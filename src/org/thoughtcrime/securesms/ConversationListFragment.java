@@ -53,7 +53,6 @@ import android.view.ViewGroup;
 
 import org.thoughtcrime.securesms.ConversationListAdapter.ItemClickListener;
 import org.thoughtcrime.securesms.components.recyclerview.DeleteItemAnimator;
-import org.thoughtcrime.securesms.components.reminder.DefaultSmsReminder;
 import org.thoughtcrime.securesms.components.reminder.DozeReminder;
 import org.thoughtcrime.securesms.components.reminder.ExpiredBuildReminder;
 import org.thoughtcrime.securesms.components.reminder.OutdatedBuildReminder;
@@ -61,7 +60,6 @@ import org.thoughtcrime.securesms.components.reminder.PushRegistrationReminder;
 import org.thoughtcrime.securesms.components.reminder.Reminder;
 import org.thoughtcrime.securesms.components.reminder.ReminderView;
 import org.thoughtcrime.securesms.components.reminder.ReminderView.OnDismissListener;
-import org.thoughtcrime.securesms.components.reminder.ShareReminder;
 import org.thoughtcrime.securesms.components.reminder.SystemSmsImportReminder;
 import org.thoughtcrime.securesms.crypto.MasterSecret;
 import org.thoughtcrime.securesms.database.DatabaseFactory;
@@ -177,14 +175,10 @@ public class ConversationListFragment extends Fragment
           return Optional.of(new ExpiredBuildReminder(context));
         } else if (OutdatedBuildReminder.isEligible()) {
           return Optional.of(new OutdatedBuildReminder(context));
-        } else if (DefaultSmsReminder.isEligible(context)) {
-          return Optional.of(new DefaultSmsReminder(context));
         } else if (Util.isDefaultSmsProvider(context) && SystemSmsImportReminder.isEligible(context)) {
           return Optional.of((new SystemSmsImportReminder(context, masterSecret)));
         } else if (PushRegistrationReminder.isEligible(context)) {
           return Optional.of((new PushRegistrationReminder(context, masterSecret)));
-        } else if (ShareReminder.isEligible(context)) {
-          return Optional.of(new ShareReminder(context));
         } else if (DozeReminder.isEligible(context)) {
           return Optional.of(new DozeReminder(context));
         } else {
