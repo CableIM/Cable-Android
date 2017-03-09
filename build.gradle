@@ -197,15 +197,15 @@ android {
 
     defaultConfig {
         applicationId "im.cable.cableim"
-        versionCode 245
-        versionName "3.31.0"
+        versionCode 0
+        versionName "3.31.0-0"
 
         minSdkVersion 9
         targetSdkVersion 22
         multiDexEnabled true
 
         vectorDrawables.useSupportLibrary = true
-        project.ext.set("archivesBaseName", "Signal");
+        project.ext.set("archivesBaseName", "Cable");
 
         buildConfigField "long", "BUILD_TIMESTAMP", getLastCommitTimestamp() + "L"
         buildConfigField "String", "SIGNAL_URL", "\"https://cable-service.pantelegrafo.cable.im\""
