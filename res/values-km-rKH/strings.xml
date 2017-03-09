@@ -749,7 +749,7 @@
   <string name="registration_problems__sms_interceptors">ស្ទាក់ចាប់SMS។</string>
   <string name="registration_problems__some_third_party_text_messaging_clients_such_as_handcent">
 កម្មវិធីផ្ញើសារមួយចំនួន ដូចជា Handcent ឬ GoSMS មានឥរិយាបថមិនល្អ និងជ្រាតចូលSMSចូលថ្មីទាំងអស់។ ត្រួតពិនិត្យមើល ប្រសិនបើអ្នកទទួលបានសារដែលចាប់ផ្តើមពីឃ្លា 
-\'Your Signal verification code:\' ក្នុងករណីខ្លះ អ្នកត្រូវកំណត់កម្មវិធីផ្ញើសារ 
+\'Your Cable verification code:\' ក្នុងករណីខ្លះ អ្នកត្រូវកំណត់កម្មវិធីផ្ញើសារ 
 ដើម្បីអនុញ្ញាតទទួលសារជាអក្សរបាន។</string>
   <string name="registration_problems__incorrect_number">លេខមិនត្រឹមត្រូវ។</string>
   <string name="registration_problems__please_checkt_to_make_sure_you_entered_your_number_correctly">

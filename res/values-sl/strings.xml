@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
-  <string name="app_name">Signal</string>
+  <string name="app_name">Cable</string>
   <string name="yes">Da</string>
   <string name="no">Ne</string>
   <string name="delete">Izbriši</string>
@@ -25,17 +25,17 @@
   </plurals>
   <string name="ApplicationPreferencesActivity_delete">Izbriši</string>
   <string name="ApplicationPreferencesActivity_disable_passphrase">Izklopim geslo?</string>
-  <string name="ApplicationPreferencesActivity_this_will_permanently_unlock_signal_and_message_notifications">S tem boste odklenili aplikacijo Signal in obvestila o sporočilih.</string>
+  <string name="ApplicationPreferencesActivity_this_will_permanently_unlock_signal_and_message_notifications">S tem boste odklenili aplikacijo Cable in obvestila o sporočilih.</string>
   <string name="ApplicationPreferencesActivity_disable">Onemogoči</string>
   <string name="ApplicationPreferencesActivity_unregistering">Odjava poteka</string>
-  <string name="ApplicationPreferencesActivity_unregistering_from_signal_messages_and_calls">Odjava od sporočil in klicev Signal...</string>
+  <string name="ApplicationPreferencesActivity_unregistering_from_signal_messages_and_calls">Odjava od sporočil in klicev Cable...</string>
   <string name="ApplicationPreferencesActivity_disable_signal_messages_and_calls">Izklopim sporočila in klice Signal?</string>
-  <string name="ApplicationPreferencesActivity_disable_signal_messages_and_calls_by_unregistering">S tem boste izključili sporočila in klice Signal in se odjavili s strežnika. Za ponovno uporabo boste morali zopet prijaviti s svojo telefonsko številko.</string>
+  <string name="ApplicationPreferencesActivity_disable_signal_messages_and_calls_by_unregistering">S tem boste izključili sporočila in klice Cable in se odjavili s strežnika. Za ponovno uporabo boste morali zopet prijaviti s svojo telefonsko številko.</string>
   <string name="ApplicationPreferencesActivity_error_connecting_to_server">Napaka pri povezavi s strežnikom!</string>
   <string name="ApplicationPreferencesActivity_sms_enabled">Sporočila SMS vklopljena</string>
   <string name="ApplicationPreferencesActivity_touch_to_change_your_default_sms_app">Dotaknite se za spremembo privzete aplikacije za sporočila SMS</string>
   <string name="ApplicationPreferencesActivity_sms_disabled">Sporočila SMS izklopljena</string>
-  <string name="ApplicationPreferencesActivity_touch_to_make_signal_your_default_sms_app">Z dotikom nastavite Signal za privzeto aplikacijo SMS</string>
+  <string name="ApplicationPreferencesActivity_touch_to_make_signal_your_default_sms_app">Z dotikom nastavite Cable za privzeto aplikacijo SMS</string>
   <string name="ApplicationPreferencesActivity_on">Vklopljena</string>
   <string name="ApplicationPreferencesActivity_On">Vklopljena</string>
   <string name="ApplicationPreferencesActivity_off">Izklopljena</string>
@@ -70,12 +70,12 @@
   <!--CallScreen-->
   <string name="CallScreen_Incoming_call">Dohodni klic</string>
   <!--ConfirmIdentityDialog-->
-  <string name="ConfirmIdentityDialog_your_safety_number_with_s_has_changed">Varnostno število z uporabnikom %1$s je bilo spremenjeno. To lahko pomeni, da poskuša nekdo prestrezati vajino komunikacijo ali pa je %2$s zgolj ponovno namestil aplikacijo Signal.</string>
+  <string name="ConfirmIdentityDialog_your_safety_number_with_s_has_changed">Varnostno število z uporabnikom %1$s je bilo spremenjeno. To lahko pomeni, da poskuša nekdo prestrezati vajino komunikacijo ali pa je %2$s zgolj ponovno namestil aplikacijo Cable.</string>
   <string name="ConfirmIdentityDialog_you_may_wish_to_verify_your_safety_number_with_this_contact">Morda bi želeli preveriti vajino skupno varnostno število.</string>
   <string name="ConfirmIdentityDialog_accept">Sprejmi</string>
   <!--ContactsDatabase-->
   <string name="ContactsDatabase_message_s">Sporočilo %s</string>
-  <string name="ContactsDatabase_signal_call_s">Klic Signal: %s</string>
+  <string name="ContactsDatabase_signal_call_s">Klic Cable: %s</string>
   <!--ConversationItem-->
   <string name="ConversationItem_message_size_d_kb">Velikost sporočila: %d KB</string>
   <string name="ConversationItem_expires_s">Poteče: %s</string>
@@ -89,7 +89,7 @@
   <string name="ConversationItem_click_to_approve_unencrypted">Tapni za prehod na nezavarovana sporočila</string>
   <string name="ConversationItem_click_to_approve_unencrypted_sms_dialog_title">Preklopim na nešifriran SMS?</string>
   <string name="ConversationItem_click_to_approve_unencrypted_mms_dialog_title">Preklopim na nešifriran MMS?</string>
-  <string name="ConversationItem_click_to_approve_unencrypted_dialog_message">To sporočilo <b>ne bo</b> šifrirano, ker prejemnik ni več uporabnik aplikacije Signal.\n\nPošljem nešifrirano?</string>
+  <string name="ConversationItem_click_to_approve_unencrypted_dialog_message">To sporočilo <b>ne bo</b> šifrirano, ker prejemnik ni več uporabnik aplikacije Cable.\n\nPošljem nešifrirano?</string>
   <string name="ConversationItem_unable_to_open_media">Ne najdem aplikacije za odpiranje te vrste datotek.</string>
   <string name="ConversationItem_from_s">od %s</string>
   <string name="ConversationItem_to_s">za %s</string>
@@ -124,8 +124,8 @@
   <string name="ConversationActivity_are_you_sure_you_want_to_leave_this_group">Ste prepričani, da res želite zapustiti to skupino?</string>
   <string name="ConversationActivity_transport_insecure_sms">Nezavarovan SMS</string>
   <string name="ConversationActivity_transport_insecure_mms">Nezavarovan MMS</string>
-  <string name="ConversationActivity_transport_signal">Signal</string>
-  <string name="ConversationActivity_lets_switch_to_signal">Začni uporabljati aplikacijo Signal %1$s</string>
+  <string name="ConversationActivity_transport_signal">Cable</string>
+  <string name="ConversationActivity_lets_switch_to_signal">Začni uporabljati aplikacijo Cable %1$s</string>
   <string name="ConversationActivity_lets_use_this_to_chat">Uporabljajva tole za pogovore: %1$s</string>
   <string name="ConversationActivity_error_leaving_group">Napaka ob zapuščanju skupine</string>
   <string name="ConversationActivity_mms_not_supported_title">Sporočila MMS niso podprta</string>
@@ -196,7 +196,7 @@
   </plurals>
   <string name="ConversationFragment_collecting_attahments">Zbiram priponke...</string>
   <string name="ConversationFragment_pending">V teku...</string>
-  <string name="ConversationFragment_push">Podatkovno (Signal)</string>
+  <string name="ConversationFragment_push">Podatkovno (Cable)</string>
   <string name="ConversationFragment_mms">MMS</string>
   <string name="ConversationFragment_sms">SMS</string>
   <string name="ConversationFragment_deleting">Brišem</string>
@@ -260,19 +260,19 @@
   <string name="DeviceListItem_today">Danes</string>
   <!--DozeReminder-->
   <string name="DozeReminder_optimize_for_missing_play_services">Optimiziraj za manjkajočo aplikacijo Play Services</string>
-  <string name="DozeReminder_this_device_does_not_support_play_services_tap_to_disable_system_battery">Naprava ne podpira storitev Play Services. Tapnite za izklop optimizacije baterije, ki aplikaciji Signal preprečuje povezavo v času neaktivnosti naprave.</string>
+  <string name="DozeReminder_this_device_does_not_support_play_services_tap_to_disable_system_battery">Naprava ne podpira storitev Play Services. Tapnite za izklop optimizacije baterije, ki aplikaciji Cable preprečuje povezavo v času neaktivnosti naprave.</string>
   <!--ShareActivity-->
   <string name="ShareActivity_share_with">Deli z</string>
   <!--ExperienceUpgradeActivity-->
-  <string name="ExperienceUpgradeActivity_welcome_to_signal_dgaf">Dobrodošli v aplikaciji Signal.</string>
-  <string name="ExperienceUpgradeActivity_textsecure_is_now_called_signal">TextSecure in RedPhone sta odslej združena v skupni aplikaciji za zasebno komuniciranje: Signal.</string>
-  <string name="ExperienceUpgradeActivity_welcome_to_signal_excited">Dobrodošli v aplikaciji Signal!</string>
-  <string name="ExperienceUpgradeActivity_textsecure_is_now_signal">TextSecure je odslej Signal.</string>
-  <string name="ExperienceUpgradeActivity_textsecure_is_now_signal_long">TextSecure in RedPhone sta odslej ena aplikacija: Signal. Tapnite za več!</string>
+  <string name="ExperienceUpgradeActivity_welcome_to_signal_dgaf">Dobrodošli v aplikaciji Cable.</string>
+  <string name="ExperienceUpgradeActivity_textsecure_is_now_called_signal">TextSecure in RedPhone sta odslej združena v skupni aplikaciji za zasebno komuniciranje: Cable.</string>
+  <string name="ExperienceUpgradeActivity_welcome_to_signal_excited">Dobrodošli v aplikaciji Cable!</string>
+  <string name="ExperienceUpgradeActivity_textsecure_is_now_signal">TextSecure je odslej Cable.</string>
+  <string name="ExperienceUpgradeActivity_textsecure_is_now_signal_long">TextSecure in RedPhone sta odslej ena aplikacija: Cable. Tapnite za več!</string>
   <string name="ExperienceUpgradeActivity_say_hello_to_video_calls">Novo: varni video pogovori.</string>
-  <string name="ExperienceUpgradeActivity_signal_now_supports_secure_video_calls">Aplikacija Signal zdaj omogoča tudi varne video klice. Za uporabo začnite z običajnim glasovnim klicem in nato tapnite na gumb s kamero.</string>
-  <string name="ExperienceUpgradeActivity_signal_now_supports_secure_video_calling">Aplikacija Signal zdaj omogoča tudi varne video klice.</string>
-  <string name="ExperienceUpgradeActivity_signal_now_supports_secure_video_calling_long">Aplikacija Signal zdaj omogoča tudi varne video klice. Tapnite za več informacij.</string>
+  <string name="ExperienceUpgradeActivity_signal_now_supports_secure_video_calls">Aplikacija Cable zdaj omogoča tudi varne video klice. Za uporabo začnite z običajnim glasovnim klicem in nato tapnite na gumb s kamero.</string>
+  <string name="ExperienceUpgradeActivity_signal_now_supports_secure_video_calling">Aplikacija Cable zdaj omogoča tudi varne video klice.</string>
+  <string name="ExperienceUpgradeActivity_signal_now_supports_secure_video_calling_long">Aplikacija Cable zdaj omogoča tudi varne video klice. Tapnite za več informacij.</string>
   <!--ExportFragment-->
   <string name="ExportFragment_export">Izvozi</string>
   <string name="ExportFragment_export_plaintext_to_storage">Izvozim v nešifrirani obliki?</string>
@@ -284,7 +284,7 @@
   <string name="ExportFragment_error_while_writing_to_storage">Napaka pri zapisovanju.</string>
   <string name="ExportFragment_export_successful">Izvoz je bil uspešno opravljen.</string>
   <!--GcmRefreshJob-->
-  <string name="GcmRefreshJob_Permanent_Signal_communication_failure">Trajna okvara pri komunikaciji aplikacije Signal!</string>
+  <string name="GcmRefreshJob_Permanent_Signal_communication_failure">Trajna okvara pri komunikaciji aplikacije Cable!</string>
   <string name="GcmRefreshJob_Signal_was_unable_to_register_with_Google_Play_Services">Registracija z Google Play Services ni bila uspešna. Podatkovna komunikacija je izklopljena, prosimo poskusite s ponovno registracijo v meniju Nastavive &gt; Napredno.</string>
   <!--GiphyActivity-->
   <string name="GiphyActivity_error_while_retrieving_full_resolution_gif">Napaka pri pridobivanju GIF-a v polni ločljivosti</string>
@@ -296,8 +296,8 @@
   <string name="GroupCreateActivity_actionbar_edit_title">Uredi skupino</string>
   <string name="GroupCreateActivity_group_name_hint">Ime skupine</string>
   <string name="GroupCreateActivity_actionbar_mms_title">Nova skupina MMS</string>
-  <string name="GroupCreateActivity_contacts_dont_support_push">Izbrali ste stik, ki ne podpira skupin Signal, zato bo to skupina MMS.</string>
-  <string name="GroupCreateActivity_youre_not_registered_for_signal">Ker niste prijavljeni za uporabo podatkovne komunikacije, so skupine Signal onemogočene. Poskusite se registrirati v meniju: Nastavitve &gt; Napredno.</string>
+  <string name="GroupCreateActivity_contacts_dont_support_push">Izbrali ste stik, ki ne podpira skupin Cable, zato bo to skupina MMS.</string>
+  <string name="GroupCreateActivity_youre_not_registered_for_signal">Ker niste prijavljeni za uporabo podatkovne komunikacije, so skupine Cable onemogočene. Poskusite se registrirati v meniju: Nastavitve &gt; Napredno.</string>
   <string name="GroupCreateActivity_contacts_mms_exception">Prišlo je do nepričakovane napake, zato skupina ni bila ustvarjena.</string>
   <string name="GroupCreateActivity_contacts_no_members">V skupini mora biti vsaj ena oseba!</string>
   <string name="GroupCreateActivity_contacts_invalid_number">En izmed članov skupine ima nepravilno zapisano številko. Popravite napako ali odstranite stik iz skupine in poskusite znova.</string>
@@ -305,7 +305,7 @@
   <string name="GroupCreateActivity_menu_apply_button">Uveljavi</string>
   <string name="GroupCreateActivity_creating_group">Ustvarjam %1$s…</string>
   <string name="GroupCreateActivity_updating_group">Posodabljam %1$s...</string>
-  <string name="GroupCreateActivity_cannot_add_non_push_to_existing_group">Stik %1$s ni bil dodan, ker ni uporabnik aplikacije Signal.</string>
+  <string name="GroupCreateActivity_cannot_add_non_push_to_existing_group">Stik %1$s ni bil dodan, ker ni uporabnik aplikacije Cable.</string>
   <string name="GroupCreateActivity_loading_group_details">Nalagam podatke o skupini...</string>
   <string name="GroupCreateActivity_youre_already_in_the_group">Ste že v skupini.</string>
   <!--GroupMembersDialog-->
@@ -315,12 +315,12 @@
   <string name="ImportExportActivity_export">Izvoz</string>
   <!--ImportFragment-->
   <string name="ImportFragment_import_system_sms_database">Uvozim iz sistemske zbirke sporočil SMS?</string>
-  <string name="ImportFragment_this_will_import_messages_from_the_system">S tem boste uvozili sporočila iz sistemsko privzete aplikacije SMS v aplikacijo Signal. Če ste predhodno že uvozili sporočila iz sistemske aplikacije SMS, bodo ta sporočila podvojena.</string>
+  <string name="ImportFragment_this_will_import_messages_from_the_system">S tem boste uvozili sporočila iz sistemsko privzete aplikacije SMS v aplikacijo Cable. Če ste predhodno že uvozili sporočila iz sistemske aplikacije SMS, bodo ta sporočila podvojena.</string>
   <string name="ImportFragment_import">Uvozi</string>
   <string name="ImportFragment_cancel">Prekliči</string>
   <string name="ImportFragment_restore_encrypted_backup">Obnovim iz šifirane varnostne kopije?</string>
   <string name="ImportFragment_restoring_an_encrypted_backup_will_completely_replace_your_existing_keys">
-Uvoz iz šifrirane varnostne kopije bo popolnoma nadomestil obstoječe ključe, nastavitve, in sporočila. Izgubili boste vse podatke iz vaše trenutne namestitve aplikacije Signal, ki niso v tej varnostni kopiji.</string>
+Uvoz iz šifrirane varnostne kopije bo popolnoma nadomestil obstoječe ključe, nastavitve, in sporočila. Izgubili boste vse podatke iz vaše trenutne namestitve aplikacije Cable, ki niso v tej varnostni kopiji.</string>
   <string name="ImportFragment_restore">Obnovi</string>
   <string name="ImportFragment_import_plaintext_backup">Uvozim iz nešifrirane varnostne kopije?</string>
   <string name="ImportFragment_this_will_import_messages_from_a_plaintext_backup">S tem boste uvozili sporočila iz nešifrirane varnostne kopije. Če ste predhodno že uvozili sporočila iz iste varnostne kopije, bodo ta sporočila podvojena.</string>
@@ -355,29 +355,29 @@ Uvoz iz šifrirane varnostne kopije bo popolnoma nadomestil obstoječe ključe, 
     <item quantity="few">Pošljem %d povabila SMS?</item>
     <item quantity="other">Pošljem %d povabil SMS?</item>
   </plurals>
-  <string name="InviteActivity_lets_switch_to_signal">Preklopi na Signal: %1$s</string>
+  <string name="InviteActivity_lets_switch_to_signal">Preklopi na Cable: %1$s</string>
   <string name="InviteActivity_no_app_to_share_to">Kaže, da nimate nameščene nobene primerne aplikacije.</string>
   <string name="InviteActivity_friends_dont_let_friends_text_unencrypted">Pametni ljudje uporabljajo šifrirano komunikacijo!</string>
   <!--KeyScanningActivity-->
   <string name="KeyScanningActivity_no_scanned_key_found_exclamation">Noben skeniran ključ ni bil najden!</string>
   <string name="KeyScanningActivity_install_barcode_Scanner">Želite namestiti Barcode Scanner?</string>
-  <string name="KeyScanningActivity_this_application_requires_barcode_scanner_would_you_like_to_install_it">Signal potrebuje aplikacijo Barcode Scanner za branje kod QR.</string>
+  <string name="KeyScanningActivity_this_application_requires_barcode_scanner_would_you_like_to_install_it">Cable potrebuje aplikacijo Barcode Scanner za branje kod QR.</string>
   <!--MessageDetailsRecipient-->
   <string name="MessageDetailsRecipient_failed_to_send">Pošiljanje ni uspelo</string>
   <string name="MessageDetailsRecipient_new_safety_number">Novo varnostno število</string>
   <!--MessageRetrievalService-->
-  <string name="MessageRetrievalService_signal">Signal</string>
+  <string name="MessageRetrievalService_signal">Cable</string>
   <string name="MessageRetrievalService_background_connection_enabled">Zaledna povezava je vkloplejena</string>
   <!--MmsDownloader-->
   <string name="MmsDownloader_error_storing_mms">Napaka pri shranjevanju MMS sporočila!</string>
   <string name="MmsDownloader_error_connecting_to_mms_provider">Napaka pri povezavi s ponudnikom MMS</string>
   <string name="MmsDownloader_error_reading_mms_settings">Napaka pri branju nastavitev MMS brezžičnega ponudnika</string>
   <!--- NotificationBarManager-->
-  <string name="NotificationBarManager_signal_call_in_progress">Klic Signal poteka</string>
+  <string name="NotificationBarManager_signal_call_in_progress">Klic Cable poteka</string>
   <string name="NotificationBarManager_missed_call_from_s">Neodgovorjen klic: %s</string>
-  <string name="NotificationBarManager_missed_signal_call">Neodgovorjen klic Signal</string>
-  <string name="NotificationBarManager__establishing_signal_call">Vzpostavljam klic Signal</string>
-  <string name="NotificationBarManager__incoming_signal_call">Dohodni klic Signal</string>
+  <string name="NotificationBarManager_missed_signal_call">Neodgovorjen klic Cable</string>
+  <string name="NotificationBarManager__establishing_signal_call">Vzpostavljam klic Cable</string>
+  <string name="NotificationBarManager__incoming_signal_call">Dohodni klic Cable</string>
   <string name="NotificationBarManager__deny_call">Zavrni klic</string>
   <string name="NotificationBarManager__answer_call">Odgovori</string>
   <string name="NotificationBarManager__end_call">Zaključi klic</string>
@@ -387,13 +387,13 @@ Uvoz iz šifrirane varnostne kopije bo popolnoma nadomestil obstoječe ključe, 
   <string name="NotificationMmsMessageRecord_downloading_mms_message">Nalagam sporočilo MMS</string>
   <string name="NotificationMmsMessageRecord_error_downloading_mms_message">Napaka pri prenosu sporočila MMS. Tapni za ponovitev.</string>
   <!--MessageRecord-->
-  <string name="MessageRecord_message_encrypted_with_a_legacy_protocol_version_that_is_no_longer_supported">Prejeli ste sporočilo, šifrirano z različico aplikacije Signal, ki ni več podprta. Prosite pošiljatelja, naj posodobi Signal na najnovejšo različico.</string>
+  <string name="MessageRecord_message_encrypted_with_a_legacy_protocol_version_that_is_no_longer_supported">Prejeli ste sporočilo, šifrirano z različico aplikacije Cable, ki ni več podprta. Prosite pošiljatelja, naj posodobi Cable na najnovejšo različico.</string>
   <string name="MessageRecord_left_group">Zapustili ste skupino.</string>
   <string name="MessageRecord_updated_group">Skupina je bila posodobljena.</string>
   <string name="MessageRecord_s_called_you">Oseba %s vas je klicala</string>
   <string name="MessageRecord_called_s">Klicali ste: %s</string>
   <string name="MessageRecord_missed_call_from">Neodgovorjen klic: %s</string>
-  <string name="MessageRecord_s_is_on_signal_say_hey">%s uporablja Signal, pozdravite ga!</string>
+  <string name="MessageRecord_s_is_on_signal_say_hey">%s uporablja Cable, pozdravite ga!</string>
   <string name="MessageRecord_you_set_disappearing_message_time_to_s">Čas poteka sporočila ste nastavili na %1$s.</string>
   <string name="MessageRecord_s_set_disappearing_message_time_to_s">Oseba %1$s je nastavila čas poteka sporočila na %2$s</string>
   <string name="MessageRecord_your_safety_number_with_s_has_changed">Varnostno število z uporabnikom %s je bilo spremenjeno.</string>
@@ -419,21 +419,21 @@ Uvoz iz šifrirane varnostne kopije bo popolnoma nadomestil obstoječe ključe, 
   <string name="DeviceProvisioningActivity_sorry_you_have_too_many_devices_linked_already">Imate preveč registriranih naprav. Za povezavo nove najprej kakšno odstranite.</string>
   <string name="DeviceActivity_sorry_this_is_not_a_valid_device_link_qr_code">Koda QR za povezavo naprav ni veljavna.</string>
   <string name="DeviceProvisioningActivity_link_a_signal_device">Povežem z napravo Signal?</string>
-  <string name="DeviceProvisioningActivity_it_looks_like_youre_trying_to_link_a_signal_device_using_a_3rd_party_scanner">Izgleda, da želite za povzavo z napravo Signal uporabiti zunanji optični čitalnik. Prosimo, da storite to znotraj aplikacije Signal, saj je tako najvarneje.</string>
+  <string name="DeviceProvisioningActivity_it_looks_like_youre_trying_to_link_a_signal_device_using_a_3rd_party_scanner">Izgleda, da želite za povzavo z napravo Cable uporabiti zunanji optični čitalnik. Prosimo, da storite to znotraj aplikacije Cable, saj je tako najvarneje.</string>
   <!--ExpirationDialog-->
   <string name="ExpirationDialog_disappearing_messages">Izginjajoča sporočila</string>
   <string name="ExpirationDialog_your_messages_will_not_expire">Vaša sporočila ne bodo potekla.</string>
   <string name="ExpirationDialog_your_messages_will_disappear_s_after_they_have_been_seen">Sporočila, poslana ali prejeta v tem pogovoru, bodo izginila %s po ogledu.</string>
   <!--PassphrasePromptActivity-->
   <string name="PassphrasePromptActivity_enter_passphrase">Vnesite geslo</string>
-  <string name="PassphrasePromptActivity_watermark_content_description">Ikona Signal</string>
+  <string name="PassphrasePromptActivity_watermark_content_description">Ikona Cable</string>
   <string name="PassphrasePromptActivity_ok_button_content_description">Vnesite geslo</string>
   <string name="PassphrasePromptActivity_invalid_passphrase_exclamation">Napačno geslo!</string>
   <!--PlayServicesProblemFragment-->
   <string name="PlayServicesProblemFragment_the_version_of_google_play_services_you_have_installed_is_not_functioning">Različica programa Google Play Services, ki jo imate nameščeno, ne deluje, kot bi morala. Prosimo ponovno namestite Google Play Services in poskusite znova.</string>
   <!--RatingManager-->
   <string name="RatingManager_rate_this_app">Oceni to aplikacijo</string>
-  <string name="RatingManager_if_you_enjoy_using_this_app_please_take_a_moment">Če se vam zdi aplikacija Signal koristna in uporabna, vas prosimo, da si vzamete nekaj trenutkov, in jo ocenite.</string>
+  <string name="RatingManager_if_you_enjoy_using_this_app_please_take_a_moment">Če se vam zdi aplikacija Cable koristna in uporabna, vas prosimo, da si vzamete nekaj trenutkov, in jo ocenite.</string>
   <string name="RatingManager_rate_now">Oceni zdaj!</string>
   <string name="RatingManager_no_thanks">Ne, hvala!</string>
   <string name="RatingManager_later">Kasneje</string>
@@ -472,7 +472,7 @@ Uvoz iz šifrirane varnostne kopije bo popolnoma nadomestil obstoječe ključe, 
   <string name="RedPhone_the_number_you_dialed_does_not_support_secure_voice">Številka, ki ste jo klicali, ne podpira varnih klicev!</string>
   <string name="RedPhone_got_it">Razumem</string>
   <!--RegistrationActivity-->
-  <string name="RegistrationActivity_connect_with_signal">Poveži z aplikacijo Signal</string>
+  <string name="RegistrationActivity_connect_with_signal">Poveži z aplikacijo Cable</string>
   <string name="RegistrationActivity_select_your_country">Izberite svojo državo</string>
   <string name="RegistrationActivity_you_must_specify_your_country_code">Navesti morate mednarodno kodo svoje države</string>
   <string name="RegistrationActivity_you_must_specify_your_phone_number">Navesti morate svojo telefonsko številko</string>
@@ -483,7 +483,7 @@ Preverite, če je to zares vaša telefonska številka! Potrdili jo bomo s sporo�
   <string name="RegistrationActivity_continue">Nadaljuj</string>
   <string name="RegistrationActivity_edit">Uredi</string>
   <string name="RegistrationActivity_missing_google_play_services">Mankajoča aplikacija Google Play Services</string>
-  <string name="RegistrationActivity_this_device_is_missing_google_play_services">Naprava nima nameščene aplikacije Google Play Services. Zaradi tega lahko pri delovanju aplikacije Signal prihaja do večje porabe baterije in zmanjšane zanesljivosti pri prejemu sporočil.\n\nČe niste napredni uporabnik, nimate nameščenega prilagojenega sistema Android ali pa menite, da je to obvestilo posledica napake, se za pomoč obrnite na support@whispersystems.org.</string>
+  <string name="RegistrationActivity_this_device_is_missing_google_play_services">Naprava nima nameščene aplikacije Google Play Services. Zaradi tega lahko pri delovanju aplikacije Cable prihaja do večje porabe baterije in zmanjšane zanesljivosti pri prejemu sporočil.\n\nČe niste napredni uporabnik, nimate nameščenega prilagojenega sistema Android ali pa menite, da je to obvestilo posledica napake, se za pomoč obrnite na support@whispersystems.org.</string>
   <string name="RegistrationActivity_i_understand">Razumem</string>
   <string name="RegistrationActivity_play_services_error">Napaka Play Services</string>
   <string name="RegistrationActivity_google_play_services_is_updating_or_unavailable">Aplikacija Google Play Services se posodablja ali pa je začasno nedosegljiva. Poskusite znova.</string>
@@ -509,12 +509,12 @@ Preverite, če je to zares vaša telefonska številka! Potrdili jo bomo s sporo�
   <string name="RegistrationProgressActivity_too_many_requests">Preveč zahtevkov!</string>
   <string name="RegistrationProgressActivity_youve_already_requested_a_voice_call">Pred kratkim ste že zahtevali glasovni klic. Naslednjič lahko poskusite čez 20 minut.</string>
   <string name="RegistrationProgressActivity_registration_conflict">Napaka pri prijavi</string>
-  <string name="RegistrationProgressActivity_this_number_is_already_registered_on_a_different">Ta številka je že registrirana na drugem strežniku Signal (CyanogenMod?). Najprej se morate odjaviti tam.</string>
+  <string name="RegistrationProgressActivity_this_number_is_already_registered_on_a_different">Ta številka je že registrirana na drugem strežniku Cable (CyanogenMod?). Najprej se morate odjaviti tam.</string>
   <!--RegistrationService-->
   <string name="RegistrationService_registration_complete">Registracija je zaključena!</string>
-  <string name="RegistrationService_signal_registration_has_successfully_completed">Registracija stoiritve Signal je bila uspešno opravljena.</string>
+  <string name="RegistrationService_signal_registration_has_successfully_completed">Registracija stoiritve Cable je bila uspešno opravljena.</string>
   <string name="RegistrationService_registration_error">Napaka pri registraciji</string>
-  <string name="RegistrationService_signal_registration_has_encountered_a_problem">Pri registraciji storitve Signal je prišlo do problema.</string>
+  <string name="RegistrationService_signal_registration_has_encountered_a_problem">Pri registraciji storitve Cable je prišlo do problema.</string>
   <!--Slide-->
   <string name="Slide_image">Slika</string>
   <string name="Slide_audio">Zvok</string>
@@ -536,15 +536,15 @@ Prejeto sporočilo za izmenjavo ključev za napačno različico protokola.</stri
   <string name="ThreadRecord_called_you">Imeli ste klic</string>
   <string name="ThreadRecord_missed_call">Neodgovorjen klic</string>
   <string name="ThreadRecord_media_message">Večpredstavno sporočilo</string>
-  <string name="ThreadRecord_s_is_on_signal_say_hey">%s uporablja Signal, pozdravite ga!</string>
+  <string name="ThreadRecord_s_is_on_signal_say_hey">%s uporablja Cable, pozdravite ga!</string>
   <string name="ThreadRecord_disappearing_message_time_updated_to_s">Čas poteka sporočila je nastavljen na %s</string>
   <string name="ThreadRecord_your_safety_number_with_s_has_changed">Varnostno število z uporabnikom %s je bilo spremenjeno.</string>
   <!--UpdateApkReadyListener-->
-  <string name="UpdateApkReadyListener_Signal_update">Nadgradnja aplikacije Signal</string>
-  <string name="UpdateApkReadyListener_a_new_version_of_signal_is_available_tap_to_update">Na voljo je nova različica aplikacije Signal. Tapnite za nadgradnjo.</string>
+  <string name="UpdateApkReadyListener_Signal_update">Nadgradnja aplikacije Cable</string>
+  <string name="UpdateApkReadyListener_a_new_version_of_signal_is_available_tap_to_update">Na voljo je nova različica aplikacije Cable. Tapnite za nadgradnjo.</string>
   <!--VerifyIdentityActivity-->
-  <string name="VerifyIdentityActivity_your_contact_is_running_an_old_version_of_signal">Vaš partner uporablja zastarelo različico aplikacije Signal. Za pregled in potrditev varnostnega števila jo bo moral nadgraditi.</string>
-  <string name="VerifyIdentityActivity_your_contact_is_running_a_newer_version_of_Signal">Vaš partner uporablja novejšo različico aplikacije Signal z nekompatibilnimi kodami QR. Prosimo nadgradite svojo aplikacijo.</string>
+  <string name="VerifyIdentityActivity_your_contact_is_running_an_old_version_of_signal">Vaš partner uporablja zastarelo različico aplikacije Cable. Za pregled in potrditev varnostnega števila jo bo moral nadgraditi.</string>
+  <string name="VerifyIdentityActivity_your_contact_is_running_a_newer_version_of_Signal">Vaš partner uporablja novejšo različico aplikacije Cable z nekompatibilnimi kodami QR. Prosimo nadgradite svojo aplikacijo.</string>
   <string name="VerifyIdentityActivity_the_scanned_qr_code_is_not_a_correctly_formatted_safety_number">Skenirana koda QR ne vsebuje pravilno formatirane informacije z varnostnim številom. Poskusite znova.</string>
   <string name="VerifyIdentityActivity_share_safety_number_via">Deli varnostno število preko...</string>
   <string name="VerifyIdentityActivity_our_signal_safety_number">Skupno varnostno število:</string>
@@ -582,7 +582,7 @@ Prejeto sporočilo za izmenjavo ključev za napačno različico protokola.</stri
   <!--KeyCachingService-->
   <string name="KeyCachingService_signal_passphrase_cached">Kliknite za odprtje.</string>
   <string name="KeyCachingService_signal_passphrase_cached_with_lock">Kliknite za odprtje, za zaprtje kliknite ključavnico.</string>
-  <string name="KeyCachingService_passphrase_cached">Signal je odklenjen</string>
+  <string name="KeyCachingService_passphrase_cached">Cable je odklenjen</string>
   <string name="KeyCachingService_lock">Zakleni z geslom</string>
   <!--MediaPreviewActivity-->
   <string name="MediaPreviewActivity_you">Vi</string>
@@ -610,15 +610,15 @@ Prejeto sporočilo za izmenjavo ključev za napačno različico protokola.</stri
   <string name="MmsPreferencesFragment__invalid_uri">Vnesli ste neveljaven URI</string>
   <string name="MmsPreferencesFragment__invalid_host">Vnesli ste neveljaven naslov gostitelja</string>
   <!--QuickResponseService-->
-  <string name="QuickResponseService_quick_response_unavailable_when_Signal_is_locked">Hiter odziv ni mogoč kadar je aplikacija Signal zaklenjena!</string>
+  <string name="QuickResponseService_quick_response_unavailable_when_Signal_is_locked">Hiter odziv ni mogoč kadar je aplikacija Cable zaklenjena!</string>
   <string name="QuickResponseService_problem_sending_message">Težava pri pošiljanju sporočila</string>
   <!--SingleRecipientNotificationBuilder-->
-  <string name="SingleRecipientNotificationBuilder_signal">Signal</string>
+  <string name="SingleRecipientNotificationBuilder_signal">Cable</string>
   <string name="SingleRecipientNotificationBuilder_new_message">Novo sporočilo</string>
   <!--VideoPlayer-->
   <string name="VideoPlayer_error_playing_video">Napaka pri predvajanju videa</string>
   <!--WebRtcCallScreen-->
-  <string name="WebRtcCallScreen_new_safety_numbers">Vaše varnostno število z uporabnikom %1$s je bilo spremenjeno. To lahko pomeni, da poskuša nekdo prestrezati vajino komunikacijo ali pa je %2$s zgolj ponovno namestil aplikacijo Signal.</string>
+  <string name="WebRtcCallScreen_new_safety_numbers">Vaše varnostno število z uporabnikom %1$s je bilo spremenjeno. To lahko pomeni, da poskuša nekdo prestrezati vajino komunikacijo ali pa je %2$s zgolj ponovno namestil aplikacijo Cable.</string>
   <string name="WebRtcCallScreen_you_may_wish_to_verify_this_contact">Morda bi želeli preveriti vajino skupno varnostno število.</string>
   <string name="WebRtcCallScreen_new_safety_numbers_title">Nova varnostna števila</string>
   <!--WebRtcCallControls-->
@@ -659,7 +659,7 @@ Prejeto sporočilo za izmenjavo ključev za napačno različico protokola.</stri
   <!--conversation_title_view-->
   <string name="conversation_title_view__conversation_muted">Pogovor je bil utišan</string>
   <!--conversation_activity-->
-  <string name="conversation_activity__type_message_push">Pošlji sporočilo Signal</string>
+  <string name="conversation_activity__type_message_push">Pošlji sporočilo Cable</string>
   <string name="conversation_activity__type_message_sms_insecure">Pošlji nezavarovan SMS</string>
   <string name="conversation_activity__type_message_mms_insecure">Pošlji nezavarovan MMS</string>
   <string name="conversation_activity__from_sim_name">Od %1$s</string>
@@ -770,7 +770,7 @@ Prejeto sporočilo za izmenjavo ključev za napačno različico protokola.</stri
   <string name="import_fragment__import_system_sms_database">Uvoz iz sistemske zbirke sporočil SMS</string>
   <string name="import_fragment__import_the_database_from_the_default_system">Uvoz zbirke sporočil iz sistemsko privzete aplikacije SMS.</string>
   <string name="import_fragment__restore_encrypted_backup">Uvoz iz šifrirane varnostne kopije</string>
-  <string name="import_fragment__restore_a_previously_exported_encrypted_signal_backup">Obnova podatkov iz predhodno ustvarjene šifrirane varnostne kopije Signal.</string>
+  <string name="import_fragment__restore_a_previously_exported_encrypted_signal_backup">Obnova podatkov iz predhodno ustvarjene šifrirane varnostne kopije Cable.</string>
   <string name="import_fragment__import_plaintext_backup">Uvoz iz nešifrirane varnostne kopije</string>
   <string name="import_fragment__import_a_plaintext_backup_file">Uvoz iz datoteke z nešifrirano varnostno kopijo. Združljivo s sistemskimi varnostnimi kopijami sporočil SMS.</string>
   <!--load_more_header-->
@@ -792,7 +792,7 @@ Prejeto sporočilo za izmenjavo ključev za napačno različico protokola.</stri
   <!--prompt_passphrase_activity-->
   <string name="prompt_passphrase_activity__unlock">Odkleni</string>
   <!--prompt_mms_activity-->
-  <string name="prompt_mms_activity__signal_requires_mms_settings_to_deliver_media_and_group_messages">Za pošiljanje vešpredsatvnostnih in skupinskih sporočil potrebuje aplikacija Signal nastavitve MMS vašega mobilnega operaterja. Teh podatkov ni moč pridobiti iz vaše naprave, kar je značilno za zaklenjene naprave in druge omejene konfiguracije. </string>
+  <string name="prompt_mms_activity__signal_requires_mms_settings_to_deliver_media_and_group_messages">Za pošiljanje vešpredsatvnostnih in skupinskih sporočil potrebuje aplikacija Cable nastavitve MMS vašega mobilnega operaterja. Teh podatkov ni moč pridobiti iz vaše naprave, kar je značilno za zaklenjene naprave in druge omejene konfiguracije. </string>
   <string name="prompt_mms_activity__to_send_media_and_group_messages_tap_ok">Za pošiljanje večpredstavnostnih in skupinskih sporočil kliknite \'OK\' in vnesite potrebne podatke. Nastavitve MMS za vašega operaterja lahko najverjetneje najdete z iskanjem po spletu. Podatke morate vnesti samo enkrat.</string>
   <!--recipient_preferences_activity-->
   <string name="recipient_preference_activity__blocked">BLOKIRAN</string>
@@ -806,14 +806,14 @@ Prejeto sporočilo za izmenjavo ključev za napačno različico protokola.</stri
   <string name="recipient_preferences__color_for_this_contact">Barva stika</string>
   <string name="recipient_preferences__verify_safety_number">Preverjanje istovetnosti</string>
   <!--- redphone_call_controls-->
-  <string name="redphone_call_card__signal_call">Klic Signal</string>
+  <string name="redphone_call_card__signal_call">Klic Cable</string>
   <string name="redphone_call_controls__end_call">zaključi klic</string>
   <string name="redphone_call_controls__audio">Zvok</string>
   <string name="redphone_call_controls__mute">Utišaj</string>
-  <string name="redphone_call_controls__signal_call">Klic Signal</string>
+  <string name="redphone_call_controls__signal_call">Klic Cable</string>
   <!--registration_activity-->
   <string name="registration_activity__verify_your_number_to_connect_with_signal">
-Za uporabo storitev Signal potrdite svojo telefonsko številko.</string>
+Za uporabo storitev Cable potrdite svojo telefonsko številko.</string>
   <string name="registration_activity__your_country">VAŠA DRŽAVA</string>
   <string name="registration_activity__your_country_code_and_phone_number">KODA DRŽAVE IN VAŠA
 TELEFONSKA ŠTEVILKA</string>
@@ -826,40 +826,40 @@ TELEFONSKA ŠTEVILKA</string>
 za težave:</string>
   <string name="registration_problems__sms_interceptors">Prestrezniki SMS</string>
   <string name="registration_problems__some_third_party_text_messaging_clients_such_as_handcent">
-Nekatere aplikacije SMS, kot naprimer Handcent in GoSMS, se obnašajo nenavadno, in prestrezajo vsa prihajajoča sporočila SMS. Preverite, če ste tam prejeli sporočilo, ki se začne z \"Your Signal verification code\". V tem primeru morate nastaviti takšno aplikacijo, da bo spuščala naprej sporočila SMS.</string>
+Nekatere aplikacije SMS, kot naprimer Handcent in GoSMS, se obnašajo nenavadno, in prestrezajo vsa prihajajoča sporočila SMS. Preverite, če ste tam prejeli sporočilo, ki se začne z \"Your Cable verification code\". V tem primeru morate nastaviti takšno aplikacijo, da bo spuščala naprej sporočila SMS.</string>
   <string name="registration_problems__incorrect_number">Napačna številka.</string>
   <string name="registration_problems__please_checkt_to_make_sure_you_entered_your_number_correctly">
 Preverite, če ste pravilno vnesli svojo telefonsko številko in če je koda vaše regije/države prava.</string>
   <string name="registration_problems__google_voice">Google Voice.</string>
   <string name="registration_problems__signal_will_not_work_with_google_voice_numbers">
-Aplikacija Signal ne bo delovala s telefonskimi številkami Google Voice.</string>
+Aplikacija Cable ne bo delovala s telefonskimi številkami Google Voice.</string>
   <!--registration_progress_activity-->
   <string name="registration_progress_activity__voice_verification">Glasovna verifikacija</string>
   <string name="registration_progress_activity__signal_can_also_call_you_to_verify_your_number">
-Za potrditev vaše telefonske številke vas Signal lahko tudi pokliče. Kliknite \'Pokliči me\'
+Za potrditev vaše telefonske številke vas Cable lahko tudi pokliče. Kliknite \'Pokliči me\'
 in spodaj vnesite šetmestno kodo, ki jo boste zaslišali.</string>
   <string name="registration_progress_activity__verify">Potrdi</string>
   <string name="registration_progress_activity__call_me">Pokliči me</string>
   <string name="registration_progress_activity__edit_number">Uredi številko</string>
   <string name="registration_progress_activity__connectivity_error">Napaka v povezavi.</string>
-  <string name="registration_progress_activity__signal_was_unable_to_connect_to_the_server">Aplikacija Signal se ni mogla povezati s strežnikom.</string>
+  <string name="registration_progress_activity__signal_was_unable_to_connect_to_the_server">Aplikacija Cable se ni mogla povezati s strežnikom.</string>
   <string name="registration_progress_activity__some_possible_problems_include">Nekateri možni razlogi
 za težave:</string>
   <string name="registration_progress_activity__no_network_connectivity">Ni povezave
 z omrežjem.</string>
-  <string name="registration_progress_activity__your_device_needs_network_connectivity">Za delovanje storitve Signal potrebuje vaša naprava omrežno povezanost. Preverite, če ste priključeni na Wi-Fi ali mobilno omrežje.</string>
+  <string name="registration_progress_activity__your_device_needs_network_connectivity">Za delovanje storitve Cable potrebuje vaša naprava omrežno povezanost. Preverite, če ste priključeni na Wi-Fi ali mobilno omrežje.</string>
   <string name="registration_progress_activity__restrictive_firewall">Omejujoč požarni zid.</string>
   <string name="registration_progress_activity__if_you_are_connected_via_wifi_its_possible_that_there_is_a_firewall">
 Če ste povezani z Wi-Fi, je možno, da je vašo povazavo blokira požarni zid. Poskusite z drugim Wi-Fi ali mobilnim omrežjem.</string>
   <string name="registration_progress_activity__signal_will_now_automatically_verify_your_number_with_a_confirmation_sms_message">
-Aplikacija Signal bo avtomatsko potrdila vašo telefonsko številko s sporočilom SMS.</string>
+Aplikacija Cable bo avtomatsko potrdila vašo telefonsko številko s sporočilom SMS.</string>
   <string name="registration_progress_activity__connecting">Povezujem...</string>
   <string name="registration_progress_activity__waiting_for_sms_verification">Čakam na SMS
 potrditev...</string>
   <string name="registration_progress_activity__registering_with_server">Registracija s strežnikom...</string>
   <string name="registration_progress_activity__this_couild_take_a_moment_please_be_patient">To utegne trajati trenutek ali dva. Ko bo registracija končana, boste obveščeni.</string>
   <string name="registration_progress_activity__signal_timed_out_while_waiting_for_a_verification_sms_message">
-Čakanje aplikacije Signal na potrditveni SMS je bilo neuspešno.</string>
+Čakanje aplikacije Cable na potrditveni SMS je bilo neuspešno.</string>
   <string name="registration_progress_activity__sms_verification_failed">Potrditev SMS ni
 bila uspešna.</string>
   <string name="registration_progress_activity__generating_keys">Ustvarjam ključe...</string>
@@ -887,7 +887,7 @@ bila uspešna.</string>
   <string name="AndroidManifest__create_passphrase">Ustvari geslo</string>
   <string name="AndroidManifest__enter_passphrase">Vnesite geslo</string>
   <string name="AndroidManifest__select_contacts">Izberite naslovnike</string>
-  <string name="AndroidManifest__signal_detected">Signal zaznan</string>
+  <string name="AndroidManifest__signal_detected">Cable zaznan</string>
   <string name="AndroidManifest__change_passphrase">Zamenjava gesla</string>
   <string name="AndroidManifest__verify_safety_number">Preverjanje istovetnosti</string>
   <string name="AndroidManifest__log_submit">Oddaj sistemsko zabeležbo</string>
@@ -941,16 +941,16 @@ bila uspešna.</string>
   <string name="preferences__change_passphrase">Zamenjaj geslo</string>
   <string name="preferences__change_your_passphrase">Zamenjava gesla</string>
   <string name="preferences__enable_passphrase">Vklop gesla</string>
-  <string name="preferences__lock_signal_and_message_notifications_with_a_passphrase">Zaklep aplikacije Signal in obvestil z geslom</string>
+  <string name="preferences__lock_signal_and_message_notifications_with_a_passphrase">Zaklep aplikacije Cable in obvestil z geslom</string>
   <string name="preferences__screen_security">Zaščita zaslona</string>
   <string name="preferences__disable_screen_security_to_allow_screen_shots">Prepreči zajem slike zaslona</string>
-  <string name="preferences__auto_lock_signal_after_a_specified_time_interval_of_inactivity">Po nastavljenem času neaktivnosti bo aplikacija Signal zaklenjena</string>
+  <string name="preferences__auto_lock_signal_after_a_specified_time_interval_of_inactivity">Po nastavljenem času neaktivnosti bo aplikacija Cable zaklenjena</string>
   <string name="preferences__inactivity_timeout_passphrase">Geslo za zaklep aplikacije</string>
   <string name="preferences__inactivity_timeout_interval">Časovni interval za zaklep aplikacije</string>
   <string name="preferences__notifications">Obvestila</string>
   <string name="preferences__enable_message_notifications">Vklopi obvestila o novih sporočilih</string>
   <string name="preferences__new_contacts_notifications">Obvestilo o novih uporabnikih</string>
-  <string name="preferences__show_a_notification_for_new_signal_contacts">Prikaži obvestilo o novih uporabnikih aplikacije Signal</string>
+  <string name="preferences__show_a_notification_for_new_signal_contacts">Prikaži obvestilo o novih uporabnikih aplikacije Cable</string>
   <string name="preferences__led_color">Barva LED</string>
   <string name="preferences__led_color_unknown">Neznano</string>
   <string name="preferences__pref_led_blink_title">Vzorec utripanja LED</string>
@@ -1012,8 +1012,8 @@ bila uspešna.</string>
   <string name="preferences__theme">Tema</string>
   <string name="preferences__default">Privzeto</string>
   <string name="preferences__language">Jezik</string>
-  <string name="preferences__signal_messages_and_calls">Sporočila in klici Signal</string>
-  <string name="preferences__free_private_messages_and_calls">Brezplačna zasebna sporočila in klici uporabnikom aplikacije Signal</string>
+  <string name="preferences__signal_messages_and_calls">Sporočila in klici Cable</string>
+  <string name="preferences__free_private_messages_and_calls">Brezplačna zasebna sporočila in klici uporabnikom aplikacije Cable</string>
   <string name="preferences__submit_debug_log">Oddaj sistemsko zabeležbo</string>
   <string name="preferences__support_wifi_calling">Združljivostni način \'Klicanje WiFi\'</string>
   <string name="preferences__enable_if_your_device_supports_sms_mms_delivery_over_wifi">Aktivirajte, če dostava SMS/MMS sporočil na vaši napravi poteka preko povezave WiFi (samo, če imate vklopljeno \'WiFi klicanje/WiFi Calling)</string>
@@ -1027,10 +1027,10 @@ bila uspešna.</string>
   <string name="preferences_chats__media_auto_download">Samodejen prenos priponk</string>
   <string name="preferences_chats__message_trimming">Izbris starih sporočil</string>
   <string name="preferences_advanced__use_system_emoji">Sistemski znaki emoji</string>
-  <string name="preferences_advanced__disable_signal_built_in_emoji_support">Izklopi privzete znake emoji aplikacije Signal</string>
+  <string name="preferences_advanced__disable_signal_built_in_emoji_support">Izklopi privzete znake emoji aplikacije Cable</string>
   <string name="preferences_advanced__video_calling_beta">Video klici beta</string>
   <string name="preferences_advanced__enable_support_for_next_generation_video_and_voice_calls">Podpora za video in glasovne klice naslednje generacije. Gre za preizkusno storitev, ki deluje le, če je vključena pri klicatelju in klicanemu.</string>
-  <string name="preferences_advanced__relay_all_calls_through_the_signal_server_to_avoid_revealing_your_ip_address">Vsi klici bodo posredovani preko strežnika Signal. S tem boste  klicani strani onemogočili, da bi izvedela za vaš naslov IP. Kvaliteta klica bo zaradi tega slabša.</string>
+  <string name="preferences_advanced__relay_all_calls_through_the_signal_server_to_avoid_revealing_your_ip_address">Vsi klici bodo posredovani preko strežnika Cable. S tem boste  klicani strani onemogočili, da bi izvedela za vaš naslov IP. Kvaliteta klica bo zaradi tega slabša.</string>
   <string name="preferences_advanced__always_relay_calls">Vedno posreduj klice</string>
   <!--****************************************-->
   <!--menus-->
@@ -1048,7 +1048,7 @@ bila uspešna.</string>
   <!--conversation_callable_insecure-->
   <string name="conversation_callable_insecure__menu_call">Kliči</string>
   <!--conversation_callable_secure-->
-  <string name="conversation_callable_secure__menu_call">Klic Signal</string>
+  <string name="conversation_callable_secure__menu_call">Klic Cable</string>
   <!--conversation_context-->
   <string name="conversation_context__menu_message_details">Podrobnosti sporočila</string>
   <string name="conversation_context__menu_copy_text">Kopiraj besedilo</string>
@@ -1116,31 +1116,31 @@ bila uspešna.</string>
   <string name="verify_display_fragment_context_menu__copy_to_clipboard">Kopiraj v odložišče</string>
   <string name="verify_display_fragment_context_menu__compare_with_clipboard">Primerjaj preko odložišča</string>
   <!--reminder_header-->
-  <string name="reminder_header_outdated_build">Vaša različica aplikacije Signal je zastarela</string>
+  <string name="reminder_header_outdated_build">Vaša različica aplikacije Cable je zastarela</string>
   <plurals name="reminder_header_outdated_build_details">
-    <item quantity="one">Vaša različica aplikacije Signal bo jutri potekla. Tapnite za posodobitev na zadnjo različico.</item>
-    <item quantity="two">Vaša različica aplikacije Signal bo potekla v %d dneh. Tapnite za posodobitev na zadnjo različico.</item>
-    <item quantity="few">Vaša različica aplikacije Signal bo potekla v %d dneh. Tapnite za posodobitev na zadnjo različico.</item>
-    <item quantity="other">Vaša različica aplikacije Signal bo potekla v %d dneh. Tapnite za posodobitev na zadnjo različico.</item>
+    <item quantity="one">Vaša različica aplikacije Cable bo jutri potekla. Tapnite za posodobitev na zadnjo različico.</item>
+    <item quantity="two">Vaša različica aplikacije Cable bo potekla v %d dneh. Tapnite za posodobitev na zadnjo različico.</item>
+    <item quantity="few">Vaša različica aplikacije Cable bo potekla v %d dneh. Tapnite za posodobitev na zadnjo različico.</item>
+    <item quantity="other">Vaša različica aplikacije Cable bo potekla v %d dneh. Tapnite za posodobitev na zadnjo različico.</item>
   </plurals>
-  <string name="reminder_header_outdated_build_details_today">Pričujoča različica aplikacije Signal bo danes potekla. Tapnite za nadgradnjo na zadnjo različico.</string>
-  <string name="reminder_header_expired_build">Vaša različica aplikacije Signal je potekla!</string>
+  <string name="reminder_header_outdated_build_details_today">Pričujoča različica aplikacije Cable bo danes potekla. Tapnite za nadgradnjo na zadnjo različico.</string>
+  <string name="reminder_header_expired_build">Vaša različica aplikacije Cable je potekla!</string>
   <string name="reminder_header_expired_build_details">Ne morete več pošiljati sporočil SIgnal. Tapnite za posodobitev na zadnjo različico aplikacije.</string>
   <string name="reminder_header_expired_build_button">POSODOBI</string>
   <string name="reminder_header_sms_default_title">Uporabljaj kot privzeto aplikacijo SMS</string>
-  <string name="reminder_header_sms_default_text">Z dotikom nastavite Signal za privzeto aplikacijo SMS</string>
+  <string name="reminder_header_sms_default_text">Z dotikom nastavite Cable za privzeto aplikacijo SMS</string>
   <string name="reminder_header_sms_default_button">NASTAVI</string>
   <string name="reminder_header_sms_import_title">Uvoz iz sistemske zbirke sporočil SMS</string>
-  <string name="reminder_header_sms_import_text">Tapnite za kopiranje sporočil SMS iz telefona v kriptirano zbirko aplikacije Signal.</string>
+  <string name="reminder_header_sms_import_text">Tapnite za kopiranje sporočil SMS iz telefona v kriptirano zbirko aplikacije Cable.</string>
   <string name="reminder_header_sms_import_button">UVOZI</string>
-  <string name="reminder_header_push_title">Vklopi sporočila in klice Signal</string>
+  <string name="reminder_header_push_title">Vklopi sporočila in klice Cable</string>
   <string name="reminder_header_push_text">Izboljšajte kvaliteto svoje komunikacije!</string>
   <string name="reminder_header_push_button">VKLOPI</string>
-  <string name="reminder_header_invite_title">Povabi k uporabi aplikacije Signal</string>
+  <string name="reminder_header_invite_title">Povabi k uporabi aplikacije Cable</string>
   <string name="reminder_header_invite_text">Prenesite svojo komunikacijo z osebo %1$s na novo raven.</string>
   <string name="reminder_header_invite_button">POVABI</string>
   <string name="reminder_header_share_title">Povabi svoje prijatelje!</string>
-  <string name="reminder_header_share_text">Več vas bo uporabljalo Signal, boljši bo!</string>
+  <string name="reminder_header_share_text">Več vas bo uporabljalo Cable, boljši bo!</string>
   <string name="reminder_header_share_button">DELI</string>
   <string name="reminder_header_close_button">ZAPRI</string>
   <!--media_preview-->

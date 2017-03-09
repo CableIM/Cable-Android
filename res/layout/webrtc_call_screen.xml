@@ -66,7 +66,7 @@
                           android:textSize="16sp"
                           android:maxWidth="270dp"
                           android:lineSpacingExtra="2sp"
-                          tools:text="The safety numbers for your conversation with Masha have changed. This could either mean that someone is trying to intercept your communication, or that Masha simply re-installed Signal. You may wish to verify safety numbers for this contact."/>
+                          tools:text="The safety numbers for your conversation with Masha have changed. This could either mean that someone is trying to intercept your communication, or that Masha simply re-installed Cable. You may wish to verify safety numbers for this contact."/>
 
                 <LinearLayout
                         android:layout_marginTop="20dp"

@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
-  <string name="app_name">Signal</string>
+  <string name="app_name">Cable</string>
   <string name="yes">Sim</string>
   <string name="no">Não</string>
   <string name="delete">Excluir</string>
@@ -21,17 +21,17 @@
   </plurals>
   <string name="ApplicationPreferencesActivity_delete">Excluir</string>
   <string name="ApplicationPreferencesActivity_disable_passphrase">Desabilitar frase-chave?</string>
-  <string name="ApplicationPreferencesActivity_this_will_permanently_unlock_signal_and_message_notifications">Isto irá destravar permanentemente as notificações do Signal e de mensagens.</string>
+  <string name="ApplicationPreferencesActivity_this_will_permanently_unlock_signal_and_message_notifications">Isto irá destravar permanentemente as notificações do Cable e de mensagens.</string>
   <string name="ApplicationPreferencesActivity_disable">Desabilitar</string>
   <string name="ApplicationPreferencesActivity_unregistering">Descadastrar</string>
-  <string name="ApplicationPreferencesActivity_unregistering_from_signal_messages_and_calls">Descadastrando de mensagens e chamadas Signal...</string>
+  <string name="ApplicationPreferencesActivity_unregistering_from_signal_messages_and_calls">Descadastrando de mensagens e chamadas Cable...</string>
   <string name="ApplicationPreferencesActivity_disable_signal_messages_and_calls">Desabilitar mensagens e chamadas Signal?</string>
-  <string name="ApplicationPreferencesActivity_disable_signal_messages_and_calls_by_unregistering">Desabilitar mensagens e chamadas Signal descadastrando-o do servidor. Você precisará recadastrar seu número de telefone para usar o Signal novamente no futuro.</string>
+  <string name="ApplicationPreferencesActivity_disable_signal_messages_and_calls_by_unregistering">Desabilitar mensagens e chamadas Cable descadastrando-o do servidor. Você precisará recadastrar seu número de telefone para usar o Cable novamente no futuro.</string>
   <string name="ApplicationPreferencesActivity_error_connecting_to_server">Erro ao conectar-se com o servidor!</string>
   <string name="ApplicationPreferencesActivity_sms_enabled">SMS habilitado</string>
   <string name="ApplicationPreferencesActivity_touch_to_change_your_default_sms_app">Toque para mudar seu aplicativo padrão de SMS</string>
   <string name="ApplicationPreferencesActivity_sms_disabled">SMS desabilitado</string>
-  <string name="ApplicationPreferencesActivity_touch_to_make_signal_your_default_sms_app">Toque para tornar o Signal o seu aplicativo padrão de SMS</string>
+  <string name="ApplicationPreferencesActivity_touch_to_make_signal_your_default_sms_app">Toque para tornar o Cable o seu aplicativo padrão de SMS</string>
   <string name="ApplicationPreferencesActivity_on">ligado</string>
   <string name="ApplicationPreferencesActivity_On">Ligado</string>
   <string name="ApplicationPreferencesActivity_off">desligado</string>
@@ -64,12 +64,12 @@
   <!--CallScreen-->
   <string name="CallScreen_Incoming_call">Recebendo chamada</string>
   <!--ConfirmIdentityDialog-->
-  <string name="ConfirmIdentityDialog_your_safety_number_with_s_has_changed">Seu número de segurança com %1$s mudou. Isso pode significar que alguém está tentando interceptar a sua comunicação ou que %2$s simplesmente reinstalou o Signal.</string>
+  <string name="ConfirmIdentityDialog_your_safety_number_with_s_has_changed">Seu número de segurança com %1$s mudou. Isso pode significar que alguém está tentando interceptar a sua comunicação ou que %2$s simplesmente reinstalou o Cable.</string>
   <string name="ConfirmIdentityDialog_you_may_wish_to_verify_your_safety_number_with_this_contact">Talvez você queira verificar seu número de segurança com esse contato.</string>
   <string name="ConfirmIdentityDialog_accept">Aceitar</string>
   <!--ContactsDatabase-->
   <string name="ContactsDatabase_message_s">Mensagem %s</string>
-  <string name="ContactsDatabase_signal_call_s">Chamada Signal %s</string>
+  <string name="ContactsDatabase_signal_call_s">Chamada Cable %s</string>
   <!--ConversationItem-->
   <string name="ConversationItem_message_size_d_kb">Tamanho da mensagem: %d KB</string>
   <string name="ConversationItem_expires_s">Expira em: %s</string>
@@ -83,7 +83,7 @@
   <string name="ConversationItem_click_to_approve_unencrypted">Clique para usar contingência insegura</string>
   <string name="ConversationItem_click_to_approve_unencrypted_sms_dialog_title">Contingenciar para SMS não criptografado?</string>
   <string name="ConversationItem_click_to_approve_unencrypted_mms_dialog_title">Contingenciar para MMS não criptografado?</string>
-  <string name="ConversationItem_click_to_approve_unencrypted_dialog_message">Esta mensagem <b>não</b> será criptografada pois o destinatário não é mais um usuário Signal.\n\nEnviar mensagem não segura?</string>
+  <string name="ConversationItem_click_to_approve_unencrypted_dialog_message">Esta mensagem <b>não</b> será criptografada pois o destinatário não é mais um usuário Cable.\n\nEnviar mensagem não segura?</string>
   <string name="ConversationItem_unable_to_open_media">Não foi possível encontrar um aplicativo para abrir este arquivo.</string>
   <string name="ConversationItem_from_s">de %s</string>
   <string name="ConversationItem_to_s">para %s</string>
@@ -116,8 +116,8 @@
   <string name="ConversationActivity_are_you_sure_you_want_to_leave_this_group">Tem certeza que deseja sair deste grupo?</string>
   <string name="ConversationActivity_transport_insecure_sms">SMS inseguro</string>
   <string name="ConversationActivity_transport_insecure_mms">MMS inseguro</string>
-  <string name="ConversationActivity_transport_signal">Signal</string>
-  <string name="ConversationActivity_lets_switch_to_signal">Vamos mudar para o Signal %1$s</string>
+  <string name="ConversationActivity_transport_signal">Cable</string>
+  <string name="ConversationActivity_lets_switch_to_signal">Vamos mudar para o Cable %1$s</string>
   <string name="ConversationActivity_lets_use_this_to_chat">Vamos usar isto para conversar: %1$s</string>
   <string name="ConversationActivity_error_leaving_group">Erro ao sair do grupo</string>
   <string name="ConversationActivity_mms_not_supported_title">Sem suporte para MMS</string>
@@ -172,7 +172,7 @@
   </plurals>
   <string name="ConversationFragment_collecting_attahments">Coletando anexos...</string>
   <string name="ConversationFragment_pending">Pendente...</string>
-  <string name="ConversationFragment_push">Dados (Signal)</string>
+  <string name="ConversationFragment_push">Dados (Cable)</string>
   <string name="ConversationFragment_mms">MMS</string>
   <string name="ConversationFragment_sms">SMS</string>
   <string name="ConversationFragment_deleting">Excluindo</string>
@@ -228,23 +228,23 @@
   <string name="DeviceListItem_today">Hoje</string>
   <!--DozeReminder-->
   <string name="DozeReminder_optimize_for_missing_play_services">Otimizar para ausência do Serviços Play</string>
-  <string name="DozeReminder_this_device_does_not_support_play_services_tap_to_disable_system_battery">Este dispositivo não tem suporte para o Serviços Play. Clique para desabilitar as otimizações sistêmicas de bateria que impedem o Signal de receber mensagens enquanto está inativo.</string>
+  <string name="DozeReminder_this_device_does_not_support_play_services_tap_to_disable_system_battery">Este dispositivo não tem suporte para o Serviços Play. Clique para desabilitar as otimizações sistêmicas de bateria que impedem o Cable de receber mensagens enquanto está inativo.</string>
   <!--ShareActivity-->
   <string name="ShareActivity_share_with">Compartilhar com</string>
   <!--ExperienceUpgradeActivity-->
-  <string name="ExperienceUpgradeActivity_welcome_to_signal_dgaf">Boas-vindas ao Signal.</string>
-  <string name="ExperienceUpgradeActivity_textsecure_is_now_called_signal">TextSecure e RedPhone agora são um mensageiro privado, para todas as situações: Signal.</string>
-  <string name="ExperienceUpgradeActivity_welcome_to_signal_excited">Boas-vindas ao Signal!</string>
-  <string name="ExperienceUpgradeActivity_textsecure_is_now_signal">TextSecure agora é Signal.</string>
-  <string name="ExperienceUpgradeActivity_textsecure_is_now_signal_long">TextSecure e RedPhone agora são um aplicativo: Signal. Clique para explorar.</string>
+  <string name="ExperienceUpgradeActivity_welcome_to_signal_dgaf">Boas-vindas ao Cable.</string>
+  <string name="ExperienceUpgradeActivity_textsecure_is_now_called_signal">TextSecure e RedPhone agora são um mensageiro privado, para todas as situações: Cable.</string>
+  <string name="ExperienceUpgradeActivity_welcome_to_signal_excited">Boas-vindas ao Cable!</string>
+  <string name="ExperienceUpgradeActivity_textsecure_is_now_signal">TextSecure agora é Cable.</string>
+  <string name="ExperienceUpgradeActivity_textsecure_is_now_signal_long">TextSecure e RedPhone agora são um aplicativo: Cable. Clique para explorar.</string>
   <string name="ExperienceUpgradeActivity_say_hello_to_video_calls">Diga oi para chamadas de vídeo seguras</string>
-  <string name="ExperienceUpgradeActivity_signal_now_supports_secure_video_calls">O Signal agora tem suporte para chamadas de vídeo seguras. Apenas inicie uma chamada Signal normalmente, clique no botão de vídeo, e diga \"Oi\".</string>
-  <string name="ExperienceUpgradeActivity_signal_now_supports_secure_video_calling">O Signal agora tem suporte para chamadas de vídeo seguras.</string>
-  <string name="ExperienceUpgradeActivity_signal_now_supports_secure_video_calling_long">O Signal agora tem suporte para chamadas de vídeo seguras. Clique para explorar.</string>
+  <string name="ExperienceUpgradeActivity_signal_now_supports_secure_video_calls">O Cable agora tem suporte para chamadas de vídeo seguras. Apenas inicie uma chamada Cable normalmente, clique no botão de vídeo, e diga \"Oi\".</string>
+  <string name="ExperienceUpgradeActivity_signal_now_supports_secure_video_calling">O Cable agora tem suporte para chamadas de vídeo seguras.</string>
+  <string name="ExperienceUpgradeActivity_signal_now_supports_secure_video_calling_long">O Cable agora tem suporte para chamadas de vídeo seguras. Clique para explorar.</string>
   <!--ExportFragment-->
   <string name="ExportFragment_export">Exportar</string>
   <string name="ExportFragment_export_plaintext_to_storage">Exportar texto para a memória?</string>
-  <string name="ExportFragment_warning_this_will_export_the_plaintext_contents">Cuidado, isto irá exportar suas mensagens de texto do Signal para a memória do aparelho.</string>
+  <string name="ExportFragment_warning_this_will_export_the_plaintext_contents">Cuidado, isto irá exportar suas mensagens de texto do Cable para a memória do aparelho.</string>
   <string name="ExportFragment_cancel">Cancelar</string>
   <string name="ExportFragment_exporting">Exportando</string>
   <string name="ExportFragment_exporting_plaintext_to_storage">Exportando o texto para a memória do aparelho...</string>
@@ -252,8 +252,8 @@
   <string name="ExportFragment_error_while_writing_to_storage">Erro ao gravar na memória do aparelho.</string>
   <string name="ExportFragment_export_successful">Exportação realizada com sucesso.</string>
   <!--GcmRefreshJob-->
-  <string name="GcmRefreshJob_Permanent_Signal_communication_failure">Falha permanente de comunicação do Signal!</string>
-  <string name="GcmRefreshJob_Signal_was_unable_to_register_with_Google_Play_Services">O Signal não pôde cadastrar-se no Serviços Google Play. Mensagens e chamadas Signal foram desabilitadas; tente recadastrar em Configurações &gt; Avançado.</string>
+  <string name="GcmRefreshJob_Permanent_Signal_communication_failure">Falha permanente de comunicação do Cable!</string>
+  <string name="GcmRefreshJob_Signal_was_unable_to_register_with_Google_Play_Services">O Cable não pôde cadastrar-se no Serviços Google Play. Mensagens e chamadas Cable foram desabilitadas; tente recadastrar em Configurações &gt; Avançado.</string>
   <!--GiphyActivity-->
   <string name="GiphyActivity_error_while_retrieving_full_resolution_gif">Erro ao restaurar GIF com resolução total</string>
   <!--GiphyFragmentPageAdapter-->
@@ -264,8 +264,8 @@
   <string name="GroupCreateActivity_actionbar_edit_title">Editar grupo</string>
   <string name="GroupCreateActivity_group_name_hint">Nome do grupo</string>
   <string name="GroupCreateActivity_actionbar_mms_title">Novo grupo MMS</string>
-  <string name="GroupCreateActivity_contacts_dont_support_push">Você selecionou um contato que não tem suporte para grupos Signal. Então, este grupo será de MMS.</string>
-  <string name="GroupCreateActivity_youre_not_registered_for_signal">Você não está cadastrado para usar mensagens e chamadas Signal, então grupos Signal estão desabilitados. Tente recadastrar em Configurações &gt; Avançado.</string>
+  <string name="GroupCreateActivity_contacts_dont_support_push">Você selecionou um contato que não tem suporte para grupos Cable. Então, este grupo será de MMS.</string>
+  <string name="GroupCreateActivity_youre_not_registered_for_signal">Você não está cadastrado para usar mensagens e chamadas Cable, então grupos Cable estão desabilitados. Tente recadastrar em Configurações &gt; Avançado.</string>
   <string name="GroupCreateActivity_contacts_mms_exception">Um erro inesperado ocorreu e fez a criação do grupo falhar.</string>
   <string name="GroupCreateActivity_contacts_no_members">Você precisa de pelo menos uma pessoa no seu grupo!</string>
   <string name="GroupCreateActivity_contacts_invalid_number">Um dos membros do seu grupo tem um número que não pôde ser lido. Favor consertar ou remover esse contato e tentar novamente.</string>
@@ -273,7 +273,7 @@
   <string name="GroupCreateActivity_menu_apply_button">Aplicar</string>
   <string name="GroupCreateActivity_creating_group">Criando %1$s…</string>
   <string name="GroupCreateActivity_updating_group">Atualizando %1$s...</string>
-  <string name="GroupCreateActivity_cannot_add_non_push_to_existing_group">Não foi possível adicionar %1$s porque o grupo não é usuário do Signal.</string>
+  <string name="GroupCreateActivity_cannot_add_non_push_to_existing_group">Não foi possível adicionar %1$s porque o grupo não é usuário do Cable.</string>
   <string name="GroupCreateActivity_loading_group_details">Carregando detalhes do grupo...</string>
   <string name="GroupCreateActivity_youre_already_in_the_group">Você já está quase no grupo.</string>
   <!--GroupMembersDialog-->
@@ -284,7 +284,7 @@
   <!--ImportFragment-->
   <string name="ImportFragment_import_system_sms_database">Importar base de dados SMS do sistema?</string>
   <string name="ImportFragment_this_will_import_messages_from_the_system">Isto importará
-        mensagens da base de dados SMS padrão do sistema para o Signal. Se isto já foi
+        mensagens da base de dados SMS padrão do sistema para o Cable. Se isto já foi
         feito anteriormente, importar novamente resultará em mensagens duplicadas.
     </string>
   <string name="ImportFragment_import">Importar</string>
@@ -293,7 +293,7 @@
   <string name="ImportFragment_restoring_an_encrypted_backup_will_completely_replace_your_existing_keys">
         Restaurar um backup criptografado irá substituir completamente suas chaves existentes,
         preferências e mensagens. Você perderá toda informação que estiver em sua
-        instalação Signal atual mas não estiver no backup.
+        instalação Cable atual mas não estiver no backup.
     </string>
   <string name="ImportFragment_restore">Restaurar</string>
   <string name="ImportFragment_import_plaintext_backup">Importar backup de texto claro?</string>
@@ -319,7 +319,7 @@
   <string name="InviteActivity_sending">Enviando...</string>
   <string name="InviteActivity_heart_content_description">Coração</string>
   <string name="InviteActivity_invitations_sent">Convites enviados!</string>
-  <string name="InviteActivity_invite_to_signal">Convidar para o Signal</string>
+  <string name="InviteActivity_invite_to_signal">Convidar para o Cable</string>
   <plurals name="InviteActivity_send_sms_to_friends">
     <item quantity="one">ENVIAR SMS PARA 1 AMIGA/O</item>
     <item quantity="other">ENVIAR SMS PARA %d AMIGOS</item>
@@ -328,29 +328,29 @@
     <item quantity="one">Enviar 1 convite SMS?</item>
     <item quantity="other">Enviar %d convites SMS?</item>
   </plurals>
-  <string name="InviteActivity_lets_switch_to_signal">Vamos mudar para o Signal: %1$s</string>
+  <string name="InviteActivity_lets_switch_to_signal">Vamos mudar para o Cable: %1$s</string>
   <string name="InviteActivity_no_app_to_share_to">Parece que você não tem aplicativos para onde compartilhar.</string>
   <string name="InviteActivity_friends_dont_let_friends_text_unencrypted">Amigos não deixam amigos conversarem sem criptografia.</string>
   <!--KeyScanningActivity-->
   <string name="KeyScanningActivity_no_scanned_key_found_exclamation">Não foi encontrada nenhuma chave lida!</string>
   <string name="KeyScanningActivity_install_barcode_Scanner">Instalar scanner de código de barras?</string>
-  <string name="KeyScanningActivity_this_application_requires_barcode_scanner_would_you_like_to_install_it">O Signal precisa do Scanner de Código de Barras para códigos QR.</string>
+  <string name="KeyScanningActivity_this_application_requires_barcode_scanner_would_you_like_to_install_it">O Cable precisa do Scanner de Código de Barras para códigos QR.</string>
   <!--MessageDetailsRecipient-->
   <string name="MessageDetailsRecipient_failed_to_send">Falha no envio</string>
   <string name="MessageDetailsRecipient_new_safety_number">Novo número de segurança</string>
   <!--MessageRetrievalService-->
-  <string name="MessageRetrievalService_signal">Signal</string>
+  <string name="MessageRetrievalService_signal">Cable</string>
   <string name="MessageRetrievalService_background_connection_enabled">Conexão em segundo plano habilitada</string>
   <!--MmsDownloader-->
   <string name="MmsDownloader_error_storing_mms">Erro ao armazenar MMS!</string>
   <string name="MmsDownloader_error_connecting_to_mms_provider">Erro de conexão com provedor de MMS</string>
   <string name="MmsDownloader_error_reading_mms_settings">Erro ao ler configuracoes de MMS do provedor sem fio </string>
   <!--- NotificationBarManager-->
-  <string name="NotificationBarManager_signal_call_in_progress">Chamada Signal em andamento</string>
+  <string name="NotificationBarManager_signal_call_in_progress">Chamada Cable em andamento</string>
   <string name="NotificationBarManager_missed_call_from_s">Chamada perdida de %s</string>
-  <string name="NotificationBarManager_missed_signal_call">Chamada Signal perdida</string>
-  <string name="NotificationBarManager__establishing_signal_call">Estabelecendo uma ligação via Signal</string>
-  <string name="NotificationBarManager__incoming_signal_call">Recebendo ligação via Signal</string>
+  <string name="NotificationBarManager_missed_signal_call">Chamada Cable perdida</string>
+  <string name="NotificationBarManager__establishing_signal_call">Estabelecendo uma ligação via Cable</string>
+  <string name="NotificationBarManager__incoming_signal_call">Recebendo ligação via Cable</string>
   <string name="NotificationBarManager__deny_call">Bloquear ligação</string>
   <string name="NotificationBarManager__answer_call">Atender ligação</string>
   <string name="NotificationBarManager__end_call">Terminar ligação</string>
@@ -360,13 +360,13 @@
   <string name="NotificationMmsMessageRecord_downloading_mms_message">Baixando mensagem MMS</string>
   <string name="NotificationMmsMessageRecord_error_downloading_mms_message">Erro ao baixar mensagem MMS, clique para tentar novamente</string>
   <!--MessageRecord-->
-  <string name="MessageRecord_message_encrypted_with_a_legacy_protocol_version_that_is_no_longer_supported">Foi recebida uma mensagem que foi criptografada usando uma versão antiga do Signal que não é mais suportada. Favor pedir ao remetente que atualize para a versão mais recente e reenvie a mensagem.</string>
+  <string name="MessageRecord_message_encrypted_with_a_legacy_protocol_version_that_is_no_longer_supported">Foi recebida uma mensagem que foi criptografada usando uma versão antiga do Cable que não é mais suportada. Favor pedir ao remetente que atualize para a versão mais recente e reenvie a mensagem.</string>
   <string name="MessageRecord_left_group">Você saiu do grupo.</string>
   <string name="MessageRecord_updated_group">Atualizou o grupo.</string>
   <string name="MessageRecord_s_called_you">%s fez uma chamada para você.</string>
   <string name="MessageRecord_called_s">Chamou %s</string>
   <string name="MessageRecord_missed_call_from">Chamada perdida de %s</string>
-  <string name="MessageRecord_s_is_on_signal_say_hey">%s está no Signal, diga oi!</string>
+  <string name="MessageRecord_s_is_on_signal_say_hey">%s está no Cable, diga oi!</string>
   <string name="MessageRecord_you_set_disappearing_message_time_to_s">Você definiu a expiração da mensagem temporária para %1$s.</string>
   <string name="MessageRecord_s_set_disappearing_message_time_to_s">%1$s definiu a expiração da mensagem temporária para %2$s.</string>
   <string name="MessageRecord_your_safety_number_with_s_has_changed">Seu número de segurança com %s mudou.</string>
@@ -393,14 +393,14 @@
   <string name="DeviceProvisioningActivity_sorry_you_have_too_many_devices_linked_already">Desculpe, você já possui muitos aparelhos religados. Tente remover alguns</string>
   <string name="DeviceActivity_sorry_this_is_not_a_valid_device_link_qr_code">Desculpe, este não é um código QR de dispositivo válido.</string>
   <string name="DeviceProvisioningActivity_link_a_signal_device">Vincular um dispositivo Signal?</string>
-  <string name="DeviceProvisioningActivity_it_looks_like_youre_trying_to_link_a_signal_device_using_a_3rd_party_scanner">Parece que você está tentando vincular um dispositivo Signal usando um outro scanner. Para sua proteção, favor escanear novamente o código usando o Signal.</string>
+  <string name="DeviceProvisioningActivity_it_looks_like_youre_trying_to_link_a_signal_device_using_a_3rd_party_scanner">Parece que você está tentando vincular um dispositivo Cable usando um outro scanner. Para sua proteção, favor escanear novamente o código usando o Cable.</string>
   <!--ExpirationDialog-->
   <string name="ExpirationDialog_disappearing_messages">Mensagens temporárias</string>
   <string name="ExpirationDialog_your_messages_will_not_expire">Suas mensagens não irão expirar.</string>
   <string name="ExpirationDialog_your_messages_will_disappear_s_after_they_have_been_seen">Mensagens enviadas e recebidas nesta conversa irão desaparecer %s após elas terem sido visualizadas.</string>
   <!--PassphrasePromptActivity-->
   <string name="PassphrasePromptActivity_enter_passphrase">Inserir frase-chave</string>
-  <string name="PassphrasePromptActivity_watermark_content_description">Ícone do Signal</string>
+  <string name="PassphrasePromptActivity_watermark_content_description">Ícone do Cable</string>
   <string name="PassphrasePromptActivity_ok_button_content_description">Enviar frase-chave</string>
   <string name="PassphrasePromptActivity_invalid_passphrase_exclamation">Frase-chave inválida!</string>
   <!--PlayServicesProblemFragment-->
@@ -446,7 +446,7 @@
   <string name="RedPhone_the_number_you_dialed_does_not_support_secure_voice">O número que você ligou não suporta ligação criptografada!</string>
   <string name="RedPhone_got_it">Entendi</string>
   <!--RegistrationActivity-->
-  <string name="RegistrationActivity_connect_with_signal">Conectar ao Signal</string>
+  <string name="RegistrationActivity_connect_with_signal">Conectar ao Cable</string>
   <string name="RegistrationActivity_select_your_country">Selecione seu país</string>
   <string name="RegistrationActivity_you_must_specify_your_country_code">Você deve especificar o
         código do seu país
@@ -464,7 +464,7 @@
   <string name="RegistrationActivity_continue">Continuar</string>
   <string name="RegistrationActivity_edit">Editar</string>
   <string name="RegistrationActivity_missing_google_play_services">Ausência do Serviços Google Play</string>
-  <string name="RegistrationActivity_this_device_is_missing_google_play_services">O Serviços Google Play está ausente neste dispositivo. Você ainda pode usar o Signal, mas esta configuração pode resultar em menor confiabilidade ou performance.\n\nSe você não é um usuário avançado, não está usando uma ROM Android customizada, ou acredita que isto é um erro, favor contatar support@whispersystems.org para ajudar na solução do problema.</string>
+  <string name="RegistrationActivity_this_device_is_missing_google_play_services">O Serviços Google Play está ausente neste dispositivo. Você ainda pode usar o Cable, mas esta configuração pode resultar em menor confiabilidade ou performance.\n\nSe você não é um usuário avançado, não está usando uma ROM Android customizada, ou acredita que isto é um erro, favor contatar support@whispersystems.org para ajudar na solução do problema.</string>
   <string name="RegistrationActivity_i_understand">Entendi</string>
   <string name="RegistrationActivity_play_services_error">Erro Serviços Play</string>
   <string name="RegistrationActivity_google_play_services_is_updating_or_unavailable">Serviços Google Play está sendo atualizado ou temporariamente indisponível. Favor tentar novamente.</string>
@@ -490,12 +490,12 @@
   <string name="RegistrationProgressActivity_too_many_requests">Muitas solicitações!</string>
   <string name="RegistrationProgressActivity_youve_already_requested_a_voice_call">Você já solicitou recentemente um chamada de voz. Você pode solicitar outra em 20 minutos.</string>
   <string name="RegistrationProgressActivity_registration_conflict">Conflito ao registrar</string>
-  <string name="RegistrationProgressActivity_this_number_is_already_registered_on_a_different">Este número já está registrado em outro servidor Signal (CyanogenMod?). Você deve descadastrá-lo antes para poder registrar aqui.</string>
+  <string name="RegistrationProgressActivity_this_number_is_already_registered_on_a_different">Este número já está registrado em outro servidor Cable (CyanogenMod?). Você deve descadastrá-lo antes para poder registrar aqui.</string>
   <!--RegistrationService-->
   <string name="RegistrationService_registration_complete">Cadastro completo</string>
-  <string name="RegistrationService_signal_registration_has_successfully_completed">Cadastro no Signal efetuado com sucesso.</string>
+  <string name="RegistrationService_signal_registration_has_successfully_completed">Cadastro no Cable efetuado com sucesso.</string>
   <string name="RegistrationService_registration_error">Erro de cadastro</string>
-  <string name="RegistrationService_signal_registration_has_encountered_a_problem">Signal encontrou um problema no registro.</string>
+  <string name="RegistrationService_signal_registration_has_encountered_a_problem">Cable encontrou um problema no registro.</string>
   <!--Slide-->
   <string name="Slide_image">Imagem</string>
   <string name="Slide_audio">Áudio</string>
@@ -519,18 +519,18 @@
   <string name="ThreadRecord_called_you">Ligação recebida</string>
   <string name="ThreadRecord_missed_call">Ligação perdida</string>
   <string name="ThreadRecord_media_message">MMS</string>
-  <string name="ThreadRecord_s_is_on_signal_say_hey">%s está no Signal, diga oi!</string>
+  <string name="ThreadRecord_s_is_on_signal_say_hey">%s está no Cable, diga oi!</string>
   <string name="ThreadRecord_disappearing_message_time_updated_to_s">Expiração da mensagem temporária definida para %s</string>
   <string name="ThreadRecord_your_safety_number_with_s_has_changed">Seu número de segurança com %s mudou.</string>
   <!--UpdateApkReadyListener-->
-  <string name="UpdateApkReadyListener_Signal_update">Atualização do Signal</string>
-  <string name="UpdateApkReadyListener_a_new_version_of_signal_is_available_tap_to_update">Uma nova versão do Signal está disponível, clique para atualizar.</string>
+  <string name="UpdateApkReadyListener_Signal_update">Atualização do Cable</string>
+  <string name="UpdateApkReadyListener_a_new_version_of_signal_is_available_tap_to_update">Uma nova versão do Cable está disponível, clique para atualizar.</string>
   <!--VerifyIdentityActivity-->
-  <string name="VerifyIdentityActivity_your_contact_is_running_an_old_version_of_signal">Seu contato está usando uma versão antiga do Signal. Peça a ele para atualizá-la antes de verificar o seu número de segurança.</string>
-  <string name="VerifyIdentityActivity_your_contact_is_running_a_newer_version_of_Signal">Seu contato está usando uma versão mais nova do Signal com um formato de código QR incompatível. Atualize para poder comparar.</string>
+  <string name="VerifyIdentityActivity_your_contact_is_running_an_old_version_of_signal">Seu contato está usando uma versão antiga do Cable. Peça a ele para atualizá-la antes de verificar o seu número de segurança.</string>
+  <string name="VerifyIdentityActivity_your_contact_is_running_a_newer_version_of_Signal">Seu contato está usando uma versão mais nova do Cable com um formato de código QR incompatível. Atualize para poder comparar.</string>
   <string name="VerifyIdentityActivity_the_scanned_qr_code_is_not_a_correctly_formatted_safety_number">O código QR escaneado não é um código de verificação de número de segurança formatado corretamente. Por favor, tente escanear de novo.</string>
   <string name="VerifyIdentityActivity_share_safety_number_via">Compartilhar número de segurança por...</string>
-  <string name="VerifyIdentityActivity_our_signal_safety_number">Nosso número de segurança Signal:</string>
+  <string name="VerifyIdentityActivity_our_signal_safety_number">Nosso número de segurança Cable:</string>
   <string name="VerifyIdentityActivity_no_app_to_share_to">Parece que você não tem aplicativos para onde compartilhar.</string>
   <string name="VerifyIdentityActivity_no_safety_number_to_compare_was_found_in_the_clipboard">Nenhum número de segurança a ser comaprado foi encontrado na área de transferência.</string>
   <!--KeyExchangeInitiator-->
@@ -565,7 +565,7 @@
   <!--KeyCachingService-->
   <string name="KeyCachingService_signal_passphrase_cached">Toque para abrir.</string>
   <string name="KeyCachingService_signal_passphrase_cached_with_lock">Toque para abrir ou clique no cadeado para fechar.</string>
-  <string name="KeyCachingService_passphrase_cached">Signal está desbloqueado</string>
+  <string name="KeyCachingService_passphrase_cached">Cable está desbloqueado</string>
   <string name="KeyCachingService_lock">Trancar com frase-chave</string>
   <!--MediaPreviewActivity-->
   <string name="MediaPreviewActivity_you">Você</string>
@@ -593,15 +593,15 @@
   <string name="MmsPreferencesFragment__invalid_uri">O texto digitado não era um URI válido</string>
   <string name="MmsPreferencesFragment__invalid_host">O texto digitado não era um host válido</string>
   <!--QuickResponseService-->
-  <string name="QuickResponseService_quick_response_unavailable_when_Signal_is_locked">Resposta rápida não disponível quando o Signal está bloqueado!</string>
+  <string name="QuickResponseService_quick_response_unavailable_when_Signal_is_locked">Resposta rápida não disponível quando o Cable está bloqueado!</string>
   <string name="QuickResponseService_problem_sending_message">Problema ao enviar mensagem!</string>
   <!--SingleRecipientNotificationBuilder-->
-  <string name="SingleRecipientNotificationBuilder_signal">Signal</string>
+  <string name="SingleRecipientNotificationBuilder_signal">Cable</string>
   <string name="SingleRecipientNotificationBuilder_new_message">Nova mensagem</string>
   <!--VideoPlayer-->
   <string name="VideoPlayer_error_playing_video">Erro ao reproduzir vídeo</string>
   <!--WebRtcCallScreen-->
-  <string name="WebRtcCallScreen_new_safety_numbers">O número de segurança da sua conversa com %1$s mudou. Isto pode significar que alguém está tentando interceptar sua comunicação, ou que %2$s simplesmente reinstalou o Signal.</string>
+  <string name="WebRtcCallScreen_new_safety_numbers">O número de segurança da sua conversa com %1$s mudou. Isto pode significar que alguém está tentando interceptar sua comunicação, ou que %2$s simplesmente reinstalou o Cable.</string>
   <string name="WebRtcCallScreen_you_may_wish_to_verify_this_contact">Talvez você queira verificar seu número de segurança com esse contato.</string>
   <string name="WebRtcCallScreen_new_safety_numbers_title">Novos números de segurança</string>
   <!--WebRtcCallControls-->
@@ -642,7 +642,7 @@
   <!--conversation_title_view-->
   <string name="conversation_title_view__conversation_muted">Conversa silenciada</string>
   <!--conversation_activity-->
-  <string name="conversation_activity__type_message_push">Enviar mensagem via Signal</string>
+  <string name="conversation_activity__type_message_push">Enviar mensagem via Cable</string>
   <string name="conversation_activity__type_message_sms_insecure">Enviar SMS inseguro</string>
   <string name="conversation_activity__type_message_mms_insecure">Enviar MMS inseguro</string>
   <string name="conversation_activity__from_sim_name">De %1$s</string>
@@ -654,7 +654,7 @@
   <string name="conversation_activity__attachment_thumbnail">Miniatura do anexo</string>
   <string name="conversation_activity__quick_attachment_drawer_toggle_camera_description">Alternar gaveta rápida de anexos de câmera</string>
   <string name="conversation_activity__quick_attachment_drawer_record_and_send_audio_description">Gravar e enviar áudio em anexo</string>
-  <string name="conversation_activity__enable_signal_for_sms">Habilitar Signal para SMS</string>
+  <string name="conversation_activity__enable_signal_for_sms">Habilitar Cable para SMS</string>
   <!--conversation_input_panel-->
   <string name="conversation_input_panel__slide_to_cancel">DESLIZE PARA CANCELAR</string>
   <!--conversation_item-->
@@ -743,7 +743,7 @@
   <string name="import_fragment__import_system_sms_database">Importar base de dados SMS do sistema</string>
   <string name="import_fragment__import_the_database_from_the_default_system">Importar a base de dados do aplicativo de mensagens padrão do sistema</string>
   <string name="import_fragment__restore_encrypted_backup">Restaurar backup criptografado</string>
-  <string name="import_fragment__restore_a_previously_exported_encrypted_signal_backup">Restaurar um backup criptografado do Signal exportado anteriormente</string>
+  <string name="import_fragment__restore_a_previously_exported_encrypted_signal_backup">Restaurar um backup criptografado do Cable exportado anteriormente</string>
   <string name="import_fragment__import_plaintext_backup">Importar backup de texto claro</string>
   <string name="import_fragment__import_a_plaintext_backup_file">Importar um backup em texto simples. Compatível com \'Backup &amp; Restauro de SMS.\'</string>
   <!--load_more_header-->
@@ -763,7 +763,7 @@
   <!--prompt_passphrase_activity-->
   <string name="prompt_passphrase_activity__unlock">Destrancar</string>
   <!--prompt_mms_activity-->
-  <string name="prompt_mms_activity__signal_requires_mms_settings_to_deliver_media_and_group_messages">O Signal requer configurações de MMS para entregar mídia e mensagens de grupos através de seu provedor de wireless. Seu dispositivo não disponibiliza esta informação, o que ocasionalmente ocorre com dispositivos bloqueados ou com outras configurações restritivas.</string>
+  <string name="prompt_mms_activity__signal_requires_mms_settings_to_deliver_media_and_group_messages">O Cable requer configurações de MMS para entregar mídia e mensagens de grupos através de seu provedor de wireless. Seu dispositivo não disponibiliza esta informação, o que ocasionalmente ocorre com dispositivos bloqueados ou com outras configurações restritivas.</string>
   <string name="prompt_mms_activity__to_send_media_and_group_messages_tap_ok">Para enviar mensagens de grupo e de mídia, clique \'OK\' e complete as configurações solicitadas. As configurações de MMS para a sua operadora geralmente podem ser encontradas fazendo uma busca por \'APN da sua operadora\'. Você só precisará fazer isto uma vez.</string>
   <!--recipient_preferences_activity-->
   <string name="recipient_preference_activity__blocked">BLOQUEADO</string>
@@ -777,14 +777,14 @@
   <string name="recipient_preferences__color_for_this_contact">Cor para este contato</string>
   <string name="recipient_preferences__verify_safety_number">Verificar número de segurança</string>
   <!--- redphone_call_controls-->
-  <string name="redphone_call_card__signal_call">Chamada do Signal</string>
+  <string name="redphone_call_card__signal_call">Chamada do Cable</string>
   <string name="redphone_call_controls__end_call">encerrar ligação</string>
   <string name="redphone_call_controls__audio">Áudio</string>
   <string name="redphone_call_controls__mute">Mudo</string>
-  <string name="redphone_call_controls__signal_call">Chamada do Signal</string>
+  <string name="redphone_call_controls__signal_call">Chamada do Cable</string>
   <!--registration_activity-->
   <string name="registration_activity__verify_your_number_to_connect_with_signal">
-        Verifique o seu número de telefone para se conectar ao Signal.
+        Verifique o seu número de telefone para se conectar ao Cable.
     </string>
   <string name="registration_activity__your_country">SEU PAÍS</string>
   <string name="registration_activity__your_country_code_and_phone_number">SEU CÓDIGO DE PAÍS E
@@ -800,7 +800,7 @@
     </string>
   <string name="registration_problems__sms_interceptors">Interceptadores SMS.</string>
   <string name="registration_problems__some_third_party_text_messaging_clients_such_as_handcent">
-Alguns clientes de mensagem de texto de terceiros, tais como o Handcent ou o GoSMS, se comportam mau e interceptam todas as mensagens de SMS recebidas. Verifique se você recebeu uma mensagem de texto que começa com \'Seu código de verificação do Signal:\', pois neste caso precisará configurar seu aplicativo de mensagens de texto de terceiros para deixar que as mensagens sejam encaminhadas.
+Alguns clientes de mensagem de texto de terceiros, tais como o Handcent ou o GoSMS, se comportam mau e interceptam todas as mensagens de SMS recebidas. Verifique se você recebeu uma mensagem de texto que começa com \'Seu código de verificação do Cable:\', pois neste caso precisará configurar seu aplicativo de mensagens de texto de terceiros para deixar que as mensagens sejam encaminhadas.
  </string>
   <string name="registration_problems__incorrect_number">Número incorreto.</string>
   <string name="registration_problems__please_checkt_to_make_sure_you_entered_your_number_correctly">
@@ -808,29 +808,29 @@ Por favor, verifique se colocou o número corretamente, e se está formatado cor
 para sua região.</string>
   <string name="registration_problems__google_voice">Google Voice.</string>
   <string name="registration_problems__signal_will_not_work_with_google_voice_numbers">
-O Signal não funcionará com números do Google Voice.
+O Cable não funcionará com números do Google Voice.
     </string>
   <!--registration_progress_activity-->
   <string name="registration_progress_activity__voice_verification">Verificação por voz</string>
   <string name="registration_progress_activity__signal_can_also_call_you_to_verify_your_number">
-O Signal também pode ligar para você para verificar o seu número. Clique em \'Me ligue\' e insira a seguir o código de seis dígitos que você ouvir.</string>
+O Cable também pode ligar para você para verificar o seu número. Clique em \'Me ligue\' e insira a seguir o código de seis dígitos que você ouvir.</string>
   <string name="registration_progress_activity__verify">Verificar</string>
   <string name="registration_progress_activity__call_me">Me ligar</string>
   <string name="registration_progress_activity__edit_number">Editar número</string>
   <string name="registration_progress_activity__connectivity_error">Erro de conectividade.</string>
-  <string name="registration_progress_activity__signal_was_unable_to_connect_to_the_server">O Signal não pode se conectar ao servidor.</string>
+  <string name="registration_progress_activity__signal_was_unable_to_connect_to_the_server">O Cable não pode se conectar ao servidor.</string>
   <string name="registration_progress_activity__some_possible_problems_include">Alguns problemas 
 possíveis, incluem:
     </string>
   <string name="registration_progress_activity__no_network_connectivity">Sem conectividade
  na rede.</string>
   <string name="registration_progress_activity__your_device_needs_network_connectivity">O seu
-dispositivo precisa de conexão com a rede para poder usar este recurso do Signal. Certifique-se de que ele está conectado aos dados móveis ou ao Wi-Fi.
+dispositivo precisa de conexão com a rede para poder usar este recurso do Cable. Certifique-se de que ele está conectado aos dados móveis ou ao Wi-Fi.
 </string>
   <string name="registration_progress_activity__restrictive_firewall">Firewall restritivo.</string>
-  <string name="registration_progress_activity__if_you_are_connected_via_wifi_its_possible_that_there_is_a_firewall">Se você está conectado através de Wi-Fi, é possível que exista um firewall bloqueando o acesso ao servidor do Signal. Tente com outra rede ou com os dados móveis.</string>
+  <string name="registration_progress_activity__if_you_are_connected_via_wifi_its_possible_that_there_is_a_firewall">Se você está conectado através de Wi-Fi, é possível que exista um firewall bloqueando o acesso ao servidor do Cable. Tente com outra rede ou com os dados móveis.</string>
   <string name="registration_progress_activity__signal_will_now_automatically_verify_your_number_with_a_confirmation_sms_message">
-Agora o Signal verificará o seu número automaticamente com uma mensagem SMS de confirmação.</string>
+Agora o Cable verificará o seu número automaticamente com uma mensagem SMS de confirmação.</string>
   <string name="registration_progress_activity__connecting">Conectando...</string>
   <string name="registration_progress_activity__waiting_for_sms_verification">Aguardando verificação
         por SMS...
@@ -839,7 +839,7 @@ Agora o Signal verificará o seu número automaticamente com uma mensagem SMS de
   <string name="registration_progress_activity__this_couild_take_a_moment_please_be_patient">Isto
 poderá levar um tempo. Por favor seja paciente, nós te notificaremos quando a verificação estiver completa.</string>
   <string name="registration_progress_activity__signal_timed_out_while_waiting_for_a_verification_sms_message">
-O Signal excedeu o tempo de espera por uma mensagem SMS de verificação.
+O Cable excedeu o tempo de espera por uma mensagem SMS de verificação.
 </string>
   <string name="registration_progress_activity__sms_verification_failed">Verificação por SMS
 falhou.</string>
@@ -868,7 +868,7 @@ falhou.</string>
   <string name="AndroidManifest__create_passphrase">Criar frase-chave</string>
   <string name="AndroidManifest__enter_passphrase">Inserir frase-chave</string>
   <string name="AndroidManifest__select_contacts">Selecionar contatos</string>
-  <string name="AndroidManifest__signal_detected">Signal detectado</string>
+  <string name="AndroidManifest__signal_detected">Cable detectado</string>
   <string name="AndroidManifest__change_passphrase">Mudar frase-chave</string>
   <string name="AndroidManifest__verify_safety_number">Verificar número de segurança</string>
   <string name="AndroidManifest__log_submit">Enviar log de depuração</string>
@@ -907,8 +907,8 @@ falhou.</string>
   <string name="preferences__sms_mms">SMS e MMS</string>
   <string name="preferences__pref_all_sms_title">Receber todos os SMS</string>
   <string name="preferences__pref_all_mms_title">Receber todos os MMS</string>
-  <string name="preferences__use_signal_for_viewing_and_storing_all_incoming_text_messages">Use o Signal para receber todas as mensagens de texto</string>
-  <string name="preferences__use_signal_for_viewing_and_storing_all_incoming_multimedia_messages">Use o Signal para receber todas as mensagens de multimídia</string>
+  <string name="preferences__use_signal_for_viewing_and_storing_all_incoming_text_messages">Use o Cable para receber todas as mensagens de texto</string>
+  <string name="preferences__use_signal_for_viewing_and_storing_all_incoming_multimedia_messages">Use o Cable para receber todas as mensagens de multimídia</string>
   <string name="preferences__input_settings">Configurações de introdução</string>
   <string name="preferences__enable_enter_key_title">Habilitar tecla Enter</string>
   <string name="preferences__replace_smiley_with_enter_key">Trocar a tecla smiley por uma tecla Enter</string>
@@ -920,16 +920,16 @@ falhou.</string>
   <string name="preferences__change_passphrase">Mudar frase-chave</string>
   <string name="preferences__change_your_passphrase">Alterar sua senha</string>
   <string name="preferences__enable_passphrase">Habilitar frase-chave</string>
-  <string name="preferences__lock_signal_and_message_notifications_with_a_passphrase">Trancar notificações Signal e de mensagens com uma frase-chave</string>
+  <string name="preferences__lock_signal_and_message_notifications_with_a_passphrase">Trancar notificações Cable e de mensagens com uma frase-chave</string>
   <string name="preferences__screen_security">Segurança da tela</string>
   <string name="preferences__disable_screen_security_to_allow_screen_shots">Bloquear capturas de tela na lista de recentes e dentro do aplicativo</string>
-  <string name="preferences__auto_lock_signal_after_a_specified_time_interval_of_inactivity">Trancar automaticamente o Signal após um determinado período de inatividade</string>
+  <string name="preferences__auto_lock_signal_after_a_specified_time_interval_of_inactivity">Trancar automaticamente o Cable após um determinado período de inatividade</string>
   <string name="preferences__inactivity_timeout_passphrase">Frase-chave de expiração por inatividade</string>
   <string name="preferences__inactivity_timeout_interval">Período de expiração por inatividade</string>
   <string name="preferences__notifications">Notificações</string>
   <string name="preferences__enable_message_notifications">Habilitar notificações de mensagem</string>
   <string name="preferences__new_contacts_notifications">Notificações de novos contatos</string>
-  <string name="preferences__show_a_notification_for_new_signal_contacts">Mostrar uma notificação para novos contatos Signal</string>
+  <string name="preferences__show_a_notification_for_new_signal_contacts">Mostrar uma notificação para novos contatos Cable</string>
   <string name="preferences__led_color">Cor do LED</string>
   <string name="preferences__led_color_unknown">Desconhecida</string>
   <string name="preferences__pref_led_blink_title">Padrão de piscagem do LED</string>
@@ -991,8 +991,8 @@ falhou.</string>
   <string name="preferences__theme">Tema</string>
   <string name="preferences__default">Padrão</string>
   <string name="preferences__language">Idioma</string>
-  <string name="preferences__signal_messages_and_calls">Mensagens e chamadas do Signal</string>
-  <string name="preferences__free_private_messages_and_calls">Chamadas e mensagens privadas gratuitas para usuários do Signal</string>
+  <string name="preferences__signal_messages_and_calls">Mensagens e chamadas do Cable</string>
+  <string name="preferences__free_private_messages_and_calls">Chamadas e mensagens privadas gratuitas para usuários do Cable</string>
   <string name="preferences__submit_debug_log">Enviar log de depuração</string>
   <string name="preferences__support_wifi_calling">Modo de compatibilidade \'WiFi Calling\'</string>
   <string name="preferences__enable_if_your_device_supports_sms_mms_delivery_over_wifi">Habilite se o seu dispositivo usa entrega de SMS/MMS via WiFi (somente habilite quando \'WiFi Calling\' estiver habilitado no seu dispositivo)</string>
@@ -1006,10 +1006,10 @@ falhou.</string>
   <string name="preferences_chats__media_auto_download">Download automático de mídia</string>
   <string name="preferences_chats__message_trimming">Aparar mensagem</string>
   <string name="preferences_advanced__use_system_emoji">Usar emoji do sistema</string>
-  <string name="preferences_advanced__disable_signal_built_in_emoji_support">Desabilitar o suporte a emoji embutido no Signal</string>
+  <string name="preferences_advanced__disable_signal_built_in_emoji_support">Desabilitar o suporte a emoji embutido no Cable</string>
   <string name="preferences_advanced__video_calling_beta">Chamada de vídeo em fase beta</string>
   <string name="preferences_advanced__enable_support_for_next_generation_video_and_voice_calls">Suporte para chamadas de voz e vídeo de última geração quando habilitado por ambas as partes. Esta funcionalidade está em fase beta.</string>
-  <string name="preferences_advanced__relay_all_calls_through_the_signal_server_to_avoid_revealing_your_ip_address">Encaminhar todas as chamadas através do servidor Signal para evitar revelar seu endereço IP para seu contato. Habilitar reduzirá a qualidade da chamada.</string>
+  <string name="preferences_advanced__relay_all_calls_through_the_signal_server_to_avoid_revealing_your_ip_address">Encaminhar todas as chamadas através do servidor Cable para evitar revelar seu endereço IP para seu contato. Habilitar reduzirá a qualidade da chamada.</string>
   <string name="preferences_advanced__always_relay_calls">Sempre reencaminhar chamadas</string>
   <!--****************************************-->
   <!--menus-->
@@ -1027,7 +1027,7 @@ falhou.</string>
   <!--conversation_callable_insecure-->
   <string name="conversation_callable_insecure__menu_call">Chamar</string>
   <!--conversation_callable_secure-->
-  <string name="conversation_callable_secure__menu_call">Chamada do Signal</string>
+  <string name="conversation_callable_secure__menu_call">Chamada do Cable</string>
   <!--conversation_context-->
   <string name="conversation_context__menu_message_details">Detalhes da mensagem</string>
   <string name="conversation_context__menu_copy_text">Copiar texto</string>
@@ -1095,30 +1095,30 @@ falhou.</string>
   <string name="verify_display_fragment_context_menu__copy_to_clipboard">Copiar para a área de transferência</string>
   <string name="verify_display_fragment_context_menu__compare_with_clipboard">Comparar com a área de transferência</string>
   <!--reminder_header-->
-  <string name="reminder_header_outdated_build">Sua versão do Signal está desatualizada</string>
+  <string name="reminder_header_outdated_build">Sua versão do Cable está desatualizada</string>
   <plurals name="reminder_header_outdated_build_details">
-    <item quantity="one">Sua versão do Signal expirará em um dia. Aperte para atualizar para a versão mais recente.</item>
-    <item quantity="other">Sua versão do Signal expirará em %d dias. Aperte para atualizar para a versão mais recente.</item>
+    <item quantity="one">Sua versão do Cable expirará em um dia. Aperte para atualizar para a versão mais recente.</item>
+    <item quantity="other">Sua versão do Cable expirará em %d dias. Aperte para atualizar para a versão mais recente.</item>
   </plurals>
-  <string name="reminder_header_outdated_build_details_today">Sua versão do Signal expirará hoje. Aperte para atualizar para a versão mais recente.
+  <string name="reminder_header_outdated_build_details_today">Sua versão do Cable expirará hoje. Aperte para atualizar para a versão mais recente.
 </string>
-  <string name="reminder_header_expired_build">Sua versão do Signal expirou!</string>
+  <string name="reminder_header_expired_build">Sua versão do Cable expirou!</string>
   <string name="reminder_header_expired_build_details">As mensagens não serão mais enviadas com sucesso. Aperte para atualizar para a versão mais recente.</string>
   <string name="reminder_header_expired_build_button">ATUALIZAÇÃO</string>
   <string name="reminder_header_sms_default_title">Usar como aplicativo padrão de SMS</string>
-  <string name="reminder_header_sms_default_text">Aperte para tornar o Signal o seu aplicativo padrão de SMS</string>
+  <string name="reminder_header_sms_default_text">Aperte para tornar o Cable o seu aplicativo padrão de SMS</string>
   <string name="reminder_header_sms_default_button">DEFINIR</string>
   <string name="reminder_header_sms_import_title">Importar SMS do sistema</string>
-  <string name="reminder_header_sms_import_text">Clique para copiar as mensagens SMS do seu telefone para a base de dados criptografada do Signal.</string>
+  <string name="reminder_header_sms_import_text">Clique para copiar as mensagens SMS do seu telefone para a base de dados criptografada do Cable.</string>
   <string name="reminder_header_sms_import_button">IMPORTAR</string>
-  <string name="reminder_header_push_title">Habilitar mensagens e ligações pelo Signal</string>
+  <string name="reminder_header_push_title">Habilitar mensagens e ligações pelo Cable</string>
   <string name="reminder_header_push_text">Melhore sua experiência de comunicação.</string>
   <string name="reminder_header_push_button">HABILITAR</string>
-  <string name="reminder_header_invite_title">Convidar para o Signal</string>
+  <string name="reminder_header_invite_title">Convidar para o Cable</string>
   <string name="reminder_header_invite_text">Leve sua conversa com %1$s para outro nível.</string>
   <string name="reminder_header_invite_button">Convidar</string>
   <string name="reminder_header_share_title">Convide seus amigos!</string>
-  <string name="reminder_header_share_text">Quanto mais amigos utilizarem o Signal, melhor ele se torna.</string>
+  <string name="reminder_header_share_text">Quanto mais amigos utilizarem o Cable, melhor ele se torna.</string>
   <string name="reminder_header_share_button">Compartilhar</string>
   <string name="reminder_header_close_button">Fechar</string>
   <!--media_preview-->

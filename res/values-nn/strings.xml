@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
-  <string name="app_name">Signal</string>
+  <string name="app_name">Cable</string>
   <string name="yes">Ja</string>
   <string name="no">Nei</string>
   <string name="delete">Slett</string>
@@ -21,7 +21,7 @@
   </plurals>
   <string name="ApplicationPreferencesActivity_delete">Slett</string>
   <string name="ApplicationPreferencesActivity_disable_passphrase">Vil du slå av bruk av passordfrase?</string>
-  <string name="ApplicationPreferencesActivity_this_will_permanently_unlock_signal_and_message_notifications">Dette låser opp Signal og meldingsvarsel.</string>
+  <string name="ApplicationPreferencesActivity_this_will_permanently_unlock_signal_and_message_notifications">Dette låser opp Cable og meldingsvarsel.</string>
   <string name="ApplicationPreferencesActivity_disable">Slå av</string>
   <string name="ApplicationPreferencesActivity_unregistering">Avregistrerer</string>
   <string name="ApplicationPreferencesActivity_unregistering_from_signal_messages_and_calls">Avregistrerer frå Signal-meldingar og -samtalar </string>
@@ -31,7 +31,7 @@
   <string name="ApplicationPreferencesActivity_sms_enabled">SMS slått på</string>
   <string name="ApplicationPreferencesActivity_touch_to_change_your_default_sms_app">Trykk for å byta forvald SMS-program</string>
   <string name="ApplicationPreferencesActivity_sms_disabled">SMS slått av</string>
-  <string name="ApplicationPreferencesActivity_touch_to_make_signal_your_default_sms_app">Trykk for å bruka Signal som standard SMS-program</string>
+  <string name="ApplicationPreferencesActivity_touch_to_make_signal_your_default_sms_app">Trykk for å bruka Cable som standard SMS-program</string>
   <string name="ApplicationPreferencesActivity_on">på</string>
   <string name="ApplicationPreferencesActivity_On">På</string>
   <string name="ApplicationPreferencesActivity_off">av</string>
@@ -64,7 +64,7 @@
   <!--CallScreen-->
   <string name="CallScreen_Incoming_call">Inngåande samtale</string>
   <!--ConfirmIdentityDialog-->
-  <string name="ConfirmIdentityDialog_your_safety_number_with_s_has_changed">Tryggleiksnummeret ditt med %1$s har endra seg. Dette kan tyda på at nokon prøver å overvaka kommunikasjonen, eller at %2$s berre har installert Signal på nytt.</string>
+  <string name="ConfirmIdentityDialog_your_safety_number_with_s_has_changed">Tryggleiksnummeret ditt med %1$s har endra seg. Dette kan tyda på at nokon prøver å overvaka kommunikasjonen, eller at %2$s berre har installert Cable på nytt.</string>
   <string name="ConfirmIdentityDialog_you_may_wish_to_verify_your_safety_number_with_this_contact">Du ynskjer kanskje å stadfesta tryggleiksnummeret ditt med denne kontakten.</string>
   <string name="ConfirmIdentityDialog_accept">Godta</string>
   <!--ContactsDatabase-->
@@ -83,7 +83,7 @@
   <string name="ConversationItem_click_to_approve_unencrypted">Trykk for usikker reserveløysing</string>
   <string name="ConversationItem_click_to_approve_unencrypted_sms_dialog_title">Vil du bruka ukryptert SMS som reserveløysing?</string>
   <string name="ConversationItem_click_to_approve_unencrypted_mms_dialog_title">Vil du bruka ukryptert MMS som reserveløysing?</string>
-  <string name="ConversationItem_click_to_approve_unencrypted_dialog_message">Denne meldinga vert <b>ikkje</b> kryptert, fordi mottakaren ikkje brukar Signal lenger.\n\nVil du senda ho ukryptert?</string>
+  <string name="ConversationItem_click_to_approve_unencrypted_dialog_message">Denne meldinga vert <b>ikkje</b> kryptert, fordi mottakaren ikkje brukar Cable lenger.\n\nVil du senda ho ukryptert?</string>
   <string name="ConversationItem_unable_to_open_media">Fann inga program som kan opna dette innhaldet.</string>
   <string name="ConversationItem_from_s">frå %s</string>
   <string name="ConversationItem_to_s">til %s</string>
@@ -116,8 +116,8 @@
   <string name="ConversationActivity_are_you_sure_you_want_to_leave_this_group">Er du sikker på at du vil forlata gruppa?</string>
   <string name="ConversationActivity_transport_insecure_sms">Usikker SMS</string>
   <string name="ConversationActivity_transport_insecure_mms">Usikker MMS</string>
-  <string name="ConversationActivity_transport_signal">Signal</string>
-  <string name="ConversationActivity_lets_switch_to_signal">La oss byte til Signal %1$s</string>
+  <string name="ConversationActivity_transport_signal">Cable</string>
+  <string name="ConversationActivity_lets_switch_to_signal">La oss byte til Cable %1$s</string>
   <string name="ConversationActivity_lets_use_this_to_chat">La oss bruka dette til å prata: %1$s</string>
   <string name="ConversationActivity_error_leaving_group">Klarte ikkje forlata gruppa</string>
   <string name="ConversationActivity_mms_not_supported_title">MMS vert ikkje støtta</string>
@@ -172,7 +172,7 @@
   </plurals>
   <string name="ConversationFragment_collecting_attahments">Hentar vedlegg …</string>
   <string name="ConversationFragment_pending">Ventar </string>
-  <string name="ConversationFragment_push">Data (Signal)</string>
+  <string name="ConversationFragment_push">Data (Cable)</string>
   <string name="ConversationFragment_mms">MMS</string>
   <string name="ConversationFragment_sms">SMS</string>
   <string name="ConversationFragment_deleting">Sletter</string>
@@ -228,19 +228,19 @@
   <string name="DeviceListItem_today">I dag</string>
   <!--DozeReminder-->
   <string name="DozeReminder_optimize_for_missing_play_services">Optimaliser for manglande Play-tenester</string>
-  <string name="DozeReminder_this_device_does_not_support_play_services_tap_to_disable_system_battery">Denne eininga støttar ikkje Play-tenester. Trykk for å skru av batterioptimaliseringane i systemet som hindrar Signal frå å henta meldingar når programmet ikkje er aktivt. </string>
+  <string name="DozeReminder_this_device_does_not_support_play_services_tap_to_disable_system_battery">Denne eininga støttar ikkje Play-tenester. Trykk for å skru av batterioptimaliseringane i systemet som hindrar Cable frå å henta meldingar når programmet ikkje er aktivt. </string>
   <!--ShareActivity-->
   <string name="ShareActivity_share_with">Del med</string>
   <!--ExperienceUpgradeActivity-->
-  <string name="ExperienceUpgradeActivity_welcome_to_signal_dgaf">Velkomen til Signal.</string>
-  <string name="ExperienceUpgradeActivity_textsecure_is_now_called_signal">TextSecure og RedPhone er no eitt program for privat kommunikasjon, til alle føremål: Signal.</string>
-  <string name="ExperienceUpgradeActivity_welcome_to_signal_excited">Velkomen til Signal!</string>
-  <string name="ExperienceUpgradeActivity_textsecure_is_now_signal">TextSecure er no Signal.</string>
-  <string name="ExperienceUpgradeActivity_textsecure_is_now_signal_long">TextSecure og RedPhone er no eitt program: Signal. Trykk for å utforska.</string>
+  <string name="ExperienceUpgradeActivity_welcome_to_signal_dgaf">Velkomen til Cable.</string>
+  <string name="ExperienceUpgradeActivity_textsecure_is_now_called_signal">TextSecure og RedPhone er no eitt program for privat kommunikasjon, til alle føremål: Cable.</string>
+  <string name="ExperienceUpgradeActivity_welcome_to_signal_excited">Velkomen til Cable!</string>
+  <string name="ExperienceUpgradeActivity_textsecure_is_now_signal">TextSecure er no Cable.</string>
+  <string name="ExperienceUpgradeActivity_textsecure_is_now_signal_long">TextSecure og RedPhone er no eitt program: Cable. Trykk for å utforska.</string>
   <string name="ExperienceUpgradeActivity_say_hello_to_video_calls">Sei hallo til trygge videosamtaler.</string>
-  <string name="ExperienceUpgradeActivity_signal_now_supports_secure_video_calls">Signal støttar no trygge videosamtaler. Berre ring som normalt med Signal, trykk video-knappen og gje eit vink.</string>
-  <string name="ExperienceUpgradeActivity_signal_now_supports_secure_video_calling">Signal støttar no trygge videosamtaler.</string>
-  <string name="ExperienceUpgradeActivity_signal_now_supports_secure_video_calling_long">Signal støttar no trygge videosamtaler. Trykk for å utforska.</string>
+  <string name="ExperienceUpgradeActivity_signal_now_supports_secure_video_calls">Cable støttar no trygge videosamtaler. Berre ring som normalt med Cable, trykk video-knappen og gje eit vink.</string>
+  <string name="ExperienceUpgradeActivity_signal_now_supports_secure_video_calling">Cable støttar no trygge videosamtaler.</string>
+  <string name="ExperienceUpgradeActivity_signal_now_supports_secure_video_calling_long">Cable støttar no trygge videosamtaler. Trykk for å utforska.</string>
   <!--ExportFragment-->
   <string name="ExportFragment_export">Eksporter</string>
   <string name="ExportFragment_export_plaintext_to_storage">Vil du eksportera klartekst som vanleg fil?</string>
@@ -253,7 +253,7 @@
   <string name="ExportFragment_export_successful">Eksportering er utført.</string>
   <!--GcmRefreshJob-->
   <string name="GcmRefreshJob_Permanent_Signal_communication_failure">Varig Signal-kommunikasjonsfeil.</string>
-  <string name="GcmRefreshJob_Signal_was_unable_to_register_with_Google_Play_Services">Signal klarte ikkje å registrera seg som Google Play-teneste. Signal-meldingar og samtalar er difor slått av. Prøv å registrera programmet på nytt under Innstillingar &gt; Avansert.</string>
+  <string name="GcmRefreshJob_Signal_was_unable_to_register_with_Google_Play_Services">Cable klarte ikkje å registrera seg som Google Play-teneste. Signal-meldingar og samtalar er difor slått av. Prøv å registrera programmet på nytt under Innstillingar &gt; Avansert.</string>
   <!--GiphyActivity-->
   <string name="GiphyActivity_error_while_retrieving_full_resolution_gif">Klarte ikkje henta GIF i full storleik</string>
   <!--GiphyFragmentPageAdapter-->
@@ -273,7 +273,7 @@
   <string name="GroupCreateActivity_menu_apply_button">Bruk</string>
   <string name="GroupCreateActivity_creating_group">Lagar %1$s …</string>
   <string name="GroupCreateActivity_updating_group">Oppdaterer %1$s …</string>
-  <string name="GroupCreateActivity_cannot_add_non_push_to_existing_group">Klarte ikkje å leggja til %1$s fordi vedkomande ikkje brukar Signal.</string>
+  <string name="GroupCreateActivity_cannot_add_non_push_to_existing_group">Klarte ikkje å leggja til %1$s fordi vedkomande ikkje brukar Cable.</string>
   <string name="GroupCreateActivity_loading_group_details">Lastar inn gruppedetaljar </string>
   <string name="GroupCreateActivity_youre_already_in_the_group">Du ligg allereie i gruppa.</string>
   <!--GroupMembersDialog-->
@@ -284,7 +284,7 @@
   <!--ImportFragment-->
   <string name="ImportFragment_import_system_sms_database">Vil du importera SMS-systemdatabase?</string>
   <string name="ImportFragment_this_will_import_messages_from_the_system">Denne handlinga importerer
-meldingar frå systemet sin SMS-database til Signal. Viss du har
+meldingar frå systemet sin SMS-database til Cable. Viss du har
 importert systemet sin SMS-database tidlegare, fører dette til dupliserte meldingar.</string>
   <string name="ImportFragment_import">Importer</string>
   <string name="ImportFragment_cancel">Avbryt</string>
@@ -316,7 +316,7 @@ fører dette til dupliserte meldingar.</string>
   <string name="InviteActivity_sending">Sendar …</string>
   <string name="InviteActivity_heart_content_description">Hjarte</string>
   <string name="InviteActivity_invitations_sent">Invitasjonar sendt.</string>
-  <string name="InviteActivity_invite_to_signal">Inviter til Signal</string>
+  <string name="InviteActivity_invite_to_signal">Inviter til Cable</string>
   <plurals name="InviteActivity_send_sms_to_friends">
     <item quantity="one">SEND SMS TIL 1 VENN</item>
     <item quantity="other">SEND SMS TIL %d VENNAR</item>
@@ -325,18 +325,18 @@ fører dette til dupliserte meldingar.</string>
     <item quantity="one">Vil du senda 1 SMS-invitasjon?</item>
     <item quantity="other">Vil du senda %d SMS-invitasjonar?</item>
   </plurals>
-  <string name="InviteActivity_lets_switch_to_signal">La oss byta til Signal. %1$s</string>
+  <string name="InviteActivity_lets_switch_to_signal">La oss byta til Cable. %1$s</string>
   <string name="InviteActivity_no_app_to_share_to">Det ser ut som at du ikkje har nokon program å dela denne informasjonen med.</string>
   <string name="InviteActivity_friends_dont_let_friends_text_unencrypted">Vennar burde ikkje prata ukryptert over nettet.</string>
   <!--KeyScanningActivity-->
   <string name="KeyScanningActivity_no_scanned_key_found_exclamation">Fann ingen skanna nøkkel.</string>
   <string name="KeyScanningActivity_install_barcode_Scanner">Vil du installera ein strekkode-skannar?</string>
-  <string name="KeyScanningActivity_this_application_requires_barcode_scanner_would_you_like_to_install_it">Signal treng Barcode Scanner for å kunna tolka QR-kodar.</string>
+  <string name="KeyScanningActivity_this_application_requires_barcode_scanner_would_you_like_to_install_it">Cable treng Barcode Scanner for å kunna tolka QR-kodar.</string>
   <!--MessageDetailsRecipient-->
   <string name="MessageDetailsRecipient_failed_to_send">Sending mislukkast</string>
   <string name="MessageDetailsRecipient_new_safety_number">Nytt tryggleiksnummer</string>
   <!--MessageRetrievalService-->
-  <string name="MessageRetrievalService_signal">Signal</string>
+  <string name="MessageRetrievalService_signal">Cable</string>
   <string name="MessageRetrievalService_background_connection_enabled">Bakgrunnstilkopling på</string>
   <!--MmsDownloader-->
   <string name="MmsDownloader_error_storing_mms">Feil under lagring av MMS.</string>
@@ -357,13 +357,13 @@ fører dette til dupliserte meldingar.</string>
   <string name="NotificationMmsMessageRecord_downloading_mms_message">Lastar ned MMS-melding</string>
   <string name="NotificationMmsMessageRecord_error_downloading_mms_message">Klarte ikkje lasta ned MMS-melding, trykk for å prøva igjen</string>
   <!--MessageRecord-->
-  <string name="MessageRecord_message_encrypted_with_a_legacy_protocol_version_that_is_no_longer_supported">Mottok ei melding som er kryptert med ein gammal versjon av Signal som ikkje lenger vert støtta. Be avsendaren om å oppdatera til nyaste versjon og senda meldinga på nytt.</string>
+  <string name="MessageRecord_message_encrypted_with_a_legacy_protocol_version_that_is_no_longer_supported">Mottok ei melding som er kryptert med ein gammal versjon av Cable som ikkje lenger vert støtta. Be avsendaren om å oppdatera til nyaste versjon og senda meldinga på nytt.</string>
   <string name="MessageRecord_left_group">Du har forlate gruppa.</string>
   <string name="MessageRecord_updated_group">Oppdatert gruppe.</string>
   <string name="MessageRecord_s_called_you">%s ringte deg</string>
   <string name="MessageRecord_called_s">Ringte %s</string>
   <string name="MessageRecord_missed_call_from">Tapt anrop frå %s</string>
-  <string name="MessageRecord_s_is_on_signal_say_hey">%s er på Signal. Sei hei!</string>
+  <string name="MessageRecord_s_is_on_signal_say_hey">%s er på Cable. Sei hei!</string>
   <string name="MessageRecord_you_set_disappearing_message_time_to_s">Du stilte inn at meldingar skal forsvinna etter %1$s.</string>
   <string name="MessageRecord_s_set_disappearing_message_time_to_s">%1$s lot meldingar forsvinna etter %2$s.</string>
   <string name="MessageRecord_your_safety_number_with_s_has_changed">Tryggleiksnummeret ditt med %s har endra seg.</string>
@@ -389,7 +389,7 @@ fører dette til dupliserte meldingar.</string>
   <string name="DeviceProvisioningActivity_sorry_you_have_too_many_devices_linked_already">Orsak, du har for mange einingar lenkja allereie, prøv å fjerna nokre</string>
   <string name="DeviceActivity_sorry_this_is_not_a_valid_device_link_qr_code">Dette er ikkje ein gyldig QR-kode for einingstilkopling.</string>
   <string name="DeviceProvisioningActivity_link_a_signal_device">Vil du kopla til ei Signal-eining?</string>
-  <string name="DeviceProvisioningActivity_it_looks_like_youre_trying_to_link_a_signal_device_using_a_3rd_party_scanner">Det ser ut som at du prøver å kopla ei eining til Signal ved hjelp av ein tredjepartsskannar. For din eigen tryggleik må du skanna koden på nytt via Signal.</string>
+  <string name="DeviceProvisioningActivity_it_looks_like_youre_trying_to_link_a_signal_device_using_a_3rd_party_scanner">Det ser ut som at du prøver å kopla ei eining til Cable ved hjelp av ein tredjepartsskannar. For din eigen tryggleik må du skanna koden på nytt via Cable.</string>
   <!--ExpirationDialog-->
   <string name="ExpirationDialog_disappearing_messages">Utløpstid for meldingar</string>
   <string name="ExpirationDialog_your_messages_will_not_expire">Meldingar går ikkje ut på tid.</string>
@@ -442,7 +442,7 @@ fører dette til dupliserte meldingar.</string>
   <string name="RedPhone_the_number_you_dialed_does_not_support_secure_voice">Nummeret du ringte støttar ikkje sikker stemme!</string>
   <string name="RedPhone_got_it">Ålreit</string>
   <!--RegistrationActivity-->
-  <string name="RegistrationActivity_connect_with_signal">Kopla til med Signal</string>
+  <string name="RegistrationActivity_connect_with_signal">Kopla til med Cable</string>
   <string name="RegistrationActivity_select_your_country">Vel land</string>
   <string name="RegistrationActivity_you_must_specify_your_country_code">Du må oppgje
 landkoden din</string>
@@ -456,7 +456,7 @@ Dobbeltsjekk at dette er nummeret ditt. Vi er i ferd med å stadfesta det ved å
   <string name="RegistrationActivity_continue">Hald fram</string>
   <string name="RegistrationActivity_edit">Endra</string>
   <string name="RegistrationActivity_missing_google_play_services">Manglar Google Play-tenester</string>
-  <string name="RegistrationActivity_this_device_is_missing_google_play_services">Denne eininga manglar Google Play-tenester. Du kan bruka Signal likevel, men dette oppsettet kan gjera appen mindre påliteleg og gi dårlegare yting.
+  <string name="RegistrationActivity_this_device_is_missing_google_play_services">Denne eininga manglar Google Play-tenester. Du kan bruka Cable likevel, men dette oppsettet kan gjera appen mindre påliteleg og gi dårlegare yting.
 
 Viss du ikkje er ein erfaren brukar, ikkje køyrer ein tredjeparts Android-ROM, eller meiner at du ser denne meldinga på grunn av ein feil, kan du ta kontakt med support@whispersystems.org for å få hjelp med å løysa problemet.</string>
   <string name="RegistrationActivity_i_understand">Eg forstår</string>
@@ -511,15 +511,15 @@ Mottok nøkkelutvekslingsmelding for ugyldig protokollversjon.</string>
   <string name="ThreadRecord_called_you">Ringte deg</string>
   <string name="ThreadRecord_missed_call">Usvart anrop</string>
   <string name="ThreadRecord_media_message">Mediemelding</string>
-  <string name="ThreadRecord_s_is_on_signal_say_hey">%s er på Signal. Sei hei!</string>
+  <string name="ThreadRecord_s_is_on_signal_say_hey">%s er på Cable. Sei hei!</string>
   <string name="ThreadRecord_disappearing_message_time_updated_to_s">Utløpstid for melding endra til %s</string>
   <string name="ThreadRecord_your_safety_number_with_s_has_changed">Tryggleiksnummeret ditt med %s har endra seg.</string>
   <!--UpdateApkReadyListener-->
   <string name="UpdateApkReadyListener_Signal_update">Signal-oppdatering</string>
   <string name="UpdateApkReadyListener_a_new_version_of_signal_is_available_tap_to_update">Det finst ei ny utgåve av Signal; trykk for å oppdatera</string>
   <!--VerifyIdentityActivity-->
-  <string name="VerifyIdentityActivity_your_contact_is_running_an_old_version_of_signal">Kontakten din køyrer ein gammal versjon av Signal. Ver venleg og be dei om å oppdatera før du stadfestar tryggleiksnummeret ditt.</string>
-  <string name="VerifyIdentityActivity_your_contact_is_running_a_newer_version_of_Signal">Kontakten din køyrer ein nyare versjon av Signal med eit inkompatibelt QR-kodeformat. Ver venleg og oppdater for å samanlikna.</string>
+  <string name="VerifyIdentityActivity_your_contact_is_running_an_old_version_of_signal">Kontakten din køyrer ein gammal versjon av Cable. Ver venleg og be dei om å oppdatera før du stadfestar tryggleiksnummeret ditt.</string>
+  <string name="VerifyIdentityActivity_your_contact_is_running_a_newer_version_of_Signal">Kontakten din køyrer ein nyare versjon av Cable med eit inkompatibelt QR-kodeformat. Ver venleg og oppdater for å samanlikna.</string>
   <string name="VerifyIdentityActivity_the_scanned_qr_code_is_not_a_correctly_formatted_safety_number">Den skanna QR-koden er ikkje ein riktig formatert stadfestingskode. Ver venleg og prøv å skanna på nytt.</string>
   <string name="VerifyIdentityActivity_share_safety_number_via">Del tryggleiksnummeret via …</string>
   <string name="VerifyIdentityActivity_our_signal_safety_number">Vårt Signal-tryggleiksnummer:</string>
@@ -557,7 +557,7 @@ Mottok nøkkelutvekslingsmelding for ugyldig protokollversjon.</string>
   <!--KeyCachingService-->
   <string name="KeyCachingService_signal_passphrase_cached">Trykk for å opna.</string>
   <string name="KeyCachingService_signal_passphrase_cached_with_lock">Trykk for å opna, eller trykk på lås for å lukka.</string>
-  <string name="KeyCachingService_passphrase_cached">Signal er låst opp</string>
+  <string name="KeyCachingService_passphrase_cached">Cable er låst opp</string>
   <string name="KeyCachingService_lock">Lås med passordfrase</string>
   <!--MediaPreviewActivity-->
   <string name="MediaPreviewActivity_you">Deg</string>
@@ -585,15 +585,15 @@ Mottok nøkkelutvekslingsmelding for ugyldig protokollversjon.</string>
   <string name="MmsPreferencesFragment__invalid_uri">Teksta du skreiv inn var ikkje ei gyldig nettadresse</string>
   <string name="MmsPreferencesFragment__invalid_host">Teksta du skreiv inn var ikkje eit gyldig vertsnamn</string>
   <!--QuickResponseService-->
-  <string name="QuickResponseService_quick_response_unavailable_when_Signal_is_locked">Hurtigsvar er utilgjengeleg når Signal er låst.</string>
+  <string name="QuickResponseService_quick_response_unavailable_when_Signal_is_locked">Hurtigsvar er utilgjengeleg når Cable er låst.</string>
   <string name="QuickResponseService_problem_sending_message">Det oppstod eit problem under sending av melding.</string>
   <!--SingleRecipientNotificationBuilder-->
-  <string name="SingleRecipientNotificationBuilder_signal">Signal</string>
+  <string name="SingleRecipientNotificationBuilder_signal">Cable</string>
   <string name="SingleRecipientNotificationBuilder_new_message">Ny melding</string>
   <!--VideoPlayer-->
   <string name="VideoPlayer_error_playing_video">Klarte ikkje spela videoen</string>
   <!--WebRtcCallScreen-->
-  <string name="WebRtcCallScreen_new_safety_numbers">Tryggleiksnummeret for samtalen din med %1$s har endra seg. Dette kan tyda på at nokon prøver å overvaka kommunikasjonen, eller at %2$s berre har installert Signal på nytt.</string>
+  <string name="WebRtcCallScreen_new_safety_numbers">Tryggleiksnummeret for samtalen din med %1$s har endra seg. Dette kan tyda på at nokon prøver å overvaka kommunikasjonen, eller at %2$s berre har installert Cable på nytt.</string>
   <string name="WebRtcCallScreen_you_may_wish_to_verify_this_contact">Du ynskjer kanskje å stadfesta tryggleiksnummeret ditt med denne kontakten.</string>
   <string name="WebRtcCallScreen_new_safety_numbers_title">Nye tryggleiksnummer</string>
   <!--WebRtcCallControls-->
@@ -646,7 +646,7 @@ Mottok nøkkelutvekslingsmelding for ugyldig protokollversjon.</string>
   <string name="conversation_activity__attachment_thumbnail">Miniatyrbilete av vedlegg</string>
   <string name="conversation_activity__quick_attachment_drawer_toggle_camera_description">Vis/skjul vedleggspanel for snøggkamera</string>
   <string name="conversation_activity__quick_attachment_drawer_record_and_send_audio_description">Ta opp og senda lydvedlegg</string>
-  <string name="conversation_activity__enable_signal_for_sms">Aktiver Signal for SMS</string>
+  <string name="conversation_activity__enable_signal_for_sms">Aktiver Cable for SMS</string>
   <!--conversation_input_panel-->
   <string name="conversation_input_panel__slide_to_cancel">SKYV FOR Å AVBRYTA</string>
   <!--conversation_item-->
@@ -722,7 +722,7 @@ Mottok nøkkelutvekslingsmelding for ugyldig protokollversjon.</string>
   <string name="log_submit_activity__posting_logs">Sender inn logg til gist …</string>
   <string name="log_submit_activity__no_browser_installed">Ingen nettlesar installert</string>
   <!--database_migration_activity-->
-  <string name="database_migration_activity__would_you_like_to_import_your_existing_text_messages">Vil du importera tekstmeldingar som ligg på eininga til Signal sin krypterte database?</string>
+  <string name="database_migration_activity__would_you_like_to_import_your_existing_text_messages">Vil du importera tekstmeldingar som ligg på eininga til Cable sin krypterte database?</string>
   <string name="database_migration_activity__the_default_system_database_will_not_be_modified">Standard systemdatabase vert ikkje endra på nokon måte.</string>
   <string name="database_migration_activity__skip">Hopp over</string>
   <string name="database_migration_activity__import">Importar</string>
@@ -755,7 +755,7 @@ Mottok nøkkelutvekslingsmelding for ugyldig protokollversjon.</string>
   <!--prompt_passphrase_activity-->
   <string name="prompt_passphrase_activity__unlock">Lås opp</string>
   <!--prompt_mms_activity-->
-  <string name="prompt_mms_activity__signal_requires_mms_settings_to_deliver_media_and_group_messages">Signal krev MMS-oppsett for å levera media og gruppemeldingar via mobilnett. Eininga di gjer ikkje ikkje denne informasjonen tilgjengeleg. Dette er vanleg på einingar med restriktive oppsett.</string>
+  <string name="prompt_mms_activity__signal_requires_mms_settings_to_deliver_media_and_group_messages">Cable krev MMS-oppsett for å levera media og gruppemeldingar via mobilnett. Eininga di gjer ikkje ikkje denne informasjonen tilgjengeleg. Dette er vanleg på einingar med restriktive oppsett.</string>
   <string name="prompt_mms_activity__to_send_media_and_group_messages_tap_ok">Trykk «OK» og følg rettleiinga viss du vil senda medie- og gruppemeldingar. Du finn vanlegvis MMS-oppsettet for operatøren din ved å søkja på nettet etter «operatøren din APN». Du treng berre å gjera dette éin gong.</string>
   <!--recipient_preferences_activity-->
   <string name="recipient_preference_activity__blocked">BLOKKERT</string>
@@ -776,7 +776,7 @@ Mottok nøkkelutvekslingsmelding for ugyldig protokollversjon.</string>
   <string name="redphone_call_controls__signal_call">Signal-anrop</string>
   <!--registration_activity-->
   <string name="registration_activity__verify_your_number_to_connect_with_signal">
-Stadfest telefonnummeret ditt for kopla til Signal.</string>
+Stadfest telefonnummeret ditt for kopla til Cable.</string>
   <string name="registration_activity__your_country">LAND</string>
   <string name="registration_activity__your_country_code_and_phone_number">LANDKODE OG
 TELEFONNUMMER</string>
@@ -798,18 +798,18 @@ Kontroller at du har skrive inn rett nummer, og at det har korrekt format for
 regionen din.</string>
   <string name="registration_problems__google_voice">Google Voice.</string>
   <string name="registration_problems__signal_will_not_work_with_google_voice_numbers">
-Signal fungerer ikkje med Google Voice-nummer.
+Cable fungerer ikkje med Google Voice-nummer.
 </string>
   <!--registration_progress_activity-->
   <string name="registration_progress_activity__voice_verification">Stemmestadfesting</string>
   <string name="registration_progress_activity__signal_can_also_call_you_to_verify_your_number">
-Signal kan òg ringa deg for å stadfesta nummeret ditt. Trykk «Ring meg» og skriv inn den sekssifra
+Cable kan òg ringa deg for å stadfesta nummeret ditt. Trykk «Ring meg» og skriv inn den sekssifra
 koden som du høyrer nedanfor.</string>
   <string name="registration_progress_activity__verify">Stadfest</string>
   <string name="registration_progress_activity__call_me">Ring meg</string>
   <string name="registration_progress_activity__edit_number">Rediger nummer</string>
   <string name="registration_progress_activity__connectivity_error">Tilkoplingsfeil.</string>
-  <string name="registration_progress_activity__signal_was_unable_to_connect_to_the_server">Signal klarte ikkje å kopla til tenaren.</string>
+  <string name="registration_progress_activity__signal_was_unable_to_connect_to_the_server">Cable klarte ikkje å kopla til tenaren.</string>
   <string name="registration_progress_activity__some_possible_problems_include">Følgjande problem
 er vanlege:</string>
   <string name="registration_progress_activity__no_network_connectivity">Inga
@@ -823,7 +823,7 @@ at mobildata eller Wifi er slått på og kopla til.</string>
 Viss du er tilkopla via Wifi, er det mogleg at ein brannmur blokkerer tilgangen til
 Signal-tenaren. Prøv i så fall eit anna nettverk eller slå på mobildata.</string>
   <string name="registration_progress_activity__signal_will_now_automatically_verify_your_number_with_a_confirmation_sms_message">
-Signal prøver no å stadfesta nummeret ditt med SMS.</string>
+Cable prøver no å stadfesta nummeret ditt med SMS.</string>
   <string name="registration_progress_activity__connecting">Koplar til …</string>
   <string name="registration_progress_activity__waiting_for_sms_verification">Ventar på
 SMS-stadfesting …</string>
@@ -831,7 +831,7 @@ SMS-stadfesting …</string>
   <string name="registration_progress_activity__this_couild_take_a_moment_please_be_patient">Dette
 kan ta litt tid. Vi varslar deg når stadfestinga er ferdig.</string>
   <string name="registration_progress_activity__signal_timed_out_while_waiting_for_a_verification_sms_message">
-Signal fekk tidsavbrot ved venting på stadfestingsmeldinga.</string>
+Cable fekk tidsavbrot ved venting på stadfestingsmeldinga.</string>
   <string name="registration_progress_activity__sms_verification_failed">Feil ved SMS-stadfesting.</string>
   <string name="registration_progress_activity__generating_keys">Lagar nøklar …</string>
   <string name="registration_progress_activity__alert">Varsel</string>
@@ -858,7 +858,7 @@ Signal fekk tidsavbrot ved venting på stadfestingsmeldinga.</string>
   <string name="AndroidManifest__create_passphrase">Lag passordfrase</string>
   <string name="AndroidManifest__enter_passphrase">Skriv inn passordfrase</string>
   <string name="AndroidManifest__select_contacts">Vel kontaktar</string>
-  <string name="AndroidManifest__signal_detected">Signal oppdaga</string>
+  <string name="AndroidManifest__signal_detected">Cable oppdaga</string>
   <string name="AndroidManifest__change_passphrase">Endra passordfrase</string>
   <string name="AndroidManifest__verify_safety_number">Stadfest tryggleiksnummeret</string>
   <string name="AndroidManifest__log_submit">Send debug-logg</string>
@@ -897,8 +897,8 @@ Signal fekk tidsavbrot ved venting på stadfestingsmeldinga.</string>
   <string name="preferences__sms_mms">SMS og MMS</string>
   <string name="preferences__pref_all_sms_title">Ta imot alle SMS</string>
   <string name="preferences__pref_all_mms_title">Ta imot alle MMS</string>
-  <string name="preferences__use_signal_for_viewing_and_storing_all_incoming_text_messages">Bruk Signal for alle inngåande tekstmeldingar </string>
-  <string name="preferences__use_signal_for_viewing_and_storing_all_incoming_multimedia_messages">Bruk Signal for alle inngåande multimediemeldingar </string>
+  <string name="preferences__use_signal_for_viewing_and_storing_all_incoming_text_messages">Bruk Cable for alle inngåande tekstmeldingar </string>
+  <string name="preferences__use_signal_for_viewing_and_storing_all_incoming_multimedia_messages">Bruk Cable for alle inngåande multimediemeldingar </string>
   <string name="preferences__input_settings">inndatainnstillingar</string>
   <string name="preferences__enable_enter_key_title">Slå på linjeskift-tast</string>
   <string name="preferences__replace_smiley_with_enter_key">Byt ut smiley-tast med linjeskift</string>
@@ -910,10 +910,10 @@ Signal fekk tidsavbrot ved venting på stadfestingsmeldinga.</string>
   <string name="preferences__change_passphrase">Endre passordfrase</string>
   <string name="preferences__change_your_passphrase">Endre passordfrase</string>
   <string name="preferences__enable_passphrase">Slå på passordfrase</string>
-  <string name="preferences__lock_signal_and_message_notifications_with_a_passphrase">Lås Signal og meldingsvarsel med passordfrase</string>
+  <string name="preferences__lock_signal_and_message_notifications_with_a_passphrase">Lås Cable og meldingsvarsel med passordfrase</string>
   <string name="preferences__screen_security">Skjermtryggleik</string>
   <string name="preferences__disable_screen_security_to_allow_screen_shots">Blokker skjermbilete i sist brukte-liste og i programmetb</string>
-  <string name="preferences__auto_lock_signal_after_a_specified_time_interval_of_inactivity">Lås Signal automatisk etter vald tid utan aktivitet</string>
+  <string name="preferences__auto_lock_signal_after_a_specified_time_interval_of_inactivity">Lås Cable automatisk etter vald tid utan aktivitet</string>
   <string name="preferences__inactivity_timeout_passphrase">passordfrase ved tidsavbrot</string>
   <string name="preferences__inactivity_timeout_interval">Tidsavbrot ved inaktivitet</string>
   <string name="preferences__notifications">Varsel</string>
@@ -996,7 +996,7 @@ Signal fekk tidsavbrot ved venting på stadfestingsmeldinga.</string>
   <string name="preferences_chats__media_auto_download">Automatisk nedlasting av media</string>
   <string name="preferences_chats__message_trimming">Meldingsforkorting</string>
   <string name="preferences_advanced__use_system_emoji">Bruk emoji på systemet</string>
-  <string name="preferences_advanced__disable_signal_built_in_emoji_support">Slå av innebygd emoji-støtte i Signal</string>
+  <string name="preferences_advanced__disable_signal_built_in_emoji_support">Slå av innebygd emoji-støtte i Cable</string>
   <string name="preferences_advanced__video_calling_beta">Videosamtaler – beta</string>
   <string name="preferences_advanced__enable_support_for_next_generation_video_and_voice_calls">Støtte for neste-generasjons video- og taleringing, når begge partane har skrudd det på. Denne funksjonen er i beta.</string>
   <string name="preferences_advanced__relay_all_calls_through_the_signal_server_to_avoid_revealing_your_ip_address">Vidaresend alle samtaler gjennom Signal-tenaren for å unngå å visa IP-adressa di til kontakten din. Dette vil gi dårlegare samtalekvalitet.</string>
@@ -1087,27 +1087,27 @@ Signal fekk tidsavbrot ved venting på stadfestingsmeldinga.</string>
   <!--reminder_header-->
   <string name="reminder_header_outdated_build">Denne Signal-installasjonen er utdatert</string>
   <plurals name="reminder_header_outdated_build_details">
-    <item quantity="one">Denne versjonen av Signal kjem frå om 1 dag. Trykk for å oppdatera til nyaste versjon.</item>
-    <item quantity="other">Denne utgåva av Signal blir forelda om %d dagar. Trykk for å oppdatera til nyaste utgåve.</item>
+    <item quantity="one">Denne versjonen av Cable kjem frå om 1 dag. Trykk for å oppdatera til nyaste versjon.</item>
+    <item quantity="other">Denne utgåva av Cable blir forelda om %d dagar. Trykk for å oppdatera til nyaste utgåve.</item>
   </plurals>
-  <string name="reminder_header_outdated_build_details_today">Denne utgåva av Signal er forelda frå og med i dag. Trykk for å oppdatera til nyaste utgåve.</string>
-  <string name="reminder_header_expired_build">Denne utgåva av Signal er forelda!</string>
+  <string name="reminder_header_outdated_build_details_today">Denne utgåva av Cable er forelda frå og med i dag. Trykk for å oppdatera til nyaste utgåve.</string>
+  <string name="reminder_header_expired_build">Denne utgåva av Cable er forelda!</string>
   <string name="reminder_header_expired_build_details">Meldingar vert frå no av ikkje send. Trykk for å oppdatera til nyaste versjon.</string>
   <string name="reminder_header_expired_build_button">OPPDATERING</string>
   <string name="reminder_header_sms_default_title">Bruk som forvald SMS-program</string>
-  <string name="reminder_header_sms_default_text">Trykk for å gjera Signal til forvald SMS-program.</string>
+  <string name="reminder_header_sms_default_text">Trykk for å gjera Cable til forvald SMS-program.</string>
   <string name="reminder_header_sms_default_button">VEL</string>
   <string name="reminder_header_sms_import_title">Importer system-SMS</string>
-  <string name="reminder_header_sms_import_text">Trykk for å kopiera telefonen sin SMS-meldingar til Signal sin krypterte database.</string>
+  <string name="reminder_header_sms_import_text">Trykk for å kopiera telefonen sin SMS-meldingar til Cable sin krypterte database.</string>
   <string name="reminder_header_sms_import_button">IMPORTER</string>
   <string name="reminder_header_push_title">Slå på Signal-meldingar og -samtalar</string>
   <string name="reminder_header_push_text">Oppgrader kommunikasjonsopplevinga.</string>
   <string name="reminder_header_push_button">SLÅ PÅ</string>
-  <string name="reminder_header_invite_title">Inviter til Signal</string>
+  <string name="reminder_header_invite_title">Inviter til Cable</string>
   <string name="reminder_header_invite_text">Ta samtalen med %1$sjå til neste nivå.</string>
   <string name="reminder_header_invite_button">INVITER</string>
   <string name="reminder_header_share_title">Inviter vennane dine!</string>
-  <string name="reminder_header_share_text">Jo fleire vennar som brukar Signal, desto betre vert det.</string>
+  <string name="reminder_header_share_text">Jo fleire vennar som brukar Cable, desto betre vert det.</string>
   <string name="reminder_header_share_button">DEL</string>
   <string name="reminder_header_close_button">LUKK</string>
   <!--media_preview-->

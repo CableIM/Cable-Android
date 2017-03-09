@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
-  <string name="app_name">Signal</string>
+  <string name="app_name">Cable</string>
   <string name="yes">Áno</string>
   <string name="no">Nie</string>
   <string name="delete">Zmazať</string>
@@ -24,7 +24,7 @@
   <string name="ApplicationPreferencesActivity_sms_enabled">SMS zapnuté</string>
   <string name="ApplicationPreferencesActivity_touch_to_change_your_default_sms_app">Dotykom sem môžete zmeniť Vašu predvolenú aplikáciu pre SMS.</string>
   <string name="ApplicationPreferencesActivity_sms_disabled">SMS vypnuté</string>
-  <string name="ApplicationPreferencesActivity_touch_to_make_signal_your_default_sms_app">Dotykom nastavte Signal ako Vašu predvolenú aplikáciu</string>
+  <string name="ApplicationPreferencesActivity_touch_to_make_signal_your_default_sms_app">Dotykom nastavte Cable ako Vašu predvolenú aplikáciu</string>
   <string name="ApplicationPreferencesActivity_on">zapnuté</string>
   <string name="ApplicationPreferencesActivity_On">Zapnuté</string>
   <string name="ApplicationPreferencesActivity_off">vypnuté</string>
@@ -59,7 +59,7 @@
   <string name="ConfirmIdentityDialog_accept">Potvrdiť</string>
   <!--ContactsDatabase-->
   <string name="ContactsDatabase_message_s">Správa %s</string>
-  <string name="ContactsDatabase_signal_call_s">Signal Hovor %s</string>
+  <string name="ContactsDatabase_signal_call_s">Cable Hovor %s</string>
   <!--ConversationItem-->
   <string name="ConversationItem_message_size_d_kb">Veľkosť správy: %d KB</string>
   <string name="ConversationItem_expires_s">Expirácia: %s</string>
@@ -103,8 +103,8 @@
   <string name="ConversationActivity_are_you_sure_you_want_to_leave_this_group">Ste si istí že chcete opustiť túto skupinu?</string>
   <string name="ConversationActivity_transport_insecure_sms">Nezašifrovaná SMS</string>
   <string name="ConversationActivity_transport_insecure_mms">Nezašifrovaná MMS</string>
-  <string name="ConversationActivity_transport_signal">Signal</string>
-  <string name="ConversationActivity_lets_switch_to_signal">Prejdite na Signal %1$s</string>
+  <string name="ConversationActivity_transport_signal">Cable</string>
+  <string name="ConversationActivity_lets_switch_to_signal">Prejdite na Cable %1$s</string>
   <string name="ConversationActivity_error_leaving_group">Chyba pri opustení skupiny</string>
   <string name="ConversationActivity_mms_not_supported_title">MMS nie sú podporované</string>
   <string name="ConversationActivity_mms_not_supported_message">Táto správa nemohla byť odoslaná keďže váš operátor nepodporuje MMS.</string>
@@ -148,7 +148,7 @@
   </plurals>
   <string name="ConversationFragment_collecting_attahments">Ukladám prílohy...</string>
   <string name="ConversationFragment_pending">Čaká na spracovanie...</string>
-  <string name="ConversationFragment_push">Data (Signal)</string>
+  <string name="ConversationFragment_push">Data (Cable)</string>
   <string name="ConversationFragment_mms">MMS</string>
   <string name="ConversationFragment_sms">SMS</string>
   <string name="ConversationFragment_deleting">Vymazávanie</string>
@@ -243,11 +243,11 @@ opätovným importom zduplikujete správy.
   <!--MessageDetailsRecipient-->
   <string name="MessageDetailsRecipient_failed_to_send">Nepodarilo sa odoslať</string>
   <!--MessageRetrievalService-->
-  <string name="MessageRetrievalService_signal">Signal</string>
+  <string name="MessageRetrievalService_signal">Cable</string>
   <!--MmsDownloader-->
   <string name="MmsDownloader_error_storing_mms">Chyba pri ukladaní MMS!</string>
   <!--- NotificationBarManager-->
-  <string name="NotificationBarManager_missed_signal_call">Zmeškaný Signal hovor</string>
+  <string name="NotificationBarManager_missed_signal_call">Zmeškaný Cable hovor</string>
   <string name="NotificationBarManager__deny_call">Zamietnuť hovor</string>
   <string name="NotificationBarManager__answer_call">Zdvihnúť hovor</string>
   <string name="NotificationBarManager__end_call">Ukončiť hovor</string>
@@ -257,7 +257,7 @@ opätovným importom zduplikujete správy.
   <!--MessageRecord-->
   <string name="MessageRecord_left_group">Opustili ste skupinu.</string>
   <string name="MessageRecord_updated_group">Skupina bola aktualizovaná.</string>
-  <string name="MessageRecord_s_is_on_signal_say_hey">%s už má tiež Signal, pozdravte ho!</string>
+  <string name="MessageRecord_s_is_on_signal_say_hey">%s už má tiež Cable, pozdravte ho!</string>
   <!--PassphraseChangeActivity-->
   <string name="PassphraseChangeActivity_passphrases_dont_match_exclamation">Heslá sa nezhodujú!</string>
   <string name="PassphraseChangeActivity_incorrect_old_passphrase_exclamation">Nesprávne staré heslo!</string>
@@ -281,7 +281,7 @@ opätovným importom zduplikujete správy.
   <string name="ExpirationDialog_your_messages_will_not_expire">Vaše správy nevypršia.</string>
   <!--PassphrasePromptActivity-->
   <string name="PassphrasePromptActivity_enter_passphrase">Zadajte heslo</string>
-  <string name="PassphrasePromptActivity_watermark_content_description">Signal ikona</string>
+  <string name="PassphrasePromptActivity_watermark_content_description">Cable ikona</string>
   <string name="PassphrasePromptActivity_ok_button_content_description">Odošli heslo</string>
   <string name="PassphrasePromptActivity_invalid_passphrase_exclamation">Nesprávne heslo!</string>
   <!--PlayServicesProblemFragment-->
@@ -383,11 +383,11 @@ Bola prijatá správa vzájomnej výmeny kľúčov s neplatnou verziou protokolu
   <string name="ThreadRecord_called_you">Volal Vám</string>
   <string name="ThreadRecord_missed_call">Zmeškaný hovor</string>
   <string name="ThreadRecord_media_message">Multimediálna správa</string>
-  <string name="ThreadRecord_s_is_on_signal_say_hey">%s už má tiež Signal, pozdravte ho!</string>
+  <string name="ThreadRecord_s_is_on_signal_say_hey">%s už má tiež Cable, pozdravte ho!</string>
   <string name="ThreadRecord_disappearing_message_time_updated_to_s">Čas na zmiznutie správy nastavený na %s</string>
   <!--UpdateApkReadyListener-->
   <!--VerifyIdentityActivity-->
-  <string name="VerifyIdentityActivity_our_signal_safety_number">Naše bezpečnostné Signal číslo:</string>
+  <string name="VerifyIdentityActivity_our_signal_safety_number">Naše bezpečnostné Cable číslo:</string>
   <!--KeyExchangeInitiator-->
   <string name="KeyExchangeInitiator_initiate_despite_existing_request_question">Začať aj napriek existujúcemu požiadavku?</string>
   <string name="KeyExchangeInitiator_send">Odošli</string>
@@ -416,7 +416,7 @@ Bola prijatá správa vzájomnej výmeny kľúčov s neplatnou verziou protokolu
   <!--KeyCachingService-->
   <string name="KeyCachingService_signal_passphrase_cached">Dotykom otvor.</string>
   <string name="KeyCachingService_signal_passphrase_cached_with_lock">Dotykom otvorte alebo dotykom zámku zatvorte.</string>
-  <string name="KeyCachingService_passphrase_cached">Signal je odomknutý</string>
+  <string name="KeyCachingService_passphrase_cached">Cable je odomknutý</string>
   <string name="KeyCachingService_lock">Zamkni s heslom</string>
   <!--MediaPreviewActivity-->
   <string name="MediaPreviewActivity_you">Vy</string>
@@ -442,7 +442,7 @@ Bola prijatá správa vzájomnej výmeny kľúčov s neplatnou verziou protokolu
   <string name="MmsPreferencesFragment__invalid_host">Vložený text nie je platná adresa počítača</string>
   <!--QuickResponseService-->
   <!--SingleRecipientNotificationBuilder-->
-  <string name="SingleRecipientNotificationBuilder_signal">Signal</string>
+  <string name="SingleRecipientNotificationBuilder_signal">Cable</string>
   <string name="SingleRecipientNotificationBuilder_new_message">Nová správa</string>
   <!--VideoPlayer-->
   <!--WebRtcCallScreen-->
@@ -481,7 +481,7 @@ Bola prijatá správa vzájomnej výmeny kľúčov s neplatnou verziou protokolu
   <!--conversation_title_view-->
   <string name="conversation_title_view__conversation_muted">Konverzácia umlčaná.</string>
   <!--conversation_activity-->
-  <string name="conversation_activity__type_message_push">Poslať Signal správu</string>
+  <string name="conversation_activity__type_message_push">Poslať Cable správu</string>
   <string name="conversation_activity__type_message_sms_insecure">Poslať nezašifrovanú SMS</string>
   <string name="conversation_activity__type_message_mms_insecure">Poslať nezašifrovanú MMS</string>
   <string name="conversation_activity__from_sim_name">Od %1$s</string>
@@ -734,7 +734,7 @@ zlyhalo.
   <!--conversation_callable_insecure-->
   <string name="conversation_callable_insecure__menu_call">Volaj</string>
   <!--conversation_callable_secure-->
-  <string name="conversation_callable_secure__menu_call">Volanie Signal</string>
+  <string name="conversation_callable_secure__menu_call">Volanie Cable</string>
   <!--conversation_context-->
   <string name="conversation_context__menu_message_details">Podrobnosti správy</string>
   <string name="conversation_context__menu_copy_text">Kopíruj text</string>
@@ -798,7 +798,7 @@ zlyhalo.
   <string name="verify_display_fragment_context_menu__compare_with_clipboard">Porovnať</string>
   <!--reminder_header-->
   <string name="reminder_header_sms_default_title">Použiť ako predvolenú SMS aplikáciu</string>
-  <string name="reminder_header_sms_default_text">Ťuknutím nastavte Signal ako Vašu predvolenú SMS aplikáciu.</string>
+  <string name="reminder_header_sms_default_text">Ťuknutím nastavte Cable ako Vašu predvolenú SMS aplikáciu.</string>
   <string name="reminder_header_sms_import_title">Importovať SMS databázu</string>
   <!--media_preview-->
   <string name="media_preview__save_title">Uložiť</string>

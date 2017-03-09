@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
-  <string name="app_name">Signal</string>
+  <string name="app_name">Cable</string>
   <string name="yes">Igen</string>
   <string name="no">Nem</string>
   <string name="delete">Törlés</string>
@@ -24,14 +24,14 @@
   <string name="ApplicationPreferencesActivity_this_will_permanently_unlock_signal_and_message_notifications">Ez véglegesen fel fogja oldani a Signal-t és az üzenet értesítéseket.</string>
   <string name="ApplicationPreferencesActivity_disable">Tiltás</string>
   <string name="ApplicationPreferencesActivity_unregistering">Regisztráció törlése</string>
-  <string name="ApplicationPreferencesActivity_unregistering_from_signal_messages_and_calls">Regisztráció törlése a Signal üzenetekről és hívásokról...</string>
-  <string name="ApplicationPreferencesActivity_disable_signal_messages_and_calls">Signal üzenetek és hívások letiltása?</string>
-  <string name="ApplicationPreferencesActivity_disable_signal_messages_and_calls_by_unregistering">Signal üzenetek és hívások letiltása a kiszolgálóról történő leregisztrálással. Újra kell regisztrálnod a telefonszámod, hogy a jövőben újra használhasd őket.</string>
+  <string name="ApplicationPreferencesActivity_unregistering_from_signal_messages_and_calls">Regisztráció törlése a Cable üzenetekről és hívásokról...</string>
+  <string name="ApplicationPreferencesActivity_disable_signal_messages_and_calls">Cable üzenetek és hívások letiltása?</string>
+  <string name="ApplicationPreferencesActivity_disable_signal_messages_and_calls_by_unregistering">Cable üzenetek és hívások letiltása a kiszolgálóról történő leregisztrálással. Újra kell regisztrálnod a telefonszámod, hogy a jövőben újra használhasd őket.</string>
   <string name="ApplicationPreferencesActivity_error_connecting_to_server">Hiba a kiszolgálóhoz való kapcsolódáskor!</string>
   <string name="ApplicationPreferencesActivity_sms_enabled">SMS engedélyezett</string>
   <string name="ApplicationPreferencesActivity_touch_to_change_your_default_sms_app">Érintsd meg az alapértelmezett SMS alkalmazás megváltoztatásához</string>
   <string name="ApplicationPreferencesActivity_sms_disabled">SMS tiltott</string>
-  <string name="ApplicationPreferencesActivity_touch_to_make_signal_your_default_sms_app">Érintsd meg a Signal alapértelmezett SMS alkalmazássá tételéhez</string>
+  <string name="ApplicationPreferencesActivity_touch_to_make_signal_your_default_sms_app">Érintsd meg a Cable alapértelmezett SMS alkalmazássá tételéhez</string>
   <string name="ApplicationPreferencesActivity_on">be</string>
   <string name="ApplicationPreferencesActivity_On">Be</string>
   <string name="ApplicationPreferencesActivity_off">ki</string>
@@ -71,7 +71,7 @@
   <string name="ConfirmIdentityDialog_accept">Elfogad</string>
   <!--ContactsDatabase-->
   <string name="ContactsDatabase_message_s">Üzenet %s</string>
-  <string name="ContactsDatabase_signal_call_s">Signal hívás %s</string>
+  <string name="ContactsDatabase_signal_call_s">Cable hívás %s</string>
   <!--ConversationItem-->
   <string name="ConversationItem_message_size_d_kb">Üzenet mérete: %d kB</string>
   <string name="ConversationItem_expires_s">Lejár: %s</string>
@@ -85,7 +85,7 @@
   <string name="ConversationItem_click_to_approve_unencrypted">Érints a védtelen visszaálláshoz</string>
   <string name="ConversationItem_click_to_approve_unencrypted_sms_dialog_title">Visszaállás védtelen SMS-re?</string>
   <string name="ConversationItem_click_to_approve_unencrypted_mms_dialog_title">Visszaállás védtelen MMS-re?</string>
-  <string name="ConversationItem_click_to_approve_unencrypted_dialog_message">Ez az üzenet <b>nem</b> lesz titkosítva, mert a címzett már nem Signal felhasználó.\n\nVédtelen üzenet küldése?</string>
+  <string name="ConversationItem_click_to_approve_unencrypted_dialog_message">Ez az üzenet <b>nem</b> lesz titkosítva, mert a címzett már nem Cable felhasználó.\n\nVédtelen üzenet küldése?</string>
   <string name="ConversationItem_unable_to_open_media">Nem található alkalmazás ez a média megnyitásához.</string>
   <string name="ConversationItem_from_s">tőle: %s</string>
   <string name="ConversationItem_to_s">neki: %s</string>
@@ -118,7 +118,7 @@
   <string name="ConversationActivity_are_you_sure_you_want_to_leave_this_group">Biztosan el akarod hagyni ezt a csoportot?</string>
   <string name="ConversationActivity_transport_insecure_sms">Nem biztonságos SMS</string>
   <string name="ConversationActivity_transport_insecure_mms">Nem biztonságos MMS</string>
-  <string name="ConversationActivity_transport_signal">Signal</string>
+  <string name="ConversationActivity_transport_signal">Cable</string>
   <string name="ConversationActivity_lets_switch_to_signal">Válts Signal-ra %1$s</string>
   <string name="ConversationActivity_lets_use_this_to_chat">Használd ezt csevegéshez: %1$s</string>
   <string name="ConversationActivity_error_leaving_group">Hiba a csoport elhagyásakor</string>
@@ -174,7 +174,7 @@
   </plurals>
   <string name="ConversationFragment_collecting_attahments">Mellékletek összegyűjtése...</string>
   <string name="ConversationFragment_pending">Függőben...</string>
-  <string name="ConversationFragment_push">Adat (Signal)</string>
+  <string name="ConversationFragment_push">Adat (Cable)</string>
   <string name="ConversationFragment_mms">MMS</string>
   <string name="ConversationFragment_sms">SMS</string>
   <string name="ConversationFragment_deleting">Törlés</string>
@@ -234,19 +234,19 @@
   <!--ShareActivity-->
   <string name="ShareActivity_share_with">Megosztás vele:</string>
   <!--ExperienceUpgradeActivity-->
-  <string name="ExperienceUpgradeActivity_welcome_to_signal_dgaf">Üdvözöl a Signal.</string>
-  <string name="ExperienceUpgradeActivity_textsecure_is_now_called_signal">A TextSecure és a RedPhone most egy privát üzenetküldő minden helyzetre: Signal.</string>
-  <string name="ExperienceUpgradeActivity_welcome_to_signal_excited">Üdvözöl a Signal!</string>
-  <string name="ExperienceUpgradeActivity_textsecure_is_now_signal">A TextSecure mostantól Signal.</string>
-  <string name="ExperienceUpgradeActivity_textsecure_is_now_signal_long">A TextSecure és a RedPhone most egy alkalmazás: Signal. Érints a felfedezéshez.</string>
+  <string name="ExperienceUpgradeActivity_welcome_to_signal_dgaf">Üdvözöl a Cable.</string>
+  <string name="ExperienceUpgradeActivity_textsecure_is_now_called_signal">A TextSecure és a RedPhone most egy privát üzenetküldő minden helyzetre: Cable.</string>
+  <string name="ExperienceUpgradeActivity_welcome_to_signal_excited">Üdvözöl a Cable!</string>
+  <string name="ExperienceUpgradeActivity_textsecure_is_now_signal">A TextSecure mostantól Cable.</string>
+  <string name="ExperienceUpgradeActivity_textsecure_is_now_signal_long">A TextSecure és a RedPhone most egy alkalmazás: Cable. Érints a felfedezéshez.</string>
   <string name="ExperienceUpgradeActivity_say_hello_to_video_calls">Köszönj a biztonságos videóhívásoknak.</string>
-  <string name="ExperienceUpgradeActivity_signal_now_supports_secure_video_calls">A Signal már támogatja a biztonságos videóhívást. Csak indíts egy Signal hívást mint normálisan, érints a videó gombra és integess.</string>
-  <string name="ExperienceUpgradeActivity_signal_now_supports_secure_video_calling">A Signal már támogatja a biztonságos videóhívást.</string>
-  <string name="ExperienceUpgradeActivity_signal_now_supports_secure_video_calling_long">A Signal már támogatja a biztonságos videóhívást. Érints a felfedezéshez.</string>
+  <string name="ExperienceUpgradeActivity_signal_now_supports_secure_video_calls">A Cable már támogatja a biztonságos videóhívást. Csak indíts egy Cable hívást mint normálisan, érints a videó gombra és integess.</string>
+  <string name="ExperienceUpgradeActivity_signal_now_supports_secure_video_calling">A Cable már támogatja a biztonságos videóhívást.</string>
+  <string name="ExperienceUpgradeActivity_signal_now_supports_secure_video_calling_long">A Cable már támogatja a biztonságos videóhívást. Érints a felfedezéshez.</string>
   <!--ExportFragment-->
   <string name="ExportFragment_export">Exportálás</string>
   <string name="ExportFragment_export_plaintext_to_storage">Nyílt szöveg exportálása tárolóra?</string>
-  <string name="ExportFragment_warning_this_will_export_the_plaintext_contents">Figyelem, ez exportálni fogja a Signal üzeneteid nyílt szöveg tartalmait a tárolóra.</string>
+  <string name="ExportFragment_warning_this_will_export_the_plaintext_contents">Figyelem, ez exportálni fogja a Cable üzeneteid nyílt szöveg tartalmait a tárolóra.</string>
   <string name="ExportFragment_cancel">Mégse</string>
   <string name="ExportFragment_exporting">Exportálás</string>
   <string name="ExportFragment_exporting_plaintext_to_storage">Nyílt szöveg exportálása tárolóra...</string>
@@ -254,8 +254,8 @@
   <string name="ExportFragment_error_while_writing_to_storage">Hiba a tárolóra írás közben.</string>
   <string name="ExportFragment_export_successful">Exportálás sikeres.</string>
   <!--GcmRefreshJob-->
-  <string name="GcmRefreshJob_Permanent_Signal_communication_failure">Elhúzódó Signal kommunikációs hiba!</string>
-  <string name="GcmRefreshJob_Signal_was_unable_to_register_with_Google_Play_Services">A Signal nem tudott regisztrálni a Google Play Szolgáltatásokkal. A Signal üzenetek és hívások le vannak tiltva, kérlek próbálj meg újraregisztrálni a Beállítások &gt; Haladó-ban.</string>
+  <string name="GcmRefreshJob_Permanent_Signal_communication_failure">Elhúzódó Cable kommunikációs hiba!</string>
+  <string name="GcmRefreshJob_Signal_was_unable_to_register_with_Google_Play_Services">A Cable nem tudott regisztrálni a Google Play Szolgáltatásokkal. A Cable üzenetek és hívások le vannak tiltva, kérlek próbálj meg újraregisztrálni a Beállítások &gt; Haladó-ban.</string>
   <!--GiphyActivity-->
   <string name="GiphyActivity_error_while_retrieving_full_resolution_gif">Hiba a teljes felbontású GIF visszakeresésekor</string>
   <!--GiphyFragmentPageAdapter-->
@@ -266,8 +266,8 @@
   <string name="GroupCreateActivity_actionbar_edit_title">Csoport szerkesztése</string>
   <string name="GroupCreateActivity_group_name_hint">Csoportnév</string>
   <string name="GroupCreateActivity_actionbar_mms_title">Új MMS csoport</string>
-  <string name="GroupCreateActivity_contacts_dont_support_push">Kiválasztottál egy kontaktot, aki nem támogatja a Signal csoportokat, így ez a csoport MMS lesz.</string>
-  <string name="GroupCreateActivity_youre_not_registered_for_signal">Nem vagy regisztrálva Signal üzenetekre és hívásokra, így a Signal csoportok le vannak tiltva. Kérlek próbálj meg újraregisztrálni a Beállítások &gt; Haladó-ban.</string>
+  <string name="GroupCreateActivity_contacts_dont_support_push">Kiválasztottál egy kontaktot, aki nem támogatja a Cable csoportokat, így ez a csoport MMS lesz.</string>
+  <string name="GroupCreateActivity_youre_not_registered_for_signal">Nem vagy regisztrálva Cable üzenetekre és hívásokra, így a Cable csoportok le vannak tiltva. Kérlek próbálj meg újraregisztrálni a Beállítások &gt; Haladó-ban.</string>
   <string name="GroupCreateActivity_contacts_mms_exception">Egy váratlan hiba történt, ami a csoport létrehozását meghiúsította.</string>
   <string name="GroupCreateActivity_contacts_no_members">A csoporthoz legalább egy emberre szükség van!</string>
   <string name="GroupCreateActivity_contacts_invalid_number">A csoportod egyik tagjának számát nem lehet megfelelően olvasni. Kérlek javítsd ki, vagy távolítsd el a kontaktot és próbáld újra!</string>
@@ -275,7 +275,7 @@
   <string name="GroupCreateActivity_menu_apply_button">Alkalmaz</string>
   <string name="GroupCreateActivity_creating_group">%1$s létrehozása...</string>
   <string name="GroupCreateActivity_updating_group">%1$s frissítése...</string>
-  <string name="GroupCreateActivity_cannot_add_non_push_to_existing_group">%1$s-t nem lehet hozzáadni, mert nem egy Signal felhasználó.</string>
+  <string name="GroupCreateActivity_cannot_add_non_push_to_existing_group">%1$s-t nem lehet hozzáadni, mert nem egy Cable felhasználó.</string>
   <string name="GroupCreateActivity_loading_group_details">A csoport részleteinek betöltése...</string>
   <string name="GroupCreateActivity_youre_already_in_the_group">Már a csoportban vagy.</string>
   <!--GroupMembersDialog-->
@@ -294,7 +294,7 @@
   <string name="ImportFragment_restore_encrypted_backup">Titkosított biztonsági mentés visszaállítása?</string>
   <string name="ImportFragment_restoring_an_encrypted_backup_will_completely_replace_your_existing_keys">
         Egy titkosított biztonsági mentés visszaállítása teljesen lecseréli a létező kulcsaidat, beállításaidat és üzeneteidet.
-        El fogsz veszíteni minden információt, ami a jelenlegi Signal telepítésedben van, de nincs
+        El fogsz veszíteni minden információt, ami a jelenlegi Cable telepítésedben van, de nincs
         a biztonsági mentésben.
     </string>
   <string name="ImportFragment_restore">Visszaállítás</string>
@@ -340,18 +340,18 @@ akkor az újbóli importálás duplikált üzeneteket eredményez.</string>
   <string name="MessageDetailsRecipient_failed_to_send">Nem sikerült elküldeni</string>
   <string name="MessageDetailsRecipient_new_safety_number">Új biztonsági szám</string>
   <!--MessageRetrievalService-->
-  <string name="MessageRetrievalService_signal">Signal</string>
+  <string name="MessageRetrievalService_signal">Cable</string>
   <string name="MessageRetrievalService_background_connection_enabled">Háttérkapcsolat engedélyezve</string>
   <!--MmsDownloader-->
   <string name="MmsDownloader_error_storing_mms">MMS tárolása sikertelen!</string>
   <string name="MmsDownloader_error_connecting_to_mms_provider">Hiba az MMS szolgáltatóhoz kapcsolódáskor</string>
   <string name="MmsDownloader_error_reading_mms_settings">Hiba a vezeték nélküli szolgáltató MMS beállításainak olvasásában</string>
   <!--- NotificationBarManager-->
-  <string name="NotificationBarManager_signal_call_in_progress">Signal hívás folyamatban</string>
+  <string name="NotificationBarManager_signal_call_in_progress">Cable hívás folyamatban</string>
   <string name="NotificationBarManager_missed_call_from_s">Nem fogadott hívás tőle: %s</string>
-  <string name="NotificationBarManager_missed_signal_call">Nem fogadott Signal hívás</string>
-  <string name="NotificationBarManager__establishing_signal_call">Signal hívás létesítése</string>
-  <string name="NotificationBarManager__incoming_signal_call">Bejövő Signal hívás</string>
+  <string name="NotificationBarManager_missed_signal_call">Nem fogadott Cable hívás</string>
+  <string name="NotificationBarManager__establishing_signal_call">Cable hívás létesítése</string>
+  <string name="NotificationBarManager__incoming_signal_call">Bejövő Cable hívás</string>
   <string name="NotificationBarManager__deny_call">Hívás elutasítása</string>
   <string name="NotificationBarManager__answer_call">Válasz hívásra</string>
   <string name="NotificationBarManager__end_call">Hívás befejezése</string>
@@ -361,7 +361,7 @@ akkor az újbóli importálás duplikált üzeneteket eredményez.</string>
   <string name="NotificationMmsMessageRecord_downloading_mms_message">MMS üzenet letöltése</string>
   <string name="NotificationMmsMessageRecord_error_downloading_mms_message">Hiba az MMS üzenet letöltésekor, érints az újrapróbálkozáshoz</string>
   <!--MessageRecord-->
-  <string name="MessageRecord_message_encrypted_with_a_legacy_protocol_version_that_is_no_longer_supported">Egy üzenet érkezett a Signal egy régebbi verziójával titkosítva, ami már nem támogatott. Kérlek kérd meg a küldőt, hogy frissítsen a legfrissebb verzióra és küldje újra az üzenetet.</string>
+  <string name="MessageRecord_message_encrypted_with_a_legacy_protocol_version_that_is_no_longer_supported">Egy üzenet érkezett a Cable egy régebbi verziójával titkosítva, ami már nem támogatott. Kérlek kérd meg a küldőt, hogy frissítsen a legfrissebb verzióra és küldje újra az üzenetet.</string>
   <string name="MessageRecord_left_group">Elhagytad a csoportot.</string>
   <string name="MessageRecord_updated_group">A csoport frissítése megtörtént.</string>
   <string name="MessageRecord_s_called_you">%s hívott téged</string>
@@ -393,15 +393,15 @@ akkor az újbóli importálás duplikált üzeneteket eredményez.</string>
   <string name="DeviceProvisioningActivity_content_progress_key_error">Érvénytelen QR kód.</string>
   <string name="DeviceProvisioningActivity_sorry_you_have_too_many_devices_linked_already">Sajnáljuk, túl sok készüléked van társítva jelenleg, próbálj meg néhányat eltávolítani</string>
   <string name="DeviceActivity_sorry_this_is_not_a_valid_device_link_qr_code">Sajnáljuk, ez nem egy érvényes készülék társítási QR kód.</string>
-  <string name="DeviceProvisioningActivity_link_a_signal_device">Signal készülék társítása?</string>
-  <string name="DeviceProvisioningActivity_it_looks_like_youre_trying_to_link_a_signal_device_using_a_3rd_party_scanner">Úgy tűnik, hogy egy harmadik féltől származó szkennelővel próbálsz társítani egy Signal készüléket. A védelmed érdekében kérlek szkenneld újra a kódot Signal-on belül.</string>
+  <string name="DeviceProvisioningActivity_link_a_signal_device">Cable készülék társítása?</string>
+  <string name="DeviceProvisioningActivity_it_looks_like_youre_trying_to_link_a_signal_device_using_a_3rd_party_scanner">Úgy tűnik, hogy egy harmadik féltől származó szkennelővel próbálsz társítani egy Cable készüléket. A védelmed érdekében kérlek szkenneld újra a kódot Signal-on belül.</string>
   <!--ExpirationDialog-->
   <string name="ExpirationDialog_disappearing_messages">Eltűnő üzenetek</string>
   <string name="ExpirationDialog_your_messages_will_not_expire">Az üzeneteid nem fognak lejárni.</string>
   <string name="ExpirationDialog_your_messages_will_disappear_s_after_they_have_been_seen">Ebben a beszélgetésben küldött és fogadott üzenetek el fognak tűnni a megtekintés után ennyivel: %s</string>
   <!--PassphrasePromptActivity-->
   <string name="PassphrasePromptActivity_enter_passphrase">Jelmondat megadása</string>
-  <string name="PassphrasePromptActivity_watermark_content_description">Signal ikon</string>
+  <string name="PassphrasePromptActivity_watermark_content_description">Cable ikon</string>
   <string name="PassphrasePromptActivity_ok_button_content_description">Jelmondat küldése</string>
   <string name="PassphrasePromptActivity_invalid_passphrase_exclamation">Érvénytelen jelmondat!</string>
   <!--PlayServicesProblemFragment-->
@@ -491,12 +491,12 @@ Ellenőrizd újra, hogy ez a te számod! Hamarosan egy SMS-ben fogjuk ellenőriz
   <string name="RegistrationProgressActivity_too_many_requests">Túl sok kérés!</string>
   <string name="RegistrationProgressActivity_youve_already_requested_a_voice_call">Mostanában már kértél egy hanghívást. 20 perc múlva kérhetsz másikat.</string>
   <string name="RegistrationProgressActivity_registration_conflict">Regisztráció ütközés</string>
-  <string name="RegistrationProgressActivity_this_number_is_already_registered_on_a_different">Ez a szám már regisztrálva van egy eltérő Signal kiszolgálón (CyanogenMod?). Le kell regisztrálnod ott mielőtt ide regisztrálsz.</string>
+  <string name="RegistrationProgressActivity_this_number_is_already_registered_on_a_different">Ez a szám már regisztrálva van egy eltérő Cable kiszolgálón (CyanogenMod?). Le kell regisztrálnod ott mielőtt ide regisztrálsz.</string>
   <!--RegistrationService-->
   <string name="RegistrationService_registration_complete">Regisztráció befejezve</string>
-  <string name="RegistrationService_signal_registration_has_successfully_completed">A Signal regisztráció sikeresen befejeződött.</string>
+  <string name="RegistrationService_signal_registration_has_successfully_completed">A Cable regisztráció sikeresen befejeződött.</string>
   <string name="RegistrationService_registration_error">Regisztrációs hiba</string>
-  <string name="RegistrationService_signal_registration_has_encountered_a_problem">A Signal regisztráció hibát észlelt.</string>
+  <string name="RegistrationService_signal_registration_has_encountered_a_problem">A Cable regisztráció hibát észlelt.</string>
   <!--Slide-->
   <string name="Slide_image">Kép</string>
   <string name="Slide_audio">Hang</string>
@@ -524,14 +524,14 @@ Kulcs-csere üzenet érkezett érvénytelen protokoll verzióhoz.
   <string name="ThreadRecord_disappearing_message_time_updated_to_s">Eltűnő üzenet ideje beállítva erre: %s</string>
   <string name="ThreadRecord_your_safety_number_with_s_has_changed">Megváltozott a biztonsági számod vele: %s.</string>
   <!--UpdateApkReadyListener-->
-  <string name="UpdateApkReadyListener_Signal_update">Signal frissítés</string>
-  <string name="UpdateApkReadyListener_a_new_version_of_signal_is_available_tap_to_update">A Signal egy új verziója érhető el, érints a frissítéshez</string>
+  <string name="UpdateApkReadyListener_Signal_update">Cable frissítés</string>
+  <string name="UpdateApkReadyListener_a_new_version_of_signal_is_available_tap_to_update">A Cable egy új verziója érhető el, érints a frissítéshez</string>
   <!--VerifyIdentityActivity-->
-  <string name="VerifyIdentityActivity_your_contact_is_running_an_old_version_of_signal">A kontaktod a Signal egy régebbi verzióját futtatja. Kérd meg, hogy frissítsen a biztonsági szám ellenőrzése előtt.</string>
-  <string name="VerifyIdentityActivity_your_contact_is_running_a_newer_version_of_Signal">A kontaktod a Signal egy újabb verzióját futtatja egy inkompatibilis QR kód formátummal. Kérlek frissíts az összehasonlításhoz.</string>
+  <string name="VerifyIdentityActivity_your_contact_is_running_an_old_version_of_signal">A kontaktod a Cable egy régebbi verzióját futtatja. Kérd meg, hogy frissítsen a biztonsági szám ellenőrzése előtt.</string>
+  <string name="VerifyIdentityActivity_your_contact_is_running_a_newer_version_of_Signal">A kontaktod a Cable egy újabb verzióját futtatja egy inkompatibilis QR kód formátummal. Kérlek frissíts az összehasonlításhoz.</string>
   <string name="VerifyIdentityActivity_the_scanned_qr_code_is_not_a_correctly_formatted_safety_number">A szkennelt QR kód nem egy helyesen formázott biztonság szám megerősítő kód. Kérlek próbáld újra szkennelni.</string>
   <string name="VerifyIdentityActivity_share_safety_number_via">Biztonsági szám megosztása ezzel...</string>
-  <string name="VerifyIdentityActivity_our_signal_safety_number">Signal biztonsági számunk:</string>
+  <string name="VerifyIdentityActivity_our_signal_safety_number">Cable biztonsági számunk:</string>
   <string name="VerifyIdentityActivity_no_app_to_share_to">Úgy néz ki, hogy nincs egy alkalmazásod se a megosztáshoz.</string>
   <string name="VerifyIdentityActivity_no_safety_number_to_compare_was_found_in_the_clipboard">A vágólapon találttal való összehasonlításhoz nincs biztonsági szám</string>
   <!--KeyExchangeInitiator-->
@@ -566,7 +566,7 @@ Kulcs-csere üzenet érkezett érvénytelen protokoll verzióhoz.
   <!--KeyCachingService-->
   <string name="KeyCachingService_signal_passphrase_cached">Érintsd meg a megnyitáshoz.</string>
   <string name="KeyCachingService_signal_passphrase_cached_with_lock">Érintsd meg a megnyitáshoz, vagy érintsd meg a zárat a bezáráshoz.</string>
-  <string name="KeyCachingService_passphrase_cached">Signal feloldva</string>
+  <string name="KeyCachingService_passphrase_cached">Cable feloldva</string>
   <string name="KeyCachingService_lock">Lezárás jelmondattal</string>
   <!--MediaPreviewActivity-->
   <string name="MediaPreviewActivity_you">Te</string>
@@ -594,10 +594,10 @@ Kulcs-csere üzenet érkezett érvénytelen protokoll verzióhoz.
   <string name="MmsPreferencesFragment__invalid_uri">A megadott szöveg nem egy érvényes URI</string>
   <string name="MmsPreferencesFragment__invalid_host">A megadott szöveg nem egy érvényes hoszt</string>
   <!--QuickResponseService-->
-  <string name="QuickResponseService_quick_response_unavailable_when_Signal_is_locked">Gyors válasz nem elérhető, amikor a Signal zárolva van!</string>
+  <string name="QuickResponseService_quick_response_unavailable_when_Signal_is_locked">Gyors válasz nem elérhető, amikor a Cable zárolva van!</string>
   <string name="QuickResponseService_problem_sending_message">Probléma az üzenetküldéskor!</string>
   <!--SingleRecipientNotificationBuilder-->
-  <string name="SingleRecipientNotificationBuilder_signal">Signal</string>
+  <string name="SingleRecipientNotificationBuilder_signal">Cable</string>
   <string name="SingleRecipientNotificationBuilder_new_message">Új üzenet</string>
   <!--VideoPlayer-->
   <string name="VideoPlayer_error_playing_video">Hiba a videó lejátszásakor</string>
@@ -645,7 +645,7 @@ Kulcs-csere üzenet érkezett érvénytelen protokoll verzióhoz.
   <!--conversation_title_view-->
   <string name="conversation_title_view__conversation_muted">Beszélgetés némítva</string>
   <!--conversation_activity-->
-  <string name="conversation_activity__type_message_push">Signal üzenet küldése</string>
+  <string name="conversation_activity__type_message_push">Cable üzenet küldése</string>
   <string name="conversation_activity__type_message_sms_insecure">Védtelen SMS küldése</string>
   <string name="conversation_activity__type_message_mms_insecure">Védtelen MMS küldése</string>
   <string name="conversation_activity__from_sim_name">%1$s hálózaton</string>
@@ -733,7 +733,7 @@ Kulcs-csere üzenet érkezett érvénytelen protokoll verzióhoz.
   <string name="log_submit_activity__posting_logs">Napló küldése gist-hez...</string>
   <string name="log_submit_activity__no_browser_installed">Nincs telepítve böngésző</string>
   <!--database_migration_activity-->
-  <string name="database_migration_activity__would_you_like_to_import_your_existing_text_messages">Szeretnéd importálni a létező szöveges üzeneteidet a Signal titkosított adatbázisába?</string>
+  <string name="database_migration_activity__would_you_like_to_import_your_existing_text_messages">Szeretnéd importálni a létező szöveges üzeneteidet a Cable titkosított adatbázisába?</string>
   <string name="database_migration_activity__the_default_system_database_will_not_be_modified">Az alapértelmezett rendszer adatbázis semmilyen módon nem fog megváltozni vagy módosulni.</string>
   <string name="database_migration_activity__skip">Kihagyás</string>
   <string name="database_migration_activity__import">Importálás</string>
@@ -746,7 +746,7 @@ Kulcs-csere üzenet érkezett érvénytelen protokoll verzióhoz.
   <string name="import_fragment__import_system_sms_database">Rendszer SMS adatbázis importálása</string>
   <string name="import_fragment__import_the_database_from_the_default_system">Adatbázis importálása az alapértelmezett rendszer üzenetküldő alkalmazásból</string>
   <string name="import_fragment__restore_encrypted_backup">Titkosított biztonsági mentés visszaállítása</string>
-  <string name="import_fragment__restore_a_previously_exported_encrypted_signal_backup">Egy korábban exportált titkosított Signal biztonsági mentés visszaállítása</string>
+  <string name="import_fragment__restore_a_previously_exported_encrypted_signal_backup">Egy korábban exportált titkosított Cable biztonsági mentés visszaállítása</string>
   <string name="import_fragment__import_plaintext_backup">Nyílt szöveg biztonsági mentés importálása</string>
   <string name="import_fragment__import_a_plaintext_backup_file">Nyílt szöveg biztonsági mentés fájl importálása. Kompatibilis az \'SMS Backup &amp; Restore\'-ral.</string>
   <!--load_more_header-->
@@ -780,11 +780,11 @@ Kulcs-csere üzenet érkezett érvénytelen protokoll verzióhoz.
   <string name="recipient_preferences__color_for_this_contact">Szín ehhez a kontakthoz</string>
   <string name="recipient_preferences__verify_safety_number">Biztonsági szám ellenőrzése</string>
   <!--- redphone_call_controls-->
-  <string name="redphone_call_card__signal_call">Signal hívás</string>
+  <string name="redphone_call_card__signal_call">Cable hívás</string>
   <string name="redphone_call_controls__end_call">hívás vége</string>
   <string name="redphone_call_controls__audio">Hang</string>
   <string name="redphone_call_controls__mute">Némít</string>
-  <string name="redphone_call_controls__signal_call">Signal hívás</string>
+  <string name="redphone_call_controls__signal_call">Cable hívás</string>
   <!--registration_activity-->
   <string name="registration_activity__verify_your_number_to_connect_with_signal">
         Ellenőrizd a telefonszámod a Signal-lal való csatlakozáshoz.
@@ -805,7 +805,7 @@ beleértve:
   <string name="registration_problems__some_third_party_text_messaging_clients_such_as_handcent">
         Néhány harmadik féltől származó üzenetküldő kliens, akárcsak a Handcent vagy GoSMS rosszul viselkedik
         és feltartóztat minden bejövő SMS üzenetet. Ellenőrizd, hogy kaptál-e szöveges üzenetet, ami
-        a \'Your Signal verification code:\' -dal kezdődik, amely esetben konfigurálnod kell a
+        a \'Your Cable verification code:\' -dal kezdődik, amely esetben konfigurálnod kell a
         harmadik féltől származó alkalmazásod, hogy engedje át a szöveges üzeneteket.
     </string>
   <string name="registration_problems__incorrect_number">Hibás szám.</string>
@@ -815,19 +815,19 @@ van formázva!
  </string>
   <string name="registration_problems__google_voice">Google Voice.</string>
   <string name="registration_problems__signal_will_not_work_with_google_voice_numbers">
-        A Signal nem fog működni Google Voice számokkal.
+        A Cable nem fog működni Google Voice számokkal.
     </string>
   <!--registration_progress_activity-->
   <string name="registration_progress_activity__voice_verification">Hang alapú azonosítás</string>
   <string name="registration_progress_activity__signal_can_also_call_you_to_verify_your_number">
-        A Signal fel is tud hívni, hogy ellenőrizze a számod. Érintsd meg a \'Hívj fel\'-t és add meg a
+        A Cable fel is tud hívni, hogy ellenőrizze a számod. Érintsd meg a \'Hívj fel\'-t és add meg a
         hatjegyű kódot, amit ott hallasz.
     </string>
   <string name="registration_progress_activity__verify">Ellenőrzés</string>
   <string name="registration_progress_activity__call_me">Hívj fel</string>
   <string name="registration_progress_activity__edit_number">Szám szerkesztése</string>
   <string name="registration_progress_activity__connectivity_error">Kapcsolati hiba.</string>
-  <string name="registration_progress_activity__signal_was_unable_to_connect_to_the_server">A Signal nem tudott kapcsolódni a kiszolgálóhoz.</string>
+  <string name="registration_progress_activity__signal_was_unable_to_connect_to_the_server">A Cable nem tudott kapcsolódni a kiszolgálóhoz.</string>
   <string name="registration_progress_activity__some_possible_problems_include">Néhány lehetséges probléma
 beleértve:
  </string>
@@ -835,17 +835,17 @@ beleértve:
 kapcsolat.
  </string>
   <string name="registration_progress_activity__your_device_needs_network_connectivity">A
-        készülékednek szüksége van hálózati kapcsolatra annak érdekében, hogy használni tudja ezt a Signal funkciót. Győződj meg róla,
+        készülékednek szüksége van hálózati kapcsolatra annak érdekében, hogy használni tudja ezt a Cable funkciót. Győződj meg róla,
         hogy kapcsolódva van mobil adatokhoz vagy Wi-Fi-hez.
     </string>
   <string name="registration_progress_activity__restrictive_firewall">Korlátozó tűzfal.
  </string>
   <string name="registration_progress_activity__if_you_are_connected_via_wifi_its_possible_that_there_is_a_firewall">
         Ha Wi-Fi -n keresztül vagy kapcsolódva, akkor lehetséges, hogy ott egy tűzfal blokkolja a hozzáférést
-        a Signal kiszolgálóhoz. Próbálj másik hálózatot vagy mobil adatot.
+        a Cable kiszolgálóhoz. Próbálj másik hálózatot vagy mobil adatot.
     </string>
   <string name="registration_progress_activity__signal_will_now_automatically_verify_your_number_with_a_confirmation_sms_message">
-        A Signal automatikusan ellenőrzi a számodat egy megerősítő SMS üzenettel.
+        A Cable automatikusan ellenőrzi a számodat egy megerősítő SMS üzenettel.
     </string>
   <string name="registration_progress_activity__connecting">Kapcsolódás...</string>
   <string name="registration_progress_activity__waiting_for_sms_verification">Várakozás SMS
@@ -856,7 +856,7 @@ ellenőrzésre...
 eltarthat egy ideig. Kérlek légy türelemmel, értesítünk, amikor az ellenőrzés befejeződött.
  </string>
   <string name="registration_progress_activity__signal_timed_out_while_waiting_for_a_verification_sms_message">
-        A Signal túllépte az időkorlátot amíg megerősítő SMS üzenetre várt.
+        A Cable túllépte az időkorlátot amíg megerősítő SMS üzenetre várt.
     </string>
   <string name="registration_progress_activity__sms_verification_failed">SMS ellenőrzés
 sikertelen.
@@ -886,7 +886,7 @@ sikertelen.
   <string name="AndroidManifest__create_passphrase">Jelmondat létrehozása</string>
   <string name="AndroidManifest__enter_passphrase">Jelmondat megadása</string>
   <string name="AndroidManifest__select_contacts">Kontaktok kiválasztása</string>
-  <string name="AndroidManifest__signal_detected">Signal észlelve</string>
+  <string name="AndroidManifest__signal_detected">Cable észlelve</string>
   <string name="AndroidManifest__change_passphrase">Jelmondat megváltoztatása</string>
   <string name="AndroidManifest__verify_safety_number">Biztonsági szám ellenőrzése</string>
   <string name="AndroidManifest__log_submit">Hibakeresési napló küldése</string>
@@ -925,8 +925,8 @@ sikertelen.
   <string name="preferences__sms_mms">SMS és MMS</string>
   <string name="preferences__pref_all_sms_title">Összes SMS fogadása</string>
   <string name="preferences__pref_all_mms_title">Összes MMS fogadása</string>
-  <string name="preferences__use_signal_for_viewing_and_storing_all_incoming_text_messages">Signal használata minden bejövő szöveges üzenethez</string>
-  <string name="preferences__use_signal_for_viewing_and_storing_all_incoming_multimedia_messages">Signal használata minden bejövő multimédia üzenethez</string>
+  <string name="preferences__use_signal_for_viewing_and_storing_all_incoming_text_messages">Cable használata minden bejövő szöveges üzenethez</string>
+  <string name="preferences__use_signal_for_viewing_and_storing_all_incoming_multimedia_messages">Cable használata minden bejövő multimédia üzenethez</string>
   <string name="preferences__input_settings">Beviteli beállítások</string>
   <string name="preferences__enable_enter_key_title">Enter billentyű engedélyezése</string>
   <string name="preferences__replace_smiley_with_enter_key">A hangulatjel billentyű lecserélése egy Enter billentyűvel</string>
@@ -938,16 +938,16 @@ sikertelen.
   <string name="preferences__change_passphrase">Jelmondat megváltoztatása</string>
   <string name="preferences__change_your_passphrase">Változtasd meg a jelmondatod</string>
   <string name="preferences__enable_passphrase">Jelmondat engedélyezése</string>
-  <string name="preferences__lock_signal_and_message_notifications_with_a_passphrase">Signal és üzenet értesítések zárolása jelmondattal</string>
+  <string name="preferences__lock_signal_and_message_notifications_with_a_passphrase">Cable és üzenet értesítések zárolása jelmondattal</string>
   <string name="preferences__screen_security">Képernyő biztonság</string>
   <string name="preferences__disable_screen_security_to_allow_screen_shots">Képernyőfelvételek blokkolása a legutóbbiak listában és az alkalmazáson belül</string>
-  <string name="preferences__auto_lock_signal_after_a_specified_time_interval_of_inactivity">Signal automatikus zárolása egy meghatározott inaktivitási időköz után</string>
+  <string name="preferences__auto_lock_signal_after_a_specified_time_interval_of_inactivity">Cable automatikus zárolása egy meghatározott inaktivitási időköz után</string>
   <string name="preferences__inactivity_timeout_passphrase">Inaktivitási időtúllépés jelmondat</string>
   <string name="preferences__inactivity_timeout_interval">Inaktivitási időtúllépés időköz</string>
   <string name="preferences__notifications">Értesítések</string>
   <string name="preferences__enable_message_notifications">Üzenet értesítések engedélyezése</string>
   <string name="preferences__new_contacts_notifications">Új kontakt értesítések</string>
-  <string name="preferences__show_a_notification_for_new_signal_contacts">Értesítések mutatása új Signal kontaktokhoz</string>
+  <string name="preferences__show_a_notification_for_new_signal_contacts">Értesítések mutatása új Cable kontaktokhoz</string>
   <string name="preferences__led_color">LED színe</string>
   <string name="preferences__led_color_unknown">Ismeretlen</string>
   <string name="preferences__pref_led_blink_title">LED villogás mintázata</string>
@@ -1009,8 +1009,8 @@ sikertelen.
   <string name="preferences__theme">Téma</string>
   <string name="preferences__default">Alapértelmezett</string>
   <string name="preferences__language">Nyelv</string>
-  <string name="preferences__signal_messages_and_calls">Signal üzenetek és hívások</string>
-  <string name="preferences__free_private_messages_and_calls">Ingyenes privát üzenetek és hívások Signal felhasználóknak</string>
+  <string name="preferences__signal_messages_and_calls">Cable üzenetek és hívások</string>
+  <string name="preferences__free_private_messages_and_calls">Ingyenes privát üzenetek és hívások Cable felhasználóknak</string>
   <string name="preferences__submit_debug_log">Hibakeresési napló küldése</string>
   <string name="preferences__support_wifi_calling">\'WiFi hívás\' kompatibilitási mód</string>
   <string name="preferences__enable_if_your_device_supports_sms_mms_delivery_over_wifi">Engedélyezd, ha a készüléked az SMS/MMS-t WiFi-n keresztül kézbesíti (csak akkor engedélyezd, ha a \'WiFi hívás\' engedélyezve van a készülékeden)</string>
@@ -1024,10 +1024,10 @@ sikertelen.
   <string name="preferences_chats__media_auto_download">Média auto-letöltés</string>
   <string name="preferences_chats__message_trimming">Üzenet csonkolás</string>
   <string name="preferences_advanced__use_system_emoji">Rendszer emoji használata</string>
-  <string name="preferences_advanced__disable_signal_built_in_emoji_support">A Signal beépített emoji támogatásának letiltása</string>
+  <string name="preferences_advanced__disable_signal_built_in_emoji_support">A Cable beépített emoji támogatásának letiltása</string>
   <string name="preferences_advanced__video_calling_beta">Videóhívás beta</string>
   <string name="preferences_advanced__enable_support_for_next_generation_video_and_voice_calls">Támogatás a következő generációs videó- és hanghívásokhoz, amikor mindkét félnél engedélyezve van. Ez a funkció jelenleg beta.</string>
-  <string name="preferences_advanced__relay_all_calls_through_the_signal_server_to_avoid_revealing_your_ip_address">Összes hívás átjátszása a Signal kiszolgálón, elkerülve az IP címed felfedését a kontaktodnak. Az engedélyezése csökkenteni fogja a hívásminőséget.</string>
+  <string name="preferences_advanced__relay_all_calls_through_the_signal_server_to_avoid_revealing_your_ip_address">Összes hívás átjátszása a Cable kiszolgálón, elkerülve az IP címed felfedését a kontaktodnak. Az engedélyezése csökkenteni fogja a hívásminőséget.</string>
   <string name="preferences_advanced__always_relay_calls">Hívások átjátszása mindig</string>
   <!--****************************************-->
   <!--menus-->
@@ -1045,7 +1045,7 @@ sikertelen.
   <!--conversation_callable_insecure-->
   <string name="conversation_callable_insecure__menu_call">Hívás</string>
   <!--conversation_callable_secure-->
-  <string name="conversation_callable_secure__menu_call">Signal hívás</string>
+  <string name="conversation_callable_secure__menu_call">Cable hívás</string>
   <!--conversation_context-->
   <string name="conversation_context__menu_message_details">Üzenet részletei</string>
   <string name="conversation_context__menu_copy_text">Szöveg másolása</string>
@@ -1123,12 +1123,12 @@ sikertelen.
   <string name="reminder_header_expired_build_details">A továbbiakban az üzenetek nem lesznek sikeresen elküldve. Érints a legfrissebb verzióra történő frissítéshez.</string>
   <string name="reminder_header_expired_build_button">FRISSÍTÉS</string>
   <string name="reminder_header_sms_default_title">Használat alapértelmezett SMS alkalmazásként</string>
-  <string name="reminder_header_sms_default_text">Érints a Signal alapértelmezett SMS alkalmazássá tételéhez.</string>
+  <string name="reminder_header_sms_default_text">Érints a Cable alapértelmezett SMS alkalmazássá tételéhez.</string>
   <string name="reminder_header_sms_default_button">BEÁLLÍTÁS</string>
   <string name="reminder_header_sms_import_title">Rendszer SMS importálása</string>
-  <string name="reminder_header_sms_import_text">Érints a telefonod SMS üzeneteinek a Signal titkosított adatbázisába másolásához.</string>
+  <string name="reminder_header_sms_import_text">Érints a telefonod SMS üzeneteinek a Cable titkosított adatbázisába másolásához.</string>
   <string name="reminder_header_sms_import_button">IMPORTÁLÁS</string>
-  <string name="reminder_header_push_title">Signal üzenetek és hívások engedélyezése</string>
+  <string name="reminder_header_push_title">Cable üzenetek és hívások engedélyezése</string>
   <string name="reminder_header_push_text">Javítsd fel a kommunikációs élményedet.</string>
   <string name="reminder_header_push_button">ENGEDÉLYEZÉS</string>
   <string name="reminder_header_invite_title">Meghívás Signal-ba</string>

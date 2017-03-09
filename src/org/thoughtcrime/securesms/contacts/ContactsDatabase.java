@@ -55,8 +55,8 @@ import java.util.Map;
 public class ContactsDatabase {
 
   private static final String TAG              = ContactsDatabase.class.getSimpleName();
-  private static final String CONTACT_MIMETYPE = "vnd.android.cursor.item/vnd.org.thoughtcrime.securesms.contact";
-  private static final String CALL_MIMETYPE    = "vnd.android.cursor.item/vnd.org.thoughtcrime.securesms.call";
+  private static final String CONTACT_MIMETYPE = "vnd.android.cursor.item/vnd.im.cable.cableim.contact";
+  private static final String CALL_MIMETYPE    = "vnd.android.cursor.item/vnd.im.cable.cableim.call";
   private static final String SYNC             = "__TS";
 
   static final String ID_COLUMN           = "_id";
