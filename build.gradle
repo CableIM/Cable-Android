@@ -271,11 +271,13 @@ android {
             buildConfigField "String", "NOPLAY_UPDATE_URL", "$ext.websiteUpdateUrl"
         }
 
-        website {
-            ext.websiteUpdateUrl = "https://updates.signal.org/android"
-            buildConfigField "boolean", "PLAY_STORE_DISABLED", "true"
-            buildConfigField "String", "NOPLAY_UPDATE_URL", "\"$ext.websiteUpdateUrl\""
-        }
+// Paride: we're not interted in the website flavor at the moment
+//
+//        website {
+//            ext.websiteUpdateUrl = "https://updates.signal.org/android"
+//            buildConfigField "boolean", "PLAY_STORE_DISABLED", "true"
+//            buildConfigField "String", "NOPLAY_UPDATE_URL", "\"$ext.websiteUpdateUrl\""
+//        }
     }
 
     applicationVariants.all { variant ->
