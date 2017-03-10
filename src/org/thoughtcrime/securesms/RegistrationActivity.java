@@ -225,7 +225,7 @@ public class RegistrationActivity extends BaseActionBarActivity {
       if (gcmStatus == PlayServicesStatus.SUCCESS) {
         promptForRegistrationStart(self, e164number, true);
       } else if (gcmStatus == PlayServicesStatus.MISSING) {
-        promptForNoPlayServices(self, e164number);
+        promptForRegistrationStart(self, e164number, false);
       } else if (gcmStatus == PlayServicesStatus.NEEDS_UPDATE) {
         GoogleApiAvailability.getInstance().getErrorDialog(self, ConnectionResult.SERVICE_VERSION_UPDATE_REQUIRED, 0);
       } else {
@@ -251,20 +251,6 @@ public class RegistrationActivity extends BaseActionBarActivity {
                                  }
                                });
       dialog.setNegativeButton(getString(R.string.RegistrationActivity_edit), null);
-      dialog.show();
-    }
-
-    private void promptForNoPlayServices(final Context context, final String e164number) {
-      AlertDialog.Builder dialog = new AlertDialog.Builder(context);
-      dialog.setTitle(R.string.RegistrationActivity_missing_google_play_services);
-      dialog.setMessage(R.string.RegistrationActivity_this_device_is_missing_google_play_services);
-      dialog.setPositiveButton(R.string.RegistrationActivity_i_understand, new DialogInterface.OnClickListener() {
-        @Override
-        public void onClick(DialogInterface dialog, int which) {
-          promptForRegistrationStart(context, e164number, false);
-        }
-      });
-      dialog.setNegativeButton(android.R.string.cancel, null);
       dialog.show();
     }
 
