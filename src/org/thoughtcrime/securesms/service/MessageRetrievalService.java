@@ -11,7 +11,6 @@ import android.util.Log;
 import org.thoughtcrime.securesms.ApplicationContext;
 import org.thoughtcrime.securesms.R;
 import org.thoughtcrime.securesms.dependencies.InjectableType;
-import org.thoughtcrime.securesms.gcm.GcmBroadcastReceiver;
 import org.thoughtcrime.securesms.jobs.PushContentReceiveJob;
 import org.thoughtcrime.securesms.util.TextSecurePreferences;
 import org.whispersystems.jobqueue.requirements.NetworkRequirement;
@@ -133,7 +132,6 @@ public class MessageRetrievalService extends Service implements InjectableType, 
   private synchronized void decrementPushReceived() {
     if (!pushPending.isEmpty()) {
       Intent intent = pushPending.remove(0);
-      GcmBroadcastReceiver.completeWakefulIntent(intent);
       notifyAll();
     }
   }

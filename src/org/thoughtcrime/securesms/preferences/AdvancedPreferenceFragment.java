@@ -18,8 +18,6 @@ import android.support.v7.app.AlertDialog;
 import android.util.Log;
 import android.widget.Toast;
 
-import com.google.android.gms.gcm.GoogleCloudMessaging;
-
 import org.thoughtcrime.redphone.signaling.RedPhoneAccountManager;
 import org.thoughtcrime.redphone.signaling.RedPhoneTrustStore;
 import org.thoughtcrime.redphone.signaling.UnauthorizedException;
@@ -207,10 +205,6 @@ public class AdvancedPreferenceFragment extends PreferenceFragment {
             redPhoneAccountManager.setGcmId(Optional.<String>absent());
           } catch (UnauthorizedException e) {
             Log.w(TAG, e);
-          }
-
-          if (!TextSecurePreferences.isGcmDisabled(context)) {
-            GoogleCloudMessaging.getInstance(context).unregister();
           }
 
           return SUCCESS;

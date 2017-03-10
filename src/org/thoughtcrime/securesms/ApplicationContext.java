@@ -25,8 +25,6 @@ import android.os.StrictMode.VmPolicy;
 import android.support.multidex.MultiDexApplication;
 import android.util.Log;
 
-import com.google.android.gms.security.ProviderInstaller;
-
 import org.thoughtcrime.securesms.crypto.PRNGFixes;
 import org.thoughtcrime.securesms.dependencies.AxolotlStorageModule;
 import org.thoughtcrime.securesms.dependencies.InjectableType;
@@ -179,7 +177,7 @@ public class ApplicationContext extends MultiDexApplication implements Dependenc
       protected Void doInBackground(Void... params) {
         if (new SignalServiceNetworkAccess(ApplicationContext.this).isCensored(ApplicationContext.this)) {
           try {
-            ProviderInstaller.installIfNeeded(ApplicationContext.this);
+//NOGMS            ProviderInstaller.installIfNeeded(ApplicationContext.this);
           } catch (Throwable t) {
             Log.w(TAG, t);
           }
