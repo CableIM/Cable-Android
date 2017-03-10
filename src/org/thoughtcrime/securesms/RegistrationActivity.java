@@ -20,9 +20,6 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.gms.common.ConnectionResult;
-import com.google.android.gms.common.GoogleApiAvailability;
-import com.google.android.gms.common.GooglePlayServicesUtil;
 import com.google.i18n.phonenumbers.AsYouTypeFormatter;
 import com.google.i18n.phonenumbers.NumberParseException;
 import com.google.i18n.phonenumbers.PhoneNumberUtil;
@@ -45,13 +42,6 @@ public class RegistrationActivity extends BaseActionBarActivity {
 
   private static final int PICK_COUNTRY = 1;
   private static final String TAG = RegistrationActivity.class.getSimpleName();
-
-  private enum PlayServicesStatus {
-    SUCCESS,
-    MISSING,
-    NEEDS_UPDATE,
-    TRANSIENT_ERROR
-  }
 
   private AsYouTypeFormatter   countryFormatter;
   private ArrayAdapter<String> countrySpinnerAdapter;
@@ -220,18 +210,7 @@ public class RegistrationActivity extends BaseActionBarActivity {
         return;
       }
 
-      PlayServicesStatus gcmStatus = checkPlayServices(self);
-
-      if (gcmStatus == PlayServicesStatus.SUCCESS) {
-        promptForRegistrationStart(self, e164number, true);
-      } else if (gcmStatus == PlayServicesStatus.MISSING) {
-        promptForRegistrationStart(self, e164number, false);
-      } else if (gcmStatus == PlayServicesStatus.NEEDS_UPDATE) {
-        GoogleApiAvailability.getInstance().getErrorDialog(self, ConnectionResult.SERVICE_VERSION_UPDATE_REQUIRED, 0);
-      } else {
-        Dialogs.showAlertDialog(self, getString(R.string.RegistrationActivity_play_services_error),
-                                getString(R.string.RegistrationActivity_google_play_services_is_updating_or_unavailable));
-      }
+      promptForRegistrationStart(self, e164number, false);
     }
 
     private void promptForRegistrationStart(final Context context, final String e164number, final boolean gcmSupported) {
@@ -252,34 +231,6 @@ public class RegistrationActivity extends BaseActionBarActivity {
                                });
       dialog.setNegativeButton(getString(R.string.RegistrationActivity_edit), null);
       dialog.show();
-    }
-
-    private PlayServicesStatus checkPlayServices(Context context) {
-      int gcmStatus = 0;
-
-      try {
-        gcmStatus = GoogleApiAvailability.getInstance().isGooglePlayServicesAvailable(context);
-      } catch (Throwable t) {
-        Log.w(TAG, t);
-        return PlayServicesStatus.MISSING;
-      }
-
-      Log.w(TAG, "Play Services: " + gcmStatus);
-
-      switch (gcmStatus) {
-        case ConnectionResult.SUCCESS:
-          return PlayServicesStatus.SUCCESS;
-        case ConnectionResult.SERVICE_VERSION_UPDATE_REQUIRED:
-          return PlayServicesStatus.NEEDS_UPDATE;
-        case ConnectionResult.SERVICE_DISABLED:
-        case ConnectionResult.SERVICE_MISSING:
-        case ConnectionResult.SERVICE_INVALID:
-        case ConnectionResult.API_UNAVAILABLE:
-        case ConnectionResult.SERVICE_MISSING_PERMISSION:
-          return PlayServicesStatus.MISSING;
-        default:
-          return PlayServicesStatus.TRANSIENT_ERROR;
-      }
     }
   }
 
