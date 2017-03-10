@@ -6,7 +6,7 @@
     <uses-sdk tools:overrideLibrary="com.amulyakhare.textdrawable,com.astuetz.pagerslidingtabstrip,pl.tajchert.waitingdots,com.h6ah4i.android.multiselectlistpreferencecompat,android.support.v13,com.davemorrissey.labs.subscaleview,com.tomergoldst.tooltips"/>
 
     <permission android:name="im.cable.cableim.ACCESS_SECRETS"
-                android:label="Access to TextSecure Secrets"
+                android:label="Access to Cable Secrets"
                 android:protectionLevel="signature" />
 
     <uses-feature android:name="android.hardware.camera" android:required="false" />
@@ -35,11 +35,15 @@
     <uses-permission android:name="android.permission.VIBRATE"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!-- Paride
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    -->
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- Paride
     <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    -->
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
@@ -58,8 +62,10 @@
     <uses-permission android:name="android.permission.INSTALL_SHORTCUT"/>
 
     <!-- For sending/receiving events -->
+    <!-- Paride: unused permission
     <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
     <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    -->
 
     <!-- For fixing MMS -->
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
@@ -73,15 +79,21 @@
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <!-- Paride: we don't need these as we don't upgrade call to encrypted calls
     <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
     <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    -->
+    <!-- Paride: we don't initiate insecure calls from Cable
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.CALL_PRIVILEGED" />
+    -->
     <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
     <uses-permission android:name="android.permission.RAISED_THREAD_PRIORITY" />
     <uses-permission android:name="android.permission.READ_CALL_STATE"/>
     <uses-permission android:name="android.permission.READ_LOGS"/>
+    <!--
     <uses-permission android:name="android.permission.WRITE_CALL_LOG"/>
+    -->
     <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
 
     <permission android:name="im.cable.cableim.permission.C2D_MESSAGE"
