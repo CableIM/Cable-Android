@@ -303,6 +303,9 @@ android {
 
      lintOptions {
         abortOnError false
+
+        disable 'MissingTranslation'
+	disable "ResourceType"
     }
 }
 
@@ -382,7 +385,7 @@ if (propFile.canRead()){
         println 'signing.properties found but some entries are missing'
         android.buildTypes.release.signingConfig = null
     }
-}else {
+} else {
     println 'signing.properties not found'
     android.buildTypes.release.signingConfig = null
 }
