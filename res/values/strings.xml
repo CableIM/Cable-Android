@@ -504,6 +504,10 @@
 
     <!-- RegistrationActivity -->
     <string name="RegistrationActivity_connect_with_signal">Connect with Cable</string>
+    <string name="RegistrationActivity_select_your_server">Select your registration server</string>
+    <string name="RegistrationActivity_you_must_specify_your_server">You must specify your
+        registration server
+    </string>
     <string name="RegistrationActivity_select_your_country">Select your country</string>
     <string name="RegistrationActivity_you_must_specify_your_country_code">You must specify your
         country code
@@ -781,6 +785,10 @@
     <!-- conversation_fragment -->
     <string name="conversation_fragment__scroll_to_the_bottom_content_description">Scroll to the bottom</string>
 
+    <!-- server_selection_fragment -->
+    <string name="server_selection_fragment__loading_servers">Loading servers...</string>
+    <string name="server_selection_fragment__search">Search</string>
+
     <!-- country_selection_fragment -->
     <string name="country_selection_fragment__loading_countries">Loading countries...</string>
     <string name="country_selection_fragment__search">Search</string>
@@ -920,6 +928,7 @@
     <string name="registration_activity__verify_your_number_to_connect_with_signal">
         Verify your phone number to connect with Cable.
     </string>
+    <string name="registration_activity__your_registration_server">YOUR REGISTRATION SERVER</string>
     <string name="registration_activity__your_country">YOUR COUNTRY</string>
     <string name="registration_activity__your_country_code_and_phone_number">YOUR COUNTRY CODE AND
         PHONE NUMBER
@@ -1159,6 +1168,9 @@
     <string name="preferences__submit_debug_log">Submit debug log</string>
     <string name="preferences__support_wifi_calling">\'WiFi Calling\' compatibility mode</string>
     <string name="preferences__enable_if_your_device_supports_sms_mms_delivery_over_wifi">Enable if your device uses SMS/MMS delivery over WiFi (only enable when \'WiFi Calling\' is enabled on your device)</string>
+    <string name="preferences__registration_server">Registration Server</string>
+    <string name="preferences__server_lattuga">Lattuga</string>
+    <string name="preferences__server_pantelegrafo">Pantelegrafo</string>
     <string name="preferences_app_protection__blocked_contacts">Blocked contacts</string>
     <string name="preferences_app_protection__safety_numbers_approval">Safety numbers approval</string>
     <string name="preferences_app_protecting__require_approval_of_new_safety_numbers_when_they_change">Require approval of new safety numbers when they change</string>

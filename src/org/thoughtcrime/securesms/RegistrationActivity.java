@@ -41,7 +41,12 @@ import org.whispersystems.signalservice.api.util.PhoneNumberFormatter;
 public class RegistrationActivity extends BaseActionBarActivity {
 
   private static final int PICK_COUNTRY = 1;
+  private static final int PICK_SERVER = 2;
   private static final String TAG = RegistrationActivity.class.getSimpleName();
+
+  private ArrayAdapter<String> serverSpinnerAdapter;
+  private Spinner              serverSpinner;
+  private TextView             serverCode;
 
   private AsYouTypeFormatter   countryFormatter;
   private ArrayAdapter<String> countrySpinnerAdapter;
@@ -72,10 +77,17 @@ public class RegistrationActivity extends BaseActionBarActivity {
       setCountryDisplay(data.getStringExtra("country_name"));
       setCountryFormatter(data.getIntExtra("country_code", 1));
     }
+
+    if (requestCode == PICK_SERVER && resultCode == RESULT_OK && data != null) {
+      this.countryCode.setText(data.getIntExtra("server_code", 1)+"");
+      setServerDisplay(data.getStringExtra("server_name"));
+    }
   }
 
   private void initializeResources() {
     this.masterSecret   = getIntent().getParcelableExtra("master_secret");
+    this.serverSpinner = (Spinner)findViewById(R.id.server_spinner);
+    this.serverCode    = (TextView)findViewById(R.id.server_code);
     this.countrySpinner = (Spinner)findViewById(R.id.country_spinner);
     this.countryCode    = (TextView)findViewById(R.id.country_code);
     this.number         = (TextView)findViewById(R.id.number);
@@ -109,7 +121,36 @@ public class RegistrationActivity extends BaseActionBarActivity {
     });
   }
 
-  private void initializeSpinner() {
+  private void initializeSpinner() {    //Server
+    this.serverSpinnerAdapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item);
+    this.serverSpinnerAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+    setServerDisplay(getString(R.string.RegistrationActivity_select_your_server));
+
+    this.serverSpinner.setAdapter(this.serverSpinnerAdapter);
+    this.serverSpinner.setOnTouchListener(new View.OnTouchListener() {
+      @Override
+      public boolean onTouch(View v, MotionEvent event) {
+        if (event.getAction() == MotionEvent.ACTION_UP) {
+          Intent intent = new Intent(RegistrationActivity.this, ServerSelectionActivity.class);
+          startActivityForResult(intent, PICK_SERVER);
+        }
+        return true;
+      }
+    });
+    this.serverSpinner.setOnKeyListener(new View.OnKeyListener() {
+      @Override
+      public boolean onKey(View v, int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_DPAD_CENTER && event.getAction() == KeyEvent.ACTION_UP) {
+          Intent intent = new Intent(RegistrationActivity.this, ServerSelectionActivity.class);
+          startActivityForResult(intent, PICK_SERVER);
+          return true;
+        }
+        return false;
+      }
+    });
+
+    //Country
     this.countrySpinnerAdapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item);
     this.countrySpinnerAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
@@ -163,6 +204,11 @@ public class RegistrationActivity extends BaseActionBarActivity {
     }
   }
 
+  private void setServerDisplay(String value) {
+    this.serverSpinnerAdapter.clear();
+    this.serverSpinnerAdapter.add(value);
+  }
+
   private void setCountryDisplay(String value) {
     this.countrySpinnerAdapter.clear();
     this.countrySpinnerAdapter.add(value);
@@ -190,6 +236,13 @@ public class RegistrationActivity extends BaseActionBarActivity {
         Toast.makeText(self,
                        getString(R.string.RegistrationActivity_you_must_specify_your_country_code),
                        Toast.LENGTH_LONG).show();
+        return;
+      }
+
+      if (TextUtils.isEmpty(serverCode.getText())) {
+        Toast.makeText(self,
+                getString(R.string.RegistrationActivity_you_must_specify_your_server),
+                Toast.LENGTH_LONG).show();
         return;
       }
 
@@ -231,6 +284,27 @@ public class RegistrationActivity extends BaseActionBarActivity {
                                });
       dialog.setNegativeButton(getString(R.string.RegistrationActivity_edit), null);
       dialog.show();
+    }
+  }
+
+  private class ServerChangedListener implements TextWatcher {
+    @Override
+    public void afterTextChanged(Editable s) {
+      if (TextUtils.isEmpty(s)) {
+        setServerDisplay(getString(R.string.RegistrationActivity_select_your_server));
+        return;
+      }
+
+      String serverCode   = s.toString();
+      setServerDisplay(serverCode);
+    }
+
+    @Override
+    public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+    }
+
+    @Override
+    public void onTextChanged(CharSequence s, int start, int before, int count) {
     }
   }
 
