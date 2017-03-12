@@ -33,7 +33,7 @@ public class ExperienceUpgradeActivity extends BaseActionBarActivity {
   private static final int    NOTIFICATION_ID = 1339;
 
   private enum ExperienceUpgrade {
-    SIGNAL_REBRANDING(157,
+    SIGNAL_REBRANDING(157000,
                       new IntroPage(0xFF2090EA,
                                     BasicIntroFragment.newInstance(R.drawable.splash_logo,
                                                                    R.string.ExperienceUpgradeActivity_welcome_to_signal_dgaf,
@@ -41,7 +41,7 @@ public class ExperienceUpgradeActivity extends BaseActionBarActivity {
                       R.string.ExperienceUpgradeActivity_welcome_to_signal_excited,
                       R.string.ExperienceUpgradeActivity_textsecure_is_now_signal,
                       R.string.ExperienceUpgradeActivity_textsecure_is_now_signal_long),
-    VIDEO_CALLS(245,
+    VIDEO_CALLS(245000,
                       new IntroPage(0xFF2090EA,
                                     BasicIntroFragment.newInstance(R.drawable.video_splash,
                                                                    R.string.ExperienceUpgradeActivity_say_hello_to_video_calls,

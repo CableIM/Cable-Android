@@ -186,7 +186,7 @@ android {
 
     defaultConfig {
         applicationId "im.cable.cableim"
-        versionCode 6
+        versionCode 247006
         versionName "3.31.0-1"
 
         minSdkVersion 9

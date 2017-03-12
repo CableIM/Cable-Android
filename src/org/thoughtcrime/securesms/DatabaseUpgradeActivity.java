@@ -56,20 +56,20 @@ import java.util.TreeSet;
 public class DatabaseUpgradeActivity extends BaseActivity {
   private static final String TAG = DatabaseUpgradeActivity.class.getSimpleName();
 
-  public static final int NO_MORE_KEY_EXCHANGE_PREFIX_VERSION  = 46;
-  public static final int MMS_BODY_VERSION                     = 46;
-  public static final int TOFU_IDENTITIES_VERSION              = 50;
-  public static final int CURVE25519_VERSION                   = 63;
-  public static final int ASYMMETRIC_MASTER_SECRET_FIX_VERSION = 73;
-  public static final int NO_V1_VERSION                        = 83;
-  public static final int SIGNED_PREKEY_VERSION                = 83;
-  public static final int NO_DECRYPT_QUEUE_VERSION             = 113;
-  public static final int PUSH_DECRYPT_SERIAL_ID_VERSION       = 131;
-  public static final int MIGRATE_SESSION_PLAINTEXT            = 136;
-  public static final int CONTACTS_ACCOUNT_VERSION             = 136;
-  public static final int MEDIA_DOWNLOAD_CONTROLS_VERSION      = 151;
-  public static final int REDPHONE_SUPPORT_VERSION             = 157;
-//  public static final int FINGERPRINTS_NON_BLOCKING_VESRION    = 212;
+  public static final int NO_MORE_KEY_EXCHANGE_PREFIX_VERSION  = 46000;
+  public static final int MMS_BODY_VERSION                     = 46000;
+  public static final int TOFU_IDENTITIES_VERSION              = 50000;
+  public static final int CURVE25519_VERSION                   = 63000;
+  public static final int ASYMMETRIC_MASTER_SECRET_FIX_VERSION = 73000;
+  public static final int NO_V1_VERSION                        = 83000;
+  public static final int SIGNED_PREKEY_VERSION                = 83000;
+  public static final int NO_DECRYPT_QUEUE_VERSION             = 113000;
+  public static final int PUSH_DECRYPT_SERIAL_ID_VERSION       = 131000;
+  public static final int MIGRATE_SESSION_PLAINTEXT            = 136000;
+  public static final int CONTACTS_ACCOUNT_VERSION             = 136000;
+  public static final int MEDIA_DOWNLOAD_CONTROLS_VERSION      = 151000;
+  public static final int REDPHONE_SUPPORT_VERSION             = 157000;
+//  public static final int FINGERPRINTS_NON_BLOCKING_VESRION    = 212000;
 
   private static final SortedSet<Integer> UPGRADE_VERSIONS = new TreeSet<Integer>() {{
     add(NO_MORE_KEY_EXCHANGE_PREFIX_VERSION);
