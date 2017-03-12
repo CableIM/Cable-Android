@@ -43,7 +43,7 @@ public class RefreshAttributesJob extends ContextJob implements InjectableType {
     String  gcmRegistrationId = TextSecurePreferences.getGcmRegistrationId(context);
     int     registrationId    = TextSecurePreferences.getLocalRegistrationId(context);
     boolean video             = TextSecurePreferences.isWebrtcCallingEnabled(context);
-    boolean fetchesMessages   = TextSecurePreferences.isGcmDisabled(context);
+    boolean fetchesMessages   = true;
 
     String token = signalAccountManager.getAccountVerificationToken();
 

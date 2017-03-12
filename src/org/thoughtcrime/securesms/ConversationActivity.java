@@ -778,8 +778,7 @@ public class ConversationActivity extends PassphraseRequiredActionBarActivity
   private void handleDial(final Recipient recipient) {
     if (recipient == null) return;
 
-    if ((isSecureVideo && TextSecurePreferences.isWebrtcCallingEnabled(this)) ||
-        (isSecureText && TextSecurePreferences.isGcmDisabled(this)))
+    if (isSecureText)
     {
       Intent intent = new Intent(this, WebRtcCallService.class);
       intent.setAction(WebRtcCallService.ACTION_OUTGOING_CALL);
@@ -787,15 +786,6 @@ public class ConversationActivity extends PassphraseRequiredActionBarActivity
       startService(intent);
 
       Intent activityIntent = new Intent(this, WebRtcCallActivity.class);
-      activityIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-      startActivity(activityIntent);
-    } else if (isSecureText) {
-      Intent intent = new Intent(this, RedPhoneService.class);
-      intent.setAction(RedPhoneService.ACTION_OUTGOING_CALL);
-      intent.putExtra(RedPhoneService.EXTRA_REMOTE_NUMBER, recipient.getNumber());
-      startService(intent);
-
-      Intent activityIntent = new Intent(this, RedPhone.class);
       activityIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
       startActivity(activityIntent);
     } else {

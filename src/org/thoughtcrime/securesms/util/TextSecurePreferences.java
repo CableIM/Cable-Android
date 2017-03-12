@@ -84,7 +84,6 @@ public class TextSecurePreferences {
   private static final String SIGNED_PREKEY_REGISTERED_PREF    = "pref_signed_prekey_registered";
   private static final String WIFI_SMS_PREF                    = "pref_wifi_sms";
 
-  private static final String GCM_DISABLED_PREF                = "pref_gcm_disabled";
   private static final String GCM_REGISTRATION_ID_PREF         = "pref_gcm_registration_id";
   private static final String GCM_REGISTRATION_ID_VERSION_PREF = "pref_gcm_registration_id_version";
   private static final String WEBSOCKET_REGISTERED_PREF        = "pref_websocket_registered";
@@ -108,10 +107,6 @@ public class TextSecurePreferences {
 
   public static boolean isTurnOnly(Context context) {
     return getBooleanPreference(context, ALWAYS_RELAY_CALLS_PREF, false);
-  }
-
-  public static boolean isGcmDisabled(Context context) {
-    return getBooleanPreference(context, GCM_DISABLED_PREF, false);
   }
 
   public static void setGcmDisabled(Context context, boolean disabled) {

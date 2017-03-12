@@ -101,15 +101,15 @@ public class MessageRetrievalService extends Service implements InjectableType, 
   }
 
   private void setForegroundIfNecessary() {
-    if (TextSecurePreferences.isGcmDisabled(this)) {
-      NotificationCompat.Builder builder = new NotificationCompat.Builder(this);
-      builder.setContentTitle(getString(R.string.MessageRetrievalService_signal));
-      builder.setContentText(getString(R.string.MessageRetrievalService_background_connection_enabled));
-      builder.setPriority(NotificationCompat.PRIORITY_MIN);
-      builder.setWhen(0);
-      builder.setSmallIcon(R.drawable.ic_signal_grey_24dp);
-      startForeground(FOREGROUND_ID, builder.build());
-    }
+    // Well, using websockets instead of GCM it is always necessary. (Paride)
+
+    NotificationCompat.Builder builder = new NotificationCompat.Builder(this);
+    builder.setContentTitle(getString(R.string.MessageRetrievalService_signal));
+    builder.setContentText(getString(R.string.MessageRetrievalService_background_connection_enabled));
+    builder.setPriority(NotificationCompat.PRIORITY_MIN);
+    builder.setWhen(0);
+    builder.setSmallIcon(R.drawable.ic_signal_grey_24dp);
+    startForeground(FOREGROUND_ID, builder.build());
   }
 
   private synchronized void incrementActive() {
@@ -137,13 +137,10 @@ public class MessageRetrievalService extends Service implements InjectableType, 
   }
 
   private synchronized boolean isConnectionNecessary() {
-    boolean isGcmDisabled = TextSecurePreferences.isGcmDisabled(this);
+    Log.w(TAG, String.format("Network requirement: %s, active activities: %s, push pending: %s",
+                             networkRequirement.isPresent(), activeActivities, pushPending.size()));
 
-    Log.w(TAG, String.format("Network requirement: %s, active activities: %s, push pending: %s, gcm disabled: %b",
-                             networkRequirement.isPresent(), activeActivities, pushPending.size(), isGcmDisabled));
-
-    return TextSecurePreferences.isWebsocketRegistered(this)                  &&
-           (activeActivities > 0 || !pushPending.isEmpty() || isGcmDisabled)  &&
+    return TextSecurePreferences.isWebsocketRegistered(this) &&
            networkRequirement.isPresent();
   }
 
