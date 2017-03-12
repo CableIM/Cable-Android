@@ -152,6 +152,7 @@ public class ConversationListActivity extends PassphraseRequiredActionBarActivit
     case R.id.menu_import_export:     handleImportExport();    return true;
     case R.id.menu_invite:            handleInvite();          return true;
 // Paride: hide help entry from menu
+// See also: res/menu/text_secure_normal.xml
 //    case R.id.menu_help:              handleHelp();            return true;
     }
 

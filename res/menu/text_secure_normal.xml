@@ -19,7 +19,10 @@
     <item android:title="@string/text_secure_normal__menu_settings"
           android:id="@+id/menu_settings" />
 
+    <!-- Added comment to hide the "Help" menu entry (Paride) -->
+    <!--
     <item android:title="@string/text_secure_normal__help"
           android:id="@+id/menu_help"/>
+    -->
 
 </menu>
