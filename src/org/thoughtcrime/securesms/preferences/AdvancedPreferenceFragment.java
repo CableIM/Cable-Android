@@ -201,11 +201,18 @@ public class AdvancedPreferenceFragment extends PreferenceFragment {
             Log.w(TAG, e);
           }
 
-//DELME          try {
-//DELME            redPhoneAccountManager.setGcmId(Optional.<String>absent());
-//DELME          } catch (UnauthorizedException e) {
-//DELME            Log.w(TAG, e);
-//DELME          }
+// Paride:
+//
+// Don't try to unregister from RedPhone: as we don't have a RedPhone
+// server it will always fail. For the same reason we never actually
+// register, so there's nothing to be done.
+// TODO: Remove all the RedPhone legacy code.
+//
+//          try {
+//            redPhoneAccountManager.setGcmId(Optional.<String>absent());
+//          } catch (UnauthorizedException e) {
+//            Log.w(TAG, e);
+//          }
 
           return SUCCESS;
         } catch (IOException ioe) {
