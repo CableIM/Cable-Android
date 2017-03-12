@@ -63,7 +63,6 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.gms.location.places.ui.PlacePicker;
 import com.google.protobuf.ByteString;
 
 import org.greenrobot.eventbus.EventBus;
@@ -87,7 +86,7 @@ import org.thoughtcrime.securesms.components.camera.QuickAttachmentDrawer;
 import org.thoughtcrime.securesms.components.camera.QuickAttachmentDrawer.AttachmentDrawerListener;
 import org.thoughtcrime.securesms.components.camera.QuickAttachmentDrawer.DrawerState;
 import org.thoughtcrime.securesms.components.emoji.EmojiDrawer;
-import org.thoughtcrime.securesms.components.location.SignalPlace;
+// Location-TODO import org.thoughtcrime.securesms.components.location.SignalPlace;
 import org.thoughtcrime.securesms.components.reminder.InviteReminder;
 import org.thoughtcrime.securesms.components.reminder.ReminderView;
 import org.thoughtcrime.securesms.contacts.ContactAccessor;
@@ -110,7 +109,7 @@ import org.thoughtcrime.securesms.mms.AttachmentManager;
 import org.thoughtcrime.securesms.mms.AttachmentManager.MediaType;
 import org.thoughtcrime.securesms.mms.AttachmentTypeSelectorAdapter;
 import org.thoughtcrime.securesms.mms.AudioSlide;
-import org.thoughtcrime.securesms.mms.LocationSlide;
+// Location-TODO import org.thoughtcrime.securesms.mms.LocationSlide;
 import org.thoughtcrime.securesms.mms.MediaConstraints;
 import org.thoughtcrime.securesms.mms.OutgoingExpirationUpdateMessage;
 import org.thoughtcrime.securesms.mms.OutgoingGroupMediaMessage;
@@ -405,8 +404,11 @@ public class ConversationActivity extends PassphraseRequiredActionBarActivity
       fragment.reloadList();
       break;
     case PICK_LOCATION:
-      SignalPlace place = new SignalPlace(PlacePicker.getPlace(data, this));
-      attachmentManager.setLocation(masterSecret, place, getCurrentMediaConstraints());
+//
+// Location-TODO (Paride)
+//
+//      SignalPlace place = new SignalPlace(PlacePicker.getPlace(data, this));
+//      attachmentManager.setLocation(masterSecret, place, getCurrentMediaConstraints());
       break;
     case PICK_GIF:
       setMedia(data.getData(), MediaType.GIF);
@@ -896,11 +898,13 @@ public class ConversationActivity extends PassphraseRequiredActionBarActivity
       @Override
       protected void onPostExecute(List<Draft> drafts) {
         for (Draft draft : drafts) {
-          try {
+// Location-TODO
+//          try {
             if (draft.getType().equals(Draft.TEXT)) {
               composeText.setText(draft.getValue());
-            } else if (draft.getType().equals(Draft.LOCATION)) {
-              attachmentManager.setLocation(masterSecret, SignalPlace.deserialize(draft.getValue()), getCurrentMediaConstraints());
+// Location-TODO
+//            } else if (draft.getType().equals(Draft.LOCATION)) {
+//              attachmentManager.setLocation(masterSecret, SignalPlace.deserialize(draft.getValue()), getCurrentMediaConstraints());
             } else if (draft.getType().equals(Draft.IMAGE)) {
               setMedia(Uri.parse(draft.getValue()), MediaType.IMAGE);
             } else if (draft.getType().equals(Draft.AUDIO)) {
@@ -908,9 +912,10 @@ public class ConversationActivity extends PassphraseRequiredActionBarActivity
             } else if (draft.getType().equals(Draft.VIDEO)) {
               setMedia(Uri.parse(draft.getValue()), MediaType.VIDEO);
             }
-          } catch (IOException e) {
-            Log.w(TAG, e);
-          }
+// Location-TODO
+//          } catch (IOException e) {
+//            Log.w(TAG, e);
+//          }
         }
 
         updateToggleButtonState();
@@ -1288,7 +1293,7 @@ public class ConversationActivity extends PassphraseRequiredActionBarActivity
     for (Slide slide : attachmentManager.buildSlideDeck().getSlides()) {
       if      (slide.hasAudio() && slide.getUri() != null)    drafts.add(new Draft(Draft.AUDIO, slide.getUri().toString()));
       else if (slide.hasVideo() && slide.getUri() != null)    drafts.add(new Draft(Draft.VIDEO, slide.getUri().toString()));
-      else if (slide.hasLocation())                           drafts.add(new Draft(Draft.LOCATION, ((LocationSlide)slide).getPlace().serialize()));
+// Location-TODO      else if (slide.hasLocation())                           drafts.add(new Draft(Draft.LOCATION, ((LocationSlide)slide).getPlace().serialize()));
       else if (slide.hasImage() && slide.getUri() != null)    drafts.add(new Draft(Draft.IMAGE, slide.getUri().toString()));
     }
 

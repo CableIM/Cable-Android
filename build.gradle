@@ -53,10 +53,6 @@ dependencies {
     }
     compile 'com.android.support:multidex:1.0.1'
 
-    compile 'com.google.android.gms:play-services-gcm:9.6.1'
-    compile 'com.google.android.gms:play-services-maps:9.6.1'
-    compile 'com.google.android.gms:play-services-places:9.6.1'
-
     compile 'org.whispersystems:jobmanager:1.0.2'
     compile 'org.whispersystems:libpastelog:1.0.7'
     compile 'org.whispersystems:signal-service-android:2.5.2'
@@ -124,9 +120,6 @@ dependencyVerification {
         'com.android.support:support-v4-preferencefragment:5470f5872514a6226fa1fc6f4e000991f38805691c534cf0bd2778911fc773ad',
         'com.android.support:gridlayout-v7:c24f2aa68089fd31b39811bc502e24637a6a8cc29bbf709cda4f4605047c9e11',
         'com.android.support:multidex:60df8e7153fabdcf3a6a48a2ce5980b599cf25cbeb3b689b7b615975ca731840',
-        'com.google.android.gms:play-services-gcm:312e61253a236f2d9b750b9c04fc92fd190d23b0b2755c99de6ce4a28b259dae',
-        'com.google.android.gms:play-services-maps:45e8021e7ddac4a44a82a0e9698991389ded3023d35c58f38dbd86d54211ec0e',
-        'com.google.android.gms:play-services-places:abf3a4a3b146ec7e6e753be62775e512868cf37d6f88ffe2d81167b33b57132b',
         'org.whispersystems:jobmanager:506f679fc2fcf7bb6d10f00f41d6f6ea0abf75c70dc95b913398661ad538a181',
         'org.whispersystems:libpastelog:bb331d9a98240fc139101128ba836c1edec3c40e000597cdbb29ebf4cbf34d88',
         'org.whispersystems:signal-service-android:030294f4f1517f032892f8100e649ac2ee6db39cf5cfaf42b00cc22ccd66b14b',
@@ -161,15 +154,11 @@ dependencyVerification {
         'com.android.support:support-compat:e880fb1209c33fcb43e2b25716808e1a6e0b4d3170d5a8dc7704e15084428f88',
         'com.android.support:support-core-ui:0149b54fd3bc9f4b3b2d321ff53c11821b31a2eca1e664d0cee224e8f53073d6',
         'com.android.support:transition:cf53f778352fe0b74ff14d838bef9fe79264f3fd43eac499b6e0d1664dbd8997',
-        'com.google.android.gms:play-services-base:0ca636a8fc9a5af45e607cdcd61783bf5d561cbbb0f862021ce69606eee5ad49',
-        'com.google.android.gms:play-services-basement:95dd882c5ffba15b9a99de3fefb05d3a01946623af67454ca00055d222f85a8d',
-        'com.google.android.gms:play-services-iid:54e919f9957b8b7820da7ee9b83471d00d0cac1cf08ddea8b5b41aea80bb1a70',
         'org.whispersystems:signal-protocol-android:1b4b9d557c8eaf861797ff683990d482d4aa8e9f23d9b17ff0cc67a02f38cb19',
         'org.whispersystems:signal-service-java:49664fb9aedb6c39b303d20d167fa61bc25dc8d8bb148713ac29783383da1e90',
         'com.nineoldandroids:library:68025a14e3e7673d6ad2f95e4b46d78d7d068343aa99256b686fe59de1b3163a',
         'javax.inject:javax.inject:91c77044a50c481636c32d916fd89c9118a72195390452c81065080f957de7ff',
         'com.madgag.spongycastle:core:8d6240b974b0aca4d3da9c7dd44d42339d8a374358aca5fc98e50a995764511f',
-        'com.google.android.gms:play-services-tasks:69ec265168e601d0203d04cd42e34bb019b2f029aa1e16fabd38a5153eea2086',
         'org.whispersystems:curve25519-android:bf6c34223d45d2f2813a8efcab9923caf99115115c760c9acea680bcb42d23c0',
         'org.whispersystems:signal-protocol-java:a835cd0609cf116a74651bd0aa748db9392bba48c2d2af787757b8a1b50d131c',
         'com.google.protobuf:protobuf-java:e0c1c64575c005601725e7c6a02cebf9e1285e888f756b2a1d73ffa8d725cc74',

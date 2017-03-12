@@ -201,11 +201,11 @@ public class AdvancedPreferenceFragment extends PreferenceFragment {
             Log.w(TAG, e);
           }
 
-          try {
-            redPhoneAccountManager.setGcmId(Optional.<String>absent());
-          } catch (UnauthorizedException e) {
-            Log.w(TAG, e);
-          }
+//DELME          try {
+//DELME            redPhoneAccountManager.setGcmId(Optional.<String>absent());
+//DELME          } catch (UnauthorizedException e) {
+//DELME            Log.w(TAG, e);
+//DELME          }
 
           return SUCCESS;
         } catch (IOException ioe) {

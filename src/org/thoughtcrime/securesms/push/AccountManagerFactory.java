@@ -5,10 +5,6 @@ import android.content.Intent;
 import android.os.AsyncTask;
 import android.util.Log;
 
-import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
-import com.google.android.gms.common.GooglePlayServicesRepairableException;
-import com.google.android.gms.security.ProviderInstaller;
-
 import org.thoughtcrime.securesms.BuildConfig;
 import org.thoughtcrime.securesms.util.TextSecurePreferences;
 import org.whispersystems.signalservice.api.SignalServiceAccountManager;
@@ -31,7 +27,7 @@ public class AccountManagerFactory {
         @Override
         protected Void doInBackground(Void... params) {
           try {
-            ProviderInstaller.installIfNeeded(context);
+//NOGMS            ProviderInstaller.installIfNeeded(context);
           } catch (Throwable t) {
             Log.w(TAG, t);
           }

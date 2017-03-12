@@ -105,9 +105,6 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyCSx9xea86GwDKGznCAULE9Y5a8b-TfN9U"/>
 
-    <meta-data android:name="com.google.android.gms.version"
-               android:value="@integer/google_play_services_version" />
-
     <meta-data android:name="org.thoughtcrime.securesms.mms.TextSecureGlideModule"
                android:value="GlideModule" />
 
