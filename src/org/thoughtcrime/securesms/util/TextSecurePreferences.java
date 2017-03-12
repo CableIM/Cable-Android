@@ -109,10 +109,6 @@ public class TextSecurePreferences {
     return getBooleanPreference(context, ALWAYS_RELAY_CALLS_PREF, false);
   }
 
-  public static void setGcmDisabled(Context context, boolean disabled) {
-    setBooleanPreference(context, GCM_DISABLED_PREF, disabled);
-  }
-
   public static boolean isWebrtcCallingEnabled(Context context) {
     return getBooleanPreference(context, WEBRTC_CALLING_PREF, false);
   }

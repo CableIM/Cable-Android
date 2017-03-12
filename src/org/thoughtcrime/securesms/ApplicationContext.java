@@ -31,7 +31,6 @@ import org.thoughtcrime.securesms.dependencies.InjectableType;
 import org.thoughtcrime.securesms.dependencies.RedPhoneCommunicationModule;
 import org.thoughtcrime.securesms.dependencies.SignalCommunicationModule;
 import org.thoughtcrime.securesms.jobs.CreateSignedPreKeyJob;
-import org.thoughtcrime.securesms.jobs.GcmRefreshJob;
 import org.thoughtcrime.securesms.jobs.RefreshAttributesJob;
 import org.thoughtcrime.securesms.jobs.persistence.EncryptingJobSerializer;
 import org.thoughtcrime.securesms.jobs.requirements.MasterSecretRequirementProvider;
@@ -82,7 +81,6 @@ public class ApplicationContext extends MultiDexApplication implements Dependenc
     initializeDependencyInjection();
     initializeJobManager();
     initializeExpiringMessageManager();
-    initializeGcmCheck();
     initializeSignedPreKeyCheck();
     initializePeriodicTasks();
     initializeCircumvention();
@@ -137,12 +135,6 @@ public class ApplicationContext extends MultiDexApplication implements Dependenc
     this.objectGraph = ObjectGraph.create(new SignalCommunicationModule(this, new SignalServiceNetworkAccess(this)),
                                           new RedPhoneCommunicationModule(this),
                                           new AxolotlStorageModule(this));
-  }
-
-  private void initializeGcmCheck() {
-    if (TextSecurePreferences.isPushRegistered(this)) {
-      this.jobManager.add(new GcmRefreshJob(this));
-    }
   }
 
   private void initializeSignedPreKeyCheck() {
