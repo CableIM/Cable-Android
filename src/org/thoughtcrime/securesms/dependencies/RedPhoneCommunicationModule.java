@@ -20,11 +20,11 @@ public class RedPhoneCommunicationModule {
     this.context = context;
   }
 
-  @Provides RedPhoneAccountManager provideRedPhoneAccountManager() {
-    return new RedPhoneAccountManager(BuildConfig.REDPHONE_MASTER_URL,
-                                      new RedPhoneTrustStore(context),
-                                      TextSecurePreferences.getLocalNumber(context),
-                                      TextSecurePreferences.getPushServerPassword(context));
-  }
+//  @Provides RedPhoneAccountManager provideRedPhoneAccountManager() {
+//    return new RedPhoneAccountManager(BuildConfig.REDPHONE_MASTER_URL,
+//                                      new RedPhoneTrustStore(context),
+//                                      TextSecurePreferences.getLocalNumber(context),
+//                                      TextSecurePreferences.getPushServerPassword(context));
+//  }
 
 }
