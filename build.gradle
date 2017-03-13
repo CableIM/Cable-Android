@@ -257,19 +257,26 @@ android {
     }
 
     productFlavors {
+
+        // In Cable "play" actually means that the app is distributed via a store
+        // (F-Droid, Amazon, Play Store, ...). This store (ideally F-Droid with its
+        // privileged extension) takes care of upgrading the app. (Paride)
+
         play {
             ext.websiteUpdateUrl = "null"
             buildConfigField "boolean", "PLAY_STORE_DISABLED", "false"
             buildConfigField "String", "NOPLAY_UPDATE_URL", "$ext.websiteUpdateUrl"
         }
 
-// Paride: we're not interted in the website flavor at the moment
-//
-//        website {
-//            ext.websiteUpdateUrl = "https://updates.signal.org/android"
-//            buildConfigField "boolean", "PLAY_STORE_DISABLED", "true"
-//            buildConfigField "String", "NOPLAY_UPDATE_URL", "\"$ext.websiteUpdateUrl\""
-//        }
+        // We're not interested in the website flavor at the moment.
+        // The right way to install Cable is via F-Droid.
+        //
+        // website {
+        //     ext.websiteUpdateUrl = "https://updates.signal.org/android"
+        //     buildConfigField "boolean", "PLAY_STORE_DISABLED", "true"
+        //     buildConfigField "String", "NOPLAY_UPDATE_URL", "\"$ext.websiteUpdateUrl\""
+        // }
+
     }
 
     applicationVariants.all { variant ->
