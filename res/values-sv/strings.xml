@@ -83,7 +83,7 @@
   <string name="ConversationItem_click_to_approve_unencrypted">Tryck för oskyddad fallback</string>
   <string name="ConversationItem_click_to_approve_unencrypted_sms_dialog_title">Använd okrypterat SMS istället?</string>
   <string name="ConversationItem_click_to_approve_unencrypted_mms_dialog_title">Använd okrypterat MMS istället?</string>
-  <string name="ConversationItem_click_to_approve_unencrypted_dialog_message">Detta meddelande kommer <b>inte</b> krypteras eftersom mottagaren inte längre är en Signal-användare. \n\nSkicka osäkert meddelande?</string>
+  <string name="ConversationItem_click_to_approve_unencrypted_dialog_message">Detta meddelande kommer <b>inte</b> krypteras eftersom mottagaren inte längre är en Cable-användare. \n\nSkicka osäkert meddelande?</string>
   <string name="ConversationItem_unable_to_open_media">Kan ej hitta app som kan öppna denna fil.</string>
   <string name="ConversationItem_from_s">från %s</string>
   <string name="ConversationItem_to_s">till %s</string>
@@ -273,7 +273,7 @@
   <string name="GroupCreateActivity_menu_apply_button">Tillämpa</string>
   <string name="GroupCreateActivity_creating_group">Skapar %1$s...</string>
   <string name="GroupCreateActivity_updating_group">Uppdaterar %1$s...</string>
-  <string name="GroupCreateActivity_cannot_add_non_push_to_existing_group">Kunde inte lägga till %1$s för han/hon är ingen Signal-användare.</string>
+  <string name="GroupCreateActivity_cannot_add_non_push_to_existing_group">Kunde inte lägga till %1$s för han/hon är ingen Cable-användare.</string>
   <string name="GroupCreateActivity_loading_group_details">Laddar gruppdetaljer...</string>
   <string name="GroupCreateActivity_youre_already_in_the_group">Du är redan i gruppen.</string>
   <!--GroupMembersDialog-->
@@ -386,8 +386,8 @@ som inte finns i säkerhetskopian.</string>
   <string name="DeviceProvisioningActivity_content_progress_key_error">Ogiltig QR-kod.</string>
   <string name="DeviceProvisioningActivity_sorry_you_have_too_many_devices_linked_already">Tyvärr har du för många enheter redan länkade, prova att ta bort en del</string>
   <string name="DeviceActivity_sorry_this_is_not_a_valid_device_link_qr_code">Tyvärr, det här är ingen giltig QR-kod för enhetslänkning.</string>
-  <string name="DeviceProvisioningActivity_link_a_signal_device">Länka en Signal-enhet?</string>
-  <string name="DeviceProvisioningActivity_it_looks_like_youre_trying_to_link_a_signal_device_using_a_3rd_party_scanner">Det verkar som att du försöker länka en Signal-enhet med hjälp av en tredjepartsskanner. För din säkerhet, vänligen skanna koden igen från Cable.</string>
+  <string name="DeviceProvisioningActivity_link_a_signal_device">Länka en Cable-enhet?</string>
+  <string name="DeviceProvisioningActivity_it_looks_like_youre_trying_to_link_a_signal_device_using_a_3rd_party_scanner">Det verkar som att du försöker länka en Cable-enhet med hjälp av en tredjepartsskanner. För din säkerhet, vänligen skanna koden igen från Cable.</string>
   <!--ExpirationDialog-->
   <string name="ExpirationDialog_disappearing_messages">Försvinnande meddelanden</string>
   <string name="ExpirationDialog_your_messages_will_not_expire">Dina meddelanden kommer inte upphöra.</string>
@@ -483,9 +483,9 @@ Dubbelkolla att det här är ditt nummer! Vi ska nu verifiera det med ett SMS.</
   <string name="RegistrationProgressActivity_this_number_is_already_registered_on_a_different">Detta nummer är redan registrerat på en annan Signalserver (CyanogenMod?). Du måste avregistrera ditt nummer därifrån innan du registrerar dig här.</string>
   <!--RegistrationService-->
   <string name="RegistrationService_registration_complete">Registrering klar</string>
-  <string name="RegistrationService_signal_registration_has_successfully_completed">Signal-registrering har lyckats.</string>
+  <string name="RegistrationService_signal_registration_has_successfully_completed">Cable-registrering har lyckats.</string>
   <string name="RegistrationService_registration_error">Registreringsfel</string>
-  <string name="RegistrationService_signal_registration_has_encountered_a_problem">Signal-registreringen har drabbats av ett problem.</string>
+  <string name="RegistrationService_signal_registration_has_encountered_a_problem">Cable-registreringen har drabbats av ett problem.</string>
   <!--Slide-->
   <string name="Slide_image">Bilder</string>
   <string name="Slide_audio">Ljud</string>
@@ -987,7 +987,7 @@ Cable uppnådde tidsgränsen för SMS-verifiering.</string>
   <string name="preferences_advanced__disable_signal_built_in_emoji_support">Stäng av Signals inbyggda emojistöd</string>
   <string name="preferences_advanced__video_calling_beta">Videosamtal beta</string>
   <string name="preferences_advanced__enable_support_for_next_generation_video_and_voice_calls">Stöd för nästa generations video- och röstsamtal om det aktiverats av båda parter. Denna funktion är i beta.</string>
-  <string name="preferences_advanced__relay_all_calls_through_the_signal_server_to_avoid_revealing_your_ip_address">Slussa alla samtal via Signal-servern för att unvika att avslöja din IP-adress för din kontakt. Aktivering innebär försämrad samtalskvalité.</string>
+  <string name="preferences_advanced__relay_all_calls_through_the_signal_server_to_avoid_revealing_your_ip_address">Slussa alla samtal via Cable-servern för att unvika att avslöja din IP-adress för din kontakt. Aktivering innebär försämrad samtalskvalité.</string>
   <string name="preferences_advanced__always_relay_calls">Slussa alltid samtal</string>
   <!--****************************************-->
   <!--menus-->

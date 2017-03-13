@@ -248,7 +248,7 @@ Om du vil benytte Cable for meldinger og anrop igjen i fremtiden må du registre
   <string name="GroupCreateActivity_avatar_content_description">Gruppeavatar</string>
   <string name="GroupCreateActivity_creating_group">Oppretter %1$s...</string>
   <string name="GroupCreateActivity_updating_group">Oppdaterer %1$s...</string>
-  <string name="GroupCreateActivity_cannot_add_non_push_to_existing_group">Kunne ikke legge til %1$s på grunn av at de ikke er Signal-brukere.</string>
+  <string name="GroupCreateActivity_cannot_add_non_push_to_existing_group">Kunne ikke legge til %1$s på grunn av at de ikke er Cable-brukere.</string>
   <string name="GroupCreateActivity_loading_group_details">Laster gruppedetaljer...</string>
   <string name="GroupCreateActivity_youre_already_in_the_group">Du er allerede i gruppen.</string>
   <!--GroupMembersDialog-->

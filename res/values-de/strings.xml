@@ -24,9 +24,9 @@
   <string name="ApplicationPreferencesActivity_this_will_permanently_unlock_signal_and_message_notifications">Entsperrt Cable und Benachrichtigungen dauerhaft.</string>
   <string name="ApplicationPreferencesActivity_disable">Deaktivieren</string>
   <string name="ApplicationPreferencesActivity_unregistering">Registrierung löschen</string>
-  <string name="ApplicationPreferencesActivity_unregistering_from_signal_messages_and_calls">Registrierung für Signal-Nachrichten und -Anrufe wird gelöscht …</string>
-  <string name="ApplicationPreferencesActivity_disable_signal_messages_and_calls">Signal-Nachrichten und -Anrufe deaktivieren?</string>
-  <string name="ApplicationPreferencesActivity_disable_signal_messages_and_calls_by_unregistering">Signal-Nachrichten und -Anrufe durch Löschen deiner Registrierung vom Server deaktivieren. Du wirst deine Rufnummer erneut registrieren müssen, um zukünftig wieder verschlüsselt zu kommunizieren.</string>
+  <string name="ApplicationPreferencesActivity_unregistering_from_signal_messages_and_calls">Registrierung für Cable-Nachrichten und -Anrufe wird gelöscht …</string>
+  <string name="ApplicationPreferencesActivity_disable_signal_messages_and_calls">Cable-Nachrichten und -Anrufe deaktivieren?</string>
+  <string name="ApplicationPreferencesActivity_disable_signal_messages_and_calls_by_unregistering">Cable-Nachrichten und -Anrufe durch Löschen deiner Registrierung vom Server deaktivieren. Du wirst deine Rufnummer erneut registrieren müssen, um zukünftig wieder verschlüsselt zu kommunizieren.</string>
   <string name="ApplicationPreferencesActivity_error_connecting_to_server">Fehler beim Verbinden zum Server!</string>
   <string name="ApplicationPreferencesActivity_sms_enabled">SMS aktiviert</string>
   <string name="ApplicationPreferencesActivity_touch_to_change_your_default_sms_app">Antippen, um Standard-SMS-App zu ändern</string>
@@ -69,7 +69,7 @@
   <string name="ConfirmIdentityDialog_accept">OK</string>
   <!--ContactsDatabase-->
   <string name="ContactsDatabase_message_s">Nachricht %s</string>
-  <string name="ContactsDatabase_signal_call_s">Signal-Anruf %s</string>
+  <string name="ContactsDatabase_signal_call_s">Cable-Anruf %s</string>
   <!--ConversationItem-->
   <string name="ConversationItem_message_size_d_kb">Nachrichtengröße: %d kB</string>
   <string name="ConversationItem_expires_s">Läuft ab in: %s</string>
@@ -238,13 +238,13 @@
   <string name="ExperienceUpgradeActivity_textsecure_is_now_signal">TextSecure heißt jetzt Cable.</string>
   <string name="ExperienceUpgradeActivity_textsecure_is_now_signal_long">TextSecure und RedPhone sind jetzt eine gemeinsame App: Cable. Antippen, um mehr zu erfahren.</string>
   <string name="ExperienceUpgradeActivity_say_hello_to_video_calls">Sag Hallo zu sicheren Videoanrufen.</string>
-  <string name="ExperienceUpgradeActivity_signal_now_supports_secure_video_calls">Cable unterstützt jetzt sichere Videoanrufe. Beginne einfach einen Signal-Anruf wie sonst auch, tippe die Kameraschaltfläche an und winke deinem Kontakt zu.</string>
+  <string name="ExperienceUpgradeActivity_signal_now_supports_secure_video_calls">Cable unterstützt jetzt sichere Videoanrufe. Beginne einfach einen Cable-Anruf wie sonst auch, tippe die Kameraschaltfläche an und winke deinem Kontakt zu.</string>
   <string name="ExperienceUpgradeActivity_signal_now_supports_secure_video_calling">Cable unterstützt jetzt sichere Videoanrufe.</string>
   <string name="ExperienceUpgradeActivity_signal_now_supports_secure_video_calling_long">Cable unterstützt jetzt sichere Videoanrufe. Zum Erkunden antippen.</string>
   <!--ExportFragment-->
   <string name="ExportFragment_export">Exportieren</string>
   <string name="ExportFragment_export_plaintext_to_storage">Klartextsicherung exportieren?</string>
-  <string name="ExportFragment_warning_this_will_export_the_plaintext_contents">Achtung: Exportiert die unverschlüsselten Inhalte deiner Signal-Nachrichten in den Gerätespeicher.</string>
+  <string name="ExportFragment_warning_this_will_export_the_plaintext_contents">Achtung: Exportiert die unverschlüsselten Inhalte deiner Cable-Nachrichten in den Gerätespeicher.</string>
   <string name="ExportFragment_cancel">Abbruch</string>
   <string name="ExportFragment_exporting">Exportieren</string>
   <string name="ExportFragment_exporting_plaintext_to_storage">Klartext wird in Gerätespeicher exportiert …</string>
@@ -252,8 +252,8 @@
   <string name="ExportFragment_error_while_writing_to_storage">Fehler beim Schreiben auf Gerätespeicher.</string>
   <string name="ExportFragment_export_successful">Exportieren erfolgreich abgeschlossen.</string>
   <!--GcmRefreshJob-->
-  <string name="GcmRefreshJob_Permanent_Signal_communication_failure">Dauerhafter Signal-Kommunikationsfehler!</string>
-  <string name="GcmRefreshJob_Signal_was_unable_to_register_with_Google_Play_Services">Cable konnte nicht für die Google Play-Dienste registriert werden. Signal-Nachrichten und -Anrufe wurden daher deaktiviert. Bitte registriere Cable im Menü »Einstellungen« &gt; »Weitere Einstellungen« erneut.</string>
+  <string name="GcmRefreshJob_Permanent_Signal_communication_failure">Dauerhafter Cable-Kommunikationsfehler!</string>
+  <string name="GcmRefreshJob_Signal_was_unable_to_register_with_Google_Play_Services">Cable konnte nicht für die Google Play-Dienste registriert werden. Cable-Nachrichten und -Anrufe wurden daher deaktiviert. Bitte registriere Cable im Menü »Einstellungen« &gt; »Weitere Einstellungen« erneut.</string>
   <!--GiphyActivity-->
   <string name="GiphyActivity_error_while_retrieving_full_resolution_gif">Fehler beim Abruf des GIFs in voller Auflösung</string>
   <!--GiphyFragmentPageAdapter-->
@@ -264,8 +264,8 @@
   <string name="GroupCreateActivity_actionbar_edit_title">Gruppe bearbeiten</string>
   <string name="GroupCreateActivity_group_name_hint">Gruppenname</string>
   <string name="GroupCreateActivity_actionbar_mms_title">Neue MMS-Gruppe</string>
-  <string name="GroupCreateActivity_contacts_dont_support_push">Du hast einen Kontakt ausgewählt, der Signal-Gruppen nicht unterstützt. Daher wird dies eine MMS-Gruppe sein.</string>
-  <string name="GroupCreateActivity_youre_not_registered_for_signal">Du bist nicht für Signal-Nachrichten und -Anrufe registriert, daher sind Signal-Gruppen deaktiviert. Bitte registriere Cable im Menü »Einstellungen« &gt; »Weitere Einstellungen«.</string>
+  <string name="GroupCreateActivity_contacts_dont_support_push">Du hast einen Kontakt ausgewählt, der Cable-Gruppen nicht unterstützt. Daher wird dies eine MMS-Gruppe sein.</string>
+  <string name="GroupCreateActivity_youre_not_registered_for_signal">Du bist nicht für Cable-Nachrichten und -Anrufe registriert, daher sind Cable-Gruppen deaktiviert. Bitte registriere Cable im Menü »Einstellungen« &gt; »Weitere Einstellungen«.</string>
   <string name="GroupCreateActivity_contacts_mms_exception">Gruppe konnte aufgrund eines unerwartet aufgetretenen Fehlers nicht erstellt werden.</string>
   <string name="GroupCreateActivity_contacts_no_members">Du benötigst mindestens eine Person in deiner Gruppe!</string>
   <string name="GroupCreateActivity_contacts_invalid_number">Eines der Gruppenmitglieder hat eine nicht korrekt lesbare Rufnummer. Bitte beheben oder Kontakt entfernen und erneut versuchen.</string>
@@ -273,7 +273,7 @@
   <string name="GroupCreateActivity_menu_apply_button">Anwenden</string>
   <string name="GroupCreateActivity_creating_group">%1$s wird erstellt …</string>
   <string name="GroupCreateActivity_updating_group">%1$s wird aktualisiert …</string>
-  <string name="GroupCreateActivity_cannot_add_non_push_to_existing_group">%1$s konnte nicht hinzugefügt werden, da kein Signal-Kontakt.</string>
+  <string name="GroupCreateActivity_cannot_add_non_push_to_existing_group">%1$s konnte nicht hinzugefügt werden, da kein Cable-Kontakt.</string>
   <string name="GroupCreateActivity_loading_group_details">Gruppendetails werden geladen …</string>
   <string name="GroupCreateActivity_youre_already_in_the_group">Du bist bereits in der Gruppe.</string>
   <!--GroupMembersDialog-->
@@ -288,7 +288,7 @@
   <string name="ImportFragment_cancel">Abbruch</string>
   <string name="ImportFragment_restore_encrypted_backup">Verschlüsselte Sicherung wiederherstellen?</string>
   <string name="ImportFragment_restoring_an_encrypted_backup_will_completely_replace_your_existing_keys">
-Das Wiederherstellen einer verschlüsselten Datensicherung ersetzt deine bestehenden Schlüssel, Einstellungen und Nachrichten. Du wirst jegliche Informationen deiner jetzigen Signal-Installation verlieren, die nicht in dieser Datensicherung enthalten sind.</string>
+Das Wiederherstellen einer verschlüsselten Datensicherung ersetzt deine bestehenden Schlüssel, Einstellungen und Nachrichten. Du wirst jegliche Informationen deiner jetzigen Cable-Installation verlieren, die nicht in dieser Datensicherung enthalten sind.</string>
   <string name="ImportFragment_restore">Wiederherstellen</string>
   <string name="ImportFragment_import_plaintext_backup">Klartextsicherung importieren?</string>
   <string name="ImportFragment_this_will_import_messages_from_a_plaintext_backup">Importiert Nachrichten aus einer Klartext-Datensicherung in Cable. Falls du bereits zuvor diese Datensicherung importiert hast, wird es zu doppelten Nachrichten kommen.</string>
@@ -337,11 +337,11 @@ Das Wiederherstellen einer verschlüsselten Datensicherung ersetzt deine bestehe
   <string name="MmsDownloader_error_connecting_to_mms_provider">Verbindung zum MMS-Anbieter fehlgeschlagen</string>
   <string name="MmsDownloader_error_reading_mms_settings">MMS-Einstellungen des Mobilfunkanbieters konnten nicht gelesen werden</string>
   <!--- NotificationBarManager-->
-  <string name="NotificationBarManager_signal_call_in_progress">Signal-Anruf läuft</string>
+  <string name="NotificationBarManager_signal_call_in_progress">Cable-Anruf läuft</string>
   <string name="NotificationBarManager_missed_call_from_s">Entgangener Anruf von %s</string>
-  <string name="NotificationBarManager_missed_signal_call">Entgangener Signal-Anruf</string>
-  <string name="NotificationBarManager__establishing_signal_call">Signal-Anruf wird hergestellt</string>
-  <string name="NotificationBarManager__incoming_signal_call">Eingehender Signal-Anruf</string>
+  <string name="NotificationBarManager_missed_signal_call">Entgangener Cable-Anruf</string>
+  <string name="NotificationBarManager__establishing_signal_call">Cable-Anruf wird hergestellt</string>
+  <string name="NotificationBarManager__incoming_signal_call">Eingehender Cable-Anruf</string>
   <string name="NotificationBarManager__deny_call">Anruf ablehnen</string>
   <string name="NotificationBarManager__answer_call">Anruf annehmen</string>
   <string name="NotificationBarManager__end_call">Anruf beenden</string>
@@ -381,15 +381,15 @@ Das Wiederherstellen einer verschlüsselten Datensicherung ersetzt deine bestehe
   <string name="DeviceProvisioningActivity_content_progress_key_error">Ungültiger QR-Code.</string>
   <string name="DeviceProvisioningActivity_sorry_you_have_too_many_devices_linked_already">Es sind bereits zu viele Geräte verknüpft. Versuche, mindestens eines zu entfernen.</string>
   <string name="DeviceActivity_sorry_this_is_not_a_valid_device_link_qr_code">Dies ist leider kein gültiger QR-Code zur Geräteverknüpfung.</string>
-  <string name="DeviceProvisioningActivity_link_a_signal_device">Signal-Gerät verknüpfen?</string>
-  <string name="DeviceProvisioningActivity_it_looks_like_youre_trying_to_link_a_signal_device_using_a_3rd_party_scanner">Du versuchst offenbar, ein Signal-Gerät mithilfe einer Scanner-App eines Drittanbieters zu verknüpfen. Scanne den QR-Code zu deinem Schutz noch einmal direkt aus Cable ein.</string>
+  <string name="DeviceProvisioningActivity_link_a_signal_device">Cable-Gerät verknüpfen?</string>
+  <string name="DeviceProvisioningActivity_it_looks_like_youre_trying_to_link_a_signal_device_using_a_3rd_party_scanner">Du versuchst offenbar, ein Cable-Gerät mithilfe einer Scanner-App eines Drittanbieters zu verknüpfen. Scanne den QR-Code zu deinem Schutz noch einmal direkt aus Cable ein.</string>
   <!--ExpirationDialog-->
   <string name="ExpirationDialog_disappearing_messages">Verschwindende Nachrichten</string>
   <string name="ExpirationDialog_your_messages_will_not_expire">Deine Nachrichten werden nicht verfallen.</string>
   <string name="ExpirationDialog_your_messages_will_disappear_s_after_they_have_been_seen">In dieser Unterhaltung gesendete und empfangene Nachrichten werden %s nach dem Lesen verschwinden.</string>
   <!--PassphrasePromptActivity-->
   <string name="PassphrasePromptActivity_enter_passphrase">Passwort eingeben</string>
-  <string name="PassphrasePromptActivity_watermark_content_description">Signal-Symbol</string>
+  <string name="PassphrasePromptActivity_watermark_content_description">Cable-Symbol</string>
   <string name="PassphrasePromptActivity_ok_button_content_description">Passwort übermitteln</string>
   <string name="PassphrasePromptActivity_invalid_passphrase_exclamation">Passwort ungültig!</string>
   <!--PlayServicesProblemFragment-->
@@ -472,12 +472,12 @@ Bitte kontrolliere noch einmal deine Rufnummer. Diese wird anschließend durch e
   <string name="RegistrationProgressActivity_too_many_requests">Zu viele Anfragen!</string>
   <string name="RegistrationProgressActivity_youve_already_requested_a_voice_call">Du hast vor Kurzem schon einen Anruf angefordert. Du kannst in 20 Minuten einen weiteren anfordern.</string>
   <string name="RegistrationProgressActivity_registration_conflict">Konflikt bei der Registrierung</string>
-  <string name="RegistrationProgressActivity_this_number_is_already_registered_on_a_different">Diese Rufnummer wurde bereits bei einem anderen Signal-Server (CyanogenMod?) registriert. Du musst zuerst deine Registrierung dort löschen, bevor du dich hier registrieren kannst.</string>
+  <string name="RegistrationProgressActivity_this_number_is_already_registered_on_a_different">Diese Rufnummer wurde bereits bei einem anderen Cable-Server (CyanogenMod?) registriert. Du musst zuerst deine Registrierung dort löschen, bevor du dich hier registrieren kannst.</string>
   <!--RegistrationService-->
   <string name="RegistrationService_registration_complete">Registrierung abgeschlossen</string>
-  <string name="RegistrationService_signal_registration_has_successfully_completed">Signal-Registrierung erfolgreich abgeschlossen.</string>
+  <string name="RegistrationService_signal_registration_has_successfully_completed">Cable-Registrierung erfolgreich abgeschlossen.</string>
   <string name="RegistrationService_registration_error">Fehler bei der Registrierung</string>
-  <string name="RegistrationService_signal_registration_has_encountered_a_problem">Bei der Signal-Registrierung ist ein Problem aufgetreten.</string>
+  <string name="RegistrationService_signal_registration_has_encountered_a_problem">Bei der Cable-Registrierung ist ein Problem aufgetreten.</string>
   <!--Slide-->
   <string name="Slide_image">Bild</string>
   <string name="Slide_audio">Audio</string>
@@ -502,14 +502,14 @@ Schlüsselaustausch-Nachricht für eine ungültige Protokollversion empfangen.</
   <string name="ThreadRecord_disappearing_message_time_updated_to_s">Zeit für verschwindende Nachrichten auf %s festgelegt</string>
   <string name="ThreadRecord_your_safety_number_with_s_has_changed">Deine Sicherheitsnummer mit %s hat sich geändert</string>
   <!--UpdateApkReadyListener-->
-  <string name="UpdateApkReadyListener_Signal_update">Signal-Aktualisierung</string>
+  <string name="UpdateApkReadyListener_Signal_update">Cable-Aktualisierung</string>
   <string name="UpdateApkReadyListener_a_new_version_of_signal_is_available_tap_to_update">Eine neue Version von Cable ist verfügbar. Zum Aktualisieren antippen.</string>
   <!--VerifyIdentityActivity-->
   <string name="VerifyIdentityActivity_your_contact_is_running_an_old_version_of_signal">Dein Kontakt verwendet eine alte Version von Cable. Bitte ihn Cable zu aktualisieren, bevor ihr eure Sicherheitsnummer überprüft.</string>
   <string name="VerifyIdentityActivity_your_contact_is_running_a_newer_version_of_Signal">Dein Kontakt verwendet eine neuere Version von Cable mit einem inkompatiblen QR-Code-Format. Zum Vergleichen bitte aktualisieren.</string>
   <string name="VerifyIdentityActivity_the_scanned_qr_code_is_not_a_correctly_formatted_safety_number">Der eingescannte QR-Code ist kein korrekt formatierter Überprüfungscode einer Sicherheitsnummer. Bitte versuche es erneut.</string>
   <string name="VerifyIdentityActivity_share_safety_number_via">Sicherheitsnummer teilen über …</string>
-  <string name="VerifyIdentityActivity_our_signal_safety_number">Unsere Signal-Sicherheitsnummer:</string>
+  <string name="VerifyIdentityActivity_our_signal_safety_number">Unsere Cable-Sicherheitsnummer:</string>
   <string name="VerifyIdentityActivity_no_app_to_share_to">Anscheinend hast du keine zum Teilen geeigneten Apps installiert.</string>
   <string name="VerifyIdentityActivity_no_safety_number_to_compare_was_found_in_the_clipboard">Keine zu vergleichende Sicherheitsnummer in der Zwischenablage gefunden</string>
   <!--KeyExchangeInitiator-->
@@ -621,7 +621,7 @@ Schlüsselaustausch-Nachricht für eine ungültige Protokollversion empfangen.</
   <!--conversation_title_view-->
   <string name="conversation_title_view__conversation_muted">Unterhaltung stummgeschaltet</string>
   <!--conversation_activity-->
-  <string name="conversation_activity__type_message_push">Signal-Nachricht senden</string>
+  <string name="conversation_activity__type_message_push">Cable-Nachricht senden</string>
   <string name="conversation_activity__type_message_sms_insecure">Unsichere SMS senden</string>
   <string name="conversation_activity__type_message_mms_insecure">Unsichere MMS senden</string>
   <string name="conversation_activity__from_sim_name">Von %1$s</string>
@@ -722,7 +722,7 @@ Schlüsselaustausch-Nachricht für eine ungültige Protokollversion empfangen.</
   <string name="import_fragment__import_system_sms_database">System-SMS-Datenbank importieren</string>
   <string name="import_fragment__import_the_database_from_the_default_system">Datenbank aus der Standard-SMS-App importieren</string>
   <string name="import_fragment__restore_encrypted_backup">Verschlüsselte Sicherung wiederherstellen</string>
-  <string name="import_fragment__restore_a_previously_exported_encrypted_signal_backup">Eine zuvor exportierte, verschlüsselte Signal-Datensicherung wiederherstellen</string>
+  <string name="import_fragment__restore_a_previously_exported_encrypted_signal_backup">Eine zuvor exportierte, verschlüsselte Cable-Datensicherung wiederherstellen</string>
   <string name="import_fragment__import_plaintext_backup">Klartextsicherung importieren</string>
   <string name="import_fragment__import_a_plaintext_backup_file">Eine mit »SMS Backup &amp; Restore« kompatible Klartextsicherung importieren</string>
   <!--load_more_header-->
@@ -756,11 +756,11 @@ Schlüsselaustausch-Nachricht für eine ungültige Protokollversion empfangen.</
   <string name="recipient_preferences__color_for_this_contact">Farbe für diesen Kontakt</string>
   <string name="recipient_preferences__verify_safety_number">Sicherheitsnummer überprüfen</string>
   <!--- redphone_call_controls-->
-  <string name="redphone_call_card__signal_call">Signal-Anruf</string>
+  <string name="redphone_call_card__signal_call">Cable-Anruf</string>
   <string name="redphone_call_controls__end_call">Anruf beenden</string>
   <string name="redphone_call_controls__audio">Audio</string>
   <string name="redphone_call_controls__mute">Stummschalten</string>
-  <string name="redphone_call_controls__signal_call">Signal-Anruf</string>
+  <string name="redphone_call_controls__signal_call">Cable-Anruf</string>
   <!--registration_activity-->
   <string name="registration_activity__verify_your_number_to_connect_with_signal">
 Überprüfe deine Rufnummer zur Registrierung bei Cable.</string>
@@ -789,13 +789,13 @@ Cable kann dich zum Überprüfen deiner Rufnummer auch anrufen. Tippe auf »Anru
   <string name="registration_progress_activity__call_me">Mich anrufen</string>
   <string name="registration_progress_activity__edit_number">Rufnummer bearbeiten</string>
   <string name="registration_progress_activity__connectivity_error">Verbindungsfehler.</string>
-  <string name="registration_progress_activity__signal_was_unable_to_connect_to_the_server">Verbindung mit Signal-Server konnte nicht hergestellt werden.</string>
+  <string name="registration_progress_activity__signal_was_unable_to_connect_to_the_server">Verbindung mit Cable-Server konnte nicht hergestellt werden.</string>
   <string name="registration_progress_activity__some_possible_problems_include">Einige der möglichen Probleme beinhalten:</string>
   <string name="registration_progress_activity__no_network_connectivity">Keine Netzwerkverbindung.</string>
-  <string name="registration_progress_activity__your_device_needs_network_connectivity">Um diese Signal-Funktion nutzen zu können, benötigt dein Gerät eine Netzverbindung. Stelle sicher, dass eine mobile Daten- oder WLAN-Verbindung besteht.</string>
+  <string name="registration_progress_activity__your_device_needs_network_connectivity">Um diese Cable-Funktion nutzen zu können, benötigt dein Gerät eine Netzverbindung. Stelle sicher, dass eine mobile Daten- oder WLAN-Verbindung besteht.</string>
   <string name="registration_progress_activity__restrictive_firewall">Restriktive Firewall.</string>
   <string name="registration_progress_activity__if_you_are_connected_via_wifi_its_possible_that_there_is_a_firewall">
-Bei Verbindung über WLAN blockiert möglicherweise eine Firewall den Zugang zum Signal-Server. Versuche ein anderes Netzwerk oder die mobile Datenverbindung.</string>
+Bei Verbindung über WLAN blockiert möglicherweise eine Firewall den Zugang zum Cable-Server. Versuche ein anderes Netzwerk oder die mobile Datenverbindung.</string>
   <string name="registration_progress_activity__signal_will_now_automatically_verify_your_number_with_a_confirmation_sms_message">
 Cable wird deine Rufnummer nun automatisch mit einer SMS überprüfen.</string>
   <string name="registration_progress_activity__connecting">Verbindung wird hergestellt …</string>
@@ -891,7 +891,7 @@ Das Warten auf eine Bestätigungs-SMS hat zu lange gedauert.</string>
   <string name="preferences__notifications">Benachrichtigungen</string>
   <string name="preferences__enable_message_notifications">Benachrichtigungen über Nachrichtenempfang aktivieren</string>
   <string name="preferences__new_contacts_notifications">Über neue Kontakte benachrichtigen</string>
-  <string name="preferences__show_a_notification_for_new_signal_contacts">Benachrichtigungen über neue Signal-Kontakte anzeigen</string>
+  <string name="preferences__show_a_notification_for_new_signal_contacts">Benachrichtigungen über neue Cable-Kontakte anzeigen</string>
   <string name="preferences__led_color">LED-Farbe</string>
   <string name="preferences__led_color_unknown">Unbekannt</string>
   <string name="preferences__pref_led_blink_title">LED-Blinkmuster</string>
@@ -953,8 +953,8 @@ Das Warten auf eine Bestätigungs-SMS hat zu lange gedauert.</string>
   <string name="preferences__theme">Design</string>
   <string name="preferences__default">Standard</string>
   <string name="preferences__language">Sprache</string>
-  <string name="preferences__signal_messages_and_calls">Signal-Nachrichten und -Anrufe</string>
-  <string name="preferences__free_private_messages_and_calls">Kostenlos und verschlüsselt mit Signal-Nutzern Nachrichten austauschen und telefonieren</string>
+  <string name="preferences__signal_messages_and_calls">Cable-Nachrichten und -Anrufe</string>
+  <string name="preferences__free_private_messages_and_calls">Kostenlos und verschlüsselt mit Cable-Nutzern Nachrichten austauschen und telefonieren</string>
   <string name="preferences__submit_debug_log">Diagnoseprotokoll übermitteln</string>
   <string name="preferences__support_wifi_calling">Kompatibilität WLAN-Telefonie</string>
   <string name="preferences__enable_if_your_device_supports_sms_mms_delivery_over_wifi">Aktivieren, falls das Gerät SMS/MMS über WLAN nutzt (nur bei aktivierter WLAN-Telefonie)</string>
@@ -971,7 +971,7 @@ Das Warten auf eine Bestätigungs-SMS hat zu lange gedauert.</string>
   <string name="preferences_advanced__disable_signal_built_in_emoji_support">Integrierte Emojis deaktivieren und stattdessen System-Emojis verwenden</string>
   <string name="preferences_advanced__video_calling_beta">Videoanrufe beta</string>
   <string name="preferences_advanced__enable_support_for_next_generation_video_and_voice_calls">Unterstützung für Video- und Sprachanrufe der nächsten Generation, falls bei beiden Beteiligten aktiviert. Diese Funktion befindet sich im Beta-Test.</string>
-  <string name="preferences_advanced__relay_all_calls_through_the_signal_server_to_avoid_revealing_your_ip_address">Alle Anrufe über den Signal-Server leiten, um die eigene IP-Adresse gegenüber Kontakten nicht offenzulegen. Bei Aktivierung wird sich die Anrufqualität verringern.</string>
+  <string name="preferences_advanced__relay_all_calls_through_the_signal_server_to_avoid_revealing_your_ip_address">Alle Anrufe über den Cable-Server leiten, um die eigene IP-Adresse gegenüber Kontakten nicht offenzulegen. Bei Aktivierung wird sich die Anrufqualität verringern.</string>
   <string name="preferences_advanced__always_relay_calls">Anrufe immer indirekt</string>
   <!--****************************************-->
   <!--menus-->
@@ -989,7 +989,7 @@ Das Warten auf eine Bestätigungs-SMS hat zu lange gedauert.</string>
   <!--conversation_callable_insecure-->
   <string name="conversation_callable_insecure__menu_call">Anruf</string>
   <!--conversation_callable_secure-->
-  <string name="conversation_callable_secure__menu_call">Signal-Anruf</string>
+  <string name="conversation_callable_secure__menu_call">Cable-Anruf</string>
   <!--conversation_context-->
   <string name="conversation_context__menu_message_details">Nachrichtendetails</string>
   <string name="conversation_context__menu_copy_text">Text kopieren</string>
@@ -1072,7 +1072,7 @@ Das Warten auf eine Bestätigungs-SMS hat zu lange gedauert.</string>
   <string name="reminder_header_sms_import_title">System-SMS importieren</string>
   <string name="reminder_header_sms_import_text">Antippen, um auf deinem Telefon gespeicherte SMS-Nachrichten in die verschlüsselte Datenbank von Cable zu importieren.</string>
   <string name="reminder_header_sms_import_button">IMPORTIEREN</string>
-  <string name="reminder_header_push_title">Signal-Nachrichten und -Anrufe aktivieren</string>
+  <string name="reminder_header_push_title">Cable-Nachrichten und -Anrufe aktivieren</string>
   <string name="reminder_header_push_text">Verbessere dein Kommunikationserlebnis.</string>
   <string name="reminder_header_push_button">AKTIVIEREN</string>
   <string name="reminder_header_invite_title">Zu Cable einladen</string>

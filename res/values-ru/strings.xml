@@ -292,8 +292,8 @@
   <string name="GroupCreateActivity_actionbar_edit_title">Редактировать группу</string>
   <string name="GroupCreateActivity_group_name_hint">Название группы</string>
   <string name="GroupCreateActivity_actionbar_mms_title">Новая MMS-группа</string>
-  <string name="GroupCreateActivity_contacts_dont_support_push">Выбранный контакт не поддерживает Signal-группы, поэтому эта группа будет преобразована в MMS.</string>
-  <string name="GroupCreateActivity_youre_not_registered_for_signal">Вы не зарегистрированы для передачи сообщений и звонков через Cable, поэтому Signal-группы отключены. Пожалуйста, зарегистрируйтесь через меню Настройки &gt; Расширенные.</string>
+  <string name="GroupCreateActivity_contacts_dont_support_push">Выбранный контакт не поддерживает Cable-группы, поэтому эта группа будет преобразована в MMS.</string>
+  <string name="GroupCreateActivity_youre_not_registered_for_signal">Вы не зарегистрированы для передачи сообщений и звонков через Cable, поэтому Cable-группы отключены. Пожалуйста, зарегистрируйтесь через меню Настройки &gt; Расширенные.</string>
   <string name="GroupCreateActivity_contacts_mms_exception">Непредвиденная ошибка не позволила создать группу.</string>
   <string name="GroupCreateActivity_contacts_no_members">Нужен как минимум один участник в группе!</string>
   <string name="GroupCreateActivity_contacts_invalid_number">Один из участников имеет неправильный номер. Пожалуйста, исправьте или удалите этот контакт и попробуйте снова.</string>

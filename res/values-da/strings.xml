@@ -84,7 +84,7 @@
   <string name="ConversationItem_click_to_approve_unencrypted">Tryk for at godkende ukrypteret besked</string>
   <string name="ConversationItem_click_to_approve_unencrypted_sms_dialog_title">Godkend ukrypteret SMS?</string>
   <string name="ConversationItem_click_to_approve_unencrypted_mms_dialog_title">Godkend ukrypteret MMS?</string>
-  <string name="ConversationItem_click_to_approve_unencrypted_dialog_message">Denne besked vil <b>ikke</b> blive krypteret, da modtageren ikke længere er Signal-bruger.\n\nSend ukrypteret besked?</string>
+  <string name="ConversationItem_click_to_approve_unencrypted_dialog_message">Denne besked vil <b>ikke</b> blive krypteret, da modtageren ikke længere er Cable-bruger.\n\nSend ukrypteret besked?</string>
   <string name="ConversationItem_unable_to_open_media">Kan ikke finde en app, der kan åbne denne fil.</string>
   <string name="ConversationItem_from_s">fra %s</string>
   <string name="ConversationItem_to_s">til %s</string>
@@ -241,7 +241,7 @@
   <!--ExportFragment-->
   <string name="ExportFragment_export">Eksportér</string>
   <string name="ExportFragment_export_plaintext_to_storage">Eksportér klartekst til hukommelsen?</string>
-  <string name="ExportFragment_warning_this_will_export_the_plaintext_contents">Advarsel. Dette vil eksportere tekstindholdet af dine Signal-beskeder til hukommelsen.</string>
+  <string name="ExportFragment_warning_this_will_export_the_plaintext_contents">Advarsel. Dette vil eksportere tekstindholdet af dine Cable-beskeder til hukommelsen.</string>
   <string name="ExportFragment_cancel">Afbryd</string>
   <string name="ExportFragment_exporting">Eksporterer</string>
   <string name="ExportFragment_exporting_plaintext_to_storage">Eksporterer klartekst til hukommelsen...</string>
@@ -249,7 +249,7 @@
   <string name="ExportFragment_error_while_writing_to_storage">Fejl under gemning i hukommelsen.</string>
   <string name="ExportFragment_export_successful">Eksport gennemført.</string>
   <!--GcmRefreshJob-->
-  <string name="GcmRefreshJob_Permanent_Signal_communication_failure">Permanent fejl i Signal-kommunikationen!</string>
+  <string name="GcmRefreshJob_Permanent_Signal_communication_failure">Permanent fejl i Cable-kommunikationen!</string>
   <string name="GcmRefreshJob_Signal_was_unable_to_register_with_Google_Play_Services">Cable var ude af stand til at registrere med Google Play Services. Cable beskeder og opkald blev deaktiveret, prøv venligst at registrere igen i Indstillinger &gt; Advanceret.</string>
   <!--GiphyActivity-->
   <string name="GiphyActivity_error_while_retrieving_full_resolution_gif">Der skete en fejl i, mens vi hentede GIF i fuld opløsning.</string>
@@ -261,7 +261,7 @@
   <string name="GroupCreateActivity_actionbar_edit_title">Rediger gruppe</string>
   <string name="GroupCreateActivity_group_name_hint">Gruppenavn</string>
   <string name="GroupCreateActivity_actionbar_mms_title">Ny MMS-gruppe</string>
-  <string name="GroupCreateActivity_contacts_dont_support_push">Du har valgt en person der ikke understøtter Signal-grupper. Denne gruppe vil være en MMS-gruppe.</string>
+  <string name="GroupCreateActivity_contacts_dont_support_push">Du har valgt en person der ikke understøtter Cable-grupper. Denne gruppe vil være en MMS-gruppe.</string>
   <string name="GroupCreateActivity_youre_not_registered_for_signal">Du er ikke sat op til Cable beskeder og opkald, så Cable grupper er deaktiveret. Du bedes registrere dig under Indstillinger &gt; Advanceret.</string>
   <string name="GroupCreateActivity_contacts_mms_exception">En ukendt fejl har medført, at oprettelse af gruppen mislykkedes.</string>
   <string name="GroupCreateActivity_contacts_no_members">Der skal være mindst én person i gruppen!</string>
@@ -270,7 +270,7 @@
   <string name="GroupCreateActivity_menu_apply_button">Anvend</string>
   <string name="GroupCreateActivity_creating_group">Opretter %1$s...</string>
   <string name="GroupCreateActivity_updating_group">Opdaterer %1$s...</string>
-  <string name="GroupCreateActivity_cannot_add_non_push_to_existing_group">Kunne ikke tilføje, da %1$s ikke er en Signal-bruger.</string>
+  <string name="GroupCreateActivity_cannot_add_non_push_to_existing_group">Kunne ikke tilføje, da %1$s ikke er en Cable-bruger.</string>
   <string name="GroupCreateActivity_loading_group_details">Indlæser gruppedetaljer...</string>
   <string name="GroupCreateActivity_youre_already_in_the_group">Du er allerede i gruppen.</string>
   <!--GroupMembersDialog-->
@@ -383,14 +383,14 @@ vil det resultere i dupletter.</string>
   <string name="DeviceProvisioningActivity_sorry_you_have_too_many_devices_linked_already">Ups. Du har allerede for mange enheder tilsluttet, prøv at fjerne én</string>
   <string name="DeviceActivity_sorry_this_is_not_a_valid_device_link_qr_code">Beklager. Dette er ikke en gyldig QR-kode til at forbinde enheder.</string>
   <string name="DeviceProvisioningActivity_link_a_signal_device">Forbind en Cable enhed?</string>
-  <string name="DeviceProvisioningActivity_it_looks_like_youre_trying_to_link_a_signal_device_using_a_3rd_party_scanner">Det ser ud som om du forsøger at forbinde en Signal-enhed vha. en tredjeparts-skanner. Af hensyn til sikkerhed, bør du skanne koden igen fra selve Signal-appen.</string>
+  <string name="DeviceProvisioningActivity_it_looks_like_youre_trying_to_link_a_signal_device_using_a_3rd_party_scanner">Det ser ud som om du forsøger at forbinde en Cable-enhed vha. en tredjeparts-skanner. Af hensyn til sikkerhed, bør du skanne koden igen fra selve Cable-appen.</string>
   <!--ExpirationDialog-->
   <string name="ExpirationDialog_disappearing_messages">Beskeder der forsvinder</string>
   <string name="ExpirationDialog_your_messages_will_not_expire">Din besked udløber ikke </string>
   <string name="ExpirationDialog_your_messages_will_disappear_s_after_they_have_been_seen">Beskeder sendt eller modtaget i denne samtale, vil forsvinde %s, efter at de er læst</string>
   <!--PassphrasePromptActivity-->
   <string name="PassphrasePromptActivity_enter_passphrase">Indtast kodeord</string>
-  <string name="PassphrasePromptActivity_watermark_content_description">Signal-ikon</string>
+  <string name="PassphrasePromptActivity_watermark_content_description">Cable-ikon</string>
   <string name="PassphrasePromptActivity_ok_button_content_description">Godkend kodeord</string>
   <string name="PassphrasePromptActivity_invalid_passphrase_exclamation">Ugyldigt kodeord!</string>
   <!--PlayServicesProblemFragment-->
@@ -480,12 +480,12 @@ Dobbelttjek, at dette er dit nummer! Vi er ved at verificere det med en SMS.
   <string name="RegistrationProgressActivity_too_many_requests">For mange anmodninger!</string>
   <string name="RegistrationProgressActivity_youve_already_requested_a_voice_call">Du har allerede anmodet om et opkald. Du kan anmode om et nyt om 20 minutter.</string>
   <string name="RegistrationProgressActivity_registration_conflict">Registreringskonflikt</string>
-  <string name="RegistrationProgressActivity_this_number_is_already_registered_on_a_different">Dette telefonnummer er allerede registreret på en anden Signal-server (CyanogenMod?). Du er nødt til at afregistrere der, før du kan registrere her.</string>
+  <string name="RegistrationProgressActivity_this_number_is_already_registered_on_a_different">Dette telefonnummer er allerede registreret på en anden Cable-server (CyanogenMod?). Du er nødt til at afregistrere der, før du kan registrere her.</string>
   <!--RegistrationService-->
   <string name="RegistrationService_registration_complete">Registrering fuldført</string>
-  <string name="RegistrationService_signal_registration_has_successfully_completed">Signal-registrering lykkedes.</string>
+  <string name="RegistrationService_signal_registration_has_successfully_completed">Cable-registrering lykkedes.</string>
   <string name="RegistrationService_registration_error">Registreringsfejl</string>
-  <string name="RegistrationService_signal_registration_has_encountered_a_problem">Der opstod en fejl under Signal-registrering.</string>
+  <string name="RegistrationService_signal_registration_has_encountered_a_problem">Der opstod en fejl under Cable-registrering.</string>
   <!--Slide-->
   <string name="Slide_image">Billede</string>
   <string name="Slide_audio">Lyd</string>
@@ -731,7 +731,7 @@ Modtog en nøgle-besked for en ugyldig protokol-version.
   <string name="import_fragment__import_system_sms_database">Importér enhedens SMS database</string>
   <string name="import_fragment__import_the_database_from_the_default_system">Importér databasen fra systemets standard SMS-app.</string>
   <string name="import_fragment__restore_encrypted_backup">Gendan krypteret backup</string>
-  <string name="import_fragment__restore_a_previously_exported_encrypted_signal_backup">Gendan en krypteret Signal-backup, som blev eksporteret tidligere.</string>
+  <string name="import_fragment__restore_a_previously_exported_encrypted_signal_backup">Gendan en krypteret Cable-backup, som blev eksporteret tidligere.</string>
   <string name="import_fragment__import_plaintext_backup">Importér klartekst-backup</string>
   <string name="import_fragment__import_a_plaintext_backup_file">Importér en klartekst-backupfil. Kompatibel med \'SMS Backup og Gendan\'.</string>
   <!--load_more_header-->
@@ -802,7 +802,7 @@ Cable kan også ringe til dig og verificere dit telefonnummer. Tryk på \'Ring t
   <string name="registration_progress_activity__signal_was_unable_to_connect_to_the_server">Cable var ikke i stand til at forbinde til serveren.</string>
   <string name="registration_progress_activity__some_possible_problems_include">Mulige problemer:</string>
   <string name="registration_progress_activity__no_network_connectivity">Ingen netværksforbindelse.</string>
-  <string name="registration_progress_activity__your_device_needs_network_connectivity">Din enhed skal have netværksforbindelse for at bruge denne Signal-funktion. Tjek om der er forbindelse til mobildata eller Wi-Fi.</string>
+  <string name="registration_progress_activity__your_device_needs_network_connectivity">Din enhed skal have netværksforbindelse for at bruge denne Cable-funktion. Tjek om der er forbindelse til mobildata eller Wi-Fi.</string>
   <string name="registration_progress_activity__restrictive_firewall">Restriktiv firewall.</string>
   <string name="registration_progress_activity__if_you_are_connected_via_wifi_its_possible_that_there_is_a_firewall">
 Hvis du er tilsluttet Internet via et trådløst netværk, er det muligt, at en firewall blokerer adgangen til Signals server. Prøv et andet trådløst netværk eller brug mobildata.</string>
@@ -902,7 +902,7 @@ mislykkedes.</string>
   <string name="preferences__notifications">Notifikationer</string>
   <string name="preferences__enable_message_notifications">Aktivér beskednotifikationer</string>
   <string name="preferences__new_contacts_notifications">Notifikationer om nye kontakter</string>
-  <string name="preferences__show_a_notification_for_new_signal_contacts">Vis notifikationer om nye Signal-kontakter</string>
+  <string name="preferences__show_a_notification_for_new_signal_contacts">Vis notifikationer om nye Cable-kontakter</string>
   <string name="preferences__led_color">LED-farve</string>
   <string name="preferences__led_color_unknown">Ukendt</string>
   <string name="preferences__pref_led_blink_title">LED-blinkemønster</string>
@@ -965,7 +965,7 @@ mislykkedes.</string>
   <string name="preferences__default">Standard</string>
   <string name="preferences__language">Sprog</string>
   <string name="preferences__signal_messages_and_calls">Signalbeskeder og -opkald</string>
-  <string name="preferences__free_private_messages_and_calls">Gratis private beskeder og opkald til Signal-brugere</string>
+  <string name="preferences__free_private_messages_and_calls">Gratis private beskeder og opkald til Cable-brugere</string>
   <string name="preferences__submit_debug_log">Indsend fejlfindingslog</string>
   <string name="preferences__support_wifi_calling">Kompatibilitetstilstand for WiFi-opkald</string>
   <string name="preferences__enable_if_your_device_supports_sms_mms_delivery_over_wifi">Aktivér hvis din enhed sender SMS/MMS via WiFI (aktivér kun, hvis WiFI-opkald er aktiveret på din enhed)</string>
@@ -982,7 +982,7 @@ mislykkedes.</string>
   <string name="preferences_advanced__disable_signal_built_in_emoji_support">Deaktivér Signals indbyggede emoji-understøttelse</string>
   <string name="preferences_advanced__video_calling_beta">Videokald beta</string>
   <string name="preferences_advanced__enable_support_for_next_generation_video_and_voice_calls">Understøttelse for forbedrede video- og stemmeopkald hvis aktiveret af begge parter. Denne funktionalitet er i beta.</string>
-  <string name="preferences_advanced__relay_all_calls_through_the_signal_server_to_avoid_revealing_your_ip_address">Videresend alle opkald gennem Signal-serveren for at undgå at afsløre din IP-adresse for din kontakt. Dette vil give en dårligere signalkvalitet.</string>
+  <string name="preferences_advanced__relay_all_calls_through_the_signal_server_to_avoid_revealing_your_ip_address">Videresend alle opkald gennem Cable-serveren for at undgå at afsløre din IP-adresse for din kontakt. Dette vil give en dårligere signalkvalitet.</string>
   <string name="preferences_advanced__always_relay_calls">Videresend altid opkald</string>
   <!--****************************************-->
   <!--menus-->

@@ -21,12 +21,12 @@
   </plurals>
   <string name="ApplicationPreferencesActivity_delete">Fshije</string>
   <string name="ApplicationPreferencesActivity_disable_passphrase">Shkyç fjalëkalimin?</string>
-  <string name="ApplicationPreferencesActivity_this_will_permanently_unlock_signal_and_message_notifications">Kjo do të hap përherë Signal-in dhe njoftimet e porosive.</string>
+  <string name="ApplicationPreferencesActivity_this_will_permanently_unlock_signal_and_message_notifications">Kjo do të hap përherë Cable-in dhe njoftimet e porosive.</string>
   <string name="ApplicationPreferencesActivity_disable">Çaktivizo</string>
   <string name="ApplicationPreferencesActivity_unregistering">Duke u çregjistruar</string>
-  <string name="ApplicationPreferencesActivity_unregistering_from_signal_messages_and_calls">Duke u çregjistruar nga mesazhet dhe thirrjet përmes Signal-it...</string>
-  <string name="ApplicationPreferencesActivity_disable_signal_messages_and_calls">Çaktivizo mesazhet dhe thirrjet përmes Signal-it?</string>
-  <string name="ApplicationPreferencesActivity_disable_signal_messages_and_calls_by_unregistering">Çaktivizo mesazhet dhe thirrjet përmes Signal-it duke u çregjistruar nga serveri. Për t\'i perdorur ato serish në të ardhmen, do të ju nevojitet që ta ri-regjistroni numrin tuaj të telefonit.</string>
+  <string name="ApplicationPreferencesActivity_unregistering_from_signal_messages_and_calls">Duke u çregjistruar nga mesazhet dhe thirrjet përmes Cable-it...</string>
+  <string name="ApplicationPreferencesActivity_disable_signal_messages_and_calls">Çaktivizo mesazhet dhe thirrjet përmes Cable-it?</string>
+  <string name="ApplicationPreferencesActivity_disable_signal_messages_and_calls_by_unregistering">Çaktivizo mesazhet dhe thirrjet përmes Cable-it duke u çregjistruar nga serveri. Për t\'i perdorur ato serish në të ardhmen, do të ju nevojitet që ta ri-regjistroni numrin tuaj të telefonit.</string>
   <string name="ApplicationPreferencesActivity_error_connecting_to_server">Gabim dukë lidhur me serverin!</string>
   <string name="ApplicationPreferencesActivity_sms_enabled">SMS është aktivizuar</string>
   <string name="ApplicationPreferencesActivity_touch_to_change_your_default_sms_app">Prek për të ndryshuar aplikacionin e parazgjedhur për SMS</string>
@@ -251,7 +251,7 @@
   <string name="GroupCreateActivity_avatar_content_description">Avatari i grupit</string>
   <string name="GroupCreateActivity_creating_group">Po krijohet %1$s…</string>
   <string name="GroupCreateActivity_updating_group">Po freskohet %1$s...</string>
-  <string name="GroupCreateActivity_cannot_add_non_push_to_existing_group"> %1$s nuk mundi të shtohet sepse nuk është përdorues i Signal-it.</string>
+  <string name="GroupCreateActivity_cannot_add_non_push_to_existing_group"> %1$s nuk mundi të shtohet sepse nuk është përdorues i Cable-it.</string>
   <string name="GroupCreateActivity_loading_group_details">Po ngarkohen detajet e grupit...</string>
   <string name="GroupCreateActivity_youre_already_in_the_group">Veç jeni në grup.</string>
   <!--GroupMembersDialog-->
@@ -273,7 +273,7 @@ i sërishëm do të rezultojë në mesazhe duplikate.</string>
   <string name="ImportFragment_restoring_an_encrypted_backup_will_completely_replace_your_existing_keys">
 Restaurimi i rezervës të enkriptuar do të zëvendësoje plotësisht çelsat, preferencat dhe
 mesazhet tuaja. Do të humbni çdo informatë nga instalimi
-aktual i Signal-it
+aktual i Cable-it
 por jo ato që i keni në rezervë.</string>
   <string name="ImportFragment_restore">Kthe</string>
   <string name="ImportFragment_import_plaintext_backup">Kthe kopjen rezervë tekstuale?</string>
@@ -314,7 +314,7 @@ importimi i sërishëm do të rezultojë ne mesazhe duplikate.</string>
   <!--KeyScanningActivity-->
   <string name="KeyScanningActivity_no_scanned_key_found_exclamation">Nuk u gjetë qelësi i skanerit!</string>
   <string name="KeyScanningActivity_install_barcode_Scanner">Instalo Barcode Scanner?</string>
-  <string name="KeyScanningActivity_this_application_requires_barcode_scanner_would_you_like_to_install_it">Signal-it i duhet Barcode Scanner për kodet QR.</string>
+  <string name="KeyScanningActivity_this_application_requires_barcode_scanner_would_you_like_to_install_it">Cable-it i duhet Barcode Scanner për kodet QR.</string>
   <!--MessageDetailsRecipient-->
   <string name="MessageDetailsRecipient_failed_to_send">Dështoj dërgimi</string>
   <string name="MessageDetailsRecipient_new_safety_number">Numër sigurie i ri</string>
@@ -335,7 +335,7 @@ importimi i sërishëm do të rezultojë ne mesazhe duplikate.</string>
   <!--NotificationMmsMessageRecord-->
   <string name="NotificationMmsMessageRecord_multimedia_message">Mesazh multimedial</string>
   <!--MessageRecord-->
-  <string name="MessageRecord_message_encrypted_with_a_legacy_protocol_version_that_is_no_longer_supported">Keni pranuar mesazh që është enkriptuar me verzion të vjetër të Signal-it që nuk mirëmbahet më. Ju lutemi që të lusni dërguesin që të instalojë verzionin e ri dhe ta ridërgojë mesazhin.</string>
+  <string name="MessageRecord_message_encrypted_with_a_legacy_protocol_version_that_is_no_longer_supported">Keni pranuar mesazh që është enkriptuar me verzion të vjetër të Cable-it që nuk mirëmbahet më. Ju lutemi që të lusni dërguesin që të instalojë verzionin e ri dhe ta ridërgojë mesazhin.</string>
   <string name="MessageRecord_left_group">Keni lënë grupin.</string>
   <string name="MessageRecord_updated_group">U freskua grupi.</string>
   <string name="MessageRecord_s_called_you">ju thirri %s</string>
@@ -366,14 +366,14 @@ importimi i sërishëm do të rezultojë ne mesazhe duplikate.</string>
   <string name="DeviceProvisioningActivity_content_progress_key_error">Kod QR i gabuar.</string>
   <string name="DeviceActivity_sorry_this_is_not_a_valid_device_link_qr_code">Kërkojmë falje, ky QR kod është i gabuar.</string>
   <string name="DeviceProvisioningActivity_link_a_signal_device">Lidh një pajisje Signal?</string>
-  <string name="DeviceProvisioningActivity_it_looks_like_youre_trying_to_link_a_signal_device_using_a_3rd_party_scanner">Duket sikur provoni të lidhni Cable paisje duke përdorur skaner të një pale të 3të. Si përmasë mbrojtëse, skanoni kodin sërish nga përbrenda Signal-it.</string>
+  <string name="DeviceProvisioningActivity_it_looks_like_youre_trying_to_link_a_signal_device_using_a_3rd_party_scanner">Duket sikur provoni të lidhni Cable paisje duke përdorur skaner të një pale të 3të. Si përmasë mbrojtëse, skanoni kodin sërish nga përbrenda Cable-it.</string>
   <!--ExpirationDialog-->
   <string name="ExpirationDialog_disappearing_messages">Mesazhet zhduken</string>
   <string name="ExpirationDialog_your_messages_will_not_expire">Mesazhet tuaja nuk do të skadojnë.</string>
   <string name="ExpirationDialog_your_messages_will_disappear_s_after_they_have_been_seen">Mesazhet e dërguara dhe të pranuara në këtë bisedë do të zhduken %s pasi se të jenë parë.</string>
   <!--PassphrasePromptActivity-->
   <string name="PassphrasePromptActivity_enter_passphrase">Fut fjalëkalimin</string>
-  <string name="PassphrasePromptActivity_watermark_content_description">Ikona e Signal-it</string>
+  <string name="PassphrasePromptActivity_watermark_content_description">Ikona e Cable-it</string>
   <string name="PassphrasePromptActivity_ok_button_content_description">Shkruaj fjalëkalimin</string>
   <string name="PassphrasePromptActivity_invalid_passphrase_exclamation">Fjalëkalimi i gabuar!</string>
   <!--PlayServicesProblemFragment-->
@@ -453,7 +453,7 @@ Kontrolloni/sigurohuni nëse ky është numri juaj! Do ta verifikojmë me një S
   <string name="RegistrationProgressActivity_too_many_requests">Përpjekje të tepruara!</string>
   <string name="RegistrationProgressActivity_youve_already_requested_a_voice_call">Veç më keni kërkuar një thirje. Mund të kërkoni një tjetër pas 20 minutash.</string>
   <string name="RegistrationProgressActivity_registration_conflict">Konflikt regjistrimi</string>
-  <string name="RegistrationProgressActivity_this_number_is_already_registered_on_a_different">Ky numër është veç më i regjistruar në një server tjetër të Signal-it (CyanogenMod?). Duhet të çregjistroheni nga ai server para se të regjistroheni këtu.</string>
+  <string name="RegistrationProgressActivity_this_number_is_already_registered_on_a_different">Ky numër është veç më i regjistruar në një server tjetër të Cable-it (CyanogenMod?). Duhet të çregjistroheni nga ai server para se të regjistroheni këtu.</string>
   <!--RegistrationService-->
   <string name="RegistrationService_registration_complete">U përfundua regjistrimi</string>
   <string name="RegistrationService_signal_registration_has_successfully_completed">Cable regjistrimi u kompletua me sukses.</string>
@@ -589,7 +589,7 @@ U pranua mesazh për shkembim çelsash për një verzion të protokolli jo valid
   <!--conversation_title_view-->
   <string name="conversation_title_view__conversation_muted">Biseda u hesht</string>
   <!--conversation_activity-->
-  <string name="conversation_activity__type_message_push">Dërgo porosi përmes Signal-it</string>
+  <string name="conversation_activity__type_message_push">Dërgo porosi përmes Cable-it</string>
   <string name="conversation_activity__type_message_sms_insecure">Dërgo SMS të pasigurt</string>
   <string name="conversation_activity__type_message_mms_insecure">Dërgo MMS të pasigurtë</string>
   <string name="conversation_activity__from_sim_name">Nga %1$s</string>
@@ -675,7 +675,7 @@ U pranua mesazh për shkembim çelsash për një verzion të protokolli jo valid
   <string name="log_submit_activity__posting_logs">Duke postuar logun në gist...</string>
   <string name="log_submit_activity__no_browser_installed">Nuk ka shfletues të instaluar</string>
   <!--database_migration_activity-->
-  <string name="database_migration_activity__would_you_like_to_import_your_existing_text_messages">A dëshironi ti importoni mesazhet tekstuale në bazen e enkriptuar të të dhënave të Signal-it?</string>
+  <string name="database_migration_activity__would_you_like_to_import_your_existing_text_messages">A dëshironi ti importoni mesazhet tekstuale në bazen e enkriptuar të të dhënave të Cable-it?</string>
   <string name="database_migration_activity__the_default_system_database_will_not_be_modified">Baza e të dhënave e parazgjedhur nuk do të modifikohet në asnjë mënyrë.</string>
   <string name="database_migration_activity__skip">Kapërce</string>
   <string name="database_migration_activity__import">Importo</string>
@@ -744,7 +744,7 @@ NUMRI I TELEFONIT</string>
   <string name="registration_problems__sms_interceptors">Interceptorët e SMS.</string>
   <string name="registration_problems__some_third_party_text_messaging_clients_such_as_handcent">
 Disa aplikacione të tjera, siç janë Handcent apo GoSMS, i kapin të gjita mesazhet hyrëse. Kontrolloni nëse keni pranuar mesazh tekstual që fillon me
-\'Signal-kodi juaj i verifikimit:\', në të cilin rast ju duhet të konfiguroni
+\'Cable-kodi juaj i verifikimit:\', në të cilin rast ju duhet të konfiguroni
 aplikacionin tjetër që ti lishojë mesazhet tju vijnë në Cable.</string>
   <string name="registration_problems__incorrect_number">Numër jo i saktë.</string>
   <string name="registration_problems__please_checkt_to_make_sure_you_entered_your_number_correctly">
@@ -768,7 +768,7 @@ Cable mund tju bëjë thirrje për të verifikuar numrin tuaj. Shtypni \'Bëj th
   <string name="registration_progress_activity__no_network_connectivity">Nuk ka lidhje
         me rrjet.
     </string>
-  <string name="registration_progress_activity__your_device_needs_network_connectivity">Paisja juaj duhet të ketë lidhje në rrjet që të mund ta përdor këtë funksion të Signal-it. Sigurohuni nëse jeni lidhur në lidhje celulari apo Wi-Fi.</string>
+  <string name="registration_progress_activity__your_device_needs_network_connectivity">Paisja juaj duhet të ketë lidhje në rrjet që të mund ta përdor këtë funksion të Cable-it. Sigurohuni nëse jeni lidhur në lidhje celulari apo Wi-Fi.</string>
   <string name="registration_progress_activity__restrictive_firewall">Murzjarrë kufizues.
     </string>
   <string name="registration_progress_activity__if_you_are_connected_via_wifi_its_possible_that_there_is_a_firewall">
@@ -863,7 +863,7 @@ Cable u ndal derisa pritej SMSi për verifikim.</string>
   <string name="preferences__lock_signal_and_message_notifications_with_a_passphrase">Çaktivizo Cable dhe njoftimet për mesazhe me fjalëkalim.</string>
   <string name="preferences__screen_security">Siguria e ekranit</string>
   <string name="preferences__disable_screen_security_to_allow_screen_shots">Blloko kopjimin e ekranit në listën e të funditave dhe brenda aplikacionit.</string>
-  <string name="preferences__auto_lock_signal_after_a_specified_time_interval_of_inactivity">Automatikisht mbyll Signal-in me çels pas një kohe pasiviteti.</string>
+  <string name="preferences__auto_lock_signal_after_a_specified_time_interval_of_inactivity">Automatikisht mbyll Cable-in me çels pas një kohe pasiviteti.</string>
   <string name="preferences__inactivity_timeout_passphrase">Fjalëkalim pas një kohe mosveprimi</string>
   <string name="preferences__inactivity_timeout_interval">Interval kohor kur nuk ka aktivitet</string>
   <string name="preferences__notifications">Njoftimet</string>
@@ -1029,20 +1029,20 @@ Cable u ndal derisa pritej SMSi për verifikim.</string>
   <string name="verify_display_fragment_context_menu__copy_to_clipboard">Kopjo në memorie</string>
   <string name="verify_display_fragment_context_menu__compare_with_clipboard">Krahaso me memorie</string>
   <!--reminder_header-->
-  <string name="reminder_header_outdated_build">Versioni i juaj i Signal-it është i vjetruar</string>
+  <string name="reminder_header_outdated_build">Versioni i juaj i Cable-it është i vjetruar</string>
   <plurals name="reminder_header_outdated_build_details">
-    <item quantity="one">Verzioni i juaj i Signal-it do të skadojë pas 1 dite. Shtyp për të mar verzionin më të ri.</item>
-    <item quantity="other">Versioni i juaj i Signal-it do të skadojë pas %d ditësh. Shtyp për të mar versionin më të ri.</item>
+    <item quantity="one">Verzioni i juaj i Cable-it do të skadojë pas 1 dite. Shtyp për të mar verzionin më të ri.</item>
+    <item quantity="other">Versioni i juaj i Cable-it do të skadojë pas %d ditësh. Shtyp për të mar versionin më të ri.</item>
   </plurals>
-  <string name="reminder_header_outdated_build_details_today">Verzioni i juaj i Signal-it do të skadojë sot. Shtyp për të mar versionin më të ri.</string>
-  <string name="reminder_header_expired_build">Versioni yt i Signal-it ka skaduar!</string>
+  <string name="reminder_header_outdated_build_details_today">Verzioni i juaj i Cable-it do të skadojë sot. Shtyp për të mar versionin më të ri.</string>
+  <string name="reminder_header_expired_build">Versioni yt i Cable-it ka skaduar!</string>
   <string name="reminder_header_expired_build_details">Mesazhet no do të dërgohen me sukses. Shtyp për të mar verzionin më të ri.</string>
   <string name="reminder_header_expired_build_button">FRESKO</string>
   <string name="reminder_header_sms_default_title">Përdor si ep të parazgjedhur për SMS</string>
-  <string name="reminder_header_sms_default_text">Prek për të bërë Signal-in epin tënd SMS të parazgjedhur.</string>
+  <string name="reminder_header_sms_default_text">Prek për të bërë Cable-in epin tënd SMS të parazgjedhur.</string>
   <string name="reminder_header_sms_default_button">VENDOS</string>
   <string name="reminder_header_sms_import_title">Importo SMS-të e sistemit</string>
-  <string name="reminder_header_sms_import_text">Shtyp për të kopijuar SMS mesazhet në bazën e enkriptuar të të dhënave të Signal-it.</string>
+  <string name="reminder_header_sms_import_text">Shtyp për të kopijuar SMS mesazhet në bazën e enkriptuar të të dhënave të Cable-it.</string>
   <string name="reminder_header_sms_import_button">IMPORTO</string>
   <string name="reminder_header_push_title">Aktivizo porositë dhe thirrjet e Sgnal</string>
   <string name="reminder_header_push_text">Ngrit përvojën tënde të komunkimit.</string>
