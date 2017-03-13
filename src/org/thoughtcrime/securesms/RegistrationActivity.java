@@ -79,7 +79,7 @@ public class RegistrationActivity extends BaseActionBarActivity {
     }
 
     if (requestCode == PICK_SERVER && resultCode == RESULT_OK && data != null) {
-      this.countryCode.setText(data.getIntExtra("server_code", 1)+"");
+      this.serverCode.setText(data.getStringExtra("server_code"));
       setServerDisplay(data.getStringExtra("server_name"));
     }
   }
@@ -94,6 +94,7 @@ public class RegistrationActivity extends BaseActionBarActivity {
     this.createButton   = (Button)findViewById(R.id.registerButton);
     this.skipButton     = (Button)findViewById(R.id.skipButton);
 
+    this.serverCode.addTextChangedListener(new ServerChangedListener());
     this.countryCode.addTextChangedListener(new CountryCodeChangedListener());
     this.number.addTextChangedListener(new NumberChangedListener());
     this.createButton.setOnClickListener(new CreateButtonListener());
@@ -179,7 +180,7 @@ public class RegistrationActivity extends BaseActionBarActivity {
       }
     });
   }
-
+  //TODO: initialize Server
   private void initializeNumber() {
     PhoneNumberUtil numberUtil  = PhoneNumberUtil.getInstance();
     String          localNumber = Util.getDeviceE164Number(this);
