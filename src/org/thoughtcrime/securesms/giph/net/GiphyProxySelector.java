@@ -53,6 +53,7 @@ public class GiphyProxySelector extends ProxySelector {
     Log.w(TAG, failure);
   }
 
+  //TODO: from ServerUtil
   private void initializeGiphyProxy() {
     GIPHY = new ArrayList<Proxy>(1) {{
       add(new Proxy(Proxy.Type.HTTP, new InetSocketAddress(BuildConfig.GIPHY_PROXY_HOST,

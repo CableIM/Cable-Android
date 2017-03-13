@@ -63,6 +63,7 @@ public class TextSecurePreferences {
   public  static final String MMS_USER_AGENT                   = "pref_mms_user_agent";
   private static final String MMS_CUSTOM_USER_AGENT            = "pref_custom_mms_user_agent";
   private static final String THREAD_TRIM_ENABLED              = "pref_trim_threads";
+  private static final String LOCAL_SERVER_URL_PREF            = "pref_local_server_url";
   private static final String LOCAL_NUMBER_PREF                = "pref_local_number";
   private static final String VERIFYING_STATE_PREF             = "pref_verifying";
   public  static final String REGISTERED_GCM_PREF              = "pref_gcm_registered";
@@ -280,6 +281,14 @@ public class TextSecurePreferences {
 
   public static String getUpdateApkDigest(Context context) {
     return getStringPreference(context, UPDATE_APK_DIGEST, null);
+  }
+
+  public static String getLocalServerUrl(Context context) {
+    return getStringPreference(context, LOCAL_SERVER_URL_PREF, "No Stored Url");
+  }
+
+  public static void setLocalServerUrl(Context context, String localUrl) {
+    setStringPreference(context, LOCAL_SERVER_URL_PREF, localUrl);
   }
 
   public static String getLocalNumber(Context context) {

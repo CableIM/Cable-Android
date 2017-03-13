@@ -255,7 +255,7 @@ public class RegistrationActivity extends BaseActionBarActivity {
       }
 
       final String e164number = getConfiguredE164Number();
-
+      final String serverUrl = serverCode.getText().toString();
       if (!PhoneNumberFormatter.isValidNumber(e164number)) {
         Dialogs.showAlertDialog(self,
                              getString(R.string.RegistrationActivity_invalid_number),
@@ -264,10 +264,10 @@ public class RegistrationActivity extends BaseActionBarActivity {
         return;
       }
 
-      promptForRegistrationStart(self, e164number, false);
+      promptForRegistrationStart(self, e164number, serverUrl, false);
     }
 
-    private void promptForRegistrationStart(final Context context, final String e164number, final boolean gcmSupported) {
+    private void promptForRegistrationStart(final Context context, final String e164number, final String serverUrl, final boolean gcmSupported) {
       AlertDialog.Builder dialog = new AlertDialog.Builder(context);
       dialog.setTitle(PhoneNumberFormatter.getInternationalFormatFromE164(e164number));
       dialog.setMessage(R.string.RegistrationActivity_we_will_now_verify_that_the_following_number_is_associated_with_your_device_s);
@@ -277,6 +277,7 @@ public class RegistrationActivity extends BaseActionBarActivity {
                                  public void onClick(DialogInterface dialog, int which) {
                                    Intent intent = new Intent(context, RegistrationProgressActivity.class);
                                    intent.putExtra(RegistrationProgressActivity.NUMBER_EXTRA, e164number);
+                                   intent.putExtra(RegistrationProgressActivity.SERVER_URL_EXTRA, serverUrl);
                                    intent.putExtra(RegistrationProgressActivity.MASTER_SECRET_EXTRA, masterSecret);
                                    intent.putExtra(RegistrationProgressActivity.GCM_SUPPORTED_EXTRA, gcmSupported);
                                    startActivity(intent);

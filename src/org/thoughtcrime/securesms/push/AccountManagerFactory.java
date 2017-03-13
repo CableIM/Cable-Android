@@ -16,13 +16,14 @@ public class AccountManagerFactory {
 
   public static SignalServiceAccountManager createManager(Context context) {
     return new SignalServiceAccountManager(new SignalServiceNetworkAccess(context).getConfiguration(context),
+                                           TextSecurePreferences.getLocalServerUrl(context),
                                            TextSecurePreferences.getLocalNumber(context),
-                                           TextSecurePreferences.getPushServerPassword(context),
-                                           BuildConfig.USER_AGENT);
+                                           TextSecurePreferences.getPushServerPassword(context)
+                                           );
   }
 
-  public static SignalServiceAccountManager createManager(final Context context, String number, String password) {
-    if (new SignalServiceNetworkAccess(context).isCensored(number)) {
+  public static SignalServiceAccountManager createManager(final Context context, String serverurl, String number, String password) {
+    if (new SignalServiceNetworkAccess(context).isCensored(serverurl, number)) {
       new AsyncTask<Void, Void, Void>() {
         @Override
         protected Void doInBackground(Void... params) {
@@ -36,7 +37,7 @@ public class AccountManagerFactory {
       }.execute();
     }
 
-    return new SignalServiceAccountManager(new SignalServiceNetworkAccess(context).getConfiguration(number),
+    return new SignalServiceAccountManager(new SignalServiceNetworkAccess(context).getConfiguration(serverurl, number),
                                            number, password, BuildConfig.USER_AGENT);
   }
 

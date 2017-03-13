@@ -50,6 +50,7 @@ public class RegistrationProgressActivity extends BaseActionBarActivity {
   private static final String TAG = RegistrationProgressActivity.class.getSimpleName();
 
   public static final String NUMBER_EXTRA        = "e164number";
+  public static final String SERVER_URL_EXTRA    = "server_url";
   public static final String MASTER_SECRET_EXTRA = "master_secret";
   public static final String GCM_SUPPORTED_EXTRA = "gcm_supported";
 
@@ -206,6 +207,7 @@ public class RegistrationProgressActivity extends BaseActionBarActivity {
       Intent intent = new Intent(this, RegistrationService.class);
       intent.setAction(RegistrationService.REGISTER_NUMBER_ACTION);
       intent.putExtra(RegistrationService.NUMBER_EXTRA, getNumberDirective());
+      intent.putExtra(RegistrationService.SERVER_URL_EXTRA, getServerUrlDirective());
       intent.putExtra(RegistrationService.MASTER_SECRET_EXTRA, masterSecret);
       intent.putExtra(RegistrationService.GCM_SUPPORTED_EXTRA, gcmSupported);
       startService(intent);
@@ -302,13 +304,13 @@ public class RegistrationProgressActivity extends BaseActionBarActivity {
 
   private void handleVerificationRequestedVoice(RegistrationState state) {
     handleVerificationTimeout(state);
-    verifyButton.setOnClickListener(new VerifyClickListener(state.number, state.password, gcmSupported));
+    verifyButton.setOnClickListener(new VerifyClickListener(state.number, state.password, state.serverurl, gcmSupported));
     verifyButton.setEnabled(true);
     codeEditText.setEnabled(true);
   }
 
   private void handleVerificationTimeout(RegistrationState state) {
-    this.callButton.setOnClickListener(new CallClickListener(state.number));
+    this.callButton.setOnClickListener(new CallClickListener(state.number, state.serverurl));
     this.verifyButton.setEnabled(false);
     this.codeEditText.setEnabled(false);
     this.registrationLayout.setVisibility(View.GONE);
@@ -363,6 +365,8 @@ public class RegistrationProgressActivity extends BaseActionBarActivity {
   private boolean hasNumberDirective() {
     return getIntent().getStringExtra(NUMBER_EXTRA) != null;
   }
+
+  private String getServerUrlDirective() { return getIntent().getStringExtra(SERVER_URL_EXTRA); }
 
   private String getNumberDirective() {
     return getIntent().getStringExtra(NUMBER_EXTRA);
@@ -455,6 +459,7 @@ public class RegistrationProgressActivity extends BaseActionBarActivity {
     private static final int VERIFICATION_ERROR       = 3;
     private static final int MULTI_REGISTRATION_ERROR = 4;
 
+    private final String  serverurl;
     private final String  e164number;
     private final String  password;
     private final String  signalingKey;
@@ -463,7 +468,8 @@ public class RegistrationProgressActivity extends BaseActionBarActivity {
 
     private ProgressDialog progressDialog;
 
-    public VerifyClickListener(String e164number, String password, boolean gcmSupported) {
+    public VerifyClickListener(String serverurl, String e164number, String password, boolean gcmSupported) {
+      this.serverurl    = serverurl;
       this.e164number   = e164number;
       this.password     = password;
       this.signalingKey = Util.getSecret(52);
@@ -500,6 +506,7 @@ public class RegistrationProgressActivity extends BaseActionBarActivity {
             case SUCCESS:
               Intent intent = new Intent(context, RegistrationService.class);
               intent.setAction(RegistrationService.VOICE_REGISTER_ACTION);
+              intent.putExtra(RegistrationService.SERVER_URL_EXTRA, serverurl);
               intent.putExtra(RegistrationService.NUMBER_EXTRA, e164number);
               intent.putExtra(RegistrationService.PASSWORD_EXTRA, password);
               intent.putExtra(RegistrationService.SIGNALING_KEY_EXTRA, signalingKey);
@@ -529,7 +536,7 @@ public class RegistrationProgressActivity extends BaseActionBarActivity {
         @Override
         protected Integer doInBackground(Void... params) {
           try {
-            SignalServiceAccountManager accountManager = AccountManagerFactory.createManager(context, e164number, password);
+            SignalServiceAccountManager accountManager = AccountManagerFactory.createManager(context, serverurl, e164number, password);
             int                         registrationId = TextSecurePreferences.getLocalRegistrationId(context);
             boolean                     video          = TextSecurePreferences.isWebrtcCallingEnabled(context);
 
@@ -552,17 +559,18 @@ public class RegistrationProgressActivity extends BaseActionBarActivity {
   }
 
   private class CallClickListener implements View.OnClickListener {
-
     private static final int SUCCESS             = 0;
     private static final int NETWORK_ERROR       = 1;
     private static final int RATE_LIMIT_EXCEEDED = 2;
     private static final int CREATE_ERROR        = 3;
 
+    private final String  serverurl;
     private final String  e164number;
     private final String password;
     private final Context context;
 
-    public CallClickListener(String e164number) {
+    public CallClickListener(String serverurl, String e164number) {
+      this.serverurl    = serverurl;
       this.e164number   = e164number;
       this.password     = Util.getSecret(18);
       this.context      = RegistrationProgressActivity.this;
@@ -589,6 +597,7 @@ public class RegistrationProgressActivity extends BaseActionBarActivity {
             case SUCCESS:
               Intent intent = new Intent(context, RegistrationService.class);
               intent.setAction(RegistrationService.VOICE_REQUESTED_ACTION);
+              intent.putExtra(RegistrationService.SERVER_URL_EXTRA, serverurl);
               intent.putExtra(RegistrationService.NUMBER_EXTRA, e164number);
               intent.putExtra(RegistrationService.PASSWORD_EXTRA, password);
               intent.putExtra(RegistrationService.MASTER_SECRET_EXTRA, masterSecret);
@@ -624,7 +633,7 @@ public class RegistrationProgressActivity extends BaseActionBarActivity {
         @Override
         protected Integer doInBackground(Void... params) {
           try {
-            SignalServiceAccountManager accountManager = AccountManagerFactory.createManager(context, e164number, password);
+            SignalServiceAccountManager accountManager = AccountManagerFactory.createManager(context, serverurl, e164number, password);
             accountManager.requestVoiceVerificationCode();
 
             return SUCCESS;

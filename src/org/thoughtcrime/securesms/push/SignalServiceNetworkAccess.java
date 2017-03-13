@@ -95,7 +95,8 @@ public class SignalServiceNetworkAccess {
 
   private final Map<String, SignalServiceUrl[]> censorshipConfiguration;
   private final String[]                        censoredCountries;
-  private final SignalServiceUrl[]              uncensoredConfiguration;
+  private final SignalServiceTrustStore         signalServiceTrustStores;
+  private SignalServiceUrl[]              uncensoredConfiguration;
 
   public SignalServiceNetworkAccess(Context context) {
     final TrustStore       googleTrustStore = new GoogleFrontingTrustStore(context);
@@ -127,20 +128,27 @@ public class SignalServiceNetworkAccess {
                                           baseAndroid, baseGoogle, mapsOneAndroid, mapsTwoAndroid, mailAndroid});
     }};
 
-    this.uncensoredConfiguration = new SignalServiceUrl[] {
-        new SignalServiceUrl(BuildConfig.SIGNAL_URL, new SignalServiceTrustStore(context))
-    };
+    this.signalServiceTrustStores = new SignalServiceTrustStore(context);
 
     this.censoredCountries = this.censorshipConfiguration.keySet().toArray(new String[0]);
   }
 
-  public SignalServiceUrl[] getConfiguration(Context context) {
-    String localNumber = TextSecurePreferences.getLocalNumber(context);
-    return getConfiguration(localNumber);
+  public SignalServiceUrl[] getUncensoredConfiguration(String serverurl) {
+    this.uncensoredConfiguration = new SignalServiceUrl[] {
+      new SignalServiceUrl(serverurl, signalServiceTrustStores)
+    };
+
+    return this.uncensoredConfiguration;
   }
 
-  public SignalServiceUrl[] getConfiguration(@Nullable String localNumber) {
-    if (localNumber == null) return this.uncensoredConfiguration;
+  public SignalServiceUrl[] getConfiguration(Context context) {
+    String localServerUrl = TextSecurePreferences.getLocalServerUrl(context);
+    String localNumber = TextSecurePreferences.getLocalNumber(context);
+    return getConfiguration(localServerUrl, localNumber);
+  }
+
+  public SignalServiceUrl[] getConfiguration(String localServerUrl, @Nullable String localNumber) {
+    if (localNumber == null) return getUncensoredConfiguration(localServerUrl);
 
     for (String censoredRegion : this.censoredCountries) {
       if (localNumber.startsWith(censoredRegion)) {
@@ -148,15 +156,15 @@ public class SignalServiceNetworkAccess {
       }
     }
 
-    return this.uncensoredConfiguration;
+    return getUncensoredConfiguration(localServerUrl);
   }
 
   public boolean isCensored(Context context) {
     return getConfiguration(context) != this.uncensoredConfiguration;
   }
 
-  public boolean isCensored(String number) {
-    return getConfiguration(number) != this.uncensoredConfiguration;
+  public boolean isCensored(String serverurl, String number) {
+    return getConfiguration(serverurl, number) != this.uncensoredConfiguration;
   }
 
 }

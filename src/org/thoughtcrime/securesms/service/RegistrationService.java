@@ -22,6 +22,7 @@ import org.thoughtcrime.securesms.push.AccountManagerFactory;
 import org.thoughtcrime.securesms.recipients.Recipient;
 import org.thoughtcrime.securesms.recipients.RecipientFactory;
 import org.thoughtcrime.securesms.util.DirectoryHelper;
+import org.thoughtcrime.securesms.util.ServerUtil;
 import org.thoughtcrime.securesms.util.TextSecurePreferences;
 import org.thoughtcrime.securesms.util.Util;
 import org.whispersystems.libsignal.IdentityKeyPair;
@@ -68,6 +69,7 @@ public class RegistrationService extends Service {
   public static final String CHALLENGE_EVENT        = "org.thoughtcrime.securesms.CHALLENGE_EVENT";
   public static final String REGISTRATION_EVENT     = "org.thoughtcrime.securesms.REGISTRATION_EVENT";
 
+  public static final String SERVER_URL_EXTRA    = "server_url";
   public static final String NUMBER_EXTRA        = "e164number";
   public static final String MASTER_SECRET_EXTRA = "master_secret";
   public static final String GCM_SUPPORTED_EXTRA = "gcm_supported";
@@ -151,6 +153,7 @@ public class RegistrationService extends Service {
 
   private void handleVoiceRequestedIntent(Intent intent) {
     setState(new RegistrationState(RegistrationState.STATE_VOICE_REQUESTED,
+                                   intent.getStringExtra(SERVER_URL_EXTRA),
                                    intent.getStringExtra(NUMBER_EXTRA),
                                    intent.getStringExtra(PASSWORD_EXTRA)));
   }
@@ -158,27 +161,29 @@ public class RegistrationService extends Service {
   private void handleVoiceRegistrationIntent(Intent intent) {
     markAsVerifying(true);
 
+    ServerUtil server    = new ServerUtil(intent.getStringExtra(SERVER_URL_EXTRA));
+    String  serverurl    = server.getServerUrl();
     String  number       = intent.getStringExtra(NUMBER_EXTRA);
     String  password     = intent.getStringExtra(PASSWORD_EXTRA);
     String  signalingKey = intent.getStringExtra(SIGNALING_KEY_EXTRA);
     boolean supportsGcm  = intent.getBooleanExtra(GCM_SUPPORTED_EXTRA, true);
 
     try {
-      SignalServiceAccountManager accountManager = AccountManagerFactory.createManager(this, number, password);
+      SignalServiceAccountManager accountManager = AccountManagerFactory.createManager(this, serverurl, number, password);
 
-      handleCommonRegistration(accountManager, number, password, signalingKey, supportsGcm);
+      handleCommonRegistration(accountManager, serverurl, number, password, signalingKey, supportsGcm);
 
-      markAsVerified(number, password, signalingKey);
+      markAsVerified(serverurl, number, password, signalingKey);
 
-      setState(new RegistrationState(RegistrationState.STATE_COMPLETE, number));
+      setState(new RegistrationState(RegistrationState.STATE_COMPLETE, serverurl, number));
       broadcastComplete(true);
     } catch (UnsupportedOperationException uoe) {
       Log.w("RegistrationService", uoe);
-      setState(new RegistrationState(RegistrationState.STATE_GCM_UNSUPPORTED, number));
+      setState(new RegistrationState(RegistrationState.STATE_GCM_UNSUPPORTED, serverurl, number));
       broadcastComplete(false);
     } catch (IOException e) {
       Log.w("RegistrationService", e);
-      setState(new RegistrationState(RegistrationState.STATE_NETWORK_ERROR, number));
+      setState(new RegistrationState(RegistrationState.STATE_NETWORK_ERROR, serverurl, number));
       broadcastComplete(false);
     }
   }
@@ -186,6 +191,8 @@ public class RegistrationService extends Service {
   private void handleSmsRegistrationIntent(Intent intent) {
     markAsVerifying(true);
 
+    ServerUtil server      = new ServerUtil(intent.getStringExtra(SERVER_URL_EXTRA));
+    String  serverurl      = server.getServerUrl();
     String  number         = intent.getStringExtra(NUMBER_EXTRA);
     boolean supportsGcm    = intent.getBooleanExtra(GCM_SUPPORTED_EXTRA, true);
     int     registrationId = TextSecurePreferences.getLocalRegistrationId(this);
@@ -202,44 +209,44 @@ public class RegistrationService extends Service {
 
       initializeChallengeListener();
 
-      setState(new RegistrationState(RegistrationState.STATE_CONNECTING, number));
-      SignalServiceAccountManager accountManager = AccountManagerFactory.createManager(this, number, password);
+      setState(new RegistrationState(RegistrationState.STATE_CONNECTING, serverurl, number));
+      SignalServiceAccountManager accountManager = AccountManagerFactory.createManager(this, serverurl, number, password);
       accountManager.requestSmsVerificationCode();
 
-      setState(new RegistrationState(RegistrationState.STATE_VERIFYING, number));
+      setState(new RegistrationState(RegistrationState.STATE_VERIFYING, serverurl, number));
       String challenge = waitForChallenge();
       accountManager.verifyAccountWithCode(challenge, signalingKey, registrationId, true, supportsVideo, !supportsGcm);
 
-      handleCommonRegistration(accountManager, number, password, signalingKey, supportsGcm);
-      markAsVerified(number, password, signalingKey);
+      handleCommonRegistration(accountManager, serverurl, number, password, signalingKey, supportsGcm);
+      markAsVerified(serverurl, number, password, signalingKey);
 
-      setState(new RegistrationState(RegistrationState.STATE_COMPLETE, number));
+      setState(new RegistrationState(RegistrationState.STATE_COMPLETE, serverurl, number));
       broadcastComplete(true);
     } catch (ExpectationFailedException efe) {
       Log.w("RegistrationService", efe);
-      setState(new RegistrationState(RegistrationState.STATE_MULTI_REGISTERED, number));
+      setState(new RegistrationState(RegistrationState.STATE_MULTI_REGISTERED, serverurl, number));
       broadcastComplete(false);
     } catch (UnsupportedOperationException uoe) {
       Log.w("RegistrationService", uoe);
-      setState(new RegistrationState(RegistrationState.STATE_GCM_UNSUPPORTED, number));
+      setState(new RegistrationState(RegistrationState.STATE_GCM_UNSUPPORTED, serverurl, number));
       broadcastComplete(false);
     } catch (AccountVerificationTimeoutException avte) {
       Log.w("RegistrationService", avte);
-      setState(new RegistrationState(RegistrationState.STATE_TIMEOUT, number));
+      setState(new RegistrationState(RegistrationState.STATE_TIMEOUT, serverurl, number));
       broadcastComplete(false);
     } catch (IOException e) {
       Log.w("RegistrationService", e);
-      setState(new RegistrationState(RegistrationState.STATE_NETWORK_ERROR, number));
+      setState(new RegistrationState(RegistrationState.STATE_NETWORK_ERROR, serverurl, number));
       broadcastComplete(false);
     } finally {
       shutdownChallengeListener();
     }
   }
-
-  private void handleCommonRegistration(SignalServiceAccountManager accountManager, String number, String password, String signalingKey, boolean supportsGcm)
+  //TODO:verificarla meglio
+  private void handleCommonRegistration(SignalServiceAccountManager accountManager, String serverurl, String number, String password, String signalingKey, boolean supportsGcm)
       throws IOException
   {
-    setState(new RegistrationState(RegistrationState.STATE_GENERATING_KEYS, number));
+    setState(new RegistrationState(RegistrationState.STATE_GENERATING_KEYS, serverurl, number));
     Recipient          self         = RecipientFactory.getRecipientsFromString(this, number, false).getPrimaryRecipient();
     IdentityKeyPair    identityKey  = IdentityKeyUtil.getIdentityKeyPair(this);
     List<PreKeyRecord> records      = PreKeyUtil.generatePreKeys(this);
@@ -247,7 +254,7 @@ public class RegistrationService extends Service {
     SignedPreKeyRecord signedPreKey = PreKeyUtil.generateSignedPreKey(this, identityKey, true);
     accountManager.setPreKeys(identityKey.getPublicKey(),lastResort, signedPreKey, records);
 
-    setState(new RegistrationState(RegistrationState.STATE_GCM_REGISTERING, number));
+    setState(new RegistrationState(RegistrationState.STATE_GCM_REGISTERING, serverurl, number));
 
     TextSecurePreferences.setWebsocketRegistered(this, true);
 
@@ -288,9 +295,10 @@ public class RegistrationService extends Service {
     }
   }
 
-  private void markAsVerified(String number, String password, String signalingKey) {
+  private void markAsVerified(String serverurl, String number, String password, String signalingKey) {
     TextSecurePreferences.setVerifying(this, false);
     TextSecurePreferences.setPushRegistered(this, true);
+    TextSecurePreferences.setLocalServerUrl(this, serverurl);
     TextSecurePreferences.setLocalNumber(this, number);
     TextSecurePreferences.setPushServerPassword(this, password);
     TextSecurePreferences.setSignalingKey(this, signalingKey);
@@ -361,6 +369,7 @@ public class RegistrationService extends Service {
     public static final int STATE_MULTI_REGISTERED     = 14;
 
     public final int    state;
+    public final String serverurl;
     public final String number;
     public final String password;
 
@@ -368,12 +377,17 @@ public class RegistrationService extends Service {
       this(state, null);
     }
 
-    public RegistrationState(int state, String number) {
-      this(state, number, null);
+    public RegistrationState(int state, String serverurl) {
+      this(state, serverurl, null);
     }
 
-    public RegistrationState(int state, String number, String password) {
+    public RegistrationState(int state, String serverurl, String number) {
+      this(state, serverurl, number, null);
+    }
+
+    public RegistrationState(int state, String serverurl, String number, String password) {
       this.state        = state;
+      this.serverurl    = serverurl;
       this.number       = number;
       this.password     = password;
     }
