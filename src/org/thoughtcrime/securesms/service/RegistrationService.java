@@ -70,7 +70,6 @@ public class RegistrationService extends Service {
 
   public static final String NUMBER_EXTRA        = "e164number";
   public static final String MASTER_SECRET_EXTRA = "master_secret";
-  public static final String GCM_SUPPORTED_EXTRA = "gcm_supported";
   public static final String PASSWORD_EXTRA      = "password";
   public static final String SIGNALING_KEY_EXTRA = "signaling_key";
   public static final String CHALLENGE_EXTRA     = "CAAChallenge";
@@ -161,7 +160,7 @@ public class RegistrationService extends Service {
     String  number       = intent.getStringExtra(NUMBER_EXTRA);
     String  password     = intent.getStringExtra(PASSWORD_EXTRA);
     String  signalingKey = intent.getStringExtra(SIGNALING_KEY_EXTRA);
-    boolean supportsGcm  = intent.getBooleanExtra(GCM_SUPPORTED_EXTRA, true);
+    boolean supportsGcm  = false;
 
     try {
       SignalServiceAccountManager accountManager = AccountManagerFactory.createManager(this, number, password);
@@ -187,7 +186,7 @@ public class RegistrationService extends Service {
     markAsVerifying(true);
 
     String  number         = intent.getStringExtra(NUMBER_EXTRA);
-    boolean supportsGcm    = intent.getBooleanExtra(GCM_SUPPORTED_EXTRA, true);
+    boolean supportsGcm    = false;
     int     registrationId = TextSecurePreferences.getLocalRegistrationId(this);
     boolean supportsVideo  = TextSecurePreferences.isWebrtcCallingEnabled(this) || !supportsGcm;
 

@@ -224,7 +224,6 @@ public class RegistrationActivity extends BaseActionBarActivity {
                                    Intent intent = new Intent(context, RegistrationProgressActivity.class);
                                    intent.putExtra(RegistrationProgressActivity.NUMBER_EXTRA, e164number);
                                    intent.putExtra(RegistrationProgressActivity.MASTER_SECRET_EXTRA, masterSecret);
-                                   intent.putExtra(RegistrationProgressActivity.GCM_SUPPORTED_EXTRA, gcmSupported);
                                    startActivity(intent);
                                    finish();
                                  }
