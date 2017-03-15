@@ -463,8 +463,7 @@ public class ConversationActivity extends PassphraseRequiredActionBarActivity
 
     if (isSingleConversation()) {
       if (isSecureText) inflater.inflate(R.menu.conversation_callable_secure, menu);
-// Paride: don't allow insecure calls
-//      else              inflater.inflate(R.menu.conversation_callable_insecure, menu);
+      else              inflater.inflate(R.menu.conversation_callable_insecure, menu);
     } else if (isGroupConversation()) {
       inflater.inflate(R.menu.conversation_group_options, menu);
 
