@@ -203,12 +203,6 @@ android {
         buildConfigField "int", "GIPHY_PROXY_PORT", "80"
         buildConfigField "String", "USER_AGENT", "\"CBL\""
         buildConfigField "boolean", "DEV_BUILD", "false"
-
-        // Placeholders, to be kept syntactically correct, otherwise crashes will occur.
-        // TODO: To be removed after all the legacy RedPhone stuff is purged. (Paride)
-        buildConfigField "String", "REDPHONE_MASTER_URL", "\"https://redphone.nonexistent/\""
-        buildConfigField "String", "REDPHONE_RELAY_HOST", "\"relay.nonexistent\""
-        buildConfigField "String", "REDPHONE_PREFIX_NAME", "\".nonexistent\""
     }
 
     compileOptions {
