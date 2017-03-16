@@ -9,6 +9,10 @@ goal, but the project is totally not ready yet.
 
 Not ready yet.
 
+## Differences between Cable and Signal
+
+TODO
+
 ## Contributing
 
 Signal's [CONTRIBUTING.md](https://github.com/WhisperSystems/Signal-Android/blob/master/CONTRIBUTING.md) is a good read. When submitting pull request please follow Signal's [Code-Style Guidelines](https://github.com/WhisperSystems/Signal-Android/wiki/Code-Style-Guidelines).
