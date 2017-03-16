@@ -8,7 +8,7 @@ buildscript {
         }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.2.3'
+        classpath 'com.android.tools.build:gradle:2.3.0'
         classpath files('libs/gradle-witness.jar')
     }
 }
@@ -178,7 +178,7 @@ dependencyVerification {
 
 android {
     compileSdkVersion 25
-    buildToolsVersion '23.0.3'
+    buildToolsVersion '25.0.0'
     useLibrary 'org.apache.http.legacy'
 
     dexOptions {
@@ -203,12 +203,6 @@ android {
         buildConfigField "int", "GIPHY_PROXY_PORT", "80"
         buildConfigField "String", "USER_AGENT", "\"CBL\""
         buildConfigField "boolean", "DEV_BUILD", "false"
-
-        // Placeholders, to be kept syntactically correct, otherwise crashes will occur.
-        // TODO: To be removed after all the legacy RedPhone stuff is purged. (Paride)
-        buildConfigField "String", "REDPHONE_MASTER_URL", "\"https://redphone.nonexistent/\""
-        buildConfigField "String", "REDPHONE_RELAY_HOST", "\"relay.nonexistent\""
-        buildConfigField "String", "REDPHONE_PREFIX_NAME", "\".nonexistent\""
     }
 
     compileOptions {
