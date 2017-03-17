@@ -84,8 +84,6 @@ public class TextSecurePreferences {
   private static final String SIGNED_PREKEY_REGISTERED_PREF    = "pref_signed_prekey_registered";
   private static final String WIFI_SMS_PREF                    = "pref_wifi_sms";
 
-  private static final String GCM_REGISTRATION_ID_PREF         = "pref_gcm_registration_id";
-  private static final String GCM_REGISTRATION_ID_VERSION_PREF = "pref_gcm_registration_id_version";
   private static final String WEBSOCKET_REGISTERED_PREF        = "pref_websocket_registered";
   private static final String RATING_LATER_PREF                = "pref_rating_later";
   private static final String RATING_ENABLED_PREF              = "pref_rating_enabled";
@@ -205,21 +203,6 @@ public class TextSecurePreferences {
 
   public static void setSignedPreKeyRegistered(Context context, boolean value) {
     setBooleanPreference(context, SIGNED_PREKEY_REGISTERED_PREF, value);
-  }
-
-  public static void setGcmRegistrationId(Context context, String registrationId) {
-    setStringPreference(context, GCM_REGISTRATION_ID_PREF, registrationId);
-    setIntegerPrefrence(context, GCM_REGISTRATION_ID_VERSION_PREF, Util.getCurrentApkReleaseVersion(context));
-  }
-
-  public static String getGcmRegistrationId(Context context) {
-    int storedRegistrationIdVersion = getIntegerPreference(context, GCM_REGISTRATION_ID_VERSION_PREF, 0);
-
-    if (storedRegistrationIdVersion != Util.getCurrentApkReleaseVersion(context)) {
-      return null;
-    } else {
-      return getStringPreference(context, GCM_REGISTRATION_ID_PREF, null);
-    }
   }
 
   public static boolean isSmsEnabled(Context context) {
