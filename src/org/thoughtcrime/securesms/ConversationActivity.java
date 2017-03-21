@@ -653,8 +653,8 @@ public class ConversationActivity extends PassphraseRequiredActionBarActivity
       String inviteText;
 
       boolean a = SecureRandom.getInstance("SHA1PRNG").nextBoolean();
-      if (a) inviteText = getString(R.string.ConversationActivity_lets_switch_to_signal, "https://cable.im/");
-      else   inviteText = getString(R.string.ConversationActivity_lets_use_this_to_chat, "https://cable.im/");
+      if (a) inviteText = getString(R.string.ConversationActivity_lets_switch_to_signal, "https://f-droid.org/app/im.cable.cableim");
+      else   inviteText = getString(R.string.ConversationActivity_lets_use_this_to_chat, "https://f-droid.org/app/im.cable.cableim");
 
       if (isDefaultSms) {
         composeText.appendInvite(inviteText);
