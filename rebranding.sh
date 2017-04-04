@@ -11,6 +11,9 @@
 
 sed -i s/Signal/Cable/ res/layout/reminder_header.xml
 
-find res -name 'strings.xml' -exec sed -i -e :a -e '/\(^ *<string name="[[:alnum:]_-]*">.*\)Signal/ s//\1Cable/;ta' {} +
-find res -name 'strings.xml' -exec sed -i '/<string name=/! s/Signal/Cable/g' {} +
+find res -name 'strings.xml' -exec sed -i '
+:a;
+/\(^ *<string name="[[:alnum:]_-]*">.*\)Signal/ s//\1Cable/;
+ta;
+/<string name=/! s/Signal/Cable/g' {} +
 
