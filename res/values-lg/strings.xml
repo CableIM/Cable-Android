@@ -320,7 +320,7 @@ a</string>
   <string name="DeviceProvisioningActivity_content_progress_network_error">Omukutu guliko ekizibu.</string>
   <string name="DeviceProvisioningActivity_content_progress_key_error">QR code nkyamu.</string>
   <string name="DeviceActivity_sorry_this_is_not_a_valid_device_link_qr_code">Bambi  QR koodi eno sintufu</string>
-  <string name="DeviceProvisioningActivity_link_a_signal_device">Yungako divayisi ya Signal?</string>
+  <string name="DeviceProvisioningActivity_link_a_signal_device">Yungako divayisi ya Cable?</string>
   <!--ExpirationDialog-->
   <string name="ExpirationDialog_disappearing_messages">Obubaka bwo bubuzibwaawo</string>
   <string name="ExpirationDialog_your_messages_will_not_expire">Obubaka bwo tebujja kugwako.</string>
@@ -606,7 +606,7 @@ Dammu okebere e namba yo.  Tugenda kugikakasa no bubaka ku simu</string>
 </string>
   <string name="log_submit_activity__no_browser_installed">Teli kibanja kitekedwamu</string>
   <!--database_migration_activity-->
-  <string name="database_migration_activity__would_you_like_to_import_your_existing_text_messages">Wandiyagade okuyingiza obubakabwo mu terekero ya bwino elibuzabuzidwamu mu Signal?</string>
+  <string name="database_migration_activity__would_you_like_to_import_your_existing_text_messages">Wandiyagade okuyingiza obubakabwo mu terekero ya bwino elibuzabuzidwamu mu Cable?</string>
   <string name="database_migration_activity__the_default_system_database_will_not_be_modified">System database eyasangibwawoo tegya kukyusibwa.</string>
   <string name="database_migration_activity__skip">Buuka</string>
   <string name="database_migration_activity__import">Okuyingiza</string>

@@ -321,7 +321,7 @@ Das Wiederherstellen einer verschlüsselten Datensicherung ersetzt deine bestehe
     <item quantity="one">1 SMS-Einladung senden?</item>
     <item quantity="other">%d SMS-Einladungen senden?</item>
   </plurals>
-  <string name="InviteActivity_lets_switch_to_signal">Wechseln wir zu »Signal«: %1$s</string>
+  <string name="InviteActivity_lets_switch_to_signal">Wechseln wir zu »Cable«: %1$s</string>
   <string name="InviteActivity_no_app_to_share_to">Es sieht so aus, als hättest du keine zum Teilen geeignete Apps installiert.</string>
   <string name="InviteActivity_friends_dont_let_friends_text_unencrypted">Freunde lassen Freunde nicht unverschlüsselt kommunizieren.</string>
   <!--KeyScanningActivity-->
@@ -720,7 +720,7 @@ Schlüsselaustausch-Nachricht für eine ungültige Protokollversion empfangen</s
   <string name="log_submit_activity__posting_logs">Diagnoseprotokoll wird übermittelt …</string>
   <string name="log_submit_activity__no_browser_installed">Kein Browser installiert</string>
   <!--database_migration_activity-->
-  <string name="database_migration_activity__would_you_like_to_import_your_existing_text_messages">Möchtest du deine vorhandenen Nachrichten in Signals verschlüsselte Datenbank importieren?</string>
+  <string name="database_migration_activity__would_you_like_to_import_your_existing_text_messages">Möchtest du deine vorhandenen Nachrichten in Cables verschlüsselte Datenbank importieren?</string>
   <string name="database_migration_activity__the_default_system_database_will_not_be_modified">Die Standard-Systemdatenbank wird in keiner Weise modifiziert oder verändert.</string>
   <string name="database_migration_activity__skip">Überspringen</string>
   <string name="database_migration_activity__import">Importieren</string>

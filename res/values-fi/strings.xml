@@ -21,7 +21,7 @@
   </plurals>
   <string name="ApplicationPreferencesActivity_delete">Poista</string>
   <string name="ApplicationPreferencesActivity_disable_passphrase">Poista salalause käytöstä?</string>
-  <string name="ApplicationPreferencesActivity_this_will_permanently_unlock_signal_and_message_notifications">Tämä avaa Signalin ja viesti-ilmoitusten lukituksen pysyvästi.</string>
+  <string name="ApplicationPreferencesActivity_this_will_permanently_unlock_signal_and_message_notifications">Tämä avaa Cablein ja viesti-ilmoitusten lukituksen pysyvästi.</string>
   <string name="ApplicationPreferencesActivity_disable">Poista käytöstä</string>
   <string name="ApplicationPreferencesActivity_unregistering">Puretaan rekisteröintiä</string>
   <string name="ApplicationPreferencesActivity_unregistering_from_signal_messages_and_calls">Puretaan rekisteröintiä Cable-viesteistä ja -puheluista...</string>
@@ -31,7 +31,7 @@
   <string name="ApplicationPreferencesActivity_sms_enabled">Tekstiviestit käytössä</string>
   <string name="ApplicationPreferencesActivity_touch_to_change_your_default_sms_app">Kosketa, jos haluat vaihtaa oletustekstiviestisovellustasi</string>
   <string name="ApplicationPreferencesActivity_sms_disabled">Tekstiviestit poissa käytöstä</string>
-  <string name="ApplicationPreferencesActivity_touch_to_make_signal_your_default_sms_app">Kosketa, jos haluat asettaa Signalin oletustekstiviestisovellukseksi</string>
+  <string name="ApplicationPreferencesActivity_touch_to_make_signal_your_default_sms_app">Kosketa, jos haluat asettaa Cablein oletustekstiviestisovellukseksi</string>
   <string name="ApplicationPreferencesActivity_on">päällä</string>
   <string name="ApplicationPreferencesActivity_On">Päällä</string>
   <string name="ApplicationPreferencesActivity_off">pois</string>
@@ -64,7 +64,7 @@
   <!--CallScreen-->
   <string name="CallScreen_Incoming_call">Saapuva puhelu</string>
   <!--ConfirmIdentityDialog-->
-  <string name="ConfirmIdentityDialog_your_safety_number_with_s_has_changed">Turvanumerosi yhteystiedon %1$s kanssa on vaihtunut. Tämä voi tarkoittaa joko sitä, että joku yrittää kaapata viestiliikennettänne, tai sitä, että %2$s on vain yksinkertaisesti asentanut Signalin uudelleen.</string>
+  <string name="ConfirmIdentityDialog_your_safety_number_with_s_has_changed">Turvanumerosi yhteystiedon %1$s kanssa on vaihtunut. Tämä voi tarkoittaa joko sitä, että joku yrittää kaapata viestiliikennettänne, tai sitä, että %2$s on vain yksinkertaisesti asentanut Cablein uudelleen.</string>
   <string name="ConfirmIdentityDialog_you_may_wish_to_verify_your_safety_number_with_this_contact">Saatat haluta varmentaa turvanumerosi tämän yhteystiedon kanssa.</string>
   <string name="ConfirmIdentityDialog_accept">Hyväksy</string>
   <!--ContactsDatabase-->
@@ -75,7 +75,7 @@
   <string name="ConversationItem_expires_s">Umpeutuu: %s</string>
   <string name="ConversationItem_error_not_delivered">Ei toimitettu</string>
   <string name="ConversationItem_view_secure_media_question">Tarkastele salattua mediaa?</string>
-  <string name="ConversationItem_this_media_has_been_stored_in_an_encrypted_database_external_viewer_warning">Tämä media on tallennettu Signalin sisäiseen salattuun tietokantaan. Valitettavasti median katselu muilla sovelluksilla vaatii sisällön salauksen purkua ja kopiointia väliaikaisesti laitteesi tallennustilaan. Haluatko varmasti tehdä tämän?</string>
+  <string name="ConversationItem_this_media_has_been_stored_in_an_encrypted_database_external_viewer_warning">Tämä media on tallennettu Cablein sisäiseen salattuun tietokantaan. Valitettavasti median katselu muilla sovelluksilla vaatii sisällön salauksen purkua ja kopiointia väliaikaisesti laitteesi tallennustilaan. Haluatko varmasti tehdä tämän?</string>
   <string name="ConversationItem_error_received_stale_key_exchange_message">Virhe. Vastaanotettiin vanhentunut avaintenvaihtoviesti.</string>
   <string name="ConversationItem_received_key_exchange_message_tap_to_process">Avaintenvaihtoviesti vastaanotettu. Aloita käsittely napsauttamalla.</string>
   <string name="ConversationItem_group_action_left">%1$s on lähtenyt ryhmästä.</string>
@@ -83,7 +83,7 @@
   <string name="ConversationItem_click_to_approve_unencrypted">Napsauta, jos haluat lähettää viestin salaamattomana</string>
   <string name="ConversationItem_click_to_approve_unencrypted_sms_dialog_title">Käytetäänkö salaamattomia tekstiviestejä?</string>
   <string name="ConversationItem_click_to_approve_unencrypted_mms_dialog_title">Käytetäänkö salaamattomia MMS-viestejä?</string>
-  <string name="ConversationItem_click_to_approve_unencrypted_dialog_message">Tätä viestiä <b>ei</b> voida salata, koska vastaanottaja ei enää käytä Signalia.\n\nLähetetäänkö salaamattomana?</string>
+  <string name="ConversationItem_click_to_approve_unencrypted_dialog_message">Tätä viestiä <b>ei</b> voida salata, koska vastaanottaja ei enää käytä Cableia.\n\nLähetetäänkö salaamattomana?</string>
   <string name="ConversationItem_unable_to_open_media">Median avaamiseen ei löytynyt sovellusta.</string>
   <string name="ConversationItem_from_s">SIM-kortilta %s</string>
   <string name="ConversationItem_to_s">vastaanotettu SIM-kortille %s</string>
@@ -117,7 +117,7 @@
   <string name="ConversationActivity_transport_insecure_sms">Salaamaton tekstiviesti</string>
   <string name="ConversationActivity_transport_insecure_mms">Salaamaton MMS-viesti</string>
   <string name="ConversationActivity_transport_signal">Cable</string>
-  <string name="ConversationActivity_lets_switch_to_signal">Hei, vaihdetaan Signaliin %1$s</string>
+  <string name="ConversationActivity_lets_switch_to_signal">Hei, vaihdetaan Cableiin %1$s</string>
   <string name="ConversationActivity_lets_use_this_to_chat">Hei, kokeillaan keskustella tällä: %1$s</string>
   <string name="ConversationActivity_error_leaving_group">Virhe ryhmästä lähtiessä</string>
   <string name="ConversationActivity_mms_not_supported_title">MMS ei ole tuettu</string>
@@ -233,13 +233,13 @@ Vastaanotettu: %4$s</string>
   <!--DocumentView-->
   <!--DozeReminder-->
   <string name="DozeReminder_optimize_for_missing_play_services">Optimoi Play Servicesin puuttumista</string>
-  <string name="DozeReminder_this_device_does_not_support_play_services_tap_to_disable_system_battery">Tämä laite ei tue Play Servicesiä. Napsauta tästä ottaaksesi pois päältä virransäästöominaisuudet, jotka estävät Signalia hakemasta viestejä taustalla.</string>
+  <string name="DozeReminder_this_device_does_not_support_play_services_tap_to_disable_system_battery">Tämä laite ei tue Play Servicesiä. Napsauta tästä ottaaksesi pois päältä virransäästöominaisuudet, jotka estävät Cableia hakemasta viestejä taustalla.</string>
   <!--ShareActivity-->
   <string name="ShareActivity_share_with">Jaa</string>
   <!--ExperienceUpgradeActivity-->
-  <string name="ExperienceUpgradeActivity_welcome_to_signal_dgaf">Tervetuloa Signaliin.</string>
-  <string name="ExperienceUpgradeActivity_textsecure_is_now_called_signal">TextSecure ja RedPhone ovat yhdistyneet nyt Signaliksi: yksityiset viestit ja puhelut samassa paketissa.</string>
-  <string name="ExperienceUpgradeActivity_welcome_to_signal_excited">Tervetuloa Signaliin!</string>
+  <string name="ExperienceUpgradeActivity_welcome_to_signal_dgaf">Tervetuloa Cableiin.</string>
+  <string name="ExperienceUpgradeActivity_textsecure_is_now_called_signal">TextSecure ja RedPhone ovat yhdistyneet nyt Cableiksi: yksityiset viestit ja puhelut samassa paketissa.</string>
+  <string name="ExperienceUpgradeActivity_welcome_to_signal_excited">Tervetuloa Cableiin!</string>
   <string name="ExperienceUpgradeActivity_textsecure_is_now_signal">TextSecure on nyt Cable.</string>
   <string name="ExperienceUpgradeActivity_textsecure_is_now_signal_long">TextSecure ja RedPhone ovat nyt yksi ja sama sovellus: Cable. Napsauta tutustuaksesi.</string>
   <string name="ExperienceUpgradeActivity_say_hello_to_video_calls">Sano hei turvallisille videopuheluille.</string>
@@ -258,7 +258,7 @@ Vastaanotettu: %4$s</string>
   <string name="ExportFragment_export_successful">Vienti onnistui.</string>
   <!--GcmRefreshJob-->
   <string name="GcmRefreshJob_Permanent_Signal_communication_failure">Pysyvä Cable-yhteysvirhe!</string>
-  <string name="GcmRefreshJob_Signal_was_unable_to_register_with_Google_Play_Services">Cable ei voinut rekisteröityä Google Play Services -palveluun, minkä vuoksi Cable-viestit ja puhelut ovat otettu pois käytöstä. Kokeile rekisteröityä uudelleen Signalin lisäasetuksista.</string>
+  <string name="GcmRefreshJob_Signal_was_unable_to_register_with_Google_Play_Services">Cable ei voinut rekisteröityä Google Play Services -palveluun, minkä vuoksi Cable-viestit ja puhelut ovat otettu pois käytöstä. Kokeile rekisteröityä uudelleen Cablein lisäasetuksista.</string>
   <!--GiphyActivity-->
   <string name="GiphyActivity_error_while_retrieving_full_resolution_gif">Täysikokoisen GIFin lataaminen epäonnistui</string>
   <!--GiphyFragmentPageAdapter-->
@@ -269,8 +269,8 @@ Vastaanotettu: %4$s</string>
   <string name="GroupCreateActivity_actionbar_edit_title">Muokkaa ryhmää</string>
   <string name="GroupCreateActivity_group_name_hint">Ryhmän nimi</string>
   <string name="GroupCreateActivity_actionbar_mms_title">Uusi MMS-ryhmä</string>
-  <string name="GroupCreateActivity_contacts_dont_support_push">Olet valinnut yhteystiedon, joka ei tue Signalin ryhmäkeskusteluja. Tämä ryhmä tulee olemaan MMS-pohjainen.</string>
-  <string name="GroupCreateActivity_youre_not_registered_for_signal">Et ole rekisteröitynyt Cable-viesteihin ja -puheluihin, joten Signalin ryhmäkeskustelut eivät ole käytettävissä. Kokeile rekisteröityä Signalin lisäasetuksista.</string>
+  <string name="GroupCreateActivity_contacts_dont_support_push">Olet valinnut yhteystiedon, joka ei tue Cablein ryhmäkeskusteluja. Tämä ryhmä tulee olemaan MMS-pohjainen.</string>
+  <string name="GroupCreateActivity_youre_not_registered_for_signal">Et ole rekisteröitynyt Cable-viesteihin ja -puheluihin, joten Cablein ryhmäkeskustelut eivät ole käytettävissä. Kokeile rekisteröityä Cablein lisäasetuksista.</string>
   <string name="GroupCreateActivity_contacts_mms_exception">Ryhmän luonti epäonnistui odottamattoman virheen takia.</string>
   <string name="GroupCreateActivity_contacts_no_members">Ryhmässä täytyy olla vähintään yksi henkilö!</string>
   <string name="GroupCreateActivity_contacts_invalid_number">Yhdellä ryhmän jäsenistä on puhelinnumero, jota ei voida lukea. Ole hyvä ja korjaa tämän henkilön yhteystiedot tai poista hänet ryhmästä ja yritä uudelleen.</string>
@@ -278,7 +278,7 @@ Vastaanotettu: %4$s</string>
   <string name="GroupCreateActivity_menu_apply_button">Valmis</string>
   <string name="GroupCreateActivity_creating_group">Luodaan %1$s…</string>
   <string name="GroupCreateActivity_updating_group">Päivitetään %1$s...</string>
-  <string name="GroupCreateActivity_cannot_add_non_push_to_existing_group">Yhteystietoa %1$s ei voitu lisätä ryhmään, koska hän ei ole Signalin-käyttäjä</string>
+  <string name="GroupCreateActivity_cannot_add_non_push_to_existing_group">Yhteystietoa %1$s ei voitu lisätä ryhmään, koska hän ei ole Cablein-käyttäjä</string>
   <string name="GroupCreateActivity_loading_group_details">Ladataan ryhmän tiedot...</string>
   <string name="GroupCreateActivity_youre_already_in_the_group">Olet jo ryhmässä.</string>
   <!--GroupMembersDialog-->
@@ -288,7 +288,7 @@ Vastaanotettu: %4$s</string>
   <string name="ImportExportActivity_export">Vie</string>
   <!--ImportFragment-->
   <string name="ImportFragment_import_system_sms_database">Tuodaanko järjestelmän tekstiviestitietokanta?</string>
-  <string name="ImportFragment_this_will_import_messages_from_the_system">Tämä toiminto kopioi tekstiviestit laitteesi tietokannasta Signaliin. Jos viestit on tuotu jo aiemmin, seuraa niiden uudelleentuonnista viestien kaksoiskappaleita.</string>
+  <string name="ImportFragment_this_will_import_messages_from_the_system">Tämä toiminto kopioi tekstiviestit laitteesi tietokannasta Cableiin. Jos viestit on tuotu jo aiemmin, seuraa niiden uudelleentuonnista viestien kaksoiskappaleita.</string>
   <string name="ImportFragment_import">Tuo</string>
   <string name="ImportFragment_cancel">Peruuta</string>
   <string name="ImportFragment_restore_encrypted_backup">Palautetaanko salattu varmuuskopio?</string>
@@ -318,7 +318,7 @@ seuraa niiden uudelleentuonnista viestien kaksoiskappaleita.</string>
   <string name="InviteActivity_sending">Lähetetään...</string>
   <string name="InviteActivity_heart_content_description">Sydän</string>
   <string name="InviteActivity_invitations_sent">Kutsut lähetetty!</string>
-  <string name="InviteActivity_invite_to_signal">Kutsu Signaliin</string>
+  <string name="InviteActivity_invite_to_signal">Kutsu Cableiin</string>
   <plurals name="InviteActivity_send_sms_to_friends">
     <item quantity="one">LÄHETÄ SMS 1 YSTÄVÄLLE</item>
     <item quantity="other">LÄHETÄ SMS %d YSTÄVÄLLE</item>
@@ -327,7 +327,7 @@ seuraa niiden uudelleentuonnista viestien kaksoiskappaleita.</string>
     <item quantity="one">Lähetä 1 SMS-kutsu?</item>
     <item quantity="other">Lähetä %d SMS-kutsua?</item>
   </plurals>
-  <string name="InviteActivity_lets_switch_to_signal">Hei, vaihdetaan Signaliin: %1$s</string>
+  <string name="InviteActivity_lets_switch_to_signal">Hei, vaihdetaan Cableiin: %1$s</string>
   <string name="InviteActivity_no_app_to_share_to">Näyttää siltä, ettei sinulla ole yhtään sovellusta, johon jakaa.</string>
   <string name="InviteActivity_friends_dont_let_friends_text_unencrypted">Kaveri ei anna kaverin keskustella ilman salausta.</string>
   <!--KeyScanningActivity-->
@@ -359,7 +359,7 @@ seuraa niiden uudelleentuonnista viestien kaksoiskappaleita.</string>
   <string name="NotificationMmsMessageRecord_downloading_mms_message">Ladataan MMS-viestiä</string>
   <string name="NotificationMmsMessageRecord_error_downloading_mms_message">Virhe ladattaessa MMS-viestiä. Yritä uudelleen napsauttamalla.</string>
   <!--MessageRecord-->
-  <string name="MessageRecord_message_encrypted_with_a_legacy_protocol_version_that_is_no_longer_supported">Vastaanotettiin viesti, joka on salattu Signalin vanhalla versiolla, jota ei enää tueta. Pyydä lähettäjää päivittämään uusimpaan versioon ja lähettämään viesti uudelleen.</string>
+  <string name="MessageRecord_message_encrypted_with_a_legacy_protocol_version_that_is_no_longer_supported">Vastaanotettiin viesti, joka on salattu Cablein vanhalla versiolla, jota ei enää tueta. Pyydä lähettäjää päivittämään uusimpaan versioon ja lähettämään viesti uudelleen.</string>
   <string name="MessageRecord_left_group">Olet lähtenyt ryhmästä.</string>
   <string name="MessageRecord_you_updated_group">Sinä päivitit ryhmää.</string>
   <string name="MessageRecord_s_updated_group">%s päivitti ryhmää.</string>
@@ -391,7 +391,7 @@ seuraa niiden uudelleentuonnista viestien kaksoiskappaleita.</string>
   <string name="DeviceProvisioningActivity_sorry_you_have_too_many_devices_linked_already">Sinulla on liian monta laitetta yhdistettynä. Kokeile poistaa joitakin</string>
   <string name="DeviceActivity_sorry_this_is_not_a_valid_device_link_qr_code">Valitettavasti tämä ei ole laitteen yhdistämiseksi tarkoitettu QR-koodi.</string>
   <string name="DeviceProvisioningActivity_link_a_signal_device">Yhdistetäänkö Cable-laite?</string>
-  <string name="DeviceProvisioningActivity_it_looks_like_youre_trying_to_link_a_signal_device_using_a_3rd_party_scanner">Vaikuttaa siltä, että yrität yhdistää laitetta käyttämällä Signalin ulkopuolista skannaussovellusta. Oman turvallisuutesi vuoksi skannaa QR-koodi uudelleen Signalilla itsellään.</string>
+  <string name="DeviceProvisioningActivity_it_looks_like_youre_trying_to_link_a_signal_device_using_a_3rd_party_scanner">Vaikuttaa siltä, että yrität yhdistää laitetta käyttämällä Cablein ulkopuolista skannaussovellusta. Oman turvallisuutesi vuoksi skannaa QR-koodi uudelleen Cableilla itsellään.</string>
   <!--ExpirationDialog-->
   <string name="ExpirationDialog_disappearing_messages">Katoavat viestit</string>
   <string name="ExpirationDialog_your_messages_will_not_expire">Viestisi eivät vanhene.</string>
@@ -405,7 +405,7 @@ seuraa niiden uudelleentuonnista viestien kaksoiskappaleita.</string>
   <string name="PlayServicesProblemFragment_the_version_of_google_play_services_you_have_installed_is_not_functioning">Käyttämäsi versio Google Play Servicestä ei toimi kunnolla. Asenna Google Play Services uudelleen ja yritä uudestaan.</string>
   <!--RatingManager-->
   <string name="RatingManager_rate_this_app">Arvostele tämä sovellus</string>
-  <string name="RatingManager_if_you_enjoy_using_this_app_please_take_a_moment">Jos pidät Signalista, voit auttaa meitä arvostelemalla sen.</string>
+  <string name="RatingManager_if_you_enjoy_using_this_app_please_take_a_moment">Jos pidät Cableista, voit auttaa meitä arvostelemalla sen.</string>
   <string name="RatingManager_rate_now">Arvostele nyt!</string>
   <string name="RatingManager_no_thanks">Ei kiitos</string>
   <string name="RatingManager_later">Myöhemmin</string>
@@ -444,7 +444,7 @@ seuraa niiden uudelleentuonnista viestien kaksoiskappaleita.</string>
   <string name="RedPhone_the_number_you_dialed_does_not_support_secure_voice">Numero, johon yritit soittaa, ei tue salattuja puheluita!</string>
   <string name="RedPhone_got_it">Ymmärrän</string>
   <!--RegistrationActivity-->
-  <string name="RegistrationActivity_connect_with_signal">Signalin käyttöönotto</string>
+  <string name="RegistrationActivity_connect_with_signal">Cablein käyttöönotto</string>
   <string name="RegistrationActivity_select_your_country">Valitse maasi</string>
   <string name="RegistrationActivity_you_must_specify_your_country_code">Suuntanumero täytyy
 määritellä</string>
@@ -486,9 +486,9 @@ Tarkista vielä, että tämä on varmasti numerosi! Aiomme seuraavaksi vahvistaa
   <string name="RegistrationProgressActivity_registration_conflict">Rekisteröintiristiriita</string>
   <!--RegistrationService-->
   <string name="RegistrationService_registration_complete">Rekisteröinti suoritettu</string>
-  <string name="RegistrationService_signal_registration_has_successfully_completed">Signalin rekisteröityminen onnistui.</string>
+  <string name="RegistrationService_signal_registration_has_successfully_completed">Cablein rekisteröityminen onnistui.</string>
   <string name="RegistrationService_registration_error">Rekisteröitymisvirhe</string>
-  <string name="RegistrationService_signal_registration_has_encountered_a_problem">Signalin rekisteröitymisessä ilmeni ongelma.</string>
+  <string name="RegistrationService_signal_registration_has_encountered_a_problem">Cablein rekisteröitymisessä ilmeni ongelma.</string>
   <!--Slide-->
   <string name="Slide_image">Kuva</string>
   <string name="Slide_audio">Äänitallenne</string>
@@ -515,10 +515,10 @@ Vastaanotetiin avaintenvaihtoviesti, joka kuuluu väärälle protokollaversiolle
   <string name="ThreadRecord_your_safety_number_with_s_has_changed">Sinun ja yhteystiedon %s turvanumero on vaihtunut.</string>
   <!--UpdateApkReadyListener-->
   <string name="UpdateApkReadyListener_Signal_update">Cable-päivitys</string>
-  <string name="UpdateApkReadyListener_a_new_version_of_signal_is_available_tap_to_update">Uusi versio Signalista on saatavilla. Päivitä napsauttamalla.</string>
+  <string name="UpdateApkReadyListener_a_new_version_of_signal_is_available_tap_to_update">Uusi versio Cableista on saatavilla. Päivitä napsauttamalla.</string>
   <!--VerifyIdentityActivity-->
-  <string name="VerifyIdentityActivity_your_contact_is_running_an_old_version_of_signal">Yhteystietosi käyttää vanhaa versiota Signalista. Pyydä häntä päivittämään, jotta voit varmentaa turvanumeron.</string>
-  <string name="VerifyIdentityActivity_your_contact_is_running_a_newer_version_of_Signal">Yhteystietosi käyttää uudempaa versiota Signalista, jonka QR-koodi ei toimi oman versiosi kanssa. Päivitä Signalisi uusimpaan versioon.</string>
+  <string name="VerifyIdentityActivity_your_contact_is_running_an_old_version_of_signal">Yhteystietosi käyttää vanhaa versiota Cableista. Pyydä häntä päivittämään, jotta voit varmentaa turvanumeron.</string>
+  <string name="VerifyIdentityActivity_your_contact_is_running_a_newer_version_of_Signal">Yhteystietosi käyttää uudempaa versiota Cableista, jonka QR-koodi ei toimi oman versiosi kanssa. Päivitä Cableisi uusimpaan versioon.</string>
   <string name="VerifyIdentityActivity_the_scanned_qr_code_is_not_a_correctly_formatted_safety_number">Skannaamasi QR-koodi ei ole oikeanmallinen turvanumerokoodi. Yritä skannata uudelleen.</string>
   <string name="VerifyIdentityActivity_share_safety_number_via">Jaa turvanumero...</string>
   <string name="VerifyIdentityActivity_our_signal_safety_number">Meidän Cable-turvanumeromme:</string>
@@ -552,11 +552,11 @@ Vastaanotetiin avaintenvaihtoviesti, joka kuuluu väärälle protokollaversiolle
   <string name="ApplicationMigrationService_import_in_progress">Tuonti käynnissä</string>
   <string name="ApplicationMigrationService_importing_text_messages">Tuo tekstiviestejä</string>
   <string name="ApplicationMigrationService_import_complete">Tuonti valmis</string>
-  <string name="ApplicationMigrationService_system_database_import_is_complete">Järjestelmän tekstiviestitietokannan tuonti Signaliin on valmis.</string>
+  <string name="ApplicationMigrationService_system_database_import_is_complete">Järjestelmän tekstiviestitietokannan tuonti Cableiin on valmis.</string>
   <!--KeyCachingService-->
   <string name="KeyCachingService_signal_passphrase_cached">Siirry takaisin sovellukseen koskettamalla tästä.</string>
   <string name="KeyCachingService_signal_passphrase_cached_with_lock">Lukitse sovellus koskettamalla lukkoa.</string>
-  <string name="KeyCachingService_passphrase_cached">Signalin lukitus on auki</string>
+  <string name="KeyCachingService_passphrase_cached">Cablein lukitus on auki</string>
   <string name="KeyCachingService_lock">Lukitse salalauseella</string>
   <!--MediaPreviewActivity-->
   <string name="MediaPreviewActivity_you">Sinä</string>
@@ -593,7 +593,7 @@ Vastaanotetiin avaintenvaihtoviesti, joka kuuluu väärälle protokollaversiolle
   <!--VideoPlayer-->
   <string name="VideoPlayer_error_playing_video">Virhe videon toistossa</string>
   <!--WebRtcCallScreen-->
-  <string name="WebRtcCallScreen_new_safety_numbers">Turvanumerosi yhteystiedon %1$s kanssa on vaihtunut. Tämä voi tarkoittaa joko sitä, että joku yrittää kaapata viestiliikennettänne, tai sitä, että %2$s on vain yksinkertaisesti asentanut Signalin uudelleen.</string>
+  <string name="WebRtcCallScreen_new_safety_numbers">Turvanumerosi yhteystiedon %1$s kanssa on vaihtunut. Tämä voi tarkoittaa joko sitä, että joku yrittää kaapata viestiliikennettänne, tai sitä, että %2$s on vain yksinkertaisesti asentanut Cablein uudelleen.</string>
   <string name="WebRtcCallScreen_you_may_wish_to_verify_this_contact">Saatat haluta varmentaa turvanumerosi tämän yhteystiedon kanssa.</string>
   <string name="WebRtcCallScreen_new_safety_number_title">Uusi turvanumero</string>
   <!--WebRtcCallControls-->
@@ -646,7 +646,7 @@ Vastaanotetiin avaintenvaihtoviesti, joka kuuluu väärälle protokollaversiolle
   <string name="conversation_activity__attachment_thumbnail">Liitteen esikatselu</string>
   <string name="conversation_activity__quick_attachment_drawer_toggle_camera_description">Avaa tai sulje pikakamera</string>
   <string name="conversation_activity__quick_attachment_drawer_record_and_send_audio_description">Nauhoita ja lähetä ääniviesti</string>
-  <string name="conversation_activity__enable_signal_for_sms">Käytä Signalia tekstiviesteille</string>
+  <string name="conversation_activity__enable_signal_for_sms">Käytä Cableia tekstiviesteille</string>
   <!--conversation_input_panel-->
   <string name="conversation_input_panel__slide_to_cancel">Pyyhkäise peruuttaaksesi</string>
   <!--conversation_item-->
@@ -725,7 +725,7 @@ Vastaanotetiin avaintenvaihtoviesti, joka kuuluu väärälle protokollaversiolle
   <string name="log_submit_activity__posting_logs">Lokia lähetetään gistiin...</string>
   <string name="log_submit_activity__no_browser_installed">Selainta ei ole asennettu</string>
   <!--database_migration_activity-->
-  <string name="database_migration_activity__would_you_like_to_import_your_existing_text_messages">Napsauta, jos haluat kopioida puhelimesi tekstiviestit Signalin salattuun tietokantaan.</string>
+  <string name="database_migration_activity__would_you_like_to_import_your_existing_text_messages">Napsauta, jos haluat kopioida puhelimesi tekstiviestit Cablein salattuun tietokantaan.</string>
   <string name="database_migration_activity__the_default_system_database_will_not_be_modified">Järjestelmän oletustietokantaa ei tulla muuttamaan millään tavalla.</string>
   <string name="database_migration_activity__skip">Ohita</string>
   <string name="database_migration_activity__import">Tuo</string>
@@ -736,7 +736,7 @@ Vastaanotetiin avaintenvaihtoviesti, joka kuuluu väärälle protokollaversiolle
   <string name="export_fragment__export_plaintext_backup">Vie salaamaton varmuuskopio</string>
   <string name="export_fragment__export_a_plaintext_backup_compatible_with">Vie salaamaton \"SMS Backup And Restore\" -yhteensopiva varmuuskopio laitteesi tallennustilaan.</string>
   <string name="import_fragment__import_system_sms_database">Tuo järjestelmän tekstiviestit</string>
-  <string name="import_fragment__import_the_database_from_the_default_system">Tuo tietokanta järjestelmän oletustekstiviestisovelluksesta Signaliin.</string>
+  <string name="import_fragment__import_the_database_from_the_default_system">Tuo tietokanta järjestelmän oletustekstiviestisovelluksesta Cableiin.</string>
   <string name="import_fragment__restore_encrypted_backup">Palauta salattu varmuuskopio</string>
   <string name="import_fragment__restore_a_previously_exported_encrypted_signal_backup"> Palauta aiemmin viety salattu Cable-varmuuskopio.</string>
   <string name="import_fragment__import_plaintext_backup">Tuo salaamaton varmuuskopio</string>
@@ -889,8 +889,8 @@ Cable ei saanut vahvistustekstiviestiä odotusajan sisällä.</string>
   <string name="preferences__sms_mms">SMS ja MMS</string>
   <string name="preferences__pref_all_sms_title">Vastaanota kaikki tekstiviestit</string>
   <string name="preferences__pref_all_mms_title">Vastaanota kaikki multimediaviestit</string>
-  <string name="preferences__use_signal_for_viewing_and_storing_all_incoming_text_messages">Käytä Signalia kaikkiin saapuviin tekstiviesteihin</string>
-  <string name="preferences__use_signal_for_viewing_and_storing_all_incoming_multimedia_messages">Käytä Signalia kaikkiin saapuviin multimediaviesteihin</string>
+  <string name="preferences__use_signal_for_viewing_and_storing_all_incoming_text_messages">Käytä Cableia kaikkiin saapuviin tekstiviesteihin</string>
+  <string name="preferences__use_signal_for_viewing_and_storing_all_incoming_multimedia_messages">Käytä Cableia kaikkiin saapuviin multimediaviesteihin</string>
   <string name="preferences__input_settings">Syöttöasetukset</string>
   <string name="preferences__enable_enter_key_title">Ota rivinvaihto käyttöön</string>
   <string name="preferences__replace_smiley_with_enter_key">Korvaa hymiönäppäin rivinvaihtonäppäimellä</string>
@@ -905,7 +905,7 @@ Cable ei saanut vahvistustekstiviestiä odotusajan sisällä.</string>
   <string name="preferences__lock_signal_and_message_notifications_with_a_passphrase">Lukitse Cable ja ilmoitukset viesteistä salalauseella</string>
   <string name="preferences__screen_security">Näytön suojaus</string>
   <string name="preferences__disable_screen_security_to_allow_screen_shots">Estä kuvakaappaukset \"viimeksi käytetyt sovellukset\" -näkymästä sekä sovelluksen sisältä</string>
-  <string name="preferences__auto_lock_signal_after_a_specified_time_interval_of_inactivity">Lukitse automaattisesti salalauseella, jos Signalia ei ole käytetty määriteltynä aikavälinä</string>
+  <string name="preferences__auto_lock_signal_after_a_specified_time_interval_of_inactivity">Lukitse automaattisesti salalauseella, jos Cableia ei ole käytetty määriteltynä aikavälinä</string>
   <string name="preferences__inactivity_timeout_passphrase">Ajasta lukitus</string>
   <string name="preferences__inactivity_timeout_interval">Automaattisen lukituksen aikaväli</string>
   <string name="preferences__notifications">Ilmoitukset</string>
@@ -974,7 +974,7 @@ Cable ei saanut vahvistustekstiviestiä odotusajan sisällä.</string>
   <string name="preferences__default">Oletus</string>
   <string name="preferences__language">Kieli</string>
   <string name="preferences__signal_messages_and_calls">Cable-viestit ja -puhelut</string>
-  <string name="preferences__free_private_messages_and_calls">Ilmaiset ja yksityiset viestit sekä puhelut Signalin käyttäjille</string>
+  <string name="preferences__free_private_messages_and_calls">Ilmaiset ja yksityiset viestit sekä puhelut Cablein käyttäjille</string>
   <string name="preferences__submit_debug_log">Lähetä virheenkorjausloki</string>
   <string name="preferences__support_wifi_calling">\"WiFi Calling\" -yhteensopiva tila</string>
   <string name="preferences__enable_if_your_device_supports_sms_mms_delivery_over_wifi">Ota käyttöön, jos laitteesi lähettää SMS- ja MMS-viestit WiFi-yhteyden kautta. (Ota käyttöön vain, kun \"WiFi Calling\" on käytössä laitteessasi.)</string>
@@ -988,7 +988,7 @@ Cable ei saanut vahvistustekstiviestiä odotusajan sisällä.</string>
   <string name="preferences_chats__media_auto_download">Liitetiedostojen automaattinen lataus</string>
   <string name="preferences_chats__message_trimming">Keskustelujen karsiminen</string>
   <string name="preferences_advanced__use_system_emoji">Käytä järjestelmän hymiöitä</string>
-  <string name="preferences_advanced__disable_signal_built_in_emoji_support">Ota Signalin oletushymiöt pois käytöstä</string>
+  <string name="preferences_advanced__disable_signal_built_in_emoji_support">Ota Cablein oletushymiöt pois käytöstä</string>
   <string name="preferences_advanced__video_calling_beta">Videopuheluiden beta</string>
   <string name="preferences_advanced__enable_support_for_next_generation_video_and_voice_calls">Tuki seuraavan sukupolven video- ja äänipuheluille, jos asetus on päällä molemmilla osapuolilla. Tämä on vielä beta-vaiheessa.</string>
   <string name="preferences_advanced__relay_all_calls_through_the_signal_server_to_avoid_revealing_your_ip_address">Välitä kaikki puhelut Cable-palvelimen kautta välttääksesi IP-osoitteesi paljastumista yhteystiedollesi. Tämä toiminto heikentää puhelun laatua.</string>
@@ -1077,29 +1077,29 @@ Cable ei saanut vahvistustekstiviestiä odotusajan sisällä.</string>
   <string name="verify_display_fragment_context_menu__copy_to_clipboard">Kopioi leikepöydälle</string>
   <string name="verify_display_fragment_context_menu__compare_with_clipboard">Vertaa leikepöytään</string>
   <!--reminder_header-->
-  <string name="reminder_header_outdated_build">Käyttämäsi Signalin versio on vanhentunut!</string>
+  <string name="reminder_header_outdated_build">Käyttämäsi Cablein versio on vanhentunut!</string>
   <plurals name="reminder_header_outdated_build_details">
     <item quantity="one">Käyttämäsi Signalin versio vanhenee 1 päivässä. Napsauta päivittääksesi viimeisimpään versioon.</item>
     <item quantity="other">Käyttämäsi Signalin versio vanhenee %d päivässä. Napsauta päivittääksesi viimeisimpään versioon.</item>
   </plurals>
-  <string name="reminder_header_outdated_build_details_today">Käyttämäsi Signalin versio vanhenee tänään. Napsauta päivittääksesi viimeisimpään versioon.</string>
-  <string name="reminder_header_expired_build">Käyttämäsi Signalin versio on vanhentunut!</string>
+  <string name="reminder_header_outdated_build_details_today">Käyttämäsi Cablein versio vanhenee tänään. Napsauta päivittääksesi viimeisimpään versioon.</string>
+  <string name="reminder_header_expired_build">Käyttämäsi Cablein versio on vanhentunut!</string>
   <string name="reminder_header_expired_build_details">Viestien lähetys ei enää onnistu. Napsauta päivittääksesi viimeisimpään versioon.</string>
   <string name="reminder_header_expired_build_button">PÄIVITÄ</string>
   <string name="reminder_header_sms_default_title">Käytä oletuksena tekstiviesteille?</string>
-  <string name="reminder_header_sms_default_text">Napsauta, jos haluat tehdä Signalista oletustekstiviestisovelluksesi.</string>
+  <string name="reminder_header_sms_default_text">Napsauta, jos haluat tehdä Cableista oletustekstiviestisovelluksesi.</string>
   <string name="reminder_header_sms_default_button">ASETA</string>
   <string name="reminder_header_sms_import_title">Tuo järjestelmän tekstiviestit</string>
-  <string name="reminder_header_sms_import_text">Napsauta, jos haluat kopioida puhelimesi tekstiviestit Signalin salattuun tietokantaan.</string>
+  <string name="reminder_header_sms_import_text">Napsauta, jos haluat kopioida puhelimesi tekstiviestit Cablein salattuun tietokantaan.</string>
   <string name="reminder_header_sms_import_button">TUO</string>
   <string name="reminder_header_push_title">Ota käyttöön Cable-viestit ja -puhelut</string>
   <string name="reminder_header_push_text">Päivitä keskustelukokemuksesi</string>
   <string name="reminder_header_push_button">OTA KÄYTTÖÖN</string>
-  <string name="reminder_header_invite_title">Kutsu Signaliin</string>
+  <string name="reminder_header_invite_title">Kutsu Cableiin</string>
   <string name="reminder_header_invite_text">Vie keskustelusi yhteystiedon %1$s kanssa seuraavalle tasolle.</string>
   <string name="reminder_header_invite_button">KUTSU</string>
   <string name="reminder_header_share_title">Kutsu ystäviäsi!</string>
-  <string name="reminder_header_share_text">Mitä useampi ystävistäsi käyttää Signalia, sitä paremmaksi se muuttuu.</string>
+  <string name="reminder_header_share_text">Mitä useampi ystävistäsi käyttää Cableia, sitä paremmaksi se muuttuu.</string>
   <string name="reminder_header_share_button">JAA</string>
   <string name="reminder_header_close_button">SULJE</string>
   <!--media_preview-->

@@ -19,7 +19,7 @@
   </plurals>
   <string name="ApplicationPreferencesActivity_delete">삭제</string>
   <string name="ApplicationPreferencesActivity_disable_passphrase">암호 사용 중지</string>
-  <string name="ApplicationPreferencesActivity_this_will_permanently_unlock_signal_and_message_notifications">Signal이 잠금 해제되어 메시지 알림이 표시됩니다.</string>
+  <string name="ApplicationPreferencesActivity_this_will_permanently_unlock_signal_and_message_notifications">Cable이 잠금 해제되어 메시지 알림이 표시됩니다.</string>
   <string name="ApplicationPreferencesActivity_disable">사용 중지</string>
   <string name="ApplicationPreferencesActivity_unregistering">Cable 메시지 서비스 탈퇴</string>
   <string name="ApplicationPreferencesActivity_unregistering_from_signal_messages_and_calls">Cable 메시지와 통화 서비스를 탈퇴 중…</string>
@@ -29,7 +29,7 @@
   <string name="ApplicationPreferencesActivity_sms_enabled">SMS 사용</string>
   <string name="ApplicationPreferencesActivity_touch_to_change_your_default_sms_app">기본 SMS 앱을 변경하려면 터치하세요</string>
   <string name="ApplicationPreferencesActivity_sms_disabled">SMS 사용 안함</string>
-  <string name="ApplicationPreferencesActivity_touch_to_make_signal_your_default_sms_app">Signal을 기본 SMS 앱으로 설정하려면 터치하세요</string>
+  <string name="ApplicationPreferencesActivity_touch_to_make_signal_your_default_sms_app">Cable을 기본 SMS 앱으로 설정하려면 터치하세요</string>
   <string name="ApplicationPreferencesActivity_on">사용</string>
   <string name="ApplicationPreferencesActivity_On">사용</string>
   <string name="ApplicationPreferencesActivity_off">사용 안함</string>
@@ -111,7 +111,7 @@
   <string name="ConversationActivity_transport_insecure_sms">보안 해제된 SMS</string>
   <string name="ConversationActivity_transport_insecure_mms">보안 해제된 MMS</string>
   <string name="ConversationActivity_transport_signal">Cable</string>
-  <string name="ConversationActivity_lets_switch_to_signal">Signal로 같이 바꿔요~ %1$s</string>
+  <string name="ConversationActivity_lets_switch_to_signal">Cable로 같이 바꿔요~ %1$s</string>
   <string name="ConversationActivity_lets_use_this_to_chat">이 앱으로 우리 같이 채팅해요~ %1$s</string>
   <string name="ConversationActivity_error_leaving_group">그룹에서 나가기 오류</string>
   <string name="ConversationActivity_mms_not_supported_title">MMS 전송 안됨</string>
@@ -207,11 +207,11 @@
   <!--ShareActivity-->
   <string name="ShareActivity_share_with">공유 대상</string>
   <!--ExperienceUpgradeActivity-->
-  <string name="ExperienceUpgradeActivity_welcome_to_signal_dgaf">Signal에 오신 것을 환영합니다.</string>
-  <string name="ExperienceUpgradeActivity_textsecure_is_now_called_signal">이제부터 TextSecure와 RedPhone이 새 다목적 보안 메신저 앱 Signal로 통합되었습니다.</string>
-  <string name="ExperienceUpgradeActivity_welcome_to_signal_excited">Signal에 오신 것을 환영합니다~!</string>
-  <string name="ExperienceUpgradeActivity_textsecure_is_now_signal">이제부터 TextSecure가 Signal로 바뀌었습니다.</string>
-  <string name="ExperienceUpgradeActivity_textsecure_is_now_signal_long">이제부터 TextSecure와 RedPhone이 새 앱 Signal로 통합되었습니다. 탐색하려면 터치하세요.</string>
+  <string name="ExperienceUpgradeActivity_welcome_to_signal_dgaf">Cable에 오신 것을 환영합니다.</string>
+  <string name="ExperienceUpgradeActivity_textsecure_is_now_called_signal">이제부터 TextSecure와 RedPhone이 새 다목적 보안 메신저 앱 Cable로 통합되었습니다.</string>
+  <string name="ExperienceUpgradeActivity_welcome_to_signal_excited">Cable에 오신 것을 환영합니다~!</string>
+  <string name="ExperienceUpgradeActivity_textsecure_is_now_signal">이제부터 TextSecure가 Cable로 바뀌었습니다.</string>
+  <string name="ExperienceUpgradeActivity_textsecure_is_now_signal_long">이제부터 TextSecure와 RedPhone이 새 앱 Cable로 통합되었습니다. 탐색하려면 터치하세요.</string>
   <!--ExportFragment-->
   <string name="ExportFragment_export">내보내기</string>
   <string name="ExportFragment_export_plaintext_to_storage">암호화되지 않은 대화를 저장소로 내보내시겠습니까?</string>
@@ -224,7 +224,7 @@
   <string name="ExportFragment_export_successful">대화 내보내기 완료됨</string>
   <!--GcmRefreshJob-->
   <string name="GcmRefreshJob_Permanent_Signal_communication_failure">영구적인 Cable 통신 실패!</string>
-  <string name="GcmRefreshJob_Signal_was_unable_to_register_with_Google_Play_Services">Signal은 Google Play 서비스에 등록할 수 없습니다. Cable 메시지와 통화는 사용 중지되었으므로 Cable 설정 메뉴에서 재가입해 주세요.</string>
+  <string name="GcmRefreshJob_Signal_was_unable_to_register_with_Google_Play_Services">Cable은 Google Play 서비스에 등록할 수 없습니다. Cable 메시지와 통화는 사용 중지되었으므로 Cable 설정 메뉴에서 재가입해 주세요.</string>
   <!--GiphyActivity-->
   <string name="GiphyActivity_error_while_retrieving_full_resolution_gif">최대 해상도 GIF 파일을 받는 동안 오류 발생</string>
   <!--GiphyFragmentPageAdapter-->
@@ -252,7 +252,7 @@
   <string name="ImportExportActivity_export">내보내기</string>
   <!--ImportFragment-->
   <string name="ImportFragment_import_system_sms_database">시스템 SMS를 가져오시겠습니까?</string>
-  <string name="ImportFragment_this_will_import_messages_from_the_system">시스템 SMS 메시지를 Signal에 가져옵니다. 이전에 가져온 시스템 SMS 메시지를 다시 가져오면 중복됩니다.</string>
+  <string name="ImportFragment_this_will_import_messages_from_the_system">시스템 SMS 메시지를 Cable에 가져옵니다. 이전에 가져온 시스템 SMS 메시지를 다시 가져오면 중복됩니다.</string>
   <string name="ImportFragment_import">가져오기</string>
   <string name="ImportFragment_cancel">취소</string>
   <string name="ImportFragment_restore_encrypted_backup">암호화된 백업을 복원하시겠습니까?</string>
@@ -278,20 +278,20 @@
   <string name="InviteActivity_sending">보내는 중…</string>
   <string name="InviteActivity_heart_content_description">하트</string>
   <string name="InviteActivity_invitations_sent">초대 보냄</string>
-  <string name="InviteActivity_invite_to_signal">Signal로 초대</string>
+  <string name="InviteActivity_invite_to_signal">Cable로 초대</string>
   <plurals name="InviteActivity_send_sms_to_friends">
     <item quantity="other">%d분에게 SMS 보내기</item>
   </plurals>
   <plurals name="InviteActivity_send_sms_invites">
     <item quantity="other">초대 메시지 %d개를 SMS로 보내시겠습니까?</item>
   </plurals>
-  <string name="InviteActivity_lets_switch_to_signal">Signal로 같이 바꿔요~ %1$s</string>
+  <string name="InviteActivity_lets_switch_to_signal">Cable로 같이 바꿔요~ %1$s</string>
   <string name="InviteActivity_no_app_to_share_to">친구 초대 위해 공유할 수 있는 앱 없음</string>
   <string name="InviteActivity_friends_dont_let_friends_text_unencrypted">좋은 친구라면 친구의 메시지도 암호화 해주세요~</string>
   <!--KeyScanningActivity-->
   <string name="KeyScanningActivity_no_scanned_key_found_exclamation">스캔된 키 없음</string>
   <string name="KeyScanningActivity_install_barcode_Scanner">바코드 스캐너를 설치하시겠습니까?</string>
-  <string name="KeyScanningActivity_this_application_requires_barcode_scanner_would_you_like_to_install_it">QR코드 스캔하려면 Signal은 바코드 스캐너가 필요합니다.</string>
+  <string name="KeyScanningActivity_this_application_requires_barcode_scanner_would_you_like_to_install_it">QR코드 스캔하려면 Cable은 바코드 스캐너가 필요합니다.</string>
   <!--MessageDetailsRecipient-->
   <string name="MessageDetailsRecipient_failed_to_send">전송 실패</string>
   <!--MessageRetrievalService-->
@@ -339,7 +339,7 @@
   <string name="DeviceProvisioningActivity_content_progress_key_error">QR코드가 잘못됨</string>
   <string name="DeviceActivity_sorry_this_is_not_a_valid_device_link_qr_code">기기 연결 QR코드 잘못됨</string>
   <string name="DeviceProvisioningActivity_link_a_signal_device">Cable 기기를 연결하시겠습니까?</string>
-  <string name="DeviceProvisioningActivity_it_looks_like_youre_trying_to_link_a_signal_device_using_a_3rd_party_scanner">Cable 기기를 서드파티 스캐너로 연결해 보는 것 같습니다. 안전한 사용을 위해 Signal에서 다시 스캔해 주세요.</string>
+  <string name="DeviceProvisioningActivity_it_looks_like_youre_trying_to_link_a_signal_device_using_a_3rd_party_scanner">Cable 기기를 서드파티 스캐너로 연결해 보는 것 같습니다. 안전한 사용을 위해 Cable에서 다시 스캔해 주세요.</string>
   <!--ExpirationDialog-->
   <!--PassphrasePromptActivity-->
   <string name="PassphrasePromptActivity_enter_passphrase">암호 입력</string>
@@ -381,11 +381,11 @@
   <string name="RedPhone_fatal_error">치명적인 오류 발생</string>
   <string name="RedPhone_login_failed">로그인 되지 않음</string>
   <string name="RedPhone_message_from_the_server">서버로 부터의 메시지</string>
-  <string name="RedPhone_number_not_registered">전화번호 Signal에 등록되지 않음</string>
+  <string name="RedPhone_number_not_registered">전화번호 Cable에 등록되지 않음</string>
   <string name="RedPhone_the_number_you_dialed_does_not_support_secure_voice">지금 거신 전화번호는 보안 통화를 지원하지 않습니다.</string>
   <string name="RedPhone_got_it">확인</string>
   <!--RegistrationActivity-->
-  <string name="RegistrationActivity_connect_with_signal">Signal로 연결</string>
+  <string name="RegistrationActivity_connect_with_signal">Cable로 연결</string>
   <string name="RegistrationActivity_select_your_country">국가 선택</string>
   <string name="RegistrationActivity_you_must_specify_your_country_code">국가 번호를 입력해야 함</string>
   <string name="RegistrationActivity_you_must_specify_your_phone_number">전화번호를 입력해야 함</string>
@@ -617,7 +617,7 @@
   <string name="log_submit_activity__posting_logs">로그를 gist에 게시 중…</string>
   <string name="log_submit_activity__no_browser_installed">브라우저 앱 없음</string>
   <!--database_migration_activity-->
-  <string name="database_migration_activity__would_you_like_to_import_your_existing_text_messages">시스템 SMS 메시지를 Signal의 암호화된 데이터베이스에 가져오시겠습니까?</string>
+  <string name="database_migration_activity__would_you_like_to_import_your_existing_text_messages">시스템 SMS 메시지를 Cable의 암호화된 데이터베이스에 가져오시겠습니까?</string>
   <string name="database_migration_activity__the_default_system_database_will_not_be_modified">기본 시스템 SMS 데이터베이스가 변경되지 않습니다.</string>
   <string name="database_migration_activity__skip">건너뛰기</string>
   <string name="database_migration_activity__import">가져오기</string>
@@ -666,7 +666,7 @@
   <string name="redphone_call_controls__mute">음소거</string>
   <string name="redphone_call_controls__signal_call">Cable 통화</string>
   <!--registration_activity-->
-  <string name="registration_activity__verify_your_number_to_connect_with_signal">Signal에 연결을 위해 전화번호를 확인합니다.</string>
+  <string name="registration_activity__verify_your_number_to_connect_with_signal">Cable에 연결을 위해 전화번호를 확인합니다.</string>
   <string name="registration_activity__your_country">국가</string>
   <string name="registration_activity__your_country_code_and_phone_number">국제전화 나라 번호 및 전화번호</string>
   <string name="registration_activity__phone_number">전화번호</string>
@@ -679,21 +679,21 @@
   <string name="registration_problems__incorrect_number">잘못된 전화번호</string>
   <string name="registration_problems__please_checkt_to_make_sure_you_entered_your_number_correctly">전화번호 입력, 지역에 따라 형식이 올바른지 확인하세요.</string>
   <string name="registration_problems__google_voice">Google 보이스</string>
-  <string name="registration_problems__signal_will_not_work_with_google_voice_numbers">Signal이 Google 보이스 전화번호와 작동하지 않습니다.</string>
+  <string name="registration_problems__signal_will_not_work_with_google_voice_numbers">Cable이 Google 보이스 전화번호와 작동하지 않습니다.</string>
   <!--registration_progress_activity-->
   <string name="registration_progress_activity__voice_verification">전화 통화 확인</string>
-  <string name="registration_progress_activity__signal_can_also_call_you_to_verify_your_number">전화번호 확인을 위해 Signal이 전화할 수도 있습니다. \'나에게 전화\'를 터치하여 안내된 인증번호 6자리를 입력하세요.</string>
+  <string name="registration_progress_activity__signal_can_also_call_you_to_verify_your_number">전화번호 확인을 위해 Cable이 전화할 수도 있습니다. \'나에게 전화\'를 터치하여 안내된 인증번호 6자리를 입력하세요.</string>
   <string name="registration_progress_activity__verify">확인</string>
   <string name="registration_progress_activity__call_me">나에게 전화</string>
   <string name="registration_progress_activity__edit_number">전화번호 수정</string>
   <string name="registration_progress_activity__connectivity_error">연결 실패</string>
-  <string name="registration_progress_activity__signal_was_unable_to_connect_to_the_server">Signal이 서버에 연결하지 못했습니다.</string>
+  <string name="registration_progress_activity__signal_was_unable_to_connect_to_the_server">Cable이 서버에 연결하지 못했습니다.</string>
   <string name="registration_progress_activity__some_possible_problems_include">잠재적인 문제</string>
   <string name="registration_progress_activity__no_network_connectivity">네트워크에 연결되지 않음</string>
   <string name="registration_progress_activity__your_device_needs_network_connectivity">이 Cable 기능을 사용하려면 네트워크에 연결해야 합니다. Wi-Fi나 모바일 데이터 네트워크 연결 상태를 확인하세요.</string>
   <string name="registration_progress_activity__restrictive_firewall">방화벽</string>
   <string name="registration_progress_activity__if_you_are_connected_via_wifi_its_possible_that_there_is_a_firewall">Wi-Fi 네트워크에 연결되면 Cable 서버에 액세스를 제한하는 방화벽이 있을 수 있습니다. 다른 Wi-Fi 네트워크나 모바일 데이터에 연결하세요.</string>
-  <string name="registration_progress_activity__signal_will_now_automatically_verify_your_number_with_a_confirmation_sms_message">Signal이 자동 SMS 인증메시지로 전화번호를 확인합니다.</string>
+  <string name="registration_progress_activity__signal_will_now_automatically_verify_your_number_with_a_confirmation_sms_message">Cable이 자동 SMS 인증메시지로 전화번호를 확인합니다.</string>
   <string name="registration_progress_activity__connecting">연결 중…</string>
   <string name="registration_progress_activity__waiting_for_sms_verification">SMS 인증메시지 기다리는 중…</string>
   <string name="registration_progress_activity__registering_with_server">서버 가입 중…</string>
@@ -768,7 +768,7 @@
   <string name="preferences__change_passphrase">암호 변경</string>
   <string name="preferences__change_your_passphrase">암호 변경</string>
   <string name="preferences__enable_passphrase">암호 사용</string>
-  <string name="preferences__lock_signal_and_message_notifications_with_a_passphrase">Signal과 메시지 알림 암호로 잠금</string>
+  <string name="preferences__lock_signal_and_message_notifications_with_a_passphrase">Cable과 메시지 알림 암호로 잠금</string>
   <string name="preferences__screen_security">화면 보안</string>
   <string name="preferences__disable_screen_security_to_allow_screen_shots">최근 사용 목록/개요 및 앱 안에서 스크린샷 차단</string>
   <string name="preferences__auto_lock_signal_after_a_specified_time_interval_of_inactivity">설정된 비활동 기간 지나면 Cable 잠금</string>
@@ -777,7 +777,7 @@
   <string name="preferences__notifications">알림</string>
   <string name="preferences__enable_message_notifications">메시지 알림 사용</string>
   <string name="preferences__new_contacts_notifications">새 연락처 알림</string>
-  <string name="preferences__show_a_notification_for_new_signal_contacts">연락처 새로 Signal에 가입되면 알림 표시</string>
+  <string name="preferences__show_a_notification_for_new_signal_contacts">연락처 새로 Cable에 가입되면 알림 표시</string>
   <string name="preferences__led_color">알림등 색상</string>
   <string name="preferences__led_color_unknown">알 수 없음</string>
   <string name="preferences__pref_led_blink_title">알림등 반복 패턴</string>
@@ -942,19 +942,19 @@
   <string name="reminder_header_expired_build_details">메시지가 전송되지 않습니다. 최신 버전으로 업데이트 하려면 터치하세요.</string>
   <string name="reminder_header_expired_build_button">업데이트</string>
   <string name="reminder_header_sms_default_title">기본 SMS 앱으로 사용</string>
-  <string name="reminder_header_sms_default_text">Signal을 기본 SMS 앱으로 설정하려면 터치하세요.</string>
+  <string name="reminder_header_sms_default_text">Cable을 기본 SMS 앱으로 설정하려면 터치하세요.</string>
   <string name="reminder_header_sms_default_button">기본 SMS 앱으로 설정</string>
   <string name="reminder_header_sms_import_title">시스템 SMS 가져오기</string>
-  <string name="reminder_header_sms_import_text">휴대전화의 SMS 메시지를 Signal의 암호화된 데이터베이스에 가져오려면 터치하세요.</string>
+  <string name="reminder_header_sms_import_text">휴대전화의 SMS 메시지를 Cable의 암호화된 데이터베이스에 가져오려면 터치하세요.</string>
   <string name="reminder_header_sms_import_button">가져오기</string>
   <string name="reminder_header_push_title">Cable 메시지와 통화 사용</string>
   <string name="reminder_header_push_text">통신 방법을 업그레이드 하시겠습니까?</string>
   <string name="reminder_header_push_button">사용</string>
-  <string name="reminder_header_invite_title">Signal로 초대</string>
+  <string name="reminder_header_invite_title">Cable로 초대</string>
   <string name="reminder_header_invite_text">더 재밌는 대화를 %1$s님과 경험해 보시겠습니까?</string>
   <string name="reminder_header_invite_button">초대</string>
   <string name="reminder_header_share_title">친구 초대</string>
-  <string name="reminder_header_share_text">Signal을 사용하는 친구가 많을수록 더 많은 것을 경험할 수 있습니다.</string>
+  <string name="reminder_header_share_text">Cable을 사용하는 친구가 많을수록 더 많은 것을 경험할 수 있습니다.</string>
   <string name="reminder_header_share_button">공유</string>
   <string name="reminder_header_close_button">닫기</string>
   <!--media_preview-->

@@ -393,7 +393,7 @@ importimi i sërishëm do të rezultojë ne mesazhe duplikate.</string>
   <string name="DeviceProvisioningActivity_content_progress_key_error">Kod QR i gabuar.</string>
   <string name="DeviceProvisioningActivity_sorry_you_have_too_many_devices_linked_already">Kërkojmë falje, keni lidhur shumë pajisje, provoni të mënjanoni disa</string>
   <string name="DeviceActivity_sorry_this_is_not_a_valid_device_link_qr_code">Kërkojmë falje, ky QR kod është i gabuar.</string>
-  <string name="DeviceProvisioningActivity_link_a_signal_device">Lidh një pajisje Signal?</string>
+  <string name="DeviceProvisioningActivity_link_a_signal_device">Lidh një pajisje Cable?</string>
   <string name="DeviceProvisioningActivity_it_looks_like_youre_trying_to_link_a_signal_device_using_a_3rd_party_scanner">Duket sikur provoni të lidhni Cable paisje duke përdorur skaner të një pale të 3të. Si përmasë mbrojtëse, skanoni kodin sërish nga përbrenda Cable-it.</string>
   <!--ExpirationDialog-->
   <string name="ExpirationDialog_disappearing_messages">Mesazhet zhduken</string>

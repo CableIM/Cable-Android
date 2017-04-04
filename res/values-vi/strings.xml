@@ -23,7 +23,7 @@
   <string name="ApplicationPreferencesActivity_disable">Tắt</string>
   <string name="ApplicationPreferencesActivity_unregistering">Tháo gỡ đăng ký</string>
   <string name="ApplicationPreferencesActivity_unregistering_from_signal_messages_and_calls">Đang huỷ đăng ký với tin nhắn và cuộc gọi Cable...</string>
-  <string name="ApplicationPreferencesActivity_disable_signal_messages_and_calls">Tắt tin nhắn và cuộc gọi Signal?</string>
+  <string name="ApplicationPreferencesActivity_disable_signal_messages_and_calls">Tắt tin nhắn và cuộc gọi Cable?</string>
   <string name="ApplicationPreferencesActivity_disable_signal_messages_and_calls_by_unregistering">Tắt tin nhắn và cuộc gọi Cable bằng cách huỷ đăng ký từ máy chủ.
 Bạn sẽ phải đăng ký lại số điện thoại để sử dụng Cable trong tương lai.</string>
   <string name="ApplicationPreferencesActivity_error_connecting_to_server">Có lỗi kết nối vào máy chủ!</string>
@@ -327,7 +327,7 @@ sao lưu này trước đó, nhập lần nữa sẽ dẫn đến việc có tin
   <string name="DeviceProvisioningActivity_content_progress_network_error">Lỗi mạng.</string>
   <string name="DeviceProvisioningActivity_content_progress_key_error">Mã QR không đúng.</string>
   <string name="DeviceActivity_sorry_this_is_not_a_valid_device_link_qr_code">Xin lỗi, đây không phải là mã QR liên kết thiết bị chính xác.</string>
-  <string name="DeviceProvisioningActivity_link_a_signal_device">Liên kết một thiết bị dùng Signal?</string>
+  <string name="DeviceProvisioningActivity_link_a_signal_device">Liên kết một thiết bị dùng Cable?</string>
   <string name="DeviceProvisioningActivity_it_looks_like_youre_trying_to_link_a_signal_device_using_a_3rd_party_scanner">Có vẻ như bạn đang cố liên kết một thiết bị dùng Cable bằng phần mềm quét bên thứ 3. Để bảo vệ mình, hãy quét lại đoạn mã sử dụng Cable.</string>
   <!--ExpirationDialog-->
   <!--PassphrasePromptActivity-->
@@ -577,7 +577,7 @@ Nhận thông tin trao đổi chìa khóa về phiên bản giao thức không h
   <string name="log_submit_activity__submitting">Đang nộp</string>
   <string name="log_submit_activity__posting_logs">Gửi ký sự lên gist...</string>
   <!--database_migration_activity-->
-  <string name="database_migration_activity__would_you_like_to_import_your_existing_text_messages">Bạn có muốn nhập các tin nhắn hiện hữu vào cơ sở dữ liệu đã mã khoá của Signal?</string>
+  <string name="database_migration_activity__would_you_like_to_import_your_existing_text_messages">Bạn có muốn nhập các tin nhắn hiện hữu vào cơ sở dữ liệu đã mã khoá của Cable?</string>
   <string name="database_migration_activity__the_default_system_database_will_not_be_modified">Cơ sở dữ liệu mặc định của hệ thống sẽ không bị sửa hay bị thay đổi gì cả.</string>
   <string name="database_migration_activity__skip">Bỏ qua</string>
   <string name="database_migration_activity__import">Nhập</string>
@@ -935,7 +935,7 @@ Các tin nhắn và cuộc gọi riêng tư miễn phí đến người dùng Ca
   <string name="reminder_header_sms_default_button">THIẾT LẬP</string>
   <string name="reminder_header_sms_import_title">Nhập SMS hệ thống</string>
   <string name="reminder_header_sms_import_button">NHẬP</string>
-  <string name="reminder_header_push_title">Bật tin nhắn và cuộc gọi Signal?</string>
+  <string name="reminder_header_push_title">Bật tin nhắn và cuộc gọi Cable?</string>
   <string name="reminder_header_push_text">Nâng tầm trải nghiệm giao tiếp.</string>
   <string name="reminder_header_push_button">BẬT</string>
   <string name="reminder_header_invite_title">Mời dùng Cable</string>

@@ -24,9 +24,9 @@
   <string name="ApplicationPreferencesActivity_this_will_permanently_unlock_signal_and_message_notifications">Dette vil permanent låse op for Cable og besked notifikationer.</string>
   <string name="ApplicationPreferencesActivity_disable">Deaktivér</string>
   <string name="ApplicationPreferencesActivity_unregistering">Afregistrerer</string>
-  <string name="ApplicationPreferencesActivity_unregistering_from_signal_messages_and_calls">Afregistrerer fra Signalbeskeder og -opkald...</string>
-  <string name="ApplicationPreferencesActivity_disable_signal_messages_and_calls">Deaktivér Signalbeskeder og -opkald?</string>
-  <string name="ApplicationPreferencesActivity_disable_signal_messages_and_calls_by_unregistering">Deaktivér Signalbeskeder og -opkald ved at afregistrere fra serveren. Du er nødt til at genregistrere dit telefonnummer for at bruge det igen i fremtiden.</string>
+  <string name="ApplicationPreferencesActivity_unregistering_from_signal_messages_and_calls">Afregistrerer fra Cablebeskeder og -opkald...</string>
+  <string name="ApplicationPreferencesActivity_disable_signal_messages_and_calls">Deaktivér Cablebeskeder og -opkald?</string>
+  <string name="ApplicationPreferencesActivity_disable_signal_messages_and_calls_by_unregistering">Deaktivér Cablebeskeder og -opkald ved at afregistrere fra serveren. Du er nødt til at genregistrere dit telefonnummer for at bruge det igen i fremtiden.</string>
   <string name="ApplicationPreferencesActivity_error_connecting_to_server">Kunne ikke oprette forbindelse til serveren!</string>
   <string name="ApplicationPreferencesActivity_sms_enabled">SMS slået til</string>
   <string name="ApplicationPreferencesActivity_touch_to_change_your_default_sms_app">Brug som standard SMS-program</string>
@@ -337,11 +337,11 @@ vil det resultere i dupletter.</string>
   <string name="MmsDownloader_error_connecting_to_mms_provider">Der skete en fejl, i forsøget på at forbinde til MMS udbyder</string>
   <string name="MmsDownloader_error_reading_mms_settings">Kunne ikke læse indstillinger for trådløs MMS udbyder</string>
   <!--- NotificationBarManager-->
-  <string name="NotificationBarManager_signal_call_in_progress">Signalopkald i gang.</string>
+  <string name="NotificationBarManager_signal_call_in_progress">Cableopkald i gang.</string>
   <string name="NotificationBarManager_missed_call_from_s">Mistet opkald fra %s</string>
-  <string name="NotificationBarManager_missed_signal_call">Mistet Signalopkald</string>
-  <string name="NotificationBarManager__establishing_signal_call">Foretager Signalopkald</string>
-  <string name="NotificationBarManager__incoming_signal_call">Indgående Signalopkald.</string>
+  <string name="NotificationBarManager_missed_signal_call">Mistet Cableopkald</string>
+  <string name="NotificationBarManager__establishing_signal_call">Foretager Cableopkald</string>
+  <string name="NotificationBarManager__incoming_signal_call">Indgående Cableopkald.</string>
   <string name="NotificationBarManager__deny_call">Afvis opkald</string>
   <string name="NotificationBarManager__answer_call">Tag telefonen</string>
   <string name="NotificationBarManager__end_call">Læg på</string>
@@ -628,7 +628,7 @@ Modtog en nøgle-besked for en ugyldig protokol-version.
   <!--conversation_title_view-->
   <string name="conversation_title_view__conversation_muted">Samtale dæmpet</string>
   <!--conversation_activity-->
-  <string name="conversation_activity__type_message_push">Send Signalbesked</string>
+  <string name="conversation_activity__type_message_push">Send Cablebesked</string>
   <string name="conversation_activity__type_message_sms_insecure">Send usikker (ukrypteret) SMS</string>
   <string name="conversation_activity__type_message_mms_insecure">Send usikker (ukrypteret) MMS</string>
   <string name="conversation_activity__from_sim_name">Fra %1$s</string>
@@ -719,7 +719,7 @@ Modtog en nøgle-besked for en ugyldig protokol-version.
   <string name="log_submit_activity__posting_logs">Sender loggene til gist...</string>
   <string name="log_submit_activity__no_browser_installed">Ingen browser installeret</string>
   <!--database_migration_activity-->
-  <string name="database_migration_activity__would_you_like_to_import_your_existing_text_messages">Vil du importere dine eksisterende beskeder til Signals krypterede database?</string>
+  <string name="database_migration_activity__would_you_like_to_import_your_existing_text_messages">Vil du importere dine eksisterende beskeder til Cables krypterede database?</string>
   <string name="database_migration_activity__the_default_system_database_will_not_be_modified">Den eksisterende systemdatabase vil ikke blive ændret.</string>
   <string name="database_migration_activity__skip">Spring over</string>
   <string name="database_migration_activity__import">Importér</string>
@@ -765,11 +765,11 @@ Modtog en nøgle-besked for en ugyldig protokol-version.
   <string name="recipient_preferences__color_for_this_contact">Denne kontakts farve</string>
   <string name="recipient_preferences__verify_safety_number">Verificer sikkerhedsnøgle</string>
   <!--- redphone_call_controls-->
-  <string name="redphone_call_card__signal_call">Signalopkald</string>
+  <string name="redphone_call_card__signal_call">Cableopkald</string>
   <string name="redphone_call_controls__end_call">læg på</string>
   <string name="redphone_call_controls__audio">Lyd</string>
   <string name="redphone_call_controls__mute">Slå lyd fra</string>
-  <string name="redphone_call_controls__signal_call">Signalopkald</string>
+  <string name="redphone_call_controls__signal_call">Cableopkald</string>
   <!--registration_activity-->
   <string name="registration_activity__verify_your_number_to_connect_with_signal">
 Bekræft at dit telefonnummer er forbundet til Cable.</string>
@@ -963,7 +963,7 @@ mislykkedes.</string>
   <string name="preferences__theme">Tema</string>
   <string name="preferences__default">Standard</string>
   <string name="preferences__language">Sprog</string>
-  <string name="preferences__signal_messages_and_calls">Signalbeskeder og -opkald</string>
+  <string name="preferences__signal_messages_and_calls">Cablebeskeder og -opkald</string>
   <string name="preferences__free_private_messages_and_calls">Gratis private beskeder og opkald til Cable-brugere</string>
   <string name="preferences__submit_debug_log">Indsend fejlfindingslog</string>
   <string name="preferences__support_wifi_calling">Kompatibilitetstilstand for WiFi-opkald</string>
@@ -978,7 +978,7 @@ mislykkedes.</string>
   <string name="preferences_chats__media_auto_download">Automatisk hentning af multimedier</string>
   <string name="preferences_chats__message_trimming">Trimning af beskeder</string>
   <string name="preferences_advanced__use_system_emoji">Anvend systemets emoji</string>
-  <string name="preferences_advanced__disable_signal_built_in_emoji_support">Deaktivér Signals indbyggede emoji-understøttelse</string>
+  <string name="preferences_advanced__disable_signal_built_in_emoji_support">Deaktivér Cables indbyggede emoji-understøttelse</string>
   <string name="preferences_advanced__video_calling_beta">Videokald beta</string>
   <string name="preferences_advanced__enable_support_for_next_generation_video_and_voice_calls">Understøttelse for forbedrede video- og stemmeopkald hvis aktiveret af begge parter. Denne funktionalitet er i beta.</string>
   <string name="preferences_advanced__relay_all_calls_through_the_signal_server_to_avoid_revealing_your_ip_address">Videresend alle opkald gennem Cable-serveren for at undgå at afsløre din IP-adresse for din kontakt. Dette vil give en dårligere signalkvalitet.</string>
@@ -999,7 +999,7 @@ mislykkedes.</string>
   <!--conversation_callable_insecure-->
   <string name="conversation_callable_insecure__menu_call">Opkald</string>
   <!--conversation_callable_secure-->
-  <string name="conversation_callable_secure__menu_call">Signalopkald</string>
+  <string name="conversation_callable_secure__menu_call">Cableopkald</string>
   <!--conversation_context-->
   <string name="conversation_context__menu_message_details">Beskeddetaljer</string>
   <string name="conversation_context__menu_copy_text">Kopiér tekst</string>
@@ -1080,9 +1080,9 @@ mislykkedes.</string>
   <string name="reminder_header_sms_default_text">Tryk for at gøre Cable til din standard SMS-app.</string>
   <string name="reminder_header_sms_default_button">SET</string>
   <string name="reminder_header_sms_import_title">Importér SMS</string>
-  <string name="reminder_header_sms_import_text">Klik for at kopiere din telefons SMS beskeder til Signals krypterede database.</string>
+  <string name="reminder_header_sms_import_text">Klik for at kopiere din telefons SMS beskeder til Cables krypterede database.</string>
   <string name="reminder_header_sms_import_button">IMPORTÈR</string>
-  <string name="reminder_header_push_title">Aktivér Signalbeskeder og -opkald</string>
+  <string name="reminder_header_push_title">Aktivér Cablebeskeder og -opkald</string>
   <string name="reminder_header_push_text">Tryk for øjeblikkelig afsending, stærkere privatlivsbeskyttelse og ingen SMS-afgifter.</string>
   <string name="reminder_header_push_button">AKTIVÈR</string>
   <string name="reminder_header_invite_title">Invitér til Cable</string>

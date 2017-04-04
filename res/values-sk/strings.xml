@@ -274,7 +274,7 @@ opätovným importom zduplikujete správy.
   <string name="DeviceProvisioningActivity_content_progress_network_error">Chyba siete.</string>
   <string name="DeviceProvisioningActivity_content_progress_key_error">Neplatný QR kód.</string>
   <string name="DeviceActivity_sorry_this_is_not_a_valid_device_link_qr_code">Prepáčte, toto nie je platný QR kód na pridanie zariadenia.</string>
-  <string name="DeviceProvisioningActivity_link_a_signal_device">Pridať zariadenie so Signalom?</string>
+  <string name="DeviceProvisioningActivity_link_a_signal_device">Pridať zariadenie so Cableom?</string>
   <!--ExpirationDialog-->
   <string name="ExpirationDialog_disappearing_messages">Miznúce správy</string>
   <string name="ExpirationDialog_your_messages_will_not_expire">Vaše správy nevypršia.</string>
@@ -322,7 +322,7 @@ opätovným importom zduplikujete správy.
   <string name="RedPhone_number_not_registered">Neregistrované číslo!</string>
   <string name="RedPhone_got_it">Mám to</string>
   <!--RegistrationActivity-->
-  <string name="RegistrationActivity_connect_with_signal">Pripájam sa so Signalom</string>
+  <string name="RegistrationActivity_connect_with_signal">Pripájam sa so Cableom</string>
   <string name="RegistrationActivity_select_your_country">Vyber svoju krajinu</string>
   <string name="RegistrationActivity_you_must_specify_your_country_code">Ty musíš zadať tvoj
 

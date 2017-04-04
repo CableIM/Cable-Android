@@ -725,7 +725,7 @@ Sleuteluitwisselingsbericht ontvangen voor een verkeerde protocol-versie.</strin
   <string name="log_submit_activity__posting_logs">Logs worden gepost naar gist...</string>
   <string name="log_submit_activity__no_browser_installed">Geen browser geïnstalleerd</string>
   <!--database_migration_activity-->
-  <string name="database_migration_activity__would_you_like_to_import_your_existing_text_messages">Wil je je huidige tekstberichtendatabase importeren naar de versleutelde database van Signal?</string>
+  <string name="database_migration_activity__would_you_like_to_import_your_existing_text_messages">Wil je je huidige tekstberichtendatabase importeren naar de versleutelde database van Cable?</string>
   <string name="database_migration_activity__the_default_system_database_will_not_be_modified">De standaardsysteemdatabase zal niet gewijzigd of aangepast worden op enige wijze.</string>
   <string name="database_migration_activity__skip">Overslaan</string>
   <string name="database_migration_activity__import">Importeren</string>

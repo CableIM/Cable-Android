@@ -23,7 +23,7 @@
   <string name="ApplicationPreferencesActivity_disable">Nonaktifkan</string>
   <string name="ApplicationPreferencesActivity_unregistering">Berhenti registrasi</string>
   <string name="ApplicationPreferencesActivity_unregistering_from_signal_messages_and_calls">Berhenti registrasi dari pesan dan panggilan Cable...</string>
-  <string name="ApplicationPreferencesActivity_disable_signal_messages_and_calls">Nonaktifkan pesan dan panggilan Signal?</string>
+  <string name="ApplicationPreferencesActivity_disable_signal_messages_and_calls">Nonaktifkan pesan dan panggilan Cable?</string>
   <string name="ApplicationPreferencesActivity_disable_signal_messages_and_calls_by_unregistering">Menonaktifkan pesan dan pangggilan Cable dengan berhenti registrasi dari server. Anda perlu mendaftar ulang nomor telepon Anda untuk menggunakannya lagi di kemudian hari.</string>
   <string name="ApplicationPreferencesActivity_error_connecting_to_server">Terjadi kesalahan koneksi ke server!</string>
   <string name="ApplicationPreferencesActivity_sms_enabled">SMS Aktif</string>
@@ -344,7 +344,7 @@ telah mengimport basis data sistem SMS, hal ini akan menyebabkan adanya duplikas
   <string name="DeviceProvisioningActivity_content_progress_network_error">Galat jaringan.</string>
   <string name="DeviceProvisioningActivity_content_progress_key_error">Kode QR tidak valid.</string>
   <string name="DeviceActivity_sorry_this_is_not_a_valid_device_link_qr_code">Maaf, ini bukan tautan perangkat QR code yang benar.</string>
-  <string name="DeviceProvisioningActivity_link_a_signal_device">Kaitkan perangkat Signal?</string>
+  <string name="DeviceProvisioningActivity_link_a_signal_device">Kaitkan perangkat Cable?</string>
   <string name="DeviceProvisioningActivity_it_looks_like_youre_trying_to_link_a_signal_device_using_a_3rd_party_scanner">Sepertinya Anda mencoba untuk menghubungkan perangkat Cable menggunakan pemindai pihak ke-3. Untuk perlindungan Anda, mohon memindai kode lagi dari Cable.</string>
   <!--ExpirationDialog-->
   <string name="ExpirationDialog_your_messages_will_not_expire">Pesan anda tidak akan kadaluarsa.</string>
