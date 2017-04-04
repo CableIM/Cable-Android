@@ -804,7 +804,7 @@ Cable kan også ringe til dig og verificere dit telefonnummer. Tryk på \'Ring t
   <string name="registration_progress_activity__your_device_needs_network_connectivity">Din enhed skal have netværksforbindelse for at bruge denne Cable-funktion. Tjek om der er forbindelse til mobildata eller Wi-Fi.</string>
   <string name="registration_progress_activity__restrictive_firewall">Restriktiv firewall.</string>
   <string name="registration_progress_activity__if_you_are_connected_via_wifi_its_possible_that_there_is_a_firewall">
-Hvis du er tilsluttet Internet via et trådløst netværk, er det muligt, at en firewall blokerer adgangen til Signals server. Prøv et andet trådløst netværk eller brug mobildata.</string>
+Hvis du er tilsluttet Internet via et trådløst netværk, er det muligt, at en firewall blokerer adgangen til Cables server. Prøv et andet trådløst netværk eller brug mobildata.</string>
   <string name="registration_progress_activity__signal_will_now_automatically_verify_your_number_with_a_confirmation_sms_message">
 Cable vil nu automatisk verificere dit telefonnummer med en bekræftelses-SMS.</string>
   <string name="registration_progress_activity__connecting">Forbinder...</string>

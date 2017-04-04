@@ -285,7 +285,7 @@
   <!--ImportFragment-->
   <string name="ImportFragment_import_system_sms_database">Impordid süsteemi SMS-andmebaasi?</string>
   <string name="ImportFragment_this_will_import_messages_from_the_system">See impordib
-        sõnumid süsteemi vaikimisi SMS-andmebaasist Signalisse. Kui sa oled eelnevalt
+        sõnumid süsteemi vaikimisi SMS-andmebaasist Cableisse. Kui sa oled eelnevalt
         importinud süsteemi SMS-andmebaasi, põhjustab uuesti importimine duplikaatsõnumeid.
     </string>
   <string name="ImportFragment_import">Impordi</string>
@@ -293,7 +293,7 @@
   <string name="ImportFragment_restore_encrypted_backup">Taastada krüptitud varundus?</string>
   <string name="ImportFragment_restoring_an_encrypted_backup_will_completely_replace_your_existing_keys">
         Krüptitud andmebaasi taastamine asendab täielikult sinu praegused võtmed, eelistused ja
-        sõnumid. Sa kaotad mistahes informatsiooni mis on sinu praeguses Signali 
+        sõnumid. Sa kaotad mistahes informatsiooni mis on sinu praeguses Cablei 
         installatsioonis aga mida pole varunduses.
     </string>
   <string name="ImportFragment_restore">Taasta</string>
@@ -793,7 +793,7 @@
   <string name="redphone_call_controls__signal_call">Cablei kõne</string>
   <!--registration_activity-->
   <string name="registration_activity__verify_your_number_to_connect_with_signal">
-        Kinnita oma telefoninumber, et ühenduda Signaliga.
+        Kinnita oma telefoninumber, et ühenduda Cableiga.
     </string>
   <string name="registration_activity__your_country">SINU RIIK</string>
   <string name="registration_activity__your_country_code_and_phone_number">SINU RIIGIKOOD JA
@@ -811,7 +811,7 @@
   <string name="registration_problems__some_third_party_text_messaging_clients_such_as_handcent">
         Mõned 3. osapoole SMS-rakendused - nagu Handcent või GoSMS - käituvad halvasti ja
         tõkestavad kõiki sissetulevaid SMS-sõnumeid. Vaata, kas said tekstsõnumi, mis algab tekstiga
-        \"Sinu Signali kinnituskood:\", sel juhul pead häälestama oma 3. osapoole SMS-rakendust,
+        \"Sinu Cablei kinnituskood:\", sel juhul pead häälestama oma 3. osapoole SMS-rakendust,
         et see laseks sõnumeid läbi.
     </string>
   <string name="registration_problems__incorrect_number">Sobimatu number.</string>
@@ -840,14 +840,14 @@
         puudub.
     </string>
   <string name="registration_progress_activity__your_device_needs_network_connectivity">Sinu
-        seade vajab võrguühendust, et kasutada seda Signali funktsiooni. Kontrolli, kinnitamaks,
+        seade vajab võrguühendust, et kasutada seda Cablei funktsiooni. Kontrolli, kinnitamaks,
         et see on ühendatud mobiilandmeside või Wi-Figa.
     </string>
   <string name="registration_progress_activity__restrictive_firewall">Piirav tulemüür.
     </string>
   <string name="registration_progress_activity__if_you_are_connected_via_wifi_its_possible_that_there_is_a_firewall">
         Kui sa oled ühendatud Wi-Fi kaudu, on võimalik, et tulemüür blokeerib ligipääsu
-        Signali serverisse. Proovi teist võrku või mobiilandmesidet.
+        Cablei serverisse. Proovi teist võrku või mobiilandmesidet.
     </string>
   <string name="registration_progress_activity__signal_will_now_automatically_verify_your_number_with_a_confirmation_sms_message">
         Cable kinnitab nüüd su numbri automaatselt SMS kinnitussõnumiga.
@@ -861,7 +861,7 @@
         võib aega võtta. Palun ole kannatlik, me anname teada kui kinnitus on valmis.
     </string>
   <string name="registration_progress_activity__signal_timed_out_while_waiting_for_a_verification_sms_message">
-        Signalil tekkis ajalõpp, oodates SMS kinnitussõnumit.
+        Cableil tekkis ajalõpp, oodates SMS kinnitussõnumit.
     </string>
   <string name="registration_progress_activity__sms_verification_failed">SMS-kinnitus
         ebaõnnestus.
@@ -1121,8 +1121,8 @@
   <!--reminder_header-->
   <string name="reminder_header_outdated_build">Sinu Cablei versioon on aegunud</string>
   <plurals name="reminder_header_outdated_build_details">
-    <item quantity="one">Sinu Signali versioon aegub 1 päeva pärast. Koputa, et uuendada uusimale versioonile.</item>
-    <item quantity="other">Sinu Signali versioon aegub %d päeva pärast. Koputa, et uuendada uusimale versioonile.</item>
+    <item quantity="one">Sinu Cablei versioon aegub 1 päeva pärast. Koputa, et uuendada uusimale versioonile.</item>
+    <item quantity="other">Sinu Cablei versioon aegub %d päeva pärast. Koputa, et uuendada uusimale versioonile.</item>
   </plurals>
   <string name="reminder_header_outdated_build_details_today">Sinu Cablei versioon aegub täna. Koputa, et uuendada uusimale versioonile.</string>
   <string name="reminder_header_expired_build">Sinu Cablei versioon on aegunud!</string>

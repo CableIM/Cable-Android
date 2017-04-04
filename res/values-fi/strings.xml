@@ -294,7 +294,7 @@ Vastaanotettu: %4$s</string>
   <string name="ImportFragment_restore_encrypted_backup">Palautetaanko salattu varmuuskopio?</string>
   <string name="ImportFragment_restoring_an_encrypted_backup_will_completely_replace_your_existing_keys">
 Salatun varmuuskopion palauttaminen korvaa kaikki olemassa olevat avaimet, asetukset ja
-viestit. Menetät kaikki Signalissa olevat tiedot, jotka eivät ole osa varmuuskopiota.</string>
+viestit. Menetät kaikki Cableissa olevat tiedot, jotka eivät ole osa varmuuskopiota.</string>
   <string name="ImportFragment_restore">Palauta</string>
   <string name="ImportFragment_import_plaintext_backup">Tuodaanko salaamaton varmuuskopio?</string>
   <string name="ImportFragment_this_will_import_messages_from_a_plaintext_backup">Tämä toiminto tuo
@@ -779,7 +779,7 @@ Vastaanotetiin avaintenvaihtoviesti, joka kuuluu väärälle protokollaversiolle
   <string name="redphone_call_controls__signal_call">Cable-puhelu</string>
   <!--registration_activity-->
   <string name="registration_activity__verify_your_number_to_connect_with_signal">
-Jotta voit ottaa Signalin käyttöön, tulee sinun ensin vahvistaa puhelinnumerosi.</string>
+Jotta voit ottaa Cablein käyttöön, tulee sinun ensin vahvistaa puhelinnumerosi.</string>
   <string name="registration_activity__your_country">MAA</string>
   <string name="registration_activity__your_country_code_and_phone_number">MAATUNNUKSESI JA
 PUHELINNUMEROSI</string>
@@ -810,12 +810,12 @@ Cable voi myös soittaa sinulle numerosi vahvistamiseksi. Napsauta \"Soita minul
 sisältyvät:</string>
   <string name="registration_progress_activity__no_network_connectivity">Ei verkkoyhteyttä.</string>
   <string name="registration_progress_activity__your_device_needs_network_connectivity">Laitteesi
-tarvitsee verkkoyhteyttä tämän Signalin ominaisuuden käyttämiseksi. Tarkista, että
+tarvitsee verkkoyhteyttä tämän Cablein ominaisuuden käyttämiseksi. Tarkista, että
 laitteesi
 on yhdistettynä mobiilitiedonsiirto- tai WiFi-verkkoon.</string>
   <string name="registration_progress_activity__restrictive_firewall">Rajoittava palomuuri.</string>
   <string name="registration_progress_activity__if_you_are_connected_via_wifi_its_possible_that_there_is_a_firewall">
-Jos olet WiFi-verkossa, on mahdollista että palomuuri estää pääsyn Signalin palvelimelle. Kokeile toista verkkoa tai mobiiliverkkoa.</string>
+Jos olet WiFi-verkossa, on mahdollista että palomuuri estää pääsyn Cablein palvelimelle. Kokeile toista verkkoa tai mobiiliverkkoa.</string>
   <string name="registration_progress_activity__signal_will_now_automatically_verify_your_number_with_a_confirmation_sms_message">
 Cable vahvistaa nyt puhelinnumerosi automaattisesti tekstiviestillä.</string>
   <string name="registration_progress_activity__connecting">Yhdistetään...</string>
@@ -1079,8 +1079,8 @@ Cable ei saanut vahvistustekstiviestiä odotusajan sisällä.</string>
   <!--reminder_header-->
   <string name="reminder_header_outdated_build">Käyttämäsi Cablein versio on vanhentunut!</string>
   <plurals name="reminder_header_outdated_build_details">
-    <item quantity="one">Käyttämäsi Signalin versio vanhenee 1 päivässä. Napsauta päivittääksesi viimeisimpään versioon.</item>
-    <item quantity="other">Käyttämäsi Signalin versio vanhenee %d päivässä. Napsauta päivittääksesi viimeisimpään versioon.</item>
+    <item quantity="one">Käyttämäsi Cablein versio vanhenee 1 päivässä. Napsauta päivittääksesi viimeisimpään versioon.</item>
+    <item quantity="other">Käyttämäsi Cablein versio vanhenee %d päivässä. Napsauta päivittääksesi viimeisimpään versioon.</item>
   </plurals>
   <string name="reminder_header_outdated_build_details_today">Käyttämäsi Cablein versio vanhenee tänään. Napsauta päivittääksesi viimeisimpään versioon.</string>
   <string name="reminder_header_expired_build">Käyttämäsi Cablein versio on vanhentunut!</string>

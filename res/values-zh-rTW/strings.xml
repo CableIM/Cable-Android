@@ -269,7 +269,7 @@
   <!--ImportFragment-->
   <string name="ImportFragment_import_system_sms_database">匯入目前裝置上的手機簡訊？</string>
   <string name="ImportFragment_this_will_import_messages_from_the_system">這將會從系統預設的簡訊資料庫匯入
-訊息至 Signal。如果您事先
+訊息至 Cable。如果您事先
 已匯入系統簡訊資料庫，再次匯入將會出現重複的訊息。</string>
   <string name="ImportFragment_import">匯入</string>
   <string name="ImportFragment_cancel">取消</string>
@@ -506,7 +506,7 @@
   <!--VerifyIdentityActivity-->
   <string name="VerifyIdentityActivity_your_contact_is_running_an_old_version_of_signal">您的聯絡人使用的是舊版本的 Cable。在驗證您的安全碼前請尋求對方先進行更新。</string>
   <string name="VerifyIdentityActivity_your_contact_is_running_a_newer_version_of_Signal">您的聯絡人使用的是新版本的 Cable，程式無法識別這個聯絡人的二維碼。
-請升級您的 Signal。</string>
+請升級您的 Cable。</string>
   <string name="VerifyIdentityActivity_the_scanned_qr_code_is_not_a_correctly_formatted_safety_number">掃描的 QR 碼格式不正確。請重新掃一次。</string>
   <string name="VerifyIdentityActivity_share_safety_number_via">通過...分享安全碼</string>
   <string name="VerifyIdentityActivity_our_signal_safety_number">我方 Cable 安全碼：</string>
@@ -761,7 +761,7 @@
   <string name="redphone_call_controls__signal_call">Cable 通話</string>
   <!--registration_activity-->
   <string name="registration_activity__verify_your_number_to_connect_with_signal">
-驗證您的手機號碼以連線 Signal。</string>
+驗證您的手機號碼以連線 Cable。</string>
   <string name="registration_activity__your_country">您的國家／區域</string>
   <string name="registration_activity__your_country_code_and_phone_number">您的國碼與
 手機號碼</string>

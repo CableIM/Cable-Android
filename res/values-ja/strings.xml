@@ -1035,7 +1035,7 @@
   <!--reminder_header-->
   <string name="reminder_header_outdated_build">Cableのバージョンが古すぎます</string>
   <plurals name="reminder_header_outdated_build_details">
-    <item quantity="other">このバージョンのSignalは%d日後に期限切れとなります。タップして最新版に更新してください。</item>
+    <item quantity="other">このバージョンのCableは%d日後に期限切れとなります。タップして最新版に更新してください。</item>
   </plurals>
   <string name="reminder_header_outdated_build_details_today">このバージョンのCableは本日で期限切れとなります。タップして最新版に更新してください。</string>
   <string name="reminder_header_expired_build">このバージョンのCableは期限切れになりました</string>

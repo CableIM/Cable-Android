@@ -746,7 +746,7 @@ Inportatu \'SMSBackup and Restorekin\' bateragarria den zifratu gabeko babeskopi
   <string name="redphone_call_controls__signal_call">Cable deia</string>
   <!--registration_activity-->
   <string name="registration_activity__verify_your_number_to_connect_with_signal">
-Egiaztatu zure telefono zenbakia Signalera konektatzeko.
+Egiaztatu zure telefono zenbakia Cableera konektatzeko.
 
 </string>
   <string name="registration_activity__your_country">ZURE HERRIALDEA</string>
@@ -769,7 +769,7 @@ batzuk ondokoak dira:
   <!--registration_progress_activity-->
   <string name="registration_progress_activity__voice_verification">Ahotsaren bidezko egiaztapena</string>
   <string name="registration_progress_activity__signal_can_also_call_you_to_verify_your_number">
-Signalek, era berean, dei diezazuke zure zenbakia egiaztatzeko. Ukitu \"Dei iezadazu\" eta sartu azpian entzungo duzun sei zenbakiko kodea.</string>
+Cableek, era berean, dei diezazuke zure zenbakia egiaztatzeko. Ukitu \"Dei iezadazu\" eta sartu azpian entzungo duzun sei zenbakiko kodea.</string>
   <string name="registration_progress_activity__verify">Egiaztatu</string>
   <string name="registration_progress_activity__call_me">Dei iezadazu</string>
   <string name="registration_progress_activity__edit_number">Zenbakia editatu</string>
@@ -786,7 +786,7 @@ areko konexiorik.
   <string name="registration_progress_activity__if_you_are_connected_via_wifi_its_possible_that_there_is_a_firewall">
 Wi-Fi sarean bazaude, agian suebaki bat Cable zerbitzariaren atzipena blokeatzen ari da.  Saiatu haririk gabeko beste sare batez edo datu mugikorrez konektatzen mesedez.</string>
   <string name="registration_progress_activity__signal_will_now_automatically_verify_your_number_with_a_confirmation_sms_message">
-Orain Signalek zure zenbakia automatikoki egiaztatuko du SMS egiaztapen mezu bat bidaliz.</string>
+Orain Cableek zure zenbakia automatikoki egiaztatuko du SMS egiaztapen mezu bat bidaliz.</string>
   <string name="registration_progress_activity__connecting">Konektatzen...</string>
   <string name="registration_progress_activity__waiting_for_sms_verification">SMS bidezko
 egiaztapenaren zain...

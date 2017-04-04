@@ -820,7 +820,7 @@ så att du är uppkopplad med mobildata eller Wi-Fi.</string>
   <string name="registration_progress_activity__restrictive_firewall">Restriktiv brandvägg.</string>
   <string name="registration_progress_activity__if_you_are_connected_via_wifi_its_possible_that_there_is_a_firewall">
 Om du är uppkopplad med Wi-Fi är det möjligt att en brandvägg blockerat tillgång
-till Signalservern. Försök med ett annat nätverk eller med mobildata.</string>
+till Cableservern. Försök med ett annat nätverk eller med mobildata.</string>
   <string name="registration_progress_activity__signal_will_now_automatically_verify_your_number_with_a_confirmation_sms_message">
 Cable kommer nu att automatiskt verifiera ditt telefonnummer med ett sms.</string>
   <string name="registration_progress_activity__connecting">Ansluter...</string>
