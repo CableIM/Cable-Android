@@ -9,15 +9,7 @@
 # When merging from upstream sometimes it's easier
 # to checkout their translations and re-run this script.
 
-find res -iname '*.xml' -exec sed -i '
-s/Signal /Cable /g;
-s/Signal,/Cable,/g;
-s/Signal)/Cable)/g;
-s/Signal!/Cable!/g;
-s/Signal</Cable</g;
-s/Signal\./Cable\./g;
-s/Signal\\/Cable\\/g;
-s/Signal:/Cable:/g;
-s/Signal-/Cable-/g;
-s/Signal$/Cable/g' {} +
+sed -i s/Signal/Cable/ res/layout/reminder_header.xml
+
+find res -iname '*.xml' -exec sed -i ':a;/\(.*<string name="[a-zA-Z0-9_]*">.*\)Signal/s//\1Cable/;ta' {} +
 
