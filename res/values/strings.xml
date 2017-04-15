@@ -745,9 +745,9 @@
     <string name="conversation_title_view__conversation_muted">Conversation muted</string>
 
     <!-- conversation_activity -->
-    <string name="conversation_activity__type_message_push">Send Cable message</string>
-    <string name="conversation_activity__type_message_sms_insecure">Send unsecured SMS</string>
-    <string name="conversation_activity__type_message_mms_insecure">Send unsecured MMS</string>
+    <string name="conversation_activity__type_message_push">Cable message</string>
+    <string name="conversation_activity__type_message_sms_insecure">Unsecured SMS</string>
+    <string name="conversation_activity__type_message_mms_insecure">Unsecured MMS</string>
     <string name="conversation_activity__from_sim_name">From %1$s</string>
     <string name="conversation_activity__send">Send</string>
     <string name="conversation_activity__remove">Remove</string>
@@ -1198,7 +1198,7 @@
     <string name="preferences_notifications__message_notifications">Message notifications</string>
     <string name="preferences_notifications__events">Events</string>
     <string name="preferences_chats__show_invitation_prompts">Show invitation prompts</string>
-    <string name="preferences_chats__display_invitation_prompts_for_contacts_without_signal">Display invitation prompts for contacts without Signal</string>
+    <string name="preferences_chats__display_invitation_prompts_for_contacts_without_signal">Display invitation prompts for contacts without Cable</string>
     <string name="preferences_chats__message_text_size">Message text size</string>
 
     <!-- **************************************** -->
