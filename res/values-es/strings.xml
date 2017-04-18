@@ -651,7 +651,7 @@ Se recibió un mensaje de intercambio de claves para una versión no válida del
   <!--conversation_title_view-->
   <string name="conversation_title_view__conversation_muted">Conversación silenciada</string>
   <!--conversation_activity-->
-  <string name="conversation_activity__type_message_push">Mensaje de Signal</string>
+  <string name="conversation_activity__type_message_push">Mensaje de Cable</string>
   <string name="conversation_activity__type_message_sms_insecure">SMS sin seguridad</string>
   <string name="conversation_activity__type_message_mms_insecure">MMS sin seguridad</string>
   <string name="conversation_activity__from_sim_name">De %1$s</string>
@@ -1041,7 +1041,7 @@ por SMS.
   <string name="preferences_notifications__message_notifications">Notificaciones de mensaje</string>
   <string name="preferences_notifications__events">Eventos</string>
   <string name="preferences_chats__show_invitation_prompts">Mostrar ofrecimientos de invitación</string>
-  <string name="preferences_chats__display_invitation_prompts_for_contacts_without_signal">Muestra ofrecimientos de invitación para contactos sin Signal</string>
+  <string name="preferences_chats__display_invitation_prompts_for_contacts_without_signal">Muestra ofrecimientos de invitación para contactos sin Cable</string>
   <string name="preferences_chats__message_text_size">Tamaño de fuente del mensaje</string>
   <!--****************************************-->
   <!--menus-->

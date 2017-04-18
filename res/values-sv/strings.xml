@@ -638,7 +638,7 @@ Tog emot meddelande för nyckelutbyte för ogiltig protokollversion.</string>
   <!--conversation_title_view-->
   <string name="conversation_title_view__conversation_muted">Konversation tystad</string>
   <!--conversation_activity-->
-  <string name="conversation_activity__type_message_push">Signalmeddelande</string>
+  <string name="conversation_activity__type_message_push">Cablemeddelande</string>
   <string name="conversation_activity__type_message_sms_insecure">Osäkert SMS</string>
   <string name="conversation_activity__type_message_mms_insecure">Osäkert MMS</string>
   <string name="conversation_activity__from_sim_name">Från %1$s</string>
@@ -1010,7 +1010,7 @@ Cable uppnådde tidsgränsen för SMS-verifiering.</string>
   <string name="preferences_notifications__message_notifications">Meddelandenotifieringar</string>
   <string name="preferences_notifications__events">Händelser</string>
   <string name="preferences_chats__show_invitation_prompts">Visa inbjudningsmeddelande</string>
-  <string name="preferences_chats__display_invitation_prompts_for_contacts_without_signal">Visa inbjudningsmeddelande för kontakter utan Signal</string>
+  <string name="preferences_chats__display_invitation_prompts_for_contacts_without_signal">Visa inbjudningsmeddelande för kontakter utan Cable</string>
   <string name="preferences_chats__message_text_size">Teckenstorlek för meddelande</string>
   <!--****************************************-->
   <!--menus-->

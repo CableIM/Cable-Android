@@ -656,7 +656,7 @@ Am primit mesajul conform căruia schimbul de chei a avut loc pentru o versiune 
   <!--conversation_title_view-->
   <string name="conversation_title_view__conversation_muted">Conversaţia este acum silenţiosă</string>
   <!--conversation_activity-->
-  <string name="conversation_activity__type_message_push">Mesaj Signal</string>
+  <string name="conversation_activity__type_message_push">Mesaj Cable</string>
   <string name="conversation_activity__type_message_sms_insecure">SMS nesecurizat</string>
   <string name="conversation_activity__type_message_mms_insecure">MMS nesecurizat</string>
   <string name="conversation_activity__from_sim_name">De la %1$s</string>
@@ -1052,7 +1052,7 @@ SMS a eșuat.</string>
   <string name="preferences_notifications__message_notifications">Notificări mesaje</string>
   <string name="preferences_notifications__events">Evenimente</string>
   <string name="preferences_chats__show_invitation_prompts">Afișează solicitări invatații</string>
-  <string name="preferences_chats__display_invitation_prompts_for_contacts_without_signal">Arată solicitări invitații pentru contactele fără Signal</string>
+  <string name="preferences_chats__display_invitation_prompts_for_contacts_without_signal">Arată solicitări invitații pentru contactele fără Cable</string>
   <string name="preferences_chats__message_text_size">Marime font mesaje</string>
   <!--****************************************-->
   <!--menus-->

@@ -642,7 +642,7 @@ Mottok nøkkelutvekslingsmelding for ugyldig protokollversjon.</string>
   <!--conversation_title_view-->
   <string name="conversation_title_view__conversation_muted">Samtale dempa</string>
   <!--conversation_activity-->
-  <string name="conversation_activity__type_message_push">Signal-melding</string>
+  <string name="conversation_activity__type_message_push">Cable-melding</string>
   <string name="conversation_activity__type_message_sms_insecure">Usikra SMS</string>
   <string name="conversation_activity__type_message_mms_insecure">Usikra MMS</string>
   <string name="conversation_activity__from_sim_name">Frå %1$s</string>
@@ -1024,7 +1024,7 @@ Cable fekk tidsavbrot ved venting på stadfestingsmeldinga.</string>
   <string name="preferences_notifications__message_notifications">Meldingsvarsel</string>
   <string name="preferences_notifications__events">Hendingar</string>
   <string name="preferences_chats__show_invitation_prompts">Oppfordring om invitering</string>
-  <string name="preferences_chats__display_invitation_prompts_for_contacts_without_signal">Vis oppfordring om å invitera kontaktar som ikkje har Signal</string>
+  <string name="preferences_chats__display_invitation_prompts_for_contacts_without_signal">Vis oppfordring om å invitera kontaktar som ikkje har Cable</string>
   <string name="preferences_chats__message_text_size">Skriftstorleik i meldingar</string>
   <!--****************************************-->
   <!--menus-->

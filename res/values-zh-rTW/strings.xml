@@ -626,7 +626,7 @@
   <!--conversation_title_view-->
   <string name="conversation_title_view__conversation_muted">對話已靜音</string>
   <!--conversation_activity-->
-  <string name="conversation_activity__type_message_push">Signal 訊息</string>
+  <string name="conversation_activity__type_message_push">Cable 訊息</string>
   <string name="conversation_activity__type_message_sms_insecure">不安全的簡訊</string>
   <string name="conversation_activity__type_message_mms_insecure">不安全的多媒體訊息</string>
   <string name="conversation_activity__from_sim_name">來自 %1$s</string>
@@ -998,7 +998,7 @@ Cable 在等待簡訊驗證時超時。</string>
   <string name="preferences_notifications__message_notifications">訊息通知</string>
   <string name="preferences_notifications__events">事件</string>
   <string name="preferences_chats__show_invitation_prompts">顯示邀請提示</string>
-  <string name="preferences_chats__display_invitation_prompts_for_contacts_without_signal">不用 Signal 來顯示給聯絡人的邀請提示</string>
+  <string name="preferences_chats__display_invitation_prompts_for_contacts_without_signal">不用 Cable 來顯示給聯絡人的邀請提示</string>
   <string name="preferences_chats__message_text_size">訊息字體大小</string>
   <!--****************************************-->
   <!--menus-->

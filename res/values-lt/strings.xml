@@ -668,7 +668,7 @@
   <!--conversation_title_view-->
   <string name="conversation_title_view__conversation_muted">Pokalbis nutildytas</string>
   <!--conversation_activity-->
-  <string name="conversation_activity__type_message_push">Signal žinutė</string>
+  <string name="conversation_activity__type_message_push">Cable žinutė</string>
   <string name="conversation_activity__type_message_sms_insecure">Neapsaugota SMS</string>
   <string name="conversation_activity__type_message_mms_insecure">Neapsaugota MMS</string>
   <string name="conversation_activity__from_sim_name">Nuo %1$s</string>
@@ -1072,7 +1072,7 @@ yra prisijungęs prie belaidžio (Wi-Fi) arba duomenų perdavimo tinklo.
   <string name="preferences_notifications__message_notifications">Žinučių pranešimai</string>
   <string name="preferences_notifications__events">Įvykiai</string>
   <string name="preferences_chats__show_invitation_prompts">Rodyti pakvietimų užklausas</string>
-  <string name="preferences_chats__display_invitation_prompts_for_contacts_without_signal">Rodyti pakvietimų užklausas kontaktams, kurie neturi Signal</string>
+  <string name="preferences_chats__display_invitation_prompts_for_contacts_without_signal">Rodyti pakvietimų užklausas kontaktams, kurie neturi Cable</string>
   <string name="preferences_chats__message_text_size">Žinučių šrifto dydis</string>
   <!--****************************************-->
   <!--menus-->

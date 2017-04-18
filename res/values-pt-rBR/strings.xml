@@ -650,7 +650,7 @@
   <!--conversation_title_view-->
   <string name="conversation_title_view__conversation_muted">Conversa silenciada</string>
   <!--conversation_activity-->
-  <string name="conversation_activity__type_message_push">Mensagem Signal</string>
+  <string name="conversation_activity__type_message_push">Mensagem Cable</string>
   <string name="conversation_activity__type_message_sms_insecure">SMS inseguro</string>
   <string name="conversation_activity__type_message_mms_insecure">MMS inseguro</string>
   <string name="conversation_activity__from_sim_name">De %1$s</string>
@@ -1032,7 +1032,7 @@ falhou.</string>
   <string name="preferences_notifications__message_notifications">Notificações de mensagem</string>
   <string name="preferences_notifications__events">Eventos</string>
   <string name="preferences_chats__show_invitation_prompts">Mostrar avisos de convite</string>
-  <string name="preferences_chats__display_invitation_prompts_for_contacts_without_signal">Mostrar avisos de convite para contatos sem Signal</string>
+  <string name="preferences_chats__display_invitation_prompts_for_contacts_without_signal">Mostrar avisos de convite para contatos sem Cable</string>
   <string name="preferences_chats__message_text_size">Tamanho da fonte da mensagem</string>
   <!--****************************************-->
   <!--menus-->

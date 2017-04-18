@@ -638,7 +638,7 @@ Comproveu que aquest és el vostre número. Anem a verificar-ho amb un SMS.</str
   <!--conversation_title_view-->
   <string name="conversation_title_view__conversation_muted">Conversa silenciada</string>
   <!--conversation_activity-->
-  <string name="conversation_activity__type_message_push">Missatge de Signal</string>
+  <string name="conversation_activity__type_message_push">Missatge de Cable</string>
   <string name="conversation_activity__type_message_sms_insecure">SMS no segur</string>
   <string name="conversation_activity__type_message_mms_insecure">MMS no segur</string>
   <string name="conversation_activity__from_sim_name">Des de %1$s</string>
@@ -1025,7 +1025,7 @@ ha fallat.
   <string name="preferences_notifications__message_notifications">Notificacions de missatge</string>
   <string name="preferences_notifications__events">Esdeveniments</string>
   <string name="preferences_chats__show_invitation_prompts">Mostra els avisos d\'invitacions</string>
-  <string name="preferences_chats__display_invitation_prompts_for_contacts_without_signal">Mostra els avisos d\'invitacions per als contactes sense Signal</string>
+  <string name="preferences_chats__display_invitation_prompts_for_contacts_without_signal">Mostra els avisos d\'invitacions per als contactes sense Cable</string>
   <string name="preferences_chats__message_text_size">Mida de la lletra dels missatges</string>
   <!--****************************************-->
   <!--menus-->

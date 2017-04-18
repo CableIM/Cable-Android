@@ -651,7 +651,7 @@ Obdržen požadavek na výměnu klíčů pro neplatnou verzi protokolu.</string>
   <!--conversation_title_view-->
   <string name="conversation_title_view__conversation_muted">Konverzace ztišena</string>
   <!--conversation_activity-->
-  <string name="conversation_activity__type_message_push">Zpráva Signal</string>
+  <string name="conversation_activity__type_message_push">Zpráva Cable</string>
   <string name="conversation_activity__type_message_sms_insecure">Nezabezpečená SMS</string>
   <string name="conversation_activity__type_message_mms_insecure">Nezabezpečená MMS</string>
   <string name="conversation_activity__from_sim_name">Od %1$s</string>
@@ -1036,7 +1036,7 @@ Cable se nedočkal přijetí ověřovací SMS. </string>
   <string name="preferences_notifications__message_notifications">Upozornění na zprávy</string>
   <string name="preferences_notifications__events">Události</string>
   <string name="preferences_chats__show_invitation_prompts">Zobrazovat pozvánky</string>
-  <string name="preferences_chats__display_invitation_prompts_for_contacts_without_signal">Zobrazovat pozvánky prokontakty které nemají Signal</string>
+  <string name="preferences_chats__display_invitation_prompts_for_contacts_without_signal">Zobrazovat pozvánky prokontakty které nemají Cable</string>
   <string name="preferences_chats__message_text_size">Velikost písma zprávy</string>
   <!--****************************************-->
   <!--menus-->

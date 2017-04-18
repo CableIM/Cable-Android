@@ -659,7 +659,7 @@ Primljena poruka razmjene ključeva za pogrešnu inačicu protokola.</string>
   <!--conversation_title_view-->
   <string name="conversation_title_view__conversation_muted">Razgovor utišan</string>
   <!--conversation_activity-->
-  <string name="conversation_activity__type_message_push">Signal poruka</string>
+  <string name="conversation_activity__type_message_push">Cable poruka</string>
   <string name="conversation_activity__type_message_sms_insecure">Nesigurni SMS</string>
   <string name="conversation_activity__type_message_mms_insecure">Nesigurni MMS</string>
   <string name="conversation_activity__from_sim_name">Od %1$s</string>
@@ -1045,7 +1045,7 @@ neuspješno.</string>
   <string name="preferences_notifications__message_notifications">Obavijesti o porukama</string>
   <string name="preferences_notifications__events">Događaji</string>
   <string name="preferences_chats__show_invitation_prompts">Prikaži upite za pozivnice</string>
-  <string name="preferences_chats__display_invitation_prompts_for_contacts_without_signal">Prikaži upite za pozivnice za kontakte koji ne koriste Signal</string>
+  <string name="preferences_chats__display_invitation_prompts_for_contacts_without_signal">Prikaži upite za pozivnice za kontakte koji ne koriste Cable</string>
   <string name="preferences_chats__message_text_size">Veličina fonta poruke</string>
   <!--****************************************-->
   <!--menus-->

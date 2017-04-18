@@ -667,7 +667,7 @@ Prejeto sporočilo za izmenjavo ključev za napačno različico protokola.</stri
   <!--conversation_title_view-->
   <string name="conversation_title_view__conversation_muted">Pogovor je bil utišan</string>
   <!--conversation_activity-->
-  <string name="conversation_activity__type_message_push">Sporočilo Signal</string>
+  <string name="conversation_activity__type_message_push">Sporočilo Cable</string>
   <string name="conversation_activity__type_message_sms_insecure">Nezavarovan SMS</string>
   <string name="conversation_activity__type_message_mms_insecure">Nezavarovan MMS</string>
   <string name="conversation_activity__from_sim_name">Od %1$s</string>
@@ -1053,7 +1053,7 @@ bila uspešna.</string>
   <string name="preferences_notifications__message_notifications">Obvestila o sporočilih</string>
   <string name="preferences_notifications__events">Dogodki</string>
   <string name="preferences_chats__show_invitation_prompts">Prikazuj obvestila o povabilih</string>
-  <string name="preferences_chats__display_invitation_prompts_for_contacts_without_signal">Prikazuj obvestila o povabilih za stike, ki nimajo nameščene aplikacije Signal.</string>
+  <string name="preferences_chats__display_invitation_prompts_for_contacts_without_signal">Prikazuj obvestila o povabilih za stike, ki nimajo nameščene aplikacije Cable.</string>
   <string name="preferences_chats__message_text_size">Velikost črk v sporočilu</string>
   <!--****************************************-->
   <!--menus-->
