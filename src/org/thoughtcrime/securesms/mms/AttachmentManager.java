@@ -296,15 +296,15 @@ public class AttachmentManager {
   }
 
   public static void selectDocument(Activity activity, int requestCode) {
-    selectMediaType(activity, "*/*", requestCode);
+    selectMediaType(activity, "*/*", null, requestCode);
   }
 
   public static void selectGallery(Activity activity, int requestCode) {
-    selectMediaType(activity, "image/* video/*", requestCode);
+    selectMediaType(activity, "image/*", new String[] {"image/*", "video/*"}, requestCode);
   }
 
   public static void selectAudio(Activity activity, int requestCode) {
-    selectMediaType(activity, "audio/*", requestCode);
+    selectMediaType(activity, "audio/*", null, requestCode);
   }
 
   public static void selectContactInfo(Activity activity, int requestCode) {
@@ -354,9 +354,13 @@ public class AttachmentManager {
     }
   }
 
-  private static void selectMediaType(Activity activity, String type, int requestCode) {
+  private static void selectMediaType(Activity activity, @NonNull String type, @Nullable String[] extraMimeType, int requestCode) {
     final Intent intent = new Intent();
     intent.setType(type);
+
+    if (extraMimeType != null && Build.VERSION.SDK_INT >= 19) {
+      intent.putExtra(Intent.EXTRA_MIME_TYPES, extraMimeType);
+    }
 
     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
       intent.setAction(Intent.ACTION_OPEN_DOCUMENT);
@@ -369,6 +373,7 @@ public class AttachmentManager {
     }
 
     intent.setAction(Intent.ACTION_GET_CONTENT);
+
     try {
       activity.startActivityForResult(intent, requestCode);
     } catch (ActivityNotFoundException anfe) {
