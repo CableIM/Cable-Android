@@ -35,6 +35,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
+
 import org.thoughtcrime.securesms.MediaPreviewActivity;
 import org.thoughtcrime.securesms.R;
 import org.thoughtcrime.securesms.components.AudioView;
@@ -105,20 +107,27 @@ public class AttachmentManager {
 
   }
 
-  public void clear() {
+  public void clear(boolean animate) {
     if (attachmentViewStub.resolved()) {
-      ViewUtil.fadeOut(attachmentViewStub.get(), 200).addListener(new Listener<Boolean>() {
-        @Override
-        public void onSuccess(Boolean result) {
-          thumbnail.clear();
-          attachmentViewStub.get().setVisibility(View.GONE);
-          attachmentListener.onAttachmentChanged();
-        }
 
-        @Override
-        public void onFailure(ExecutionException e) {
-        }
-      });
+      if (animate) {
+        ViewUtil.fadeOut(attachmentViewStub.get(), 200).addListener(new Listener<Boolean>() {
+          @Override
+          public void onSuccess(Boolean result) {
+            thumbnail.clear();
+            attachmentViewStub.get().setVisibility(View.GONE);
+            attachmentListener.onAttachmentChanged();
+          }
+
+          @Override
+          public void onFailure(ExecutionException e) {
+          }
+        });
+      } else {
+        thumbnail.clear();
+        attachmentViewStub.get().setVisibility(View.GONE);
+        attachmentListener.onAttachmentChanged();
+      }
 
       markGarbage(getSlideUri());
       slide = Optional.absent();
@@ -414,7 +423,7 @@ public class AttachmentManager {
     @Override
     public void onClick(View v) {
       cleanup();
-      clear();
+      clear(true);
     }
   }
 
