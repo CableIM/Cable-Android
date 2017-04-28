@@ -27,7 +27,7 @@
             android:layout_marginBottom="4dp"
             android:textColor="@color/white"
             android:textSize="18sp"
-            tools:text="Invite to Signal"/>
+            tools:text="Invite to Cable"/>
 
         <TextView
             android:id="@+id/reminder_text"
