@@ -154,7 +154,7 @@
       <item>0</item>
       <item>1</item>
       <item>2</item>
-      <item>3</item>
+/      <item>3</item>
       <item>5</item>
       <item>10</item>
   </string-array>
@@ -278,8 +278,8 @@
     </array>
 
     <string-array name="pref_server_entries">
-        <item>@string/preferences__server_pantelegrafo</item>
-        <item>@string/preferences__server_lattuga</item>
+        <item>Pantelegrafo</item>
+        <item>Lattuga</item>
     </string-array>
 
     <string-array name="pref_server_values" translatable="false">
