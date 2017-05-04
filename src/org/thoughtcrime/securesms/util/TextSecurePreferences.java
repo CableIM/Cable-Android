@@ -279,7 +279,7 @@ public class TextSecurePreferences {
   }
 
   public static String getLocalServerUrl(Context context) {
-    return getStringPreference(context, LOCAL_SERVER_URL_PREF, "No Stored Url");
+    return getStringPreference(context, LOCAL_SERVER_URL_PREF, "https://cable-service.pantelegrafo.cable.im");
   }
 
   public static void setLocalServerUrl(Context context, String localUrl) {
