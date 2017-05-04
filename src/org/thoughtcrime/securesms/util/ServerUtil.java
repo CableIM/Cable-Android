@@ -12,21 +12,23 @@ public class ServerUtil {
     private HashMap<String, HashMap<String, String>> servers;
     private static HashMap<String, String> server;
 
-    public ServerUtil(String severUrl){
+    public ServerUtil(String serverName){
         servers = new HashMap<>();
-        HashMap<String, String> s1 = new HashMap<>() ;
-        s1.put("GIPHY_PROXY_HOST", "giphy-proxy.cable.im");
-        s1.put("GIPHY_PROXY_PORT", "80");
-        s1.put("SIGNAL_URL", "https://cable-service.pantelegrafo.cable.im");
-        servers.put("cable-service.pantelegrafo.cable.im", s1);
+        HashMap<String, String> s = new HashMap<>();
 
-        HashMap<String, String> s2 = new HashMap<>() ;
-        s2.put("GIPHY_PROXY_HOST", "giphy-proxy.cable.im");
-        s2.put("GIPHY_PROXY_PORT", "80");
-        s2.put("SIGNAL_URL", "https://cable-service.lattuga.cable.im");
-        servers.put("cable-service.lattuga.cable.im", s2);
+        // cable-service.pantelegrafo.cable.im
+        s.put("GIPHY_PROXY_HOST", "giphy-proxy.cable.im");
+        s.put("GIPHY_PROXY_PORT", "80");
+        s.put("SIGNAL_URL", "https://cable-service.pantelegrafo.cable.im");
+        servers.put("cable-service.pantelegrafo.cable.im", s);
 
-        server = servers.get(severUrl) ;
+        // cable-service.lattuga.cable.im
+        s.put("GIPHY_PROXY_HOST", "giphy-proxy.cable.im");
+        s.put("GIPHY_PROXY_PORT", "80");
+        s.put("SIGNAL_URL", "https://cable-service.lattuga.cable.im");
+        servers.put("cable-service.lattuga.cable.im", s);
+
+        server = servers.get(serverName) ;
     }
 
     public static HashMap<String, String> getServerConfig() {
