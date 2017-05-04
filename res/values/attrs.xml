@@ -77,6 +77,7 @@
 
     <attr name="dialog_info_icon" format="reference" />
     <attr name="dialog_alert_icon" format="reference" />
+    <attr name="dialog_background_color" format="reference|color" />
 
     <attr name="conversation_icon_attach_audio" format="reference"/>
     <attr name="conversation_icon_attach_video" format="reference" />
@@ -91,9 +92,6 @@
     <attr name="import_export_item_background_color" format="reference|color" />
     <attr name="import_export_item_background_shadow_color" format="reference|color" />
     <attr name="import_export_item_card_background" format="reference" />
-    <attr name="import_sms" format="reference" />
-    <attr name="encrypted_backup" format="reference" />
-    <attr name="plaintext_backup" format="reference" />
 
     <attr name="reminder_header_background" format="color"/>
 
@@ -115,14 +113,9 @@
     <attr name="menu_forward_icon" format="reference" />
     <attr name="menu_save_icon" format="reference" />
 
-    <attr name="pref_ic_sms_mms" format="reference" />
-    <attr name="pref_ic_notifications" format="reference" />
-    <attr name="pref_ic_app_protection" format="reference" />
-    <attr name="pref_ic_appearance" format="reference" />
-    <attr name="pref_ic_storage" format="reference" />
-    <attr name="pref_ic_chats" format="reference" />
-    <attr name="pref_ic_devices" format="reference" />
-    <attr name="pref_ic_advanced" format="reference" />
+    <attr name="pref_icon_tint" format="color"/>
+
+    <attr name="pref_divider" format="reference" />
 
     <attr name="app_protect_timeout_picker_color" format="reference"/>
 
@@ -194,6 +187,16 @@
         <attr name="pickerBorderColor" format="color" />
         <attr name="pickerBorderWidth" format="dimension" />
         <attr name="pickerColors" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="DocumentView">
+        <attr name="documentWidgetBackground" format="color"/>
+        <attr name="documentForegroundTintColor" format="color" />
+        <attr name="documentBackgroundTintColor" format="color" />
+    </declare-styleable>
+    
+    <declare-styleable name="EmojiTextView">
+        <attr name="scaleEmojis" format="boolean" />
     </declare-styleable>
 
 </resources>

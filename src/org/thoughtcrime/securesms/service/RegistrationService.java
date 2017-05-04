@@ -10,10 +10,6 @@ import android.os.Handler;
 import android.os.IBinder;
 import android.util.Log;
 
-import org.thoughtcrime.redphone.signaling.RedPhoneAccountAttributes;
-import org.thoughtcrime.redphone.signaling.RedPhoneAccountManager;
-import org.thoughtcrime.redphone.signaling.RedPhoneTrustStore;
-import org.thoughtcrime.securesms.BuildConfig;
 import org.thoughtcrime.securesms.R;
 import org.thoughtcrime.securesms.crypto.IdentityKeyUtil;
 import org.thoughtcrime.securesms.crypto.PreKeyUtil;
@@ -72,7 +68,6 @@ public class RegistrationService extends Service {
   public static final String SERVER_URL_EXTRA    = "server_url";
   public static final String NUMBER_EXTRA        = "e164number";
   public static final String MASTER_SECRET_EXTRA = "master_secret";
-  public static final String GCM_SUPPORTED_EXTRA = "gcm_supported";
   public static final String PASSWORD_EXTRA      = "password";
   public static final String SIGNALING_KEY_EXTRA = "signaling_key";
   public static final String CHALLENGE_EXTRA     = "CAAChallenge";
@@ -166,7 +161,7 @@ public class RegistrationService extends Service {
     String  number       = intent.getStringExtra(NUMBER_EXTRA);
     String  password     = intent.getStringExtra(PASSWORD_EXTRA);
     String  signalingKey = intent.getStringExtra(SIGNALING_KEY_EXTRA);
-    boolean supportsGcm  = intent.getBooleanExtra(GCM_SUPPORTED_EXTRA, true);
+    boolean supportsGcm  = false;
 
     try {
       SignalServiceAccountManager accountManager = AccountManagerFactory.createManager(this, serverurl, number, password);
@@ -194,7 +189,7 @@ public class RegistrationService extends Service {
     ServerUtil server      = new ServerUtil(intent.getStringExtra(SERVER_URL_EXTRA));
     String  serverurl      = server.getServerUrl();
     String  number         = intent.getStringExtra(NUMBER_EXTRA);
-    boolean supportsGcm    = intent.getBooleanExtra(GCM_SUPPORTED_EXTRA, true);
+    boolean supportsGcm    = false;
     int     registrationId = TextSecurePreferences.getLocalRegistrationId(this);
     boolean supportsVideo  = TextSecurePreferences.isWebrtcCallingEnabled(this) || !supportsGcm;
 

@@ -24,9 +24,9 @@
   <string name="ApplicationPreferencesActivity_this_will_permanently_unlock_signal_and_message_notifications">Detta kommer permanent låsa upp Cable och meddelandeaviseringar.</string>
   <string name="ApplicationPreferencesActivity_disable">Inaktivera</string>
   <string name="ApplicationPreferencesActivity_unregistering">Avregistrering</string>
-  <string name="ApplicationPreferencesActivity_unregistering_from_signal_messages_and_calls">Avregistrerar från Signalmeddelanden och -samtal...</string>
-  <string name="ApplicationPreferencesActivity_disable_signal_messages_and_calls">Inaktivera Signalmeddelanden och -samtal?</string>
-  <string name="ApplicationPreferencesActivity_disable_signal_messages_and_calls_by_unregistering">Avaktivera Signalmeddelanden och samtal genom att avregistrera dig från servern. Du kommer behöva återregistrera ditt telefonnummer för att använda dem igen senare.</string>
+  <string name="ApplicationPreferencesActivity_unregistering_from_signal_messages_and_calls">Avregistrerar från Cablemeddelanden och -samtal...</string>
+  <string name="ApplicationPreferencesActivity_disable_signal_messages_and_calls">Inaktivera Cablemeddelanden och -samtal?</string>
+  <string name="ApplicationPreferencesActivity_disable_signal_messages_and_calls_by_unregistering">Avaktivera Cablemeddelanden och samtal genom att avregistrera dig från servern. Du kommer behöva återregistrera ditt telefonnummer för att använda dem igen senare.</string>
   <string name="ApplicationPreferencesActivity_error_connecting_to_server">Fel vid anslutning till server!</string>
   <string name="ApplicationPreferencesActivity_sms_enabled">SMS aktiverat</string>
   <string name="ApplicationPreferencesActivity_touch_to_change_your_default_sms_app">Tryck för att ändra din standardapp för SMS</string>
@@ -69,7 +69,7 @@
   <string name="ConfirmIdentityDialog_accept">Acceptera</string>
   <!--ContactsDatabase-->
   <string name="ContactsDatabase_message_s">Meddelande %s</string>
-  <string name="ContactsDatabase_signal_call_s">Signalsamtal %s</string>
+  <string name="ContactsDatabase_signal_call_s">Cablesamtal %s</string>
   <!--ConversationItem-->
   <string name="ConversationItem_message_size_d_kb">Meddelandestorlek: %d kB</string>
   <string name="ConversationItem_expires_s">Går ut: %s</string>
@@ -83,8 +83,9 @@
   <string name="ConversationItem_click_to_approve_unencrypted">Tryck för oskyddad fallback</string>
   <string name="ConversationItem_click_to_approve_unencrypted_sms_dialog_title">Använd okrypterat SMS istället?</string>
   <string name="ConversationItem_click_to_approve_unencrypted_mms_dialog_title">Använd okrypterat MMS istället?</string>
-  <string name="ConversationItem_click_to_approve_unencrypted_dialog_message">Detta meddelande kommer <b>inte</b> krypteras eftersom mottagaren inte längre är en Signal-användare. \n\nSkicka osäkert meddelande?</string>
+  <string name="ConversationItem_click_to_approve_unencrypted_dialog_message">Detta meddelande kommer <b>inte</b> krypteras eftersom mottagaren inte längre är en Cable-användare. \n\nSkicka osäkert meddelande?</string>
   <string name="ConversationItem_unable_to_open_media">Kan ej hitta app som kan öppna denna fil.</string>
+  <string name="ConversationItem_copied_text">Kopierade %s</string>
   <string name="ConversationItem_from_s">från %s</string>
   <string name="ConversationItem_to_s">till %s</string>
   <!--ConversationActivity-->
@@ -226,6 +227,8 @@
   <string name="DeviceListItem_linked_s">Länkade %s</string>
   <string name="DeviceListItem_last_active_s">Senast aktiv %s</string>
   <string name="DeviceListItem_today">Idag</string>
+  <!--DocumentView-->
+  <string name="DocumentView_unknown_file">Okänd fil</string>
   <!--DozeReminder-->
   <string name="DozeReminder_optimize_for_missing_play_services">Optimera för avsaknad av Play-tjänster</string>
   <string name="DozeReminder_this_device_does_not_support_play_services_tap_to_disable_system_battery">Denna enhet stödjer inte Play-tjänster. Tryck för att slå av systemets batterioptimeringar som förhindrar Cable från att ta emot meddelanden medan den är inaktiv.</string>
@@ -238,13 +241,13 @@
   <string name="ExperienceUpgradeActivity_textsecure_is_now_signal">TextSecure är nu Cable.</string>
   <string name="ExperienceUpgradeActivity_textsecure_is_now_signal_long">TextSecure och RedPhone är nu en app: Cable. Tryck för att utforska.</string>
   <string name="ExperienceUpgradeActivity_say_hello_to_video_calls">Säg hej till säkra videosamtal.</string>
-  <string name="ExperienceUpgradeActivity_signal_now_supports_secure_video_calls">Cable stöder nu säkra videosamtal. Starta bara ett Signalsamtal som vanligt, tryck på video-knappen och vinka hallå.</string>
+  <string name="ExperienceUpgradeActivity_signal_now_supports_secure_video_calls">Cable stöder nu säkra videosamtal. Starta bara ett Cablesamtal som vanligt, tryck på video-knappen och vinka hallå.</string>
   <string name="ExperienceUpgradeActivity_signal_now_supports_secure_video_calling">Cable stöder nu säkra videosamtal.</string>
   <string name="ExperienceUpgradeActivity_signal_now_supports_secure_video_calling_long">Cable stöder nu säkra videosamtal. Tryck för att utforska.</string>
   <!--ExportFragment-->
   <string name="ExportFragment_export">Exportera</string>
   <string name="ExportFragment_export_plaintext_to_storage">Exportera okrypterat till lagring?</string>
-  <string name="ExportFragment_warning_this_will_export_the_plaintext_contents">Varning, detta kommer exportera innehållet i dina Signalmeddelanden okrypterat till lagringen.</string>
+  <string name="ExportFragment_warning_this_will_export_the_plaintext_contents">Varning, detta kommer exportera innehållet i dina Cablemeddelanden okrypterat till lagringen.</string>
   <string name="ExportFragment_cancel">Avbryt</string>
   <string name="ExportFragment_exporting">Sparar</string>
   <string name="ExportFragment_exporting_plaintext_to_storage">Exporterar okrypterat till lagring...</string>
@@ -264,8 +267,8 @@
   <string name="GroupCreateActivity_actionbar_edit_title">Ändra grupp</string>
   <string name="GroupCreateActivity_group_name_hint">Gruppnamn</string>
   <string name="GroupCreateActivity_actionbar_mms_title">Ny MMS-grupp</string>
-  <string name="GroupCreateActivity_contacts_dont_support_push">Du har valt en kontakt som inte har stöd för Signalgrupper, så denna grupp kommer använda MMS.</string>
-  <string name="GroupCreateActivity_youre_not_registered_for_signal">Du är inte registrerad för samtal och meddelanden med Cable, så Signalgrupper är inaktiverat. Försök registrera i Inställningar &gt; Avancerat.</string>
+  <string name="GroupCreateActivity_contacts_dont_support_push">Du har valt en kontakt som inte har stöd för Cablegrupper, så denna grupp kommer använda MMS.</string>
+  <string name="GroupCreateActivity_youre_not_registered_for_signal">Du är inte registrerad för samtal och meddelanden med Cable, så Cablegrupper är inaktiverat. Försök registrera i Inställningar &gt; Avancerat.</string>
   <string name="GroupCreateActivity_contacts_mms_exception">Ett oförutsett fel inträffade som gjort att gruppen inte kunde skapas.</string>
   <string name="GroupCreateActivity_contacts_no_members">Du behöver åtminstone en person i din grupp!</string>
   <string name="GroupCreateActivity_contacts_invalid_number">En av deltagarna i din grupp har ett nummer som inte kan läsas ordentligt. Vänligen åtgärda eller ta bort kontakten och försök igen.</string>
@@ -273,7 +276,7 @@
   <string name="GroupCreateActivity_menu_apply_button">Tillämpa</string>
   <string name="GroupCreateActivity_creating_group">Skapar %1$s...</string>
   <string name="GroupCreateActivity_updating_group">Uppdaterar %1$s...</string>
-  <string name="GroupCreateActivity_cannot_add_non_push_to_existing_group">Kunde inte lägga till %1$s för han/hon är ingen Signal-användare.</string>
+  <string name="GroupCreateActivity_cannot_add_non_push_to_existing_group">Kunde inte lägga till %1$s för han/hon är ingen Cable-användare.</string>
   <string name="GroupCreateActivity_loading_group_details">Laddar gruppdetaljer...</string>
   <string name="GroupCreateActivity_youre_already_in_the_group">Du är redan i gruppen.</string>
   <!--GroupMembersDialog-->
@@ -341,11 +344,11 @@ som inte finns i säkerhetskopian.</string>
   <string name="MmsDownloader_error_connecting_to_mms_provider">Fel vid anslutning till MMS-leverantör</string>
   <string name="MmsDownloader_error_reading_mms_settings">Fel vid läsningen av trådlös leverantör MMS-inställningar</string>
   <!--- NotificationBarManager-->
-  <string name="NotificationBarManager_signal_call_in_progress">Signalsamtal pågår</string>
+  <string name="NotificationBarManager_signal_call_in_progress">Cablesamtal pågår</string>
   <string name="NotificationBarManager_missed_call_from_s">Missat samtal från %s</string>
-  <string name="NotificationBarManager_missed_signal_call">Missat Signalsamtal</string>
-  <string name="NotificationBarManager__establishing_signal_call">Upprättar Signalsamtal</string>
-  <string name="NotificationBarManager__incoming_signal_call">Inkommande Signalsamtal</string>
+  <string name="NotificationBarManager_missed_signal_call">Missat Cablesamtal</string>
+  <string name="NotificationBarManager__establishing_signal_call">Upprättar Cablesamtal</string>
+  <string name="NotificationBarManager__incoming_signal_call">Inkommande Cablesamtal</string>
   <string name="NotificationBarManager__deny_call">Neka samtal</string>
   <string name="NotificationBarManager__answer_call">Svara på samtal</string>
   <string name="NotificationBarManager__end_call">Avsluta samtal</string>
@@ -357,11 +360,12 @@ som inte finns i säkerhetskopian.</string>
   <!--MessageRecord-->
   <string name="MessageRecord_message_encrypted_with_a_legacy_protocol_version_that_is_no_longer_supported">Tog emot ett meddelande som krypterats med en tidigare version av Cable so inte längre stöds. Be avsändaren uppdatera till den senaste versionen och skicka om meddelandet.</string>
   <string name="MessageRecord_left_group">Du har lämnat gruppen.</string>
-  <string name="MessageRecord_updated_group">Uppdaterade gruppen.</string>
+  <string name="MessageRecord_you_updated_group">Du uppdaterade gruppen.</string>
+  <string name="MessageRecord_s_updated_group">%s uppdaterade gruppen.</string>
   <string name="MessageRecord_s_called_you">%s ringde dig</string>
   <string name="MessageRecord_called_s">Ringde %s</string>
   <string name="MessageRecord_missed_call_from">Missat samtal från %s</string>
-  <string name="MessageRecord_s_is_on_signal_say_hey">%s finns på Cable, skriv hej!</string>
+  <string name="MessageRecord_s_joined_signal">%s har anslutit sig till Cable!</string>
   <string name="MessageRecord_you_set_disappearing_message_time_to_s">Du ställde in tiden för försvinnande meddelanden till %1$s.</string>
   <string name="MessageRecord_s_set_disappearing_message_time_to_s">%1$s ställde in tiden för försvinnande meddelanden till %2$s.</string>
   <string name="MessageRecord_your_safety_number_with_s_has_changed">Ditt säkerhetsnummer med %s har ändrats.</string>
@@ -386,15 +390,15 @@ som inte finns i säkerhetskopian.</string>
   <string name="DeviceProvisioningActivity_content_progress_key_error">Ogiltig QR-kod.</string>
   <string name="DeviceProvisioningActivity_sorry_you_have_too_many_devices_linked_already">Tyvärr har du för många enheter redan länkade, prova att ta bort en del</string>
   <string name="DeviceActivity_sorry_this_is_not_a_valid_device_link_qr_code">Tyvärr, det här är ingen giltig QR-kod för enhetslänkning.</string>
-  <string name="DeviceProvisioningActivity_link_a_signal_device">Länka en Signal-enhet?</string>
-  <string name="DeviceProvisioningActivity_it_looks_like_youre_trying_to_link_a_signal_device_using_a_3rd_party_scanner">Det verkar som att du försöker länka en Signal-enhet med hjälp av en tredjepartsskanner. För din säkerhet, vänligen skanna koden igen från Cable.</string>
+  <string name="DeviceProvisioningActivity_link_a_signal_device">Länka en Cable-enhet?</string>
+  <string name="DeviceProvisioningActivity_it_looks_like_youre_trying_to_link_a_signal_device_using_a_3rd_party_scanner">Det verkar som att du försöker länka en Cable-enhet med hjälp av en tredjepartsskanner. För din säkerhet, vänligen skanna koden igen från Cable.</string>
   <!--ExpirationDialog-->
   <string name="ExpirationDialog_disappearing_messages">Försvinnande meddelanden</string>
   <string name="ExpirationDialog_your_messages_will_not_expire">Dina meddelanden kommer inte upphöra.</string>
   <string name="ExpirationDialog_your_messages_will_disappear_s_after_they_have_been_seen">Meddelanden som skickas och tas emot i den här konversationen kommer att försvinna %s efter att de setts.</string>
   <!--PassphrasePromptActivity-->
   <string name="PassphrasePromptActivity_enter_passphrase">Ange lösenord</string>
-  <string name="PassphrasePromptActivity_watermark_content_description">Signalikon</string>
+  <string name="PassphrasePromptActivity_watermark_content_description">Cableikon</string>
   <string name="PassphrasePromptActivity_ok_button_content_description">Skicka lösenord</string>
   <string name="PassphrasePromptActivity_invalid_passphrase_exclamation">Fel lösenord!</string>
   <!--PlayServicesProblemFragment-->
@@ -458,6 +462,8 @@ Dubbelkolla att det här är ditt nummer! Vi ska nu verifiera det med ett SMS.</
   <string name="RegistrationActivity_i_understand">Jag förstår</string>
   <string name="RegistrationActivity_play_services_error">Play-tjänstfel</string>
   <string name="RegistrationActivity_google_play_services_is_updating_or_unavailable">Google Play-tjänster uppdateras eller är tillfälligt inte tillgängligt. Försök igen senare.</string>
+  <string name="RegistrationActivity_more_information">Mer information</string>
+  <string name="RegistrationActivity_less_information">Mindre information</string>
   <!--RegistrationProblemsActivity-->
   <string name="RegistrationProblemsActivity_possible_problems">Potentiella problem</string>
   <!--RegistrationProgressActivity-->
@@ -480,12 +486,12 @@ Dubbelkolla att det här är ditt nummer! Vi ska nu verifiera det med ett SMS.</
   <string name="RegistrationProgressActivity_too_many_requests">För många förfrågningar!</string>
   <string name="RegistrationProgressActivity_youve_already_requested_a_voice_call">Du har redan begärt ett röstsamtal. Du kan begära ett nytt om 20 minuter.</string>
   <string name="RegistrationProgressActivity_registration_conflict">Registreringskonflikt</string>
-  <string name="RegistrationProgressActivity_this_number_is_already_registered_on_a_different">Detta nummer är redan registrerat på en annan Signalserver (CyanogenMod?). Du måste avregistrera ditt nummer därifrån innan du registrerar dig här.</string>
+  <string name="RegistrationProgressActivity_this_number_is_already_registered_on_a_different">Detta nummer är redan registrerat på en annan Cableserver. Du måste avregistrera ditt nummer därifrån innan du registrerar dig här.</string>
   <!--RegistrationService-->
   <string name="RegistrationService_registration_complete">Registrering klar</string>
-  <string name="RegistrationService_signal_registration_has_successfully_completed">Signal-registrering har lyckats.</string>
+  <string name="RegistrationService_signal_registration_has_successfully_completed">Cable-registrering har lyckats.</string>
   <string name="RegistrationService_registration_error">Registreringsfel</string>
-  <string name="RegistrationService_signal_registration_has_encountered_a_problem">Signal-registreringen har drabbats av ett problem.</string>
+  <string name="RegistrationService_signal_registration_has_encountered_a_problem">Cable-registreringen har drabbats av ett problem.</string>
   <!--Slide-->
   <string name="Slide_image">Bilder</string>
   <string name="Slide_audio">Ljud</string>
@@ -500,6 +506,7 @@ Tog emot meddelande för nyckelutbyte för ogiltig protokollversion.</string>
   <string name="SmsMessageRecord_secure_session_reset_s">%s startar om den säkra sessionen.</string>
   <string name="SmsMessageRecord_duplicate_message">Duplicerat meddelande.</string>
   <!--ThreadRecord-->
+  <string name="ThreadRecord_group_updated">Grupp uppdaterad</string>
   <string name="ThreadRecord_left_the_group">Lämnade gruppen</string>
   <string name="ThreadRecord_secure_session_reset">Säker session nollställd.</string>
   <string name="ThreadRecord_draft">Utkast:</string>
@@ -507,7 +514,7 @@ Tog emot meddelande för nyckelutbyte för ogiltig protokollversion.</string>
   <string name="ThreadRecord_called_you">Ringde dig</string>
   <string name="ThreadRecord_missed_call">Missat samtal</string>
   <string name="ThreadRecord_media_message">Mediameddelande</string>
-  <string name="ThreadRecord_s_is_on_signal_say_hey">%s finns på Cable, skriv hej!</string>
+  <string name="ThreadRecord_s_joined_signal">%s har anslutit sig till Cable!</string>
   <string name="ThreadRecord_disappearing_message_time_updated_to_s">Tiden för försvinnande meddelanden inställd till %s</string>
   <string name="ThreadRecord_your_safety_number_with_s_has_changed">Ditt säkerhetsnummer med %s har ändrats.</string>
   <!--UpdateApkReadyListener-->
@@ -549,7 +556,7 @@ Tog emot meddelande för nyckelutbyte för ogiltig protokollversion.</string>
   <string name="ApplicationMigrationService_import_in_progress">Import pågår</string>
   <string name="ApplicationMigrationService_importing_text_messages">Importerar SMS</string>
   <string name="ApplicationMigrationService_import_complete">Import färdig</string>
-  <string name="ApplicationMigrationService_system_database_import_is_complete">Signals import av databasen är klar.</string>
+  <string name="ApplicationMigrationService_system_database_import_is_complete">Cables import av databasen är klar.</string>
   <!--KeyCachingService-->
   <string name="KeyCachingService_signal_passphrase_cached">Tryck för att öppna.</string>
   <string name="KeyCachingService_signal_passphrase_cached_with_lock">Tryck för att öppna, tryck på låset för att stänga.</string>
@@ -583,6 +590,8 @@ Tog emot meddelande för nyckelutbyte för ogiltig protokollversion.</string>
   <!--QuickResponseService-->
   <string name="QuickResponseService_quick_response_unavailable_when_Signal_is_locked">Snabbsvar är ej tillgängligt när Cable är låst!</string>
   <string name="QuickResponseService_problem_sending_message">Problem med att skicka meddelandet!</string>
+  <!--SaveAttachmentTask-->
+  <string name="SaveAttachmentTask_open_directory">Öppna mapp</string>
   <!--SingleRecipientNotificationBuilder-->
   <string name="SingleRecipientNotificationBuilder_signal">Cable</string>
   <string name="SingleRecipientNotificationBuilder_new_message">Nytt meddelande</string>
@@ -591,16 +600,12 @@ Tog emot meddelande för nyckelutbyte för ogiltig protokollversion.</string>
   <!--WebRtcCallScreen-->
   <string name="WebRtcCallScreen_new_safety_numbers">Säkerhetsnumret för din konversation med %1$s har ändrats. Detta kan antingen betyda att någon försöker avlyssna er kommunikation, eller att %2$s helt enkelt har installerat om Cable.</string>
   <string name="WebRtcCallScreen_you_may_wish_to_verify_this_contact">Du kan vilja verifiera ditt säkerhetsnummer med denna kontakt.</string>
-  <string name="WebRtcCallScreen_new_safety_numbers_title">Nya säkerhetsnummer</string>
+  <string name="WebRtcCallScreen_new_safety_number_title">Nytt säkerhetsnummer</string>
   <!--WebRtcCallControls-->
   <string name="WebRtcCallControls_tap_to_enable_your_video">Tryck för att aktivera video</string>
   <!--attachment_type_selector-->
-  <string name="attachment_type_selector__image">Bild</string>
-  <string name="attachment_type_selector__image_description">Bild</string>
   <string name="attachment_type_selector__audio">Ljud</string>
   <string name="attachment_type_selector__audio_description">Ljud</string>
-  <string name="attachment_type_selector__video">Video</string>
-  <string name="attachment_type_selector__video_description">Video</string>
   <string name="attachment_type_selector__contact">Kontakt</string>
   <string name="attachment_type_selector__contact_description">Kontakt</string>
   <string name="attachment_type_selector__camera">Kamera</string>
@@ -609,6 +614,10 @@ Tog emot meddelande för nyckelutbyte för ogiltig protokollversion.</string>
   <string name="attachment_type_selector__location_description">Plats</string>
   <string name="attachment_type_selector__gif">GIF</string>
   <string name="attachment_type_selector__gif_description">Gif</string>
+  <string name="attachment_type_selector__gallery_description">Bild eller video</string>
+  <string name="attachment_type_selector__file_description">Fil</string>
+  <string name="attachment_type_selector__gallery">Galleri</string>
+  <string name="attachment_type_selector__file">Fil</string>
   <string name="attachment_type_selector__drawer_description">Dölj/visa bilagor</string>
   <!--change_passphrase_activity-->
   <string name="change_passphrase_activity__old_passphrase">Gammal lösenfras</string>
@@ -630,9 +639,9 @@ Tog emot meddelande för nyckelutbyte för ogiltig protokollversion.</string>
   <!--conversation_title_view-->
   <string name="conversation_title_view__conversation_muted">Konversation tystad</string>
   <!--conversation_activity-->
-  <string name="conversation_activity__type_message_push">Skicka Signalmeddelande</string>
-  <string name="conversation_activity__type_message_sms_insecure">Skicka okrypterat SMS</string>
-  <string name="conversation_activity__type_message_mms_insecure">Skicka okrypterat MMS</string>
+  <string name="conversation_activity__type_message_push">Cablemeddelande</string>
+  <string name="conversation_activity__type_message_sms_insecure">Osäkert SMS</string>
+  <string name="conversation_activity__type_message_mms_insecure">Osäkert MMS</string>
   <string name="conversation_activity__from_sim_name">Från %1$s</string>
   <string name="conversation_activity__send">Skicka</string>
   <string name="conversation_activity__remove">Ta bort</string>
@@ -711,6 +720,9 @@ Tog emot meddelande för nyckelutbyte för ogiltig protokollversion.</string>
   <string name="giphy_activity_toolbar__search_gifs_and_stickers">Sök GIF-bilder och stickers</string>
   <!--giphy_fragment-->
   <string name="giphy_fragment__nothing_found">Inget hittat</string>
+  <!--import_export_fragment-->
+  <string name="import_export_fragment__export">Exportera</string>
+  <string name="import_export_fragment__import">Importera</string>
   <!--log_submit_activity-->
   <string name="log_submit_activity__log_fetch_failed">Kunde inte läsa loggen från din enhet. Du kan fortfarande använda ADB för att få en logg.</string>
   <string name="log_submit_activity__thanks">Tack för din hjälp!</string>
@@ -718,7 +730,7 @@ Tog emot meddelande för nyckelutbyte för ogiltig protokollversion.</string>
   <string name="log_submit_activity__posting_logs">Skickar loggar till gist...</string>
   <string name="log_submit_activity__no_browser_installed">Ingen webbläsare installerad</string>
   <!--database_migration_activity-->
-  <string name="database_migration_activity__would_you_like_to_import_your_existing_text_messages">Vill du importera dina existerande SMS-meddelanden till Signals krypterade databas?</string>
+  <string name="database_migration_activity__would_you_like_to_import_your_existing_text_messages">Vill du importera dina existerande SMS-meddelanden till Cables krypterade databas?</string>
   <string name="database_migration_activity__the_default_system_database_will_not_be_modified">Systemets standarddatabas kommer på intet sätt att modifieras eller ändras.</string>
   <string name="database_migration_activity__skip">Hoppa över</string>
   <string name="database_migration_activity__import">Importera</string>
@@ -741,12 +753,12 @@ Tog emot meddelande för nyckelutbyte för ogiltig protokollversion.</string>
   <!--message_recipients_list_item-->
   <string name="message_recipients_list_item__verify">VERIFIERA</string>
   <string name="message_recipients_list_item__resend">SKICKA OM</string>
+  <string name="message_recipients_list_item__resending">Skickar om...</string>
   <!--GroupUtil-->
   <plurals name="GroupUtil_joined_the_group">
     <item quantity="one">%1$s gick med i gruppen.</item>
     <item quantity="other">%1$s gick med i gruppen.</item>
   </plurals>
-  <string name="GroupUtil_group_updated">Grupp uppdaterad.</string>
   <string name="GroupUtil_group_name_is_now">Gruppnamnet är nu \'%1$s\'.</string>
   <!--prompt_passphrase_activity-->
   <string name="prompt_passphrase_activity__unlock">Lås upp</string>
@@ -765,11 +777,11 @@ Tog emot meddelande för nyckelutbyte för ogiltig protokollversion.</string>
   <string name="recipient_preferences__color_for_this_contact">Färg för denna kontakt</string>
   <string name="recipient_preferences__verify_safety_number">Verifiera säkerhetsnummer</string>
   <!--- redphone_call_controls-->
-  <string name="redphone_call_card__signal_call">Signalsamtal</string>
+  <string name="redphone_call_card__signal_call">Cablesamtal</string>
   <string name="redphone_call_controls__end_call">avsluta samtal</string>
   <string name="redphone_call_controls__audio">Ljud</string>
   <string name="redphone_call_controls__mute">Tysta</string>
-  <string name="redphone_call_controls__signal_call">Signalsamtal</string>
+  <string name="redphone_call_controls__signal_call">Cablesamtal</string>
   <!--registration_activity-->
   <string name="registration_activity__verify_your_number_to_connect_with_signal">
 Verifiera ditt telefonnummer för att ansluta till Cable.</string>
@@ -778,7 +790,7 @@ Verifiera ditt telefonnummer för att ansluta till Cable.</string>
 TELEFONNUMMER</string>
   <string name="registration_activity__phone_number">TELEFONNUMMER</string>
   <string name="registration_activity__register">Registrera</string>
-  <string name="registration_activity__registration_will_transmit_some_contact_information_to_the_server_temporariliy">Registrering kommer att temporärt överföra viss kontaktinformation till servern.</string>
+  <string name="registration_activity__registration_will_transmit_some_contact_information_to_the_server_temporariliy">Cable gör det lätt att kommunicera genom att använda ditt mobilnummer och din kontaktbok. Vänner och kontakter som redan har ditt nummer kommer lätt kunna kontakta dig med Cable.\n\nRegistreringen skickar viss kontaktinformation till servern. Informationen lagras ej.</string>
   <string name="registration_activity__powered_by_twilio">Powered by twilio</string>
   <!--registration_problems-->
   <string name="registration_problems__some_possible_problems_include">Några möjliga orsaker:</string>
@@ -811,7 +823,7 @@ så att du är uppkopplad med mobildata eller Wi-Fi.</string>
   <string name="registration_progress_activity__restrictive_firewall">Restriktiv brandvägg.</string>
   <string name="registration_progress_activity__if_you_are_connected_via_wifi_its_possible_that_there_is_a_firewall">
 Om du är uppkopplad med Wi-Fi är det möjligt att en brandvägg blockerat tillgång
-till Signalservern. Försök med ett annat nätverk eller med mobildata.</string>
+till Cableservern. Försök med ett annat nätverk eller med mobildata.</string>
   <string name="registration_progress_activity__signal_will_now_automatically_verify_your_number_with_a_confirmation_sms_message">
 Cable kommer nu att automatiskt verifiera ditt telefonnummer med ett sms.</string>
   <string name="registration_progress_activity__connecting">Ansluter...</string>
@@ -875,6 +887,14 @@ Cable uppnådde tidsgränsen för SMS-verifiering.</string>
   <string name="arrays__images">Bilder</string>
   <string name="arrays__audio">Ljud</string>
   <string name="arrays__video">Video</string>
+  <string name="arrays__documents">Dokument</string>
+  <string name="arrays__small">Liten</string>
+  <string name="arrays__normal">Normal</string>
+  <string name="arrays__large">Stor</string>
+  <string name="arrays__extra_large">Extra stor</string>
+  <string name="arrays__default">Standard</string>
+  <string name="arrays__high">Hög</string>
+  <string name="arrays__max">Max</string>
   <!--plurals.xml-->
   <plurals name="hours_ago">
     <item quantity="one">%d timme</item>
@@ -916,9 +936,8 @@ Cable uppnådde tidsgränsen för SMS-verifiering.</string>
   <string name="preferences__pref_led_blink_custom_pattern_off_for">Av under:</string>
   <string name="preferences__pref_led_blink_custom_pattern_set">Specialanpassat LED-blinkningsmönster valt!</string>
   <string name="preferences__sound">Ljud</string>
-  <string name="preferences__change_notification_sound">Ändra aviseringsljud</string>
   <string name="preferences__silent">Tyst</string>
-  <string name="preferences__in_conversation_notifications">Inom-konversationsaviseringar</string>
+  <string name="preferences__in_conversation_notifications">Aviseringar inom konversationer</string>
   <string name="preferences__play_inthread_notifications">Spela aviseringsljud när du tittar på en aktiv konversation</string>
   <string name="preferences__repeat_alerts">Upprepa aviseringar</string>
   <string name="preferences__never">Aldrig</string>
@@ -969,8 +988,8 @@ Cable uppnådde tidsgränsen för SMS-verifiering.</string>
   <string name="preferences__theme">Tema</string>
   <string name="preferences__default">Standard</string>
   <string name="preferences__language">Språk</string>
-  <string name="preferences__signal_messages_and_calls">Signalmeddelanden och -samtal</string>
-  <string name="preferences__free_private_messages_and_calls">Gratis privata meddelanden och samtal med andra Signalanvändare</string>
+  <string name="preferences__signal_messages_and_calls">Cablemeddelanden och -samtal</string>
+  <string name="preferences__free_private_messages_and_calls">Gratis privata meddelanden och samtal med andra Cableanvändare</string>
   <string name="preferences__submit_debug_log">Skicka in loggfilen för felsökning</string>
   <string name="preferences__support_wifi_calling">\'WiFi Calling\' kompatibilitetsläge</string>
   <string name="preferences__enable_if_your_device_supports_sms_mms_delivery_over_wifi">Aktivera om din enhet använder SMS/MMS sändning över WiFi (aktivera endast när \'WiFi Calling\' är aktiverat på din enhet)</string>
@@ -984,11 +1003,23 @@ Cable uppnådde tidsgränsen för SMS-verifiering.</string>
   <string name="preferences_chats__media_auto_download">Autonedladdning av media</string>
   <string name="preferences_chats__message_trimming">Trimma meddelanden</string>
   <string name="preferences_advanced__use_system_emoji">Använd systemets emojis</string>
-  <string name="preferences_advanced__disable_signal_built_in_emoji_support">Stäng av Signals inbyggda emojistöd</string>
+  <string name="preferences_advanced__disable_signal_built_in_emoji_support">Stäng av Cables inbyggda emojistöd</string>
   <string name="preferences_advanced__video_calling_beta">Videosamtal beta</string>
   <string name="preferences_advanced__enable_support_for_next_generation_video_and_voice_calls">Stöd för nästa generations video- och röstsamtal om det aktiverats av båda parter. Denna funktion är i beta.</string>
-  <string name="preferences_advanced__relay_all_calls_through_the_signal_server_to_avoid_revealing_your_ip_address">Slussa alla samtal via Signal-servern för att unvika att avslöja din IP-adress för din kontakt. Aktivering innebär försämrad samtalskvalité.</string>
+  <string name="preferences_advanced__relay_all_calls_through_the_signal_server_to_avoid_revealing_your_ip_address">Slussa alla samtal via Cable-servern för att undvika att avslöja din IP-adress för din kontakt. Aktivering innebär försämrad samtalskvalité.</string>
   <string name="preferences_advanced__always_relay_calls">Slussa alltid samtal</string>
+  <string name="preferences_app_protection__app_access">Appåtkomst</string>
+  <string name="preferences_app_protection__communication">Kommunikation</string>
+  <string name="preferences_chats__chats">Chatt</string>
+  <string name="preferences_notifications__message_notifications">Meddelandeaviseringar</string>
+  <string name="preferences_notifications__events">Händelser</string>
+  <string name="preferences_notifications__in_chat_sounds">Ljud i chatter</string>
+  <string name="preferences_notifications__show">Visa</string>
+  <string name="preferences_chats__show_invitation_prompts">Visa inbjudningsmeddelanden</string>
+  <string name="preferences_chats__display_invitation_prompts_for_contacts_without_signal">Visa inbjudningsmeddelande för kontakter utan Cable</string>
+  <string name="preferences_chats__message_text_size">Teckenstorlek för meddelande</string>
+  <string name="preferences_events__contact_joined_signal">Kontakt anslöt sig till Cable</string>
+  <string name="preferences_notifications__priority">Prioritet</string>
   <!--****************************************-->
   <!--menus-->
   <!--****************************************-->
@@ -1005,7 +1036,7 @@ Cable uppnådde tidsgränsen för SMS-verifiering.</string>
   <!--conversation_callable_insecure-->
   <string name="conversation_callable_insecure__menu_call">Ring</string>
   <!--conversation_callable_secure-->
-  <string name="conversation_callable_secure__menu_call">Signalsamtal</string>
+  <string name="conversation_callable_secure__menu_call">Cablesamtal</string>
   <!--conversation_context-->
   <string name="conversation_context__menu_message_details">Meddelandedetaljer</string>
   <string name="conversation_context__menu_copy_text">Kopiera text</string>
@@ -1086,9 +1117,9 @@ Cable uppnådde tidsgränsen för SMS-verifiering.</string>
   <string name="reminder_header_sms_default_text">Tryck för att göra Cable till din standardapp för SMS.</string>
   <string name="reminder_header_sms_default_button">STÄLL IN</string>
   <string name="reminder_header_sms_import_title">Importera systemets SMS</string>
-  <string name="reminder_header_sms_import_text">Tryck för att kopiera din telefons SMS-meddelanden till Signals krypterade databas.</string>
+  <string name="reminder_header_sms_import_text">Tryck för att kopiera din telefons SMS-meddelanden till Cables krypterade databas.</string>
   <string name="reminder_header_sms_import_button">IMPORTERA</string>
-  <string name="reminder_header_push_title">Aktivera Signalmeddelanden och samtal</string>
+  <string name="reminder_header_push_title">Aktivera Cablemeddelanden och samtal</string>
   <string name="reminder_header_push_text">Uppgradera din kommunikationsupplevelse.</string>
   <string name="reminder_header_push_button">AKTIVERA</string>
   <string name="reminder_header_invite_title">Bjud in till Cable</string>

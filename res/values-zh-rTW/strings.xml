@@ -22,9 +22,9 @@
   <string name="ApplicationPreferencesActivity_this_will_permanently_unlock_signal_and_message_notifications">這將會永久性地解鎖 Cable 與訊息通知。</string>
   <string name="ApplicationPreferencesActivity_disable">停用</string>
   <string name="ApplicationPreferencesActivity_unregistering">取消註冊</string>
-  <string name="ApplicationPreferencesActivity_unregistering_from_signal_messages_and_calls">取消註冊Signal訊息與通話...</string>
-  <string name="ApplicationPreferencesActivity_disable_signal_messages_and_calls">停用Signal訊息與通話?</string>
-  <string name="ApplicationPreferencesActivity_disable_signal_messages_and_calls_by_unregistering">這將會從伺服器上登出您的Signal並停用。 未來如果還想使用該功能，則需要再次註冊。</string>
+  <string name="ApplicationPreferencesActivity_unregistering_from_signal_messages_and_calls">取消註冊 Cable 訊息與通話...</string>
+  <string name="ApplicationPreferencesActivity_disable_signal_messages_and_calls">停用 Cable 訊息與通話?</string>
+  <string name="ApplicationPreferencesActivity_disable_signal_messages_and_calls_by_unregistering">這將會從伺服器上登出您的 Cable 並停用。 未來如果還想使用該功能，則需要再次註冊。</string>
   <string name="ApplicationPreferencesActivity_error_connecting_to_server">與伺服器的連線發生錯誤！</string>
   <string name="ApplicationPreferencesActivity_sms_enabled">簡訊功能已啟動</string>
   <string name="ApplicationPreferencesActivity_touch_to_change_your_default_sms_app">按此以變更您預設的簡訊應用</string>
@@ -61,7 +61,7 @@
   <!--CallScreen-->
   <string name="CallScreen_Incoming_call">來電</string>
   <!--ConfirmIdentityDialog-->
-  <string name="ConfirmIdentityDialog_your_safety_number_with_s_has_changed">%1$s 的安全碼產生變動。這有可能是有不明人士試圖攔截您的通訊／對話內容，或是因為 %2$s 重新安裝 Signal。</string>
+  <string name="ConfirmIdentityDialog_your_safety_number_with_s_has_changed">%1$s 的安全碼產生變動。這有可能是有不明人士試圖攔截您的通訊／對話內容，或是因為 %2$s 重新安裝 Cable。</string>
   <string name="ConfirmIdentityDialog_you_may_wish_to_verify_your_safety_number_with_this_contact">您可能希望驗證這名聯絡人的安全碼。</string>
   <string name="ConfirmIdentityDialog_accept">接受</string>
   <!--ContactsDatabase-->
@@ -82,6 +82,7 @@
   <string name="ConversationItem_click_to_approve_unencrypted_mms_dialog_title">回收未加密的多媒體訊息？</string>
   <string name="ConversationItem_click_to_approve_unencrypted_dialog_message">由於對方已經不再是 Cable 的使用者，當前訊息<b>不會</b>被加密。\n\n傳送不加密的訊息？</string>
   <string name="ConversationItem_unable_to_open_media">找不到合適的應用程式來開啟媒體檔案。</string>
+  <string name="ConversationItem_copied_text">複製 %s</string>
   <string name="ConversationItem_from_s">來自 %s</string>
   <string name="ConversationItem_to_s">至 %s</string>
   <!--ConversationActivity-->
@@ -210,17 +211,23 @@
   <string name="DeviceListItem_linked_s">已連結 %s</string>
   <string name="DeviceListItem_last_active_s">最後活躍 %s</string>
   <string name="DeviceListItem_today">今天</string>
+  <!--DocumentView-->
+  <string name="DocumentView_unknown_file">未知的檔案</string>
   <!--DozeReminder-->
   <string name="DozeReminder_optimize_for_missing_play_services">為缺少的 Play 服務優化</string>
   <string name="DozeReminder_this_device_does_not_support_play_services_tap_to_disable_system_battery">這個裝置不支援 Play 服務。輕觸關閉，因為系統電池效能最佳化會防止 Cable 在閒置時取得訊息。</string>
   <!--ShareActivity-->
   <string name="ShareActivity_share_with">分享給</string>
   <!--ExperienceUpgradeActivity-->
-  <string name="ExperienceUpgradeActivity_welcome_to_signal_dgaf">歡迎來到 Signal。</string>
-  <string name="ExperienceUpgradeActivity_textsecure_is_now_called_signal">從現在起 TextSecure 與 RedPhone 將會是同一個私密的訊息平台，最佳的解決方案：Signal。</string>
-  <string name="ExperienceUpgradeActivity_welcome_to_signal_excited">歡迎來到 Signal！</string>
-  <string name="ExperienceUpgradeActivity_textsecure_is_now_signal">TextSecure 已命名為 Signal。</string>
-  <string name="ExperienceUpgradeActivity_textsecure_is_now_signal_long">從現在起 TextSecure 與 RedPhone 將會是同一個應用程式：Signal。輕觸以開始探索。</string>
+  <string name="ExperienceUpgradeActivity_welcome_to_signal_dgaf">歡迎來到 Cable。</string>
+  <string name="ExperienceUpgradeActivity_textsecure_is_now_called_signal">從現在起 TextSecure 與 RedPhone 將會是同一個私密的訊息平台，最佳的解決方案：Cable。</string>
+  <string name="ExperienceUpgradeActivity_welcome_to_signal_excited">歡迎來到 Cable！</string>
+  <string name="ExperienceUpgradeActivity_textsecure_is_now_signal">TextSecure 已命名為 Cable。</string>
+  <string name="ExperienceUpgradeActivity_textsecure_is_now_signal_long">從現在起 TextSecure 與 RedPhone 將會是同一個應用程式：Cable。輕觸以開始探索。</string>
+  <string name="ExperienceUpgradeActivity_say_hello_to_video_calls">向安全的視訊通話打聲招呼，說聲嗨。</string>
+  <string name="ExperienceUpgradeActivity_signal_now_supports_secure_video_calls">現在 Cable 支援了安全的視訊通話。就如同開始 Cable 通話一樣，輕觸視訊按鈕，接著揮手打聲招呼。</string>
+  <string name="ExperienceUpgradeActivity_signal_now_supports_secure_video_calling">現在 Cable 支援安全的視訊通話。</string>
+  <string name="ExperienceUpgradeActivity_signal_now_supports_secure_video_calling_long">現在 Cable 支援安全的視訊通話。輕觸探索。</string>
   <!--ExportFragment-->
   <string name="ExportFragment_export">匯出</string>
   <string name="ExportFragment_export_plaintext_to_storage">匯出純文字格式至儲存裝置？</string>
@@ -264,7 +271,7 @@
   <!--ImportFragment-->
   <string name="ImportFragment_import_system_sms_database">匯入目前裝置上的手機簡訊？</string>
   <string name="ImportFragment_this_will_import_messages_from_the_system">這將會從系統預設的簡訊資料庫匯入
-訊息至 Signal。如果您事先
+訊息至 Cable。如果您事先
 已匯入系統簡訊資料庫，再次匯入將會出現重複的訊息。</string>
   <string name="ImportFragment_import">匯入</string>
   <string name="ImportFragment_cancel">取消</string>
@@ -304,7 +311,7 @@
   <plurals name="InviteActivity_send_sms_invites">
     <item quantity="other">傳送 %d 則簡訊邀請？</item>
   </plurals>
-  <string name="InviteActivity_lets_switch_to_signal">讓我們切換到 Signal：%1$s</string>
+  <string name="InviteActivity_lets_switch_to_signal">讓我們切換到 Cable：%1$s</string>
   <string name="InviteActivity_no_app_to_share_to">看起來您沒有任何可以分享的應用。</string>
   <string name="InviteActivity_friends_dont_let_friends_text_unencrypted">朋友不該讓朋友之間的聊天未經加密。</string>
   <!--KeyScanningActivity-->
@@ -338,11 +345,12 @@
   <!--MessageRecord-->
   <string name="MessageRecord_message_encrypted_with_a_legacy_protocol_version_that_is_no_longer_supported">收到一則使用舊版本並已經不再支援的 Cable 加密訊息。請尋求傳送人將 Cable 升級到最新的版本並再次傳送該訊息。</string>
   <string name="MessageRecord_left_group">您已經離開了此群組。</string>
-  <string name="MessageRecord_updated_group">已更新群組。</string>
+  <string name="MessageRecord_you_updated_group">你已更新群組。</string>
+  <string name="MessageRecord_s_updated_group">%s 更新了群組。</string>
   <string name="MessageRecord_s_called_you">%s 呼叫您</string>
   <string name="MessageRecord_called_s">已呼叫 %s</string>
   <string name="MessageRecord_missed_call_from">來自 %s 的未接來電</string>
-  <string name="MessageRecord_s_is_on_signal_say_hey">%s 正在 Cable 線上，打個招呼吧！</string>
+  <string name="MessageRecord_s_joined_signal">%s 已加入 Cable!</string>
   <string name="MessageRecord_you_set_disappearing_message_time_to_s">您將訊息銷毀時間設置爲 %1$s。</string>
   <string name="MessageRecord_s_set_disappearing_message_time_to_s">%1$s 將訊息銷毀時間設置爲 %2$s。</string>
   <string name="MessageRecord_your_safety_number_with_s_has_changed">您與 %s 的安全碼已改變。</string>
@@ -436,10 +444,12 @@
   <string name="RegistrationActivity_continue">繼續</string>
   <string name="RegistrationActivity_edit">編輯</string>
   <string name="RegistrationActivity_missing_google_play_services">找不到 Google Play 服務</string>
-  <string name="RegistrationActivity_this_device_is_missing_google_play_services">這個裝置找不到 Google Play 服務。你仍然可以使用 Signal，但是這個設定也許會造成降低可靠性或效能。\n\n如果你不是進階使用者，沒有執行非原廠的 Android ROM，或相信你正看到錯誤，請聯絡 support@whispersystems.org 來協助你排除故障。</string>
+  <string name="RegistrationActivity_this_device_is_missing_google_play_services">這個裝置找不到 Google Play 服務。你仍然可以使用 Cable，但是這個設定也許會造成降低可靠性或效能。\n\n如果你不是進階使用者，沒有執行非原廠的 Android ROM，或相信你正看到錯誤，請聯絡 support@whispersystems.org 來協助你排除故障。</string>
   <string name="RegistrationActivity_i_understand">我了解</string>
   <string name="RegistrationActivity_play_services_error">Play 服務錯誤</string>
   <string name="RegistrationActivity_google_play_services_is_updating_or_unavailable">Google Play 服務正在更新或暫時無法使用。請再重試。</string>
+  <string name="RegistrationActivity_more_information">更多資訊</string>
+  <string name="RegistrationActivity_less_information">較少資訊</string>
   <!--RegistrationProblemsActivity-->
   <string name="RegistrationProblemsActivity_possible_problems">可能的問題</string>
   <!--RegistrationProgressActivity-->
@@ -462,10 +472,10 @@
   <string name="RegistrationProgressActivity_too_many_requests">送出太多次要求！</string>
   <string name="RegistrationProgressActivity_youve_already_requested_a_voice_call">您剛已接到一通語音驗證碼提示通話。須於20分鐘後再提出下一次通話需求。</string>
   <string name="RegistrationProgressActivity_registration_conflict">註冊發生衝突</string>
-  <string name="RegistrationProgressActivity_this_number_is_already_registered_on_a_different">此號碼已經在另一個 Cable 伺服器 (CyanogenMod?) 註冊過了。您必需先將其取消才能在此進行註冊。</string>
+  <string name="RegistrationProgressActivity_this_number_is_already_registered_on_a_different">這個號碼已在不同的 Cable 伺服器註冊。在這裡註冊前，你必須先在那取消註冊。</string>
   <!--RegistrationService-->
   <string name="RegistrationService_registration_complete">註冊完成</string>
-  <string name="RegistrationService_signal_registration_has_successfully_completed">已成功註冊 Signal。</string>
+  <string name="RegistrationService_signal_registration_has_successfully_completed">已成功註冊 Cable。</string>
   <string name="RegistrationService_registration_error">註冊失敗</string>
   <string name="RegistrationService_signal_registration_has_encountered_a_problem">Cable 註冊遭遇到了問題。</string>
   <!--Slide-->
@@ -483,6 +493,7 @@
   <string name="SmsMessageRecord_secure_session_reset_s">%s 重設安全對話。</string>
   <string name="SmsMessageRecord_duplicate_message">複製訊息。</string>
   <!--ThreadRecord-->
+  <string name="ThreadRecord_group_updated">群組已更新</string>
   <string name="ThreadRecord_left_the_group">已離開群組</string>
   <string name="ThreadRecord_secure_session_reset">安全對話已重設。</string>
   <string name="ThreadRecord_draft">草稿：</string>
@@ -490,14 +501,16 @@
   <string name="ThreadRecord_called_you">呼叫您</string>
   <string name="ThreadRecord_missed_call">未接來電</string>
   <string name="ThreadRecord_media_message">媒體訊息</string>
-  <string name="ThreadRecord_s_is_on_signal_say_hey">%s 正在 Cable 線上，打個招呼吧！</string>
+  <string name="ThreadRecord_s_joined_signal">%s 已加入 Cable!</string>
   <string name="ThreadRecord_disappearing_message_time_updated_to_s">訊息銷毀時間設置爲 %s</string>
   <string name="ThreadRecord_your_safety_number_with_s_has_changed">您與 %s 的安全碼已改變。</string>
   <!--UpdateApkReadyListener-->
+  <string name="UpdateApkReadyListener_Signal_update">Cable 更新</string>
+  <string name="UpdateApkReadyListener_a_new_version_of_signal_is_available_tap_to_update">有新版本的 Cable，輕觸更新</string>
   <!--VerifyIdentityActivity-->
-  <string name="VerifyIdentityActivity_your_contact_is_running_an_old_version_of_signal">您的聯絡人使用的是舊版本的 Signal。在驗證您的安全碼前請尋求對方先進行更新。</string>
-  <string name="VerifyIdentityActivity_your_contact_is_running_a_newer_version_of_Signal">您的聯絡人使用的是新版本的 Signal，程式無法識別這個聯絡人的二維碼。
-請升級您的 Signal。</string>
+  <string name="VerifyIdentityActivity_your_contact_is_running_an_old_version_of_signal">您的聯絡人使用的是舊版本的 Cable。在驗證您的安全碼前請尋求對方先進行更新。</string>
+  <string name="VerifyIdentityActivity_your_contact_is_running_a_newer_version_of_Signal">您的聯絡人使用的是新版本的 Cable，程式無法識別這個聯絡人的二維碼。
+請升級您的 Cable。</string>
   <string name="VerifyIdentityActivity_the_scanned_qr_code_is_not_a_correctly_formatted_safety_number">掃描的 QR 碼格式不正確。請重新掃一次。</string>
   <string name="VerifyIdentityActivity_share_safety_number_via">通過...分享安全碼</string>
   <string name="VerifyIdentityActivity_our_signal_safety_number">我方 Cable 安全碼：</string>
@@ -565,24 +578,22 @@
   <!--QuickResponseService-->
   <string name="QuickResponseService_quick_response_unavailable_when_Signal_is_locked">當 Cable 鎖定時無法使用快速回覆！</string>
   <string name="QuickResponseService_problem_sending_message">傳送訊息出現問題！</string>
+  <!--SaveAttachmentTask-->
+  <string name="SaveAttachmentTask_open_directory">開啟目錄</string>
   <!--SingleRecipientNotificationBuilder-->
   <string name="SingleRecipientNotificationBuilder_signal">Cable</string>
   <string name="SingleRecipientNotificationBuilder_new_message">新訊息</string>
   <!--VideoPlayer-->
   <string name="VideoPlayer_error_playing_video">播放影片時發生錯誤</string>
   <!--WebRtcCallScreen-->
-  <string name="WebRtcCallScreen_new_safety_numbers">%1$s 的安全碼產生變動。這有可能是有不明人士試圖攔截您的通訊／對話內容，或是因為 %2$s 重新安裝 Signal。</string>
+  <string name="WebRtcCallScreen_new_safety_numbers">%1$s 的安全碼產生變動。這有可能是有不明人士試圖攔截您的通訊／對話內容，或是因為 %2$s 重新安裝 Cable。</string>
   <string name="WebRtcCallScreen_you_may_wish_to_verify_this_contact">您可能希望驗證這名聯絡人的安全碼。</string>
-  <string name="WebRtcCallScreen_new_safety_numbers_title">新的安全碼</string>
+  <string name="WebRtcCallScreen_new_safety_number_title">新的安全碼</string>
   <!--WebRtcCallControls-->
-  <string name="WebRtcCallControls_tap_to_enable_your_video">輕觸開啟你的語音</string>
+  <string name="WebRtcCallControls_tap_to_enable_your_video">輕觸開啟你的視訊</string>
   <!--attachment_type_selector-->
-  <string name="attachment_type_selector__image">圖片</string>
-  <string name="attachment_type_selector__image_description">圖片</string>
   <string name="attachment_type_selector__audio">音訊</string>
   <string name="attachment_type_selector__audio_description">音訊</string>
-  <string name="attachment_type_selector__video">影片</string>
-  <string name="attachment_type_selector__video_description">影片</string>
   <string name="attachment_type_selector__contact">聯絡人</string>
   <string name="attachment_type_selector__contact_description">聯絡人</string>
   <string name="attachment_type_selector__camera">相機</string>
@@ -591,6 +602,10 @@
   <string name="attachment_type_selector__location_description">位置</string>
   <string name="attachment_type_selector__gif">動態圖檔</string>
   <string name="attachment_type_selector__gif_description">動態圖檔</string>
+  <string name="attachment_type_selector__gallery_description">圖片或影片</string>
+  <string name="attachment_type_selector__file_description">檔案</string>
+  <string name="attachment_type_selector__gallery">圖片庫</string>
+  <string name="attachment_type_selector__file">檔案</string>
   <string name="attachment_type_selector__drawer_description">切換附件抽屜</string>
   <!--change_passphrase_activity-->
   <string name="change_passphrase_activity__old_passphrase">舊的自訂密碼</string>
@@ -612,9 +627,9 @@
   <!--conversation_title_view-->
   <string name="conversation_title_view__conversation_muted">對話已靜音</string>
   <!--conversation_activity-->
-  <string name="conversation_activity__type_message_push">傳送 Cable 加密訊息</string>
-  <string name="conversation_activity__type_message_sms_insecure">傳送未加密的手機簡訊</string>
-  <string name="conversation_activity__type_message_mms_insecure">傳送未加密的多媒體訊息</string>
+  <string name="conversation_activity__type_message_push">Cable 訊息</string>
+  <string name="conversation_activity__type_message_sms_insecure">不安全的簡訊</string>
+  <string name="conversation_activity__type_message_mms_insecure">不安全的多媒體訊息</string>
   <string name="conversation_activity__from_sim_name">來自 %1$s</string>
   <string name="conversation_activity__send">送出</string>
   <string name="conversation_activity__remove">移除</string>
@@ -688,6 +703,9 @@
   <string name="giphy_activity_toolbar__search_gifs_and_stickers">搜尋動態圖檔與貼圖</string>
   <!--giphy_fragment-->
   <string name="giphy_fragment__nothing_found">未找到任何東西</string>
+  <!--import_export_fragment-->
+  <string name="import_export_fragment__export">匯出</string>
+  <string name="import_export_fragment__import">匯入</string>
   <!--log_submit_activity-->
   <string name="log_submit_activity__log_fetch_failed">無法在您的設備上讀取日誌。您仍然可以使用 ADB 來獲得偵錯紀錄。</string>
   <string name="log_submit_activity__thanks">感謝您的協助！</string>
@@ -718,11 +736,11 @@
   <!--message_recipients_list_item-->
   <string name="message_recipients_list_item__verify">驗證</string>
   <string name="message_recipients_list_item__resend">重新傳送</string>
+  <string name="message_recipients_list_item__resending">重送中...</string>
   <!--GroupUtil-->
   <plurals name="GroupUtil_joined_the_group">
     <item quantity="other">%1$s 加入了群組。</item>
   </plurals>
-  <string name="GroupUtil_group_updated">群組已更新。</string>
   <string name="GroupUtil_group_name_is_now">群組現在名為 \'%1$s\'。</string>
   <!--prompt_passphrase_activity-->
   <string name="prompt_passphrase_activity__unlock">解鎖</string>
@@ -748,13 +766,13 @@
   <string name="redphone_call_controls__signal_call">Cable 通話</string>
   <!--registration_activity-->
   <string name="registration_activity__verify_your_number_to_connect_with_signal">
-驗證您的手機號碼以連線 Signal。</string>
+驗證您的手機號碼以連線 Cable。</string>
   <string name="registration_activity__your_country">您的國家／區域</string>
   <string name="registration_activity__your_country_code_and_phone_number">您的國碼與
 手機號碼</string>
   <string name="registration_activity__phone_number">手機號碼</string>
   <string name="registration_activity__register">註冊</string>
-  <string name="registration_activity__registration_will_transmit_some_contact_information_to_the_server_temporariliy">註冊過程中將會傳送某些您手機上的聯絡人資訊至我們的伺服器上。不過它們不會被儲存。</string>
+  <string name="registration_activity__registration_will_transmit_some_contact_information_to_the_server_temporariliy">Cable 使用你現在的手機號碼和通訊簿，讓通訊變得簡單。知道如何用手機聯繫你的朋友與聯絡人們，他們會更容易的透過 Cable 與你保持聯絡。\n\n註冊時，會傳輸一些聯絡資訊到伺服器，這些聯絡資訊並不會被儲存。</string>
   <string name="registration_activity__powered_by_twilio">來自 twilio</string>
   <!--registration_problems-->
   <string name="registration_problems__some_possible_problems_include">某些可能的問題
@@ -858,6 +876,14 @@ Cable 在等待簡訊驗證時超時。</string>
   <string name="arrays__images">圖片</string>
   <string name="arrays__audio">音訊</string>
   <string name="arrays__video">影片</string>
+  <string name="arrays__documents">文件</string>
+  <string name="arrays__small">小的</string>
+  <string name="arrays__normal">正常</string>
+  <string name="arrays__large">大的</string>
+  <string name="arrays__extra_large">特大的</string>
+  <string name="arrays__default">預設</string>
+  <string name="arrays__high">高的</string>
+  <string name="arrays__max">最大的</string>
   <!--plurals.xml-->
   <plurals name="hours_ago">
     <item quantity="other">%d 小時</item>
@@ -898,7 +924,6 @@ Cable 在等待簡訊驗證時超時。</string>
   <string name="preferences__pref_led_blink_custom_pattern_off_for">關閉，當:</string>
   <string name="preferences__pref_led_blink_custom_pattern_set">自訂 LED 閃爍模式設定完成！</string>
   <string name="preferences__sound">提示音效</string>
-  <string name="preferences__change_notification_sound">變更通知音效</string>
   <string name="preferences__silent">靜音</string>
   <string name="preferences__in_conversation_notifications">對話中的提示音效</string>
   <string name="preferences__play_inthread_notifications">檢視對話時播放提示音</string>
@@ -951,7 +976,7 @@ Cable 在等待簡訊驗證時超時。</string>
   <string name="preferences__theme">主題</string>
   <string name="preferences__default">預設</string>
   <string name="preferences__language">語言選項</string>
-  <string name="preferences__signal_messages_and_calls">Signal訊息與通話</string>
+  <string name="preferences__signal_messages_and_calls">Cable 訊息與通話</string>
   <string name="preferences__free_private_messages_and_calls">免費加密訊息與通話至 Cable 使用者</string>
   <string name="preferences__submit_debug_log">送出偵錯紀錄</string>
   <string name="preferences__support_wifi_calling">\"WiFi 呼叫\"相容模式</string>
@@ -967,10 +992,22 @@ Cable 在等待簡訊驗證時超時。</string>
   <string name="preferences_chats__message_trimming">訊息整理</string>
   <string name="preferences_advanced__use_system_emoji">使用系統表情符號</string>
   <string name="preferences_advanced__disable_signal_built_in_emoji_support">停用 Cable 內建的表情支援</string>
-  <string name="preferences_advanced__video_calling_beta">語音通話測試版本</string>
-  <string name="preferences_advanced__enable_support_for_next_generation_video_and_voice_calls">當雙方啟動時，會支援下一代語音通話。此功能是測試版本。</string>
+  <string name="preferences_advanced__video_calling_beta">視訊通話測試版本</string>
+  <string name="preferences_advanced__enable_support_for_next_generation_video_and_voice_calls">當雙方啟動時，會支援下一代視訊、語音通話。此功能是測試版本。</string>
   <string name="preferences_advanced__relay_all_calls_through_the_signal_server_to_avoid_revealing_your_ip_address">透過 Cable 伺服器轉發通話，來避免透露你的 IP 位址給你的聯絡人。啟用時，會降低通話品質。</string>
   <string name="preferences_advanced__always_relay_calls">永遠轉發通話</string>
+  <string name="preferences_app_protection__app_access">應用程式存取</string>
+  <string name="preferences_app_protection__communication">溝通</string>
+  <string name="preferences_chats__chats">聊天</string>
+  <string name="preferences_notifications__message_notifications">訊息通知</string>
+  <string name="preferences_notifications__events">事件</string>
+  <string name="preferences_notifications__in_chat_sounds">聊天音效</string>
+  <string name="preferences_notifications__show">顯示</string>
+  <string name="preferences_chats__show_invitation_prompts">顯示邀請提示</string>
+  <string name="preferences_chats__display_invitation_prompts_for_contacts_without_signal">不用 Cable 來顯示給聯絡人的邀請提示</string>
+  <string name="preferences_chats__message_text_size">訊息字體大小</string>
+  <string name="preferences_events__contact_joined_signal">聯絡人已加入 Cable</string>
+  <string name="preferences_notifications__priority">優先順序</string>
   <!--****************************************-->
   <!--menus-->
   <!--****************************************-->
@@ -1076,7 +1113,7 @@ Cable 在等待簡訊驗證時超時。</string>
   <string name="reminder_header_invite_text">與 %1$s 一同將你們的對話提升至更高的等級。</string>
   <string name="reminder_header_invite_button">邀請</string>
   <string name="reminder_header_share_title">邀請您的好友！</string>
-  <string name="reminder_header_share_text">當更多的朋友使用 Signal，它將變得更好。</string>
+  <string name="reminder_header_share_text">當更多的朋友使用 Cable，它將變得更好。</string>
   <string name="reminder_header_share_button">分享</string>
   <string name="reminder_header_close_button">關閉</string>
   <!--media_preview-->

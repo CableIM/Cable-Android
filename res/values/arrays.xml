@@ -206,22 +206,26 @@
       <item>image</item>
       <item>audio</item>
       <item>video</item>
+      <item>documents</item>
   </string-array>
 
   <string-array name="pref_media_download_values">
       <item>@string/arrays__images</item>
       <item>@string/arrays__audio</item>
       <item>@string/arrays__video</item>
+      <item>@string/arrays__documents</item>
   </string-array>
 
   <string-array name="pref_media_download_mobile_data_default">
       <item>image</item>
+      <item>audio</item>
   </string-array>
 
   <string-array name="pref_media_download_wifi_default">
       <item>image</item>
       <item>audio</item>
       <item>video</item>
+      <item>documents</item>
   </string-array>
 
   <string-array name="pref_media_download_roaming_default" />
@@ -282,4 +286,31 @@
         <item>cable-service-ca.pantelegrafo.cable.im</item>
         <item>cable-service-ca.lattuga.cable.im</item>
     </string-array>
+
+    <string-array name="pref_message_font_size_entries">
+        <item>@string/arrays__small</item>
+        <item>@string/arrays__normal</item>
+        <item>@string/arrays__large</item>
+        <item>@string/arrays__extra_large</item>
+    </string-array>
+
+    <string-array name="pref_message_font_size_values">
+        <item>13</item>
+        <item>16</item>
+        <item>20</item>
+        <item>30</item>
+    </string-array>
+
+    <string-array name="pref_notification_priority_entries">
+        <item>@string/arrays__default</item>
+        <item>@string/arrays__high</item>
+        <item>@string/arrays__max</item>
+    </string-array>
+
+    <string-array name="pref_notification_priority_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
 </resources>

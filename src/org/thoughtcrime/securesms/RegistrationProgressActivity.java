@@ -52,7 +52,6 @@ public class RegistrationProgressActivity extends BaseActionBarActivity {
   public static final String NUMBER_EXTRA        = "e164number";
   public static final String SERVER_URL_EXTRA    = "server_url";
   public static final String MASTER_SECRET_EXTRA = "master_secret";
-  public static final String GCM_SUPPORTED_EXTRA = "gcm_supported";
 
   private static final int FOCUSED_COLOR   = Color.parseColor("#ff333333");
   private static final int UNFOCUSED_COLOR = Color.parseColor("#ff808080");
@@ -138,7 +137,7 @@ public class RegistrationProgressActivity extends BaseActionBarActivity {
 
   private void initializeResources() {
     this.masterSecret              = getIntent().getParcelableExtra(MASTER_SECRET_EXTRA);
-    this.gcmSupported              = getIntent().getBooleanExtra(GCM_SUPPORTED_EXTRA, true);
+    this.gcmSupported              = false;
     this.registrationLayout        = (LinearLayout)findViewById(R.id.registering_layout);
     this.verificationFailureLayout = (LinearLayout)findViewById(R.id.verification_failure_layout);
     this.connectivityFailureLayout = (LinearLayout)findViewById(R.id.connectivity_failure_layout);
@@ -209,7 +208,6 @@ public class RegistrationProgressActivity extends BaseActionBarActivity {
       intent.putExtra(RegistrationService.NUMBER_EXTRA, getNumberDirective());
       intent.putExtra(RegistrationService.SERVER_URL_EXTRA, getServerUrlDirective());
       intent.putExtra(RegistrationService.MASTER_SECRET_EXTRA, masterSecret);
-      intent.putExtra(RegistrationService.GCM_SUPPORTED_EXTRA, gcmSupported);
       startService(intent);
     } else {
       Intent intent = new Intent(this, RegistrationActivity.class);
@@ -438,7 +436,6 @@ public class RegistrationProgressActivity extends BaseActionBarActivity {
 
       Intent activityIntent = new Intent(RegistrationProgressActivity.this, RegistrationActivity.class);
       activityIntent.putExtra(RegistrationProgressActivity.MASTER_SECRET_EXTRA, masterSecret);
-      activityIntent.putExtra(RegistrationProgressActivity.GCM_SUPPORTED_EXTRA, gcmSupported);
       startActivity(activityIntent);
       finish();
     }
@@ -511,7 +508,6 @@ public class RegistrationProgressActivity extends BaseActionBarActivity {
               intent.putExtra(RegistrationService.PASSWORD_EXTRA, password);
               intent.putExtra(RegistrationService.SIGNALING_KEY_EXTRA, signalingKey);
               intent.putExtra(RegistrationService.MASTER_SECRET_EXTRA, masterSecret);
-              intent.putExtra(RegistrationService.GCM_SUPPORTED_EXTRA, gcmSupported);
               startService(intent);
               break;
             case NETWORK_ERROR:
@@ -601,7 +597,6 @@ public class RegistrationProgressActivity extends BaseActionBarActivity {
               intent.putExtra(RegistrationService.NUMBER_EXTRA, e164number);
               intent.putExtra(RegistrationService.PASSWORD_EXTRA, password);
               intent.putExtra(RegistrationService.MASTER_SECRET_EXTRA, masterSecret);
-              intent.putExtra(RegistrationService.GCM_SUPPORTED_EXTRA, gcmSupported);
               startService(intent);
 
               callButton.setEnabled(false);

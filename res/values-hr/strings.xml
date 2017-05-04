@@ -242,6 +242,8 @@
   <string name="DeviceListItem_linked_s">Povezan %s</string>
   <string name="DeviceListItem_last_active_s">Zadnje aktivno %s</string>
   <string name="DeviceListItem_today">Danas</string>
+  <!--DocumentView-->
+  <string name="DocumentView_unknown_file">Nepoznata datoteka</string>
   <!--DozeReminder-->
   <string name="DozeReminder_optimize_for_missing_play_services">Optimiziraj za nedostatak Play Services</string>
   <string name="DozeReminder_this_device_does_not_support_play_services_tap_to_disable_system_battery">Ovaj uređaj ne podržava Play Services. Pritisnite kako biste onemogućili sistemsku optimizaciju baterije koja spriječava Cable da dohvaća poruke dok je uređaj neaktivan.</string>
@@ -253,6 +255,10 @@
   <string name="ExperienceUpgradeActivity_welcome_to_signal_excited">Dobro došli u Cable!</string>
   <string name="ExperienceUpgradeActivity_textsecure_is_now_signal">TextSecure je sada Cable.</string>
   <string name="ExperienceUpgradeActivity_textsecure_is_now_signal_long">TextSecure i RedPhone su sada jedna aplikacija: Cable. Pritisnite za pregled.</string>
+  <string name="ExperienceUpgradeActivity_say_hello_to_video_calls">Pozdravite sigurne video pozive.</string>
+  <string name="ExperienceUpgradeActivity_signal_now_supports_secure_video_calls">Cable sada podržava sigurne video pozive. Samo započnite Cable poziv kao i inače, pritisnite video tipku, i mahnite sugovorniku.</string>
+  <string name="ExperienceUpgradeActivity_signal_now_supports_secure_video_calling">Cable sada podržava sigurne video pozive.</string>
+  <string name="ExperienceUpgradeActivity_signal_now_supports_secure_video_calling_long">Cable sada podržava sigurne video pozive. Pritisnite kako biste istražili.</string>
   <!--ExportFragment-->
   <string name="ExportFragment_export">Izvoz</string>
   <string name="ExportFragment_export_plaintext_to_storage">Izvezi u obliku običnog teksta na disk?</string>
@@ -373,11 +379,12 @@ ponovno uvoženje će rezultirati duplim porukama.</string>
   <!--MessageRecord-->
   <string name="MessageRecord_message_encrypted_with_a_legacy_protocol_version_that_is_no_longer_supported">Primljena je poruka kriptirana starom inačicom Cable aplikacije koja više nije podržana. Molimo zapitajte pošiljatelja da ažurira na najnoviju inačicu aplikacije i ponovno pošalje poruku.</string>
   <string name="MessageRecord_left_group">Napustili ste grupu.</string>
-  <string name="MessageRecord_updated_group">Grupa je ažurirana.</string>
+  <string name="MessageRecord_you_updated_group">Ažurirali ste grupu.</string>
+  <string name="MessageRecord_s_updated_group">%s je ažurirao grupu.</string>
   <string name="MessageRecord_s_called_you">%s vas je zvao</string>
   <string name="MessageRecord_called_s">Nazvao %s</string>
   <string name="MessageRecord_missed_call_from">Propušteni poziv od %s</string>
-  <string name="MessageRecord_s_is_on_signal_say_hey">%s koristi Cable, reci bok!</string>
+  <string name="MessageRecord_s_joined_signal">%s se prijavio/la u Cable!</string>
   <string name="MessageRecord_you_set_disappearing_message_time_to_s">Postavili ste nestajanje poruka na %1$s.</string>
   <string name="MessageRecord_s_set_disappearing_message_time_to_s">%1$s je postavio/la vrijeme nestajanja poruke na %2$s.</string>
   <string name="MessageRecord_your_safety_number_with_s_has_changed">Vaš sigurnosni broj s %s je izmjenjen.</string>
@@ -475,6 +482,8 @@ Provjerite da li je ovo vaš broj telefona! Uskoro ćemo poslati SMS poruku na n
   <string name="RegistrationActivity_i_understand">Razumijem</string>
   <string name="RegistrationActivity_play_services_error">Play Services greška</string>
   <string name="RegistrationActivity_google_play_services_is_updating_or_unavailable">Google Play Services se trenutno ažurira ili je nedostupno. Pokušajte ponovno kasnije.</string>
+  <string name="RegistrationActivity_more_information">Više informacija</string>
+  <string name="RegistrationActivity_less_information">Manje informacija</string>
   <!--RegistrationProblemsActivity-->
   <string name="RegistrationProblemsActivity_possible_problems">Mogući problemi</string>
   <!--RegistrationProgressActivity-->
@@ -497,7 +506,7 @@ Provjerite da li je ovo vaš broj telefona! Uskoro ćemo poslati SMS poruku na n
   <string name="RegistrationProgressActivity_too_many_requests">Previše zahtjeva!</string>
   <string name="RegistrationProgressActivity_youve_already_requested_a_voice_call">Već ste nedavno poslali zahtjev za poziv. Možete ponovno poslati zahtjev za 20 minuta.</string>
   <string name="RegistrationProgressActivity_registration_conflict">Konflikt prilikom registracije</string>
-  <string name="RegistrationProgressActivity_this_number_is_already_registered_on_a_different">Ovaj broj je već registriran na drugom Cable poslužitelju (CyanogenMod?). Morate tamo ukloniti registraciju prije nego li se registrirate ovdje.</string>
+  <string name="RegistrationProgressActivity_this_number_is_already_registered_on_a_different">Ovaj broj je već registriran na drugom Cable poslužitelju. Trebate prvo ukloniti registraciju tamo prije registracije ovdje.</string>
   <!--RegistrationService-->
   <string name="RegistrationService_registration_complete">Registracija završena</string>
   <string name="RegistrationService_signal_registration_has_successfully_completed">Cable registracija je uspješno završena.</string>
@@ -517,6 +526,7 @@ Primljena poruka razmjene ključeva za pogrešnu inačicu protokola.</string>
   <string name="SmsMessageRecord_secure_session_reset_s">%s resetiranje sigurne sesije.</string>
   <string name="SmsMessageRecord_duplicate_message">Dupla poruka.</string>
   <!--ThreadRecord-->
+  <string name="ThreadRecord_group_updated">Grupa je ažurirana</string>
   <string name="ThreadRecord_left_the_group">Napustio/la grupu</string>
   <string name="ThreadRecord_secure_session_reset">Resetiranje sigurne sesije.</string>
   <string name="ThreadRecord_draft">Skica:</string>
@@ -524,10 +534,12 @@ Primljena poruka razmjene ključeva za pogrešnu inačicu protokola.</string>
   <string name="ThreadRecord_called_you">Zvali su vas</string>
   <string name="ThreadRecord_missed_call">Propušteni poziv</string>
   <string name="ThreadRecord_media_message">Multimedijalna poruka</string>
-  <string name="ThreadRecord_s_is_on_signal_say_hey">%s koristi Cable, reci bok!</string>
+  <string name="ThreadRecord_s_joined_signal">%s se prijavio/la u Cable!</string>
   <string name="ThreadRecord_disappearing_message_time_updated_to_s">Vrijeme nestajanja poruke postavljeno na %s</string>
   <string name="ThreadRecord_your_safety_number_with_s_has_changed">Vaš sigurnosni broj s %s je izmjenjen.</string>
   <!--UpdateApkReadyListener-->
+  <string name="UpdateApkReadyListener_Signal_update">Cable ažuriranje</string>
+  <string name="UpdateApkReadyListener_a_new_version_of_signal_is_available_tap_to_update">Nova inačica Cablea je dostupna, pritisnite za ažuriranje</string>
   <!--VerifyIdentityActivity-->
   <string name="VerifyIdentityActivity_your_contact_is_running_an_old_version_of_signal">Vaš kontakt koristi stariju Cable inačicu. Zamolite ih da ažuriraju Cable prije provjere sigurnosnog broja.</string>
   <string name="VerifyIdentityActivity_your_contact_is_running_a_newer_version_of_Signal">Vaš kontakt koristi noviju Cable inačicu s nekompatibilnim QR kod oblikom. Ažurirajte vašu inačicu kako biste usporedili.</string>
@@ -598,6 +610,8 @@ Primljena poruka razmjene ključeva za pogrešnu inačicu protokola.</string>
   <!--QuickResponseService-->
   <string name="QuickResponseService_quick_response_unavailable_when_Signal_is_locked">Brzi odgovor nije dostupan kada je Cable zaključan!</string>
   <string name="QuickResponseService_problem_sending_message">Greška prilikom slanja poruke!</string>
+  <!--SaveAttachmentTask-->
+  <string name="SaveAttachmentTask_open_directory">Otvori direktorij</string>
   <!--SingleRecipientNotificationBuilder-->
   <string name="SingleRecipientNotificationBuilder_signal">Cable</string>
   <string name="SingleRecipientNotificationBuilder_new_message">Nova poruka</string>
@@ -606,16 +620,12 @@ Primljena poruka razmjene ključeva za pogrešnu inačicu protokola.</string>
   <!--WebRtcCallScreen-->
   <string name="WebRtcCallScreen_new_safety_numbers">Sigurnosni broj za vaš razgovor s %1$s je izmjenjen. Ovo može značiti da netko pokušava presresti vašu komunikaciju ili da je %2$s jednostavno ponovno instalirao Cable.</string>
   <string name="WebRtcCallScreen_you_may_wish_to_verify_this_contact">Možda biste trebali provjeriti sigurnosni broj za ovaj kontakt.</string>
-  <string name="WebRtcCallScreen_new_safety_numbers_title">Novi sigurnosni brojevi</string>
+  <string name="WebRtcCallScreen_new_safety_number_title">Novi sigurnosni broj</string>
   <!--WebRtcCallControls-->
   <string name="WebRtcCallControls_tap_to_enable_your_video">Pritisnite da omogućite svoj video</string>
   <!--attachment_type_selector-->
-  <string name="attachment_type_selector__image">Slika</string>
-  <string name="attachment_type_selector__image_description">Slika</string>
   <string name="attachment_type_selector__audio">Zvuk</string>
   <string name="attachment_type_selector__audio_description">Zvuk</string>
-  <string name="attachment_type_selector__video">Video</string>
-  <string name="attachment_type_selector__video_description">Video</string>
   <string name="attachment_type_selector__contact">Kontakt</string>
   <string name="attachment_type_selector__contact_description">Kontakt</string>
   <string name="attachment_type_selector__camera">Kamera</string>
@@ -645,9 +655,9 @@ Primljena poruka razmjene ključeva za pogrešnu inačicu protokola.</string>
   <!--conversation_title_view-->
   <string name="conversation_title_view__conversation_muted">Razgovor utišan</string>
   <!--conversation_activity-->
-  <string name="conversation_activity__type_message_push">Pošalji Cable poruku</string>
-  <string name="conversation_activity__type_message_sms_insecure">Pošalji nesigurni SMS</string>
-  <string name="conversation_activity__type_message_mms_insecure">Pošalji nesigurni MMS</string>
+  <string name="conversation_activity__type_message_push">Cable poruka</string>
+  <string name="conversation_activity__type_message_sms_insecure">Nesigurni SMS</string>
+  <string name="conversation_activity__type_message_mms_insecure">Nesigurni MMS</string>
   <string name="conversation_activity__from_sim_name">Od %1$s</string>
   <string name="conversation_activity__send">Pošalji</string>
   <string name="conversation_activity__remove">Ukloni</string>
@@ -731,6 +741,9 @@ Primljena poruka razmjene ključeva za pogrešnu inačicu protokola.</string>
   <string name="giphy_activity_toolbar__search_gifs_and_stickers">Pretraži GIFove i naljepnice</string>
   <!--giphy_fragment-->
   <string name="giphy_fragment__nothing_found">Ništa nije pronađeno.</string>
+  <!--import_export_fragment-->
+  <string name="import_export_fragment__export">Izvoz</string>
+  <string name="import_export_fragment__import">Uvoz</string>
   <!--log_submit_activity-->
   <string name="log_submit_activity__log_fetch_failed">Čitanje zapisa na Vašem uređaju nije moguće. Još uvijek možete koristiti ADB za pristup debug zapisu.</string>
   <string name="log_submit_activity__thanks">Hvala na pomoći!</string>
@@ -762,13 +775,13 @@ Uvezi nekriptiranu kopiju. Kompatibilno s \'SMSBackup And Restore\'.</string>
   <!--message_recipients_list_item-->
   <string name="message_recipients_list_item__verify">POTVRDI</string>
   <string name="message_recipients_list_item__resend">PONOVNO POŠALJI</string>
+  <string name="message_recipients_list_item__resending">Ponovno slanje...</string>
   <!--GroupUtil-->
   <plurals name="GroupUtil_joined_the_group">
     <item quantity="one">%1$s se pridružio grupi.</item>
     <item quantity="few">%1$s se pridružilo grupi.</item>
     <item quantity="other">%1$s se pridružilo grupi.</item>
   </plurals>
-  <string name="GroupUtil_group_updated">Grupa je ažurirana.</string>
   <string name="GroupUtil_group_name_is_now">Ime grupe sada je \'%1$s\'.</string>
   <!--prompt_passphrase_activity-->
   <string name="prompt_passphrase_activity__unlock">Otključaj</string>
@@ -800,7 +813,7 @@ Potvrdite svoj broj telefona kako biste se povezali sa Cable.</string>
 TELEFONSKI BROJ</string>
   <string name="registration_activity__phone_number">TELEFONSKI BROJ</string>
   <string name="registration_activity__register">Registriraj</string>
-  <string name="registration_activity__registration_will_transmit_some_contact_information_to_the_server_temporariliy">Registracija šalje neke informacije o kontaktima na poslužitelj. Podaci se ne pohranjuju trajno.</string>
+  <string name="registration_activity__registration_will_transmit_some_contact_information_to_the_server_temporariliy">Cable olakšava komunikaciju koristeći postojeće telefonske brojeve iz vašeg imenika. Prijatelji i kontakti koji već znaju vaš broj telefona će biti u mogućnosti lako vas kontaktirati putem Cablea.\n\nRegistracija šalje neke kontakt podatke na poslužitelj, ali se oni ne spremaju.</string>
   <string name="registration_activity__powered_by_twilio">Pokreće twilio</string>
   <!--registration_problems-->
   <string name="registration_problems__some_possible_problems_include">Neki mogući problemi
@@ -903,6 +916,11 @@ neuspješno.</string>
   <string name="arrays__images">Slike</string>
   <string name="arrays__audio">Audio</string>
   <string name="arrays__video">Video</string>
+  <string name="arrays__documents">Dokumenti</string>
+  <string name="arrays__small">Mala</string>
+  <string name="arrays__normal">Normalna</string>
+  <string name="arrays__large">Velika</string>
+  <string name="arrays__extra_large">Ekstra velika</string>
   <!--plurals.xml-->
   <plurals name="hours_ago">
     <item quantity="one">%d sat</item>
@@ -945,7 +963,6 @@ neuspješno.</string>
   <string name="preferences__pref_led_blink_custom_pattern_off_for">Isključi za:</string>
   <string name="preferences__pref_led_blink_custom_pattern_set">Prilagođeni LED uzorak treptanja postavljen!</string>
   <string name="preferences__sound">Zvuk</string>
-  <string name="preferences__change_notification_sound">Izmjenite zvuk obavijesti</string>
   <string name="preferences__silent">Bezvučno</string>
   <string name="preferences__in_conversation_notifications">Obavijesti unutar razgovora</string>
   <string name="preferences__play_inthread_notifications">Reproduciraj zvukove obavijesti prilikom pregleda aktivnog razgovora</string>
@@ -1018,6 +1035,15 @@ neuspješno.</string>
   <string name="preferences_advanced__enable_support_for_next_generation_video_and_voice_calls">Podrška za video i glasovne pozive sljedeće generacije, ukoliko je omogućeno od obje strane. Ova mogućnost je u beti.</string>
   <string name="preferences_advanced__relay_all_calls_through_the_signal_server_to_avoid_revealing_your_ip_address">Preusmjeri sve pozive kroz Cable poslužitelj kako biste izbjegli otkrivanje svoje IP adrese vašem kontaktu. Ukoliko ovo omogućite smanjit će se kvaliteta poziva.</string>
   <string name="preferences_advanced__always_relay_calls">Uvijek preusmjeri pozive</string>
+  <string name="preferences_app_protection__app_access">Pristup aplikaciji</string>
+  <string name="preferences_app_protection__communication">Komunikacija</string>
+  <string name="preferences_chats__chats">Razgovori</string>
+  <string name="preferences_notifications__message_notifications">Obavijesti o porukama</string>
+  <string name="preferences_notifications__events">Događaji</string>
+  <string name="preferences_chats__show_invitation_prompts">Prikaži upite za pozivnice</string>
+  <string name="preferences_chats__display_invitation_prompts_for_contacts_without_signal">Prikaži upite za pozivnice za kontakte koji ne koriste Cable</string>
+  <string name="preferences_chats__message_text_size">Veličina fonta poruke</string>
+  <string name="preferences_events__contact_joined_signal">Kontakt se prijavio/la u Cable</string>
   <!--****************************************-->
   <!--menus-->
   <!--****************************************-->
@@ -1108,8 +1134,8 @@ neuspješno.</string>
     <item quantity="few">Vaša Cable inačica će isteći za %d dana. Dodirnite za ažuriranje na najnoviju inačicu.</item>
     <item quantity="other">Vaša Cable inačica će isteći za %d dana. Dodirnite za ažuriranje na najnoviju inačicu.</item>
   </plurals>
-  <string name="reminder_header_outdated_build_details_today">Vaša će verzija Signala isteći danas. Dodirnite za ažuriranje na najnoviju inačicu.</string>
-  <string name="reminder_header_expired_build">Vaša je verzija Signala istekla!</string>
+  <string name="reminder_header_outdated_build_details_today">Vaša će verzija Cablea isteći danas. Dodirnite za ažuriranje na najnoviju inačicu.</string>
+  <string name="reminder_header_expired_build">Vaša je verzija Cablea istekla!</string>
   <string name="reminder_header_expired_build_details">Poruke više neće moći biti uspješno poslane. Pritisnite za ažuriranje na najnoviju inačicu.</string>
   <string name="reminder_header_expired_build_button">AŽURIRAJ</string>
   <string name="reminder_header_sms_default_title">Koristi kao zadanu SMS aplikaciju</string>

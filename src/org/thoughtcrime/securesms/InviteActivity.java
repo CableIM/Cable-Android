@@ -83,7 +83,7 @@ public class InviteActivity extends PassphraseRequiredActionBarActivity implemen
     heart             = ViewUtil.findById(this, R.id.heart);
     contactsFragment  = (ContactSelectionListFragment)getSupportFragmentManager().findFragmentById(R.id.contact_selection_list_fragment);
 
-    inviteText.setText(getString(R.string.InviteActivity_lets_switch_to_signal, "https://sgnl.link/1KpeYmF"));
+    inviteText.setText(getString(R.string.InviteActivity_lets_switch_to_signal, "https://f-droid.org/app/im.cable.cableim"));
     updateSmsButtonText();
 
     if (VERSION.SDK_INT >= VERSION_CODES.LOLLIPOP) {
@@ -236,7 +236,7 @@ public class InviteActivity extends PassphraseRequiredActionBarActivity implemen
           Optional<RecipientsPreferences> preferences    = DatabaseFactory.getRecipientPreferenceDatabase(context).getRecipientsPreferences(recipients.getIds());
           int                             subscriptionId = preferences.isPresent() ? preferences.get().getDefaultSubscriptionId().or(-1) : -1;
 
-          MessageSender.send(context, masterSecret, new OutgoingTextMessage(recipients, message, subscriptionId), -1L, true);
+          MessageSender.send(context, masterSecret, new OutgoingTextMessage(recipients, message, subscriptionId), -1L, true, null);
 
           if (recipients.getPrimaryRecipient().getContactUri() != null) {
             DatabaseFactory.getRecipientPreferenceDatabase(context).setSeenInviteReminder(recipients, true);

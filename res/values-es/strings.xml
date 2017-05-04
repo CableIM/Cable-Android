@@ -25,7 +25,7 @@
   <string name="ApplicationPreferencesActivity_disable">Desactivar</string>
   <string name="ApplicationPreferencesActivity_unregistering">Desregistrándose</string>
   <string name="ApplicationPreferencesActivity_unregistering_from_signal_messages_and_calls">Borrando cuenta Cable...</string>
-  <string name="ApplicationPreferencesActivity_disable_signal_messages_and_calls">¿Deshabilitar mensajes y llamadas de Signal?</string>
+  <string name="ApplicationPreferencesActivity_disable_signal_messages_and_calls">¿Deshabilitar mensajes y llamadas de Cable?</string>
   <string name="ApplicationPreferencesActivity_disable_signal_messages_and_calls_by_unregistering">Esto deshabilitará los mensajes de Cable eliminándole del servidor. Necesitará volver a registrar su número de teléfono para usar mensajes de Cable de nuevo en el futuro.</string>
   <string name="ApplicationPreferencesActivity_error_connecting_to_server">¡Error conectando al servidor!</string>
   <string name="ApplicationPreferencesActivity_sms_enabled">SMS habilitados</string>
@@ -85,6 +85,7 @@
   <string name="ConversationItem_click_to_approve_unencrypted_mms_dialog_title">¿Recurrir a MMS cifrado?</string>
   <string name="ConversationItem_click_to_approve_unencrypted_dialog_message">Este mensaje <b>no</b> se cifrará porque el destinatario ya no es un usuario de Cable.\n\n¿Enviar mensaje no asegurado?</string>
   <string name="ConversationItem_unable_to_open_media">No se pudo encontrar una aplicación capaz de abrir este contenido.</string>
+  <string name="ConversationItem_copied_text">Se copió %s</string>
   <string name="ConversationItem_from_s">de %s</string>
   <string name="ConversationItem_to_s">a %s</string>
   <!--ConversationActivity-->
@@ -230,6 +231,8 @@ Recibido:%4$s</string>
   <string name="DeviceListItem_linked_s">Se vinculó %s</string>
   <string name="DeviceListItem_last_active_s">Activo por última vez el %s</string>
   <string name="DeviceListItem_today">Hoy</string>
+  <!--DocumentView-->
+  <string name="DocumentView_unknown_file">Fichero desconocido</string>
   <!--DozeReminder-->
   <string name="DozeReminder_optimize_for_missing_play_services">Optimizar por la ausencia de \"Play Services\"</string>
   <string name="DozeReminder_this_device_does_not_support_play_services_tap_to_disable_system_battery">Este dispositivo no soporta \"Play Services\". Pulsa para inhabilitar las optimizaciones de batería del sistema que le impiden a Cable obtener mensajes mientras está inactivo.</string>
@@ -241,6 +244,10 @@ Recibido:%4$s</string>
   <string name="ExperienceUpgradeActivity_welcome_to_signal_excited">¡Bienvenido a Cable!</string>
   <string name="ExperienceUpgradeActivity_textsecure_is_now_signal">TextSecure es ahora Cable.</string>
   <string name="ExperienceUpgradeActivity_textsecure_is_now_signal_long">TextSecure y RedPhone son ahora una sola aplicación: Cable. Pulse para explorar.</string>
+  <string name="ExperienceUpgradeActivity_say_hello_to_video_calls">Diga hola a las llamadas de vídeo seguras.</string>
+  <string name="ExperienceUpgradeActivity_signal_now_supports_secure_video_calls">Cable ahora soporta llamada de vídeo segura. Simplemente inicie una llamada de Cable con normalidad, pulse el botón de vídeo, y salude con la mano.</string>
+  <string name="ExperienceUpgradeActivity_signal_now_supports_secure_video_calling">Cable ahora soporta llamada de vídeo segura.</string>
+  <string name="ExperienceUpgradeActivity_signal_now_supports_secure_video_calling_long">Cable ahora soporta llamada de vídeo segura. Pulse para explorar.</string>
   <!--ExportFragment-->
   <string name="ExportFragment_export">Exportar</string>
   <string name="ExportFragment_export_plaintext_to_storage">¿Exportar texto plano al almacenamiento?</string>
@@ -359,11 +366,12 @@ importarla de nuevo dará como resultado mensajes duplicados.</string>
   <!--MessageRecord-->
   <string name="MessageRecord_message_encrypted_with_a_legacy_protocol_version_that_is_no_longer_supported">Se ha recibido un mensaje encriptado usando una versión de Cable antigua que ya no está soportada. Por favor, avisa al quien te lo ha enviado para que actualice a la versión más reciente y reenvíe el mensaje.</string>
   <string name="MessageRecord_left_group">Ha dejado el grupo.</string>
-  <string name="MessageRecord_updated_group">Grupo actualizado.</string>
+  <string name="MessageRecord_you_updated_group">Ha actualizado el grupo.</string>
+  <string name="MessageRecord_s_updated_group">%s ha actualizado el grupo.</string>
   <string name="MessageRecord_s_called_you">%s le llamó</string>
   <string name="MessageRecord_called_s">Llamó a %s</string>
   <string name="MessageRecord_missed_call_from">Llamada perdida de %s</string>
-  <string name="MessageRecord_s_is_on_signal_say_hey">¡%s esta en Cable, salúdele!</string>
+  <string name="MessageRecord_s_joined_signal">¡%s se ha unido a Cable!</string>
   <string name="MessageRecord_you_set_disappearing_message_time_to_s">Ha establecido la hora desaparición del mensaje a las %1$s.</string>
   <string name="MessageRecord_s_set_disappearing_message_time_to_s">%1$s estableció la hora de desaparición del mensaje a las %2$s.</string>
   <string name="MessageRecord_your_safety_number_with_s_has_changed">Su número de seguridad con %s ha cambiado.</string>
@@ -389,7 +397,7 @@ importarla de nuevo dará como resultado mensajes duplicados.</string>
   <string name="DeviceProvisioningActivity_content_progress_key_error">Código QR no válido.</string>
   <string name="DeviceProvisioningActivity_sorry_you_have_too_many_devices_linked_already">Lo sentimos, ya tiene demasiados dispositivos vinculados, trate de eliminar alguno</string>
   <string name="DeviceActivity_sorry_this_is_not_a_valid_device_link_qr_code">Lo sentimos , este código QR no es ​​válido .</string>
-  <string name="DeviceProvisioningActivity_link_a_signal_device">¿Enlazar un dispositivo Signal?</string>
+  <string name="DeviceProvisioningActivity_link_a_signal_device">¿Enlazar un dispositivo Cable?</string>
   <string name="DeviceProvisioningActivity_it_looks_like_youre_trying_to_link_a_signal_device_using_a_3rd_party_scanner">Parece que estás intentando enlazar un dispositivo Cable usando un escáner de terceros. Para tu protección, por favor, escanea el código otra vez desde Cable.</string>
   <!--ExpirationDialog-->
   <string name="ExpirationDialog_disappearing_messages">Mensajes desvanecentes</string>
@@ -465,6 +473,8 @@ número de teléfono
   <string name="RegistrationActivity_i_understand">Entiendo</string>
   <string name="RegistrationActivity_play_services_error">Error en \"Play Services\"</string>
   <string name="RegistrationActivity_google_play_services_is_updating_or_unavailable">Google Play Services se está actualizando o está temporalmente suspendido. Por favor intente de nuevo.</string>
+  <string name="RegistrationActivity_more_information">Más información</string>
+  <string name="RegistrationActivity_less_information">Menos información</string>
   <!--RegistrationProblemsActivity-->
   <string name="RegistrationProblemsActivity_possible_problems">Posibles problemas</string>
   <!--RegistrationProgressActivity-->
@@ -487,7 +497,7 @@ número de teléfono
   <string name="RegistrationProgressActivity_too_many_requests">¡Demasiadas peticiones!</string>
   <string name="RegistrationProgressActivity_youve_already_requested_a_voice_call">Usted ya ha solicitado recientemente una llamada de voz. Puede pedir otra en 20 minutos.</string>
   <string name="RegistrationProgressActivity_registration_conflict">Confilicto al registrarse</string>
-  <string name="RegistrationProgressActivity_this_number_is_already_registered_on_a_different">Este número ya está registrado en un servidor Cable distinto (¿CyanogenMod?). Tiene que desregistrarse allí antes de registrarse aquí.</string>
+  <string name="RegistrationProgressActivity_this_number_is_already_registered_on_a_different">Este número ya está registrado en un servidor de Cable distinto. Tiene que desregistrarse allí antes de registrarse aquí.</string>
   <!--RegistrationService-->
   <string name="RegistrationService_registration_complete">Registro completado</string>
   <string name="RegistrationService_signal_registration_has_successfully_completed">El registro en Cable se ha completado con éxito.</string>
@@ -509,6 +519,7 @@ Se recibió un mensaje de intercambio de claves para una versión no válida del
   <string name="SmsMessageRecord_secure_session_reset_s">%s reinició la sesión segura.</string>
   <string name="SmsMessageRecord_duplicate_message">Duplicar mensaje.</string>
   <!--ThreadRecord-->
+  <string name="ThreadRecord_group_updated">Grupo actualizado</string>
   <string name="ThreadRecord_left_the_group">Dejar el grupo</string>
   <string name="ThreadRecord_secure_session_reset">Reinicio de sesión segura.</string>
   <string name="ThreadRecord_draft">Borrador:</string>
@@ -516,12 +527,12 @@ Se recibió un mensaje de intercambio de claves para una versión no válida del
   <string name="ThreadRecord_called_you">Le llamaron</string>
   <string name="ThreadRecord_missed_call">Llamada perdida</string>
   <string name="ThreadRecord_media_message">Mensaje multimedia</string>
-  <string name="ThreadRecord_s_is_on_signal_say_hey">¡%s está en Cable, salúdele!</string>
+  <string name="ThreadRecord_s_joined_signal">¡%s se ha unido a Cable!</string>
   <string name="ThreadRecord_disappearing_message_time_updated_to_s">El plazo del mensaje desvanecente se estableció a %s</string>
   <string name="ThreadRecord_your_safety_number_with_s_has_changed">Su número de seguridad con %s ha cambiado.</string>
   <!--UpdateApkReadyListener-->
   <string name="UpdateApkReadyListener_Signal_update">Actualización de Cable</string>
-  <string name="UpdateApkReadyListener_a_new_version_of_signal_is_available_tap_to_update">Está disponible una nueva versión de Cable, toca para actualizar.</string>
+  <string name="UpdateApkReadyListener_a_new_version_of_signal_is_available_tap_to_update">Está disponible una nueva versión de Cable, pulse para actualizar.</string>
   <!--VerifyIdentityActivity-->
   <string name="VerifyIdentityActivity_your_contact_is_running_an_old_version_of_signal">Su contacto está ejecutando una versión antigua de Cable. Por favor, pídale que actualice antes de que verifique el número de seguridad de usted.</string>
   <string name="VerifyIdentityActivity_your_contact_is_running_a_newer_version_of_Signal">Su contacto está ejecutando una versión de Cable con un formato de código QR incompatible. Por favor, actualice para comparar.</string>
@@ -592,6 +603,8 @@ Se recibió un mensaje de intercambio de claves para una versión no válida del
   <!--QuickResponseService-->
   <string name="QuickResponseService_quick_response_unavailable_when_Signal_is_locked">¡La respuesta rápida no está disponible cuando Cable está bloqueado!</string>
   <string name="QuickResponseService_problem_sending_message">¡Hubo un problema al enviar el mensaje!</string>
+  <!--SaveAttachmentTask-->
+  <string name="SaveAttachmentTask_open_directory">Abrir directorio</string>
   <!--SingleRecipientNotificationBuilder-->
   <string name="SingleRecipientNotificationBuilder_signal">Cable</string>
   <string name="SingleRecipientNotificationBuilder_new_message">Nuevo mensaje</string>
@@ -600,16 +613,12 @@ Se recibió un mensaje de intercambio de claves para una versión no válida del
   <!--WebRtcCallScreen-->
   <string name="WebRtcCallScreen_new_safety_numbers">El número de seguridad para su conversación con %1$s ha cambiado. Esto podría significar que alguien está tratando de interceptar su comunicación, o bien que %2$s simplemente ha reinstalado Cable.</string>
   <string name="WebRtcCallScreen_you_may_wish_to_verify_this_contact">Puede que desee verificar su número de seguridad con este contacto.</string>
-  <string name="WebRtcCallScreen_new_safety_numbers_title">Nuevos números de seguridad</string>
+  <string name="WebRtcCallScreen_new_safety_number_title">Nuevo número de seguridad</string>
   <!--WebRtcCallControls-->
   <string name="WebRtcCallControls_tap_to_enable_your_video">Pulse para habilitar su vídeo</string>
   <!--attachment_type_selector-->
-  <string name="attachment_type_selector__image">Imagen</string>
-  <string name="attachment_type_selector__image_description">Imagen</string>
   <string name="attachment_type_selector__audio">Audio</string>
   <string name="attachment_type_selector__audio_description">Audio</string>
-  <string name="attachment_type_selector__video">Vídeo</string>
-  <string name="attachment_type_selector__video_description">Vídeo</string>
   <string name="attachment_type_selector__contact">Contacto</string>
   <string name="attachment_type_selector__contact_description">Contacto</string>
   <string name="attachment_type_selector__camera">Cámara</string>
@@ -618,6 +627,10 @@ Se recibió un mensaje de intercambio de claves para una versión no válida del
   <string name="attachment_type_selector__location_description">Ubicación</string>
   <string name="attachment_type_selector__gif">GIF</string>
   <string name="attachment_type_selector__gif_description">Gif</string>
+  <string name="attachment_type_selector__gallery_description">Imagen o vídeo</string>
+  <string name="attachment_type_selector__file_description">Fichero</string>
+  <string name="attachment_type_selector__gallery">Galería</string>
+  <string name="attachment_type_selector__file">Fichero</string>
   <string name="attachment_type_selector__drawer_description">Accionar el panel de adjuntos</string>
   <!--change_passphrase_activity-->
   <string name="change_passphrase_activity__old_passphrase">Clave de acceso antigua</string>
@@ -639,9 +652,9 @@ Se recibió un mensaje de intercambio de claves para una versión no válida del
   <!--conversation_title_view-->
   <string name="conversation_title_view__conversation_muted">Conversación silenciada</string>
   <!--conversation_activity-->
-  <string name="conversation_activity__type_message_push">Enviar mensaje de Cable</string>
-  <string name="conversation_activity__type_message_sms_insecure">Enviar SMS no seguro</string>
-  <string name="conversation_activity__type_message_mms_insecure">Enviar MMS no seguro</string>
+  <string name="conversation_activity__type_message_push">Mensaje de Cable</string>
+  <string name="conversation_activity__type_message_sms_insecure">SMS sin seguridad</string>
+  <string name="conversation_activity__type_message_mms_insecure">MMS sin seguridad</string>
   <string name="conversation_activity__from_sim_name">De %1$s</string>
   <string name="conversation_activity__send">Enviar</string>
   <string name="conversation_activity__remove">Eliminar</string>
@@ -720,6 +733,9 @@ Se recibió un mensaje de intercambio de claves para una versión no válida del
   <string name="giphy_activity_toolbar__search_gifs_and_stickers">Buscar GIFs y pegatinas (stickers)</string>
   <!--giphy_fragment-->
   <string name="giphy_fragment__nothing_found">No se encontró nada</string>
+  <!--import_export_fragment-->
+  <string name="import_export_fragment__export">Exportar</string>
+  <string name="import_export_fragment__import">Importar</string>
   <!--log_submit_activity-->
   <string name="log_submit_activity__log_fetch_failed">No se pudo leer el registro (log) en su dispositivo. Aún puede usar ADB para obtener un registro de depuración en su lugar.</string>
   <string name="log_submit_activity__thanks">¡Gracias por su ayuda!</string>
@@ -727,7 +743,7 @@ Se recibió un mensaje de intercambio de claves para una versión no válida del
   <string name="log_submit_activity__posting_logs">Publicando registros de actividad en gist...</string>
   <string name="log_submit_activity__no_browser_installed">No hay ningún navegador instalado</string>
   <!--database_migration_activity-->
-  <string name="database_migration_activity__would_you_like_to_import_your_existing_text_messages">¿Desea importar sus mensajes de texto existentes a la base de datos cifrada de Signal?</string>
+  <string name="database_migration_activity__would_you_like_to_import_your_existing_text_messages">¿Desea importar sus mensajes de texto existentes a la base de datos cifrada de Cable?</string>
   <string name="database_migration_activity__the_default_system_database_will_not_be_modified">La base de datos de sistema por defecto no será modificada o alterada de ningún modo.</string>
   <string name="database_migration_activity__skip">Saltar</string>
   <string name="database_migration_activity__import">Importar</string>
@@ -750,12 +766,12 @@ Se recibió un mensaje de intercambio de claves para una versión no válida del
   <!--message_recipients_list_item-->
   <string name="message_recipients_list_item__verify">VERIFICAR</string>
   <string name="message_recipients_list_item__resend">REENVIAR</string>
+  <string name="message_recipients_list_item__resending">Renviando...</string>
   <!--GroupUtil-->
   <plurals name="GroupUtil_joined_the_group">
     <item quantity="one">%1$s se unió al grupo.</item>
     <item quantity="other">%1$s se unieron al grupo.</item>
   </plurals>
-  <string name="GroupUtil_group_updated">Grupo actualizado.</string>
   <string name="GroupUtil_group_name_is_now">Ahora el nombre del grupo es \'%1$s\'.</string>
   <!--prompt_passphrase_activity-->
   <string name="prompt_passphrase_activity__unlock">Desbloquear</string>
@@ -788,7 +804,7 @@ NÚMERO DE TELÉFONO
 </string>
   <string name="registration_activity__phone_number">NÚMERO DE TELÉFONO</string>
   <string name="registration_activity__register">Registro</string>
-  <string name="registration_activity__registration_will_transmit_some_contact_information_to_the_server_temporariliy">Al registrarse se transmitirá cierta información de contacto al servidor pero esta no será guardada.</string>
+  <string name="registration_activity__registration_will_transmit_some_contact_information_to_the_server_temporariliy">Cable facilita comunicarse usando su número de teléfono y libreta de direcciones existentes. Los amigos y contactos que ya saben como contactar con usted por teléfono podrán acceder a usted por Cable.\n\nEl proceso de registro transmite cierta información de contacto al servidor que no se almacena.</string>
   <string name="registration_activity__powered_by_twilio">Impulsado por twilio</string>
   <!--registration_problems-->
   <string name="registration_problems__some_possible_problems_include">Algunos posibles problemas
@@ -902,6 +918,14 @@ por SMS.
   <string name="arrays__images">Imágenes</string>
   <string name="arrays__audio">Audio</string>
   <string name="arrays__video">Vídeo</string>
+  <string name="arrays__documents">Documentos</string>
+  <string name="arrays__small">Pequeña</string>
+  <string name="arrays__normal">Normal</string>
+  <string name="arrays__large">Grande</string>
+  <string name="arrays__extra_large">Extra grande</string>
+  <string name="arrays__default">Por defecto</string>
+  <string name="arrays__high">Alto</string>
+  <string name="arrays__max">Máximo</string>
   <!--plurals.xml-->
   <plurals name="hours_ago">
     <item quantity="one">%d hora</item>
@@ -943,7 +967,6 @@ por SMS.
   <string name="preferences__pref_led_blink_custom_pattern_off_for">Apagado durante:</string>
   <string name="preferences__pref_led_blink_custom_pattern_set">¡Se ha establecido el patrón personalizado de parpadeo del LED!</string>
   <string name="preferences__sound">Sonido</string>
-  <string name="preferences__change_notification_sound">Cambiar sonido de notificación</string>
   <string name="preferences__silent">Silenciar</string>
   <string name="preferences__in_conversation_notifications">Notificaciones en conversación</string>
   <string name="preferences__play_inthread_notifications">Reproducir sonido de notificación al pasar a ver una conversación activa</string>
@@ -1016,6 +1039,18 @@ por SMS.
   <string name="preferences_advanced__enable_support_for_next_generation_video_and_voice_calls">Soporte para la nueva generación de llamadas de vídeo y voz cuando estén habilitadas por ambas partes. Esta característica está en fase beta.</string>
   <string name="preferences_advanced__relay_all_calls_through_the_signal_server_to_avoid_revealing_your_ip_address">Hacer que el servidor de Cable repita todas las llamadas para evitar revelar su dirección IP a su contacto. Habilitando esto reducirá la calidad de la llamada.</string>
   <string name="preferences_advanced__always_relay_calls">Pasar siempre las llamadas por repetidor</string>
+  <string name="preferences_app_protection__app_access">Acceso a la aplicación</string>
+  <string name="preferences_app_protection__communication">Comunicación</string>
+  <string name="preferences_chats__chats">Chats</string>
+  <string name="preferences_notifications__message_notifications">Notificaciones de mensaje</string>
+  <string name="preferences_notifications__events">Eventos</string>
+  <string name="preferences_notifications__in_chat_sounds">Sonidos en el chat</string>
+  <string name="preferences_notifications__show">Mostrar</string>
+  <string name="preferences_chats__show_invitation_prompts">Mostrar ofrecimientos de invitación</string>
+  <string name="preferences_chats__display_invitation_prompts_for_contacts_without_signal">Muestra ofrecimientos de invitación para contactos sin Cable</string>
+  <string name="preferences_chats__message_text_size">Tamaño de fuente del mensaje</string>
+  <string name="preferences_events__contact_joined_signal">Un contacto se ha unido a Cable</string>
+  <string name="preferences_notifications__priority">Prioridad</string>
   <!--****************************************-->
   <!--menus-->
   <!--****************************************-->

@@ -14,6 +14,9 @@ public abstract class Attachment {
   private final long    size;
 
   @Nullable
+  private final String fileName;
+
+  @Nullable
   private final String  location;
 
   @Nullable
@@ -25,17 +28,22 @@ public abstract class Attachment {
   @Nullable
   private final byte[] digest;
 
-  public Attachment(@NonNull String contentType, int transferState, long size,
+  @Nullable
+  private final String fastPreflightId;
+
+  public Attachment(@NonNull String contentType, int transferState, long size, @Nullable String fileName,
                     @Nullable String location, @Nullable String key, @Nullable String relay,
-                    @Nullable byte[] digest)
+                    @Nullable byte[] digest, @Nullable String fastPreflightId)
   {
-    this.contentType   = contentType;
-    this.transferState = transferState;
-    this.size          = size;
-    this.location      = location;
-    this.key           = key;
-    this.relay         = relay;
-    this.digest        = digest;
+    this.contentType     = contentType;
+    this.transferState   = transferState;
+    this.size            = size;
+    this.fileName        = fileName;
+    this.location        = location;
+    this.key             = key;
+    this.relay           = relay;
+    this.digest          = digest;
+    this.fastPreflightId = fastPreflightId;
   }
 
   @Nullable
@@ -55,6 +63,11 @@ public abstract class Attachment {
 
   public long getSize() {
     return size;
+  }
+
+  @Nullable
+  public String getFileName() {
+    return fileName;
   }
 
   @NonNull
@@ -80,5 +93,10 @@ public abstract class Attachment {
   @Nullable
   public byte[] getDigest() {
     return digest;
+  }
+
+  @Nullable
+  public String getFastPreflightId() {
+    return fastPreflightId;
   }
 }

@@ -1,11 +1,10 @@
 package org.thoughtcrime.securesms;
 
-import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
+import android.support.v4.graphics.drawable.DrawableCompat;
 import android.support.v7.app.AlertDialog;
 import android.text.Editable;
 import android.text.TextUtils;
@@ -15,7 +14,6 @@ import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -53,8 +51,11 @@ public class RegistrationActivity extends BaseActionBarActivity {
   private Spinner              countrySpinner;
   private TextView             countryCode;
   private TextView             number;
-  private Button               createButton;
-  private Button               skipButton;
+  private TextView             createButton;
+  private TextView             skipButton;
+  private TextView             informationView;
+  private View                 informationToggle;
+  private TextView             informationToggleText;
 
   private MasterSecret masterSecret;
 
@@ -86,40 +87,32 @@ public class RegistrationActivity extends BaseActionBarActivity {
 
   private void initializeResources() {
     this.masterSecret   = getIntent().getParcelableExtra("master_secret");
-    this.serverSpinner = (Spinner)findViewById(R.id.server_spinner);
-    this.serverCode    = (TextView)findViewById(R.id.server_code);
-    this.countrySpinner = (Spinner)findViewById(R.id.country_spinner);
-    this.countryCode    = (TextView)findViewById(R.id.country_code);
-    this.number         = (TextView)findViewById(R.id.number);
-    this.createButton   = (Button)findViewById(R.id.registerButton);
-    this.skipButton     = (Button)findViewById(R.id.skipButton);
+    this.serverSpinner         = (Spinner)findViewById(R.id.server_spinner);
+    this.serverCode            = (TextView)findViewById(R.id.server_code);
+    this.countrySpinner        = (Spinner) findViewById(R.id.country_spinner);
+    this.countryCode           = (TextView) findViewById(R.id.country_code);
+    this.number                = (TextView) findViewById(R.id.number);
+    this.createButton          = (TextView) findViewById(R.id.registerButton);
+    this.skipButton            = (TextView) findViewById(R.id.skipButton);
+    this.informationView       = (TextView) findViewById(R.id.registration_information);
+    this.informationToggle     =            findViewById(R.id.information_link_container);
+    this.informationToggleText = (TextView) findViewById(R.id.information_label);
+
+    DrawableCompat.setTint(this.createButton.getBackground(), getResources().getColor(R.color.signal_primary));
+    DrawableCompat.setTint(this.skipButton.getBackground(), getResources().getColor(R.color.grey_400));
 
     this.serverCode.addTextChangedListener(new ServerChangedListener());
     this.countryCode.addTextChangedListener(new CountryCodeChangedListener());
     this.number.addTextChangedListener(new NumberChangedListener());
     this.createButton.setOnClickListener(new CreateButtonListener());
     this.skipButton.setOnClickListener(new CancelButtonListener());
+    this.informationToggle.setOnClickListener(new InformationToggleListener());
 
     if (getIntent().getBooleanExtra("cancel_button", false)) {
       this.skipButton.setVisibility(View.VISIBLE);
     } else {
       this.skipButton.setVisibility(View.INVISIBLE);
     }
-
-    findViewById(R.id.twilio_shoutout).setOnClickListener(new View.OnClickListener() {
-      @Override
-      public void onClick(View v) {
-        Intent intent = new Intent();
-        intent.setAction(Intent.ACTION_VIEW);
-        intent.addCategory(Intent.CATEGORY_BROWSABLE);
-        intent.setData(Uri.parse("https://twilio.com"));
-        try {
-          startActivity(intent);
-        } catch (ActivityNotFoundException e) {
-          Log.w(TAG,e);
-        }
-      }
-    });
   }
 
   private void initializeSpinner() {    //Server
@@ -279,7 +272,6 @@ public class RegistrationActivity extends BaseActionBarActivity {
                                    intent.putExtra(RegistrationProgressActivity.NUMBER_EXTRA, e164number);
                                    intent.putExtra(RegistrationProgressActivity.SERVER_URL_EXTRA, serverUrl);
                                    intent.putExtra(RegistrationProgressActivity.MASTER_SECRET_EXTRA, masterSecret);
-                                   intent.putExtra(RegistrationProgressActivity.GCM_SUPPORTED_EXTRA, gcmSupported);
                                    startActivity(intent);
                                    finish();
                                  }
@@ -385,6 +377,19 @@ public class RegistrationActivity extends BaseActionBarActivity {
 
       startActivity(nextIntent);
       finish();
+    }
+  }
+
+  private class InformationToggleListener implements View.OnClickListener {
+    @Override
+    public void onClick(View v) {
+      if (informationView.getVisibility() == View.VISIBLE) {
+        informationView.setVisibility(View.GONE);
+        informationToggleText.setText(R.string.RegistrationActivity_more_information);
+      } else {
+        informationView.setVisibility(View.VISIBLE);
+        informationToggleText.setText(R.string.RegistrationActivity_less_information);
+      }
     }
   }
 }

@@ -32,6 +32,7 @@ import org.thoughtcrime.securesms.ApplicationContext;
 import org.thoughtcrime.securesms.database.documents.IdentityKeyMismatch;
 import org.thoughtcrime.securesms.database.documents.IdentityKeyMismatchList;
 import org.thoughtcrime.securesms.database.model.DisplayRecord;
+import org.thoughtcrime.securesms.database.model.MessageRecord;
 import org.thoughtcrime.securesms.database.model.SmsMessageRecord;
 import org.thoughtcrime.securesms.jobs.TrimThreadJob;
 import org.thoughtcrime.securesms.recipients.Recipient;
@@ -46,6 +47,8 @@ import org.whispersystems.libsignal.util.guava.Optional;
 import org.whispersystems.signalservice.api.util.InvalidNumberException;
 
 import java.io.IOException;
+import java.security.NoSuchAlgorithmException;
+import java.security.SecureRandom;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
@@ -79,12 +82,12 @@ public class SmsDatabase extends MessagingDatabase {
     STATUS + " INTEGER DEFAULT -1," + TYPE + " INTEGER, " + REPLY_PATH_PRESENT + " INTEGER, " +
     RECEIPT_COUNT + " INTEGER DEFAULT 0," + SUBJECT + " TEXT, " + BODY + " TEXT, " +
     MISMATCHED_IDENTITIES + " TEXT DEFAULT NULL, " + SERVICE_CENTER + " TEXT, " + SUBSCRIPTION_ID + " INTEGER DEFAULT -1, " +
-    EXPIRES_IN + " INTEGER DEFAULT 0, " + EXPIRE_STARTED + " INTEGER DEFAULT 0);";
+    EXPIRES_IN + " INTEGER DEFAULT 0, " + EXPIRE_STARTED + " INTEGER DEFAULT 0, " + NOTIFIED + " DEFAULT 0);";
 
   public static final String[] CREATE_INDEXS = {
     "CREATE INDEX IF NOT EXISTS sms_thread_id_index ON " + TABLE_NAME + " (" + THREAD_ID + ");",
     "CREATE INDEX IF NOT EXISTS sms_read_index ON " + TABLE_NAME + " (" + READ + ");",
-    "CREATE INDEX IF NOT EXISTS sms_read_and_thread_id_index ON " + TABLE_NAME + "(" + READ + "," + THREAD_ID + ");",
+    "CREATE INDEX IF NOT EXISTS sms_read_and_notified_and_thread_id_index ON " + TABLE_NAME + "(" + READ + "," + NOTIFIED + ","  + THREAD_ID + ");",
     "CREATE INDEX IF NOT EXISTS sms_type_index ON " + TABLE_NAME + " (" + TYPE + ");",
     "CREATE INDEX IF NOT EXISTS sms_date_sent_index ON " + TABLE_NAME + " (" + DATE_SENT + ");",
     "CREATE INDEX IF NOT EXISTS sms_thread_date_index ON " + TABLE_NAME + " (" + THREAD_ID + ", " + DATE_RECEIVED + ");"
@@ -96,7 +99,8 @@ public class SmsDatabase extends MessagingDatabase {
       DATE_SENT + " AS " + NORMALIZED_DATE_SENT,
       PROTOCOL, READ, STATUS, TYPE,
       REPLY_PATH_PRESENT, SUBJECT, BODY, SERVICE_CENTER, RECEIPT_COUNT,
-      MISMATCHED_IDENTITIES, SUBSCRIPTION_ID, EXPIRES_IN, EXPIRE_STARTED
+      MISMATCHED_IDENTITIES, SUBSCRIPTION_ID, EXPIRES_IN, EXPIRE_STARTED,
+      NOTIFIED
   };
 
   private static final EarlyReceiptCache earlyReceiptCache = new EarlyReceiptCache();
@@ -269,6 +273,15 @@ public class SmsDatabase extends MessagingDatabase {
 
   public void markAsSentFailed(long id) {
     updateTypeBitmask(id, Types.BASE_TYPE_MASK, Types.BASE_SENT_FAILED_TYPE);
+  }
+
+  public void markAsNotified(long id) {
+    SQLiteDatabase database      = databaseHelper.getWritableDatabase();
+    ContentValues  contentValues = new ContentValues();
+
+    contentValues.put(NOTIFIED, 1);
+
+    database.update(TABLE_NAME, contentValues, ID_WHERE, new String[] {String.valueOf(id)});
   }
 
   public void incrementDeliveryReceiptCount(SyncMessageId messageId) {
@@ -584,7 +597,8 @@ public class SmsDatabase extends MessagingDatabase {
   }
 
   protected long insertMessageOutbox(long threadId, OutgoingTextMessage message,
-                                     long type, boolean forceSms, long date)
+                                     long type, boolean forceSms, long date,
+                                     InsertListener insertListener)
   {
     if      (message.isKeyExchange())   type |= Types.KEY_EXCHANGE_BIT;
     else if (message.isSecureMessage()) type |= (Types.SECURE_MESSAGE_BIT | Types.PUSH_MESSAGE_BIT);
@@ -612,6 +626,10 @@ public class SmsDatabase extends MessagingDatabase {
 
     SQLiteDatabase db        = databaseHelper.getWritableDatabase();
     long           messageId = db.insert(TABLE_NAME, ADDRESS, contentValues);
+
+    if (insertListener != null) {
+      insertListener.onComplete();
+    }
 
     DatabaseFactory.getThreadDatabase(context).update(threadId, true);
     DatabaseFactory.getThreadDatabase(context).setLastSeen(threadId);
@@ -758,6 +776,37 @@ public class SmsDatabase extends MessagingDatabase {
     return new Reader(cursor);
   }
 
+  public OutgoingMessageReader readerFor(OutgoingTextMessage message, long threadId) {
+    return new OutgoingMessageReader(message, threadId);
+  }
+
+  public class OutgoingMessageReader {
+
+    private final OutgoingTextMessage message;
+    private final long                id;
+    private final long                threadId;
+
+    public OutgoingMessageReader(OutgoingTextMessage message, long threadId) {
+      try {
+        this.message  = message;
+        this.threadId = threadId;
+        this.id       = SecureRandom.getInstance("SHA1PRNG").nextLong();
+      } catch (NoSuchAlgorithmException e) {
+        throw new AssertionError(e);
+      }
+    }
+
+    public MessageRecord getCurrent() {
+      return new SmsMessageRecord(context, id, new DisplayRecord.Body(message.getMessageBody(), true),
+                                  message.getRecipients(), message.getRecipients().getPrimaryRecipient(),
+                                  1, System.currentTimeMillis(), System.currentTimeMillis(),
+                                  0, message.isSecureMessage() ? MmsSmsColumns.Types.getOutgoingEncryptedMessageType() : MmsSmsColumns.Types.getOutgoingSmsMessageType(),
+                                  threadId, 0, new LinkedList<IdentityKeyMismatch>(),
+                                  message.getSubscriptionId(), message.getExpiresIn(),
+                                  System.currentTimeMillis());
+    }
+  }
+
   public class Reader {
 
     private final Cursor cursor;
@@ -846,6 +895,10 @@ public class SmsDatabase extends MessagingDatabase {
     public void close() {
       cursor.close();
     }
+  }
+
+  public interface InsertListener {
+    public void onComplete();
   }
 
 }

@@ -30,6 +30,9 @@ import org.thoughtcrime.securesms.util.MediaUtil;
 import org.thoughtcrime.securesms.util.Util;
 import org.whispersystems.libsignal.util.guava.Optional;
 
+import java.security.NoSuchAlgorithmException;
+import java.security.SecureRandom;
+
 public abstract class Slide {
 
   protected final Attachment attachment;
@@ -60,6 +63,20 @@ public abstract class Slide {
     return Optional.absent();
   }
 
+  @NonNull
+  public Optional<String> getFileName() {
+    return Optional.fromNullable(attachment.getFileName());
+  }
+
+  @Nullable
+  public String getFastPreflightId() {
+    return attachment.getFastPreflightId();
+  }
+
+  public long getFileSize() {
+    return attachment.getSize();
+  }
+
   public boolean hasImage() {
     return false;
   }
@@ -69,6 +86,10 @@ public abstract class Slide {
   }
 
   public boolean hasAudio() {
+    return false;
+  }
+
+  public boolean hasDocument() {
     return false;
   }
 
@@ -107,18 +128,25 @@ public abstract class Slide {
     return false;
   }
 
-  protected static Attachment constructAttachmentFromUri(@NonNull Context context,
-                                                         @NonNull Uri     uri,
-                                                         @NonNull String  defaultMime,
-                                                                  long     size,
-                                                                  boolean  hasThumbnail)
+  protected static Attachment constructAttachmentFromUri(@NonNull  Context context,
+                                                         @NonNull  Uri     uri,
+                                                         @NonNull  String  defaultMime,
+                                                                   long     size,
+                                                                   boolean  hasThumbnail,
+                                                         @Nullable String   fileName)
   {
-    Optional<String> resolvedType = Optional.fromNullable(MediaUtil.getMimeType(context, uri));
-    return new UriAttachment(uri, hasThumbnail ? uri : null, resolvedType.or(defaultMime), AttachmentDatabase.TRANSFER_PROGRESS_STARTED, size);
+    try {
+      Optional<String> resolvedType    = Optional.fromNullable(MediaUtil.getMimeType(context, uri));
+      String           fastPreflightId = String.valueOf(SecureRandom.getInstance("SHA1PRNG").nextLong());
+      return new UriAttachment(uri, hasThumbnail ? uri : null, resolvedType.or(defaultMime), AttachmentDatabase.TRANSFER_PROGRESS_STARTED, size, fileName, fastPreflightId);
+    } catch (NoSuchAlgorithmException e) {
+      throw new AssertionError(e);
+    }
   }
 
   @Override
   public boolean equals(Object other) {
+    if (other == null)             return false;
     if (!(other instanceof Slide)) return false;
 
     Slide that = (Slide)other;

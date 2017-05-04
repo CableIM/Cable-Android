@@ -20,12 +20,14 @@ import android.app.Activity;
 import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
+import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.provider.ContactsContract;
 import android.provider.MediaStore;
+import android.provider.OpenableColumns;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.text.TextUtils;
@@ -33,9 +35,12 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
+
 import org.thoughtcrime.securesms.MediaPreviewActivity;
 import org.thoughtcrime.securesms.R;
 import org.thoughtcrime.securesms.components.AudioView;
+import org.thoughtcrime.securesms.components.DocumentView;
 import org.thoughtcrime.securesms.components.RemovableEditableMediaView;
 import org.thoughtcrime.securesms.components.ThumbnailView;
 // Location-TODO import org.thoughtcrime.securesms.components.location.SignalMapView;
@@ -72,6 +77,7 @@ public class AttachmentManager {
   private RemovableEditableMediaView removableMediaView;
   private ThumbnailView              thumbnail;
   private AudioView                  audioView;
+  private DocumentView               documentView;
 // Location-TODO  private SignalMapView              mapView;
 
   private @NonNull  List<Uri>       garbage = new LinkedList<>();
@@ -90,6 +96,7 @@ public class AttachmentManager {
 
       this.thumbnail          = ViewUtil.findById(root, R.id.attachment_thumbnail);
       this.audioView          = ViewUtil.findById(root, R.id.attachment_audio);
+      this.documentView       = ViewUtil.findById(root, R.id.attachment_document);
 // Location-TODO      this.mapView            = ViewUtil.findById(root, R.id.attachment_location);
       this.removableMediaView = ViewUtil.findById(root, R.id.removable_media_view);
 
@@ -100,20 +107,27 @@ public class AttachmentManager {
 
   }
 
-  public void clear() {
+  public void clear(boolean animate) {
     if (attachmentViewStub.resolved()) {
-      ViewUtil.fadeOut(attachmentViewStub.get(), 200).addListener(new Listener<Boolean>() {
-        @Override
-        public void onSuccess(Boolean result) {
-          thumbnail.clear();
-          attachmentViewStub.get().setVisibility(View.GONE);
-          attachmentListener.onAttachmentChanged();
-        }
 
-        @Override
-        public void onFailure(ExecutionException e) {
-        }
-      });
+      if (animate) {
+        ViewUtil.fadeOut(attachmentViewStub.get(), 200).addListener(new Listener<Boolean>() {
+          @Override
+          public void onSuccess(Boolean result) {
+            thumbnail.clear();
+            attachmentViewStub.get().setVisibility(View.GONE);
+            attachmentListener.onAttachmentChanged();
+          }
+
+          @Override
+          public void onFailure(ExecutionException e) {
+          }
+        });
+      } else {
+        thumbnail.clear();
+        attachmentViewStub.get().setVisibility(View.GONE);
+        attachmentListener.onAttachmentChanged();
+      }
 
       markGarbage(getSlideUri());
       slide = Optional.absent();
@@ -189,8 +203,7 @@ public class AttachmentManager {
   public void setMedia(@NonNull final MasterSecret masterSecret,
                        @NonNull final Uri uri,
                        @NonNull final MediaType mediaType,
-                       @NonNull final MediaConstraints constraints)
-  {
+                       @NonNull final MediaConstraints constraints) {
     inflateStub();
 
     new AsyncTask<Void, Void, Slide>() {
@@ -203,14 +216,17 @@ public class AttachmentManager {
 
       @Override
       protected @Nullable Slide doInBackground(Void... params) {
-        long start = System.currentTimeMillis();
         try {
-          final long  mediaSize = MediaUtil.getMediaSize(context, masterSecret, uri);
-          final Slide slide     = mediaType.createSlide(context, uri, mediaSize);
-          Log.w(TAG, "slide with size " + mediaSize + " took " + (System.currentTimeMillis() - start) + "ms");
-          return slide;
-        } catch (IOException ioe) {
-          Log.w(TAG, ioe);
+          if (PartAuthority.isLocalUri(uri)) {
+            return getManuallyCalculatedSlideInfo(uri);
+          } else {
+            Slide result = getContentResolverSlideInfo(uri);
+
+            if (result == null) return getManuallyCalculatedSlideInfo(uri);
+            else                return result;
+          }
+        } catch (IOException e) {
+          Log.w(TAG, e);
           return null;
         }
       }
@@ -232,15 +248,48 @@ public class AttachmentManager {
           attachmentViewStub.get().setVisibility(View.VISIBLE);
 
           if (slide.hasAudio()) {
-            audioView.setAudio(masterSecret, (AudioSlide)slide, false);
+            audioView.setAudio(masterSecret, (AudioSlide) slide, false);
             removableMediaView.display(audioView, false);
+          } else if (slide.hasDocument()) {
+            documentView.setDocument((DocumentSlide) slide, false);
+            removableMediaView.display(documentView, false);
           } else {
-            thumbnail.setImageResource(masterSecret, slide, false);
+            thumbnail.setImageResource(masterSecret, slide, false, true);
             removableMediaView.display(thumbnail, mediaType == MediaType.IMAGE);
           }
 
           attachmentListener.onAttachmentChanged();
         }
+      }
+
+      private @Nullable Slide getContentResolverSlideInfo(Uri uri) {
+        Cursor cursor = null;
+        long   start  = System.currentTimeMillis();
+
+        try {
+          cursor = context.getContentResolver().query(uri, null, null, null, null);
+
+          if (cursor != null && cursor.moveToFirst()) {
+            String fileName = cursor.getString(cursor.getColumnIndexOrThrow(OpenableColumns.DISPLAY_NAME));
+            long   fileSize = cursor.getLong(cursor.getColumnIndexOrThrow(OpenableColumns.SIZE));
+            String mimeType = context.getContentResolver().getType(uri);
+
+            Log.w(TAG, "remote slide with size " + fileSize + " took " + (System.currentTimeMillis() - start) + "ms");
+            return mediaType.createSlide(context, uri, fileName, mimeType, fileSize);
+          }
+        } finally {
+          if (cursor != null) cursor.close();
+        }
+
+        return null;
+      }
+
+      private @NonNull Slide getManuallyCalculatedSlideInfo(Uri uri) throws IOException {
+        long start     = System.currentTimeMillis();
+        long mediaSize = MediaUtil.getMediaSize(context, masterSecret, uri);
+
+        Log.w(TAG, "local slide with size " + mediaSize + " took " + (System.currentTimeMillis() - start) + "ms");
+        return mediaType.createSlide(context, uri, null, null, mediaSize);
       }
     }.execute();
   }
@@ -255,16 +304,16 @@ public class AttachmentManager {
     return deck;
   }
 
-  public static void selectVideo(Activity activity, int requestCode) {
-    selectMediaType(activity, "video/*", requestCode);
+  public static void selectDocument(Activity activity, int requestCode) {
+    selectMediaType(activity, "*/*", null, requestCode);
   }
 
-  public static void selectImage(Activity activity, int requestCode) {
-    selectMediaType(activity, "image/*", requestCode);
+  public static void selectGallery(Activity activity, int requestCode) {
+    selectMediaType(activity, "image/*", new String[] {"image/*", "video/*"}, requestCode);
   }
 
   public static void selectAudio(Activity activity, int requestCode) {
-    selectMediaType(activity, "audio/*", requestCode);
+    selectMediaType(activity, "audio/*", null, requestCode);
   }
 
   public static void selectContactInfo(Activity activity, int requestCode) {
@@ -314,9 +363,13 @@ public class AttachmentManager {
     }
   }
 
-  private static void selectMediaType(Activity activity, String type, int requestCode) {
+  private static void selectMediaType(Activity activity, @NonNull String type, @Nullable String[] extraMimeType, int requestCode) {
     final Intent intent = new Intent();
     intent.setType(type);
+
+    if (extraMimeType != null && Build.VERSION.SDK_INT >= 19) {
+      intent.putExtra(Intent.EXTRA_MIME_TYPES, extraMimeType);
+    }
 
     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
       intent.setAction(Intent.ACTION_OPEN_DOCUMENT);
@@ -329,6 +382,7 @@ public class AttachmentManager {
     }
 
     intent.setAction(Intent.ACTION_GET_CONTENT);
+
     try {
       activity.startActivityForResult(intent, requestCode);
     } catch (ActivityNotFoundException anfe) {
@@ -369,7 +423,7 @@ public class AttachmentManager {
     @Override
     public void onClick(View v) {
       cleanup();
-      clear();
+      clear(true);
     }
   }
 
@@ -387,18 +441,25 @@ public class AttachmentManager {
   }
 
   public enum MediaType {
-    IMAGE, GIF, AUDIO, VIDEO;
+    IMAGE, GIF, AUDIO, VIDEO, DOCUMENT;
 
-    public @NonNull Slide createSlide(@NonNull Context context,
-                                      @NonNull Uri     uri,
-                                               long    dataSize)
+    public @NonNull Slide createSlide(@NonNull  Context context,
+                                      @NonNull  Uri     uri,
+                                      @Nullable String fileName,
+                                      @Nullable String mimeType,
+                                                long    dataSize)
     {
+      if (mimeType == null) {
+        mimeType = "application/octet-stream";
+      }
+
       switch (this) {
-      case IMAGE: return new ImageSlide(context, uri, dataSize);
-      case GIF:   return new GifSlide(context, uri, dataSize);
-      case AUDIO: return new AudioSlide(context, uri, dataSize);
-      case VIDEO: return new VideoSlide(context, uri, dataSize);
-      default:    throw  new AssertionError("unrecognized enum");
+      case IMAGE:    return new ImageSlide(context, uri, dataSize);
+      case GIF:      return new GifSlide(context, uri, dataSize);
+      case AUDIO:    return new AudioSlide(context, uri, dataSize);
+      case VIDEO:    return new VideoSlide(context, uri, dataSize);
+      case DOCUMENT: return new DocumentSlide(context, uri, mimeType, dataSize, fileName);
+      default:       throw  new AssertionError("unrecognized enum");
       }
     }
 
@@ -410,5 +471,6 @@ public class AttachmentManager {
       if (ContentType.isVideoType(mimeType)) return VIDEO;
       return null;
     }
+
   }
 }
