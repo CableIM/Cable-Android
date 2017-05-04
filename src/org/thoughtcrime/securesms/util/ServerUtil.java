@@ -17,15 +17,14 @@ public class ServerUtil {
         HashMap<String, String> s1 = new HashMap<>() ;
         s1.put("GIPHY_PROXY_HOST", "giphy-proxy.cable.im");
         s1.put("GIPHY_PROXY_PORT", "80");
-        s1.put("SIGNAL_URL", "https://cable-service-ca.pantelegrafo.cable.im");
-        //s1.put("SIGNAL_URL", "https://cable-service.cable.im");
-        servers.put("cable-service-ca.pantelegrafo.cable.im", s1);
+        s1.put("SIGNAL_URL", "https://cable-service.pantelegrafo.cable.im");
+        servers.put("cable-service.pantelegrafo.cable.im", s1);
 
         HashMap<String, String> s2 = new HashMap<>() ;
         s2.put("GIPHY_PROXY_HOST", "giphy-proxy.cable.im");
         s2.put("GIPHY_PROXY_PORT", "80");
-        s2.put("SIGNAL_URL", "https://cable-service-ca.lattuga.cable.im");
-        servers.put("cable-service-ca.lattuga.cable.im", s2);
+        s2.put("SIGNAL_URL", "https://cable-service.lattuga.cable.im");
+        servers.put("cable-service.lattuga.cable.im", s2);
 
         server = servers.get(severUrl) ;
     }

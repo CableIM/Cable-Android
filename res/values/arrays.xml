@@ -283,8 +283,8 @@
     </string-array>
 
     <string-array name="pref_server_values" translatable="false">
-        <item>cable-service-ca.pantelegrafo.cable.im</item>
-        <item>cable-service-ca.lattuga.cable.im</item>
+        <item>cable-service.pantelegrafo.cable.im</item>
+        <item>cable-service.lattuga.cable.im</item>
     </string-array>
 
     <string-array name="pref_message_font_size_entries">
