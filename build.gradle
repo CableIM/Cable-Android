@@ -200,9 +200,6 @@ android {
         project.ext.set("archivesBaseName", "Cable");
 
         buildConfigField "long", "BUILD_TIMESTAMP", getLastCommitTimestamp() + "L"
-        buildConfigField "String", "SIGNAL_URL", "\"https://cable-service.pantelegrafo.cable.im\""
-        buildConfigField "String", "GIPHY_PROXY_HOST", "\"giphy-proxy.pantelegrafo.cable.im\""
-        buildConfigField "int", "GIPHY_PROXY_PORT", "80"
         buildConfigField "String", "USER_AGENT", "\"CBL\""
         buildConfigField "boolean", "DEV_BUILD", "false"
     }
