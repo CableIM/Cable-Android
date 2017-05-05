@@ -8,7 +8,6 @@ import org.thoughtcrime.securesms.R;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
@@ -38,15 +37,7 @@ public class ServerListLoader extends AsyncTaskLoader<ArrayList<Map<String, Stri
             i++;
         }
 
-        Collections.sort(results, new ServerComparator());
-
         return results;
     }
 
-    private static class ServerComparator implements Comparator<Map<String, String>> {
-        @Override
-        public int compare(Map<String, String> lhs, Map<String, String> rhs) {
-            return lhs.get("server_name").compareTo(rhs.get("server_name"));
-        }
-    }
 }

@@ -14,25 +14,27 @@ public class ServerUtil {
 
     public ServerUtil(String serverName){
         servers = new HashMap<>();
-        HashMap<String, String> s = new HashMap<>();
 
+        HashMap<String, String> pantelegrafo = new HashMap<>();
         // cable-service.pantelegrafo.cable.im
-        s.put("GIPHY_PROXY_HOST", "giphy-proxy.pantelegrafo.cable.im");
-        s.put("GIPHY_PROXY_PORT", "80");
-        s.put("SIGNAL_URL", "https://cable-service.pantelegrafo.cable.im");
-        servers.put("cable-service.pantelegrafo.cable.im", s);
+        pantelegrafo.put("GIPHY_PROXY_HOST", "giphy-proxy.pantelegrafo.cable.im");
+        pantelegrafo.put("GIPHY_PROXY_PORT", "80");
+        pantelegrafo.put("SIGNAL_URL", "https://cable-service.pantelegrafo.cable.im");
+        servers.put("cable-service.pantelegrafo.cable.im", pantelegrafo);
 
+        HashMap<String, String> pantelegrafo_staging = new HashMap<>();
         // cable-service-staging.pantelegrafo.cable.im
-        s.put("GIPHY_PROXY_HOST", "giphy-proxy.pantelegrafo.cable.im");
-        s.put("GIPHY_PROXY_PORT", "80");
-        s.put("SIGNAL_URL", "https://cable-service-staging.pantelegrafo.cable.im");
-        servers.put("cable-service-staging.pantelegrafo.cable.im", s);
+        pantelegrafo_staging.put("GIPHY_PROXY_HOST", "giphy-proxy.pantelegrafo.cable.im");
+        pantelegrafo_staging.put("GIPHY_PROXY_PORT", "80");
+        pantelegrafo_staging.put("SIGNAL_URL", "https://cable-service-staging.pantelegrafo.cable.im");
+        servers.put("cable-service-staging.pantelegrafo.cable.im", pantelegrafo_staging);
 
+        HashMap<String, String> lattuga = new HashMap<>();
         // cable-service.lattuga.cable.im
-        s.put("GIPHY_PROXY_HOST", "giphy-proxy.lattuga.cable.im");
-        s.put("GIPHY_PROXY_PORT", "80");
-        s.put("SIGNAL_URL", "https://cable-service.lattuga.cable.im");
-        servers.put("cable-service.lattuga.cable.im", s);
+        lattuga.put("GIPHY_PROXY_HOST", "giphy-proxy.lattuga.cable.im");
+        lattuga.put("GIPHY_PROXY_PORT", "80");
+        lattuga.put("SIGNAL_URL", "https://cable-service.lattuga.cable.im");
+        servers.put("cable-service.lattuga.cable.im", lattuga);
 
         server = servers.get(serverName) ;
     }
