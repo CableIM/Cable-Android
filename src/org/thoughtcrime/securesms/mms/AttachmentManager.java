@@ -35,8 +35,6 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
-import com.bumptech.glide.Glide;
-
 import org.thoughtcrime.securesms.MediaPreviewActivity;
 import org.thoughtcrime.securesms.R;
 import org.thoughtcrime.securesms.components.AudioView;
@@ -63,8 +61,6 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
-
-import ws.com.google.android.mms.ContentType;
 
 public class AttachmentManager {
 
@@ -191,7 +187,7 @@ public class AttachmentManager {
 //      public void onSuccess(@NonNull Bitmap result) {
 //        byte[]        blob          = BitmapUtil.toByteArray(result);
 //        Uri           uri           = PersistentBlobProvider.getInstance(context)
-//                                                            .create(masterSecret, blob, ContentType.IMAGE_PNG);
+//                                                            .create(masterSecret, blob, MediaUtil.IMAGE_PNG);
 //        LocationSlide locationSlide = new LocationSlide(context, uri, blob.length, place);
 //
 //        setSlide(locationSlide);
@@ -203,7 +199,8 @@ public class AttachmentManager {
   public void setMedia(@NonNull final MasterSecret masterSecret,
                        @NonNull final Uri uri,
                        @NonNull final MediaType mediaType,
-                       @NonNull final MediaConstraints constraints) {
+                       @NonNull final MediaConstraints constraints)
+  {
     inflateStub();
 
     new AsyncTask<Void, Void, Slide>() {
@@ -352,7 +349,7 @@ public class AttachmentManager {
       if (captureIntent.resolveActivity(activity.getPackageManager()) != null) {
         if (captureUri == null) {
           captureUri = PersistentBlobProvider.getInstance(context)
-                                             .createForExternal(ContentType.IMAGE_JPEG);
+                                             .createForExternal(MediaUtil.IMAGE_JPEG);
         }
         Log.w(TAG, "captureUri path is " + captureUri.getPath());
         captureIntent.putExtra(MediaStore.EXTRA_OUTPUT, captureUri);
@@ -464,11 +461,11 @@ public class AttachmentManager {
     }
 
     public static @Nullable MediaType from(final @Nullable String mimeType) {
-      if (TextUtils.isEmpty(mimeType))       return null;
-      if (MediaUtil.isGif(mimeType))         return GIF;
-      if (ContentType.isImageType(mimeType)) return IMAGE;
-      if (ContentType.isAudioType(mimeType)) return AUDIO;
-      if (ContentType.isVideoType(mimeType)) return VIDEO;
+      if (TextUtils.isEmpty(mimeType))     return null;
+      if (MediaUtil.isGif(mimeType))       return GIF;
+      if (MediaUtil.isImageType(mimeType)) return IMAGE;
+      if (MediaUtil.isAudioType(mimeType)) return AUDIO;
+      if (MediaUtil.isVideoType(mimeType)) return VIDEO;
       return null;
     }
 
