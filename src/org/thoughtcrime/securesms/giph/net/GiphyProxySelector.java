@@ -1,10 +1,10 @@
 package org.thoughtcrime.securesms.giph.net;
 
-
+import android.content.Context;
 import android.os.AsyncTask;
 import android.util.Log;
 
-import org.thoughtcrime.securesms.BuildConfig;
+import org.thoughtcrime.securesms.util.TextSecurePreferences;
 import org.thoughtcrime.securesms.util.Util;
 
 import java.io.IOException;
@@ -19,11 +19,14 @@ import java.util.List;
 public class GiphyProxySelector extends ProxySelector {
 
   private static final String TAG = GiphyProxySelector.class.getSimpleName();
+  private final Context context;
 
   private final    List<Proxy> EMPTY = new ArrayList<>(1);
   private volatile List<Proxy> GIPHY = null;
 
-  public GiphyProxySelector() {
+  public GiphyProxySelector(Context context) {
+    this.context = context;
+
     EMPTY.add(Proxy.NO_PROXY);
 
     if (Util.isMainThread()) {
@@ -55,8 +58,8 @@ public class GiphyProxySelector extends ProxySelector {
 
   private void initializeGiphyProxy() {
     GIPHY = new ArrayList<Proxy>(1) {{
-      add(new Proxy(Proxy.Type.HTTP, new InetSocketAddress(BuildConfig.GIPHY_PROXY_HOST,
-                                                           BuildConfig.GIPHY_PROXY_PORT)));
+      add(new Proxy(Proxy.Type.HTTP, new InetSocketAddress(TextSecurePreferences.getGiphyProxyHost(context),
+                                                           TextSecurePreferences.getGiphyProxyPort(context))));
     }};
   }
 

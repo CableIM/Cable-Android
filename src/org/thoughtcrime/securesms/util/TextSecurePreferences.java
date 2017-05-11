@@ -26,6 +26,10 @@ public class TextSecurePreferences {
 
   private static final String TAG = TextSecurePreferences.class.getSimpleName();
 
+  public  static final String SERVER_URL                       = "pref_server_url";
+  public  static final String GIPHY_PROXY_HOST                 = "pref_giphy_proxy_host";
+  public  static final String GIPHY_PROXY_PORT                 = "pref_giphy_proxy_port";
+
   public  static final String IDENTITY_PREF                    = "pref_choose_identity";
   public  static final String CHANGE_PASSPHRASE_PREF           = "pref_change_passphrase";
   public  static final String DISABLE_PASSPHRASE_PREF          = "pref_disable_passphrase";
@@ -106,6 +110,30 @@ public class TextSecurePreferences {
   private static final String MULTI_DEVICE_PROVISIONED_PREF    = "pref_multi_device";
   public  static final String DIRECT_CAPTURE_CAMERA_ID         = "pref_direct_capture_camera_id";
   private static final String ALWAYS_RELAY_CALLS_PREF          = "pref_turn_only";
+
+  public static String getServerUrl(Context context) {
+    return getStringPreference(context, SERVER_URL, "https://cable-service.pantelegrafo.cable.im/");
+  }
+
+  public static void setServerUrl(Context context, String value) {
+    setStringPreference(context, SERVER_URL, value);
+  }
+
+  public static String getGiphyProxyHost(Context context) {
+    return getStringPreference(context, GIPHY_PROXY_HOST, "giphy-proxy.pantelegrafo.cable.im");
+  }
+
+  public static void setGiphyProxyHost(Context context, String host) {
+    setStringPreference(context, GIPHY_PROXY_HOST, host);
+  }
+
+  public static int getGiphyProxyPort(Context context) {
+    return Integer.valueOf(getStringPreference(context, GIPHY_PROXY_PORT, "80"));
+  }
+
+  public static void setGiphyProxyPort(Context context, int port) {
+    setIntegerPrefrence(context, GIPHY_PROXY_PORT, port);
+  }
 
   public static int getNotificationPriority(Context context) {
     return Integer.valueOf(getStringPreference(context, NOTIFICATION_PRIORITY_PREF, String.valueOf(NotificationCompat.PRIORITY_HIGH)));

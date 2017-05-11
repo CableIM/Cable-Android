@@ -25,13 +25,14 @@ public class OkHttpUrlLoader implements ModelLoader<GlideUrl, InputStream> {
   public static class Factory implements ModelLoaderFactory<GlideUrl, InputStream> {
     private static volatile OkHttpClient internalClient;
     private OkHttpClient client;
+    private static Context context;
 
     private static OkHttpClient getInternalClient() {
       if (internalClient == null) {
         synchronized (Factory.class) {
           if (internalClient == null) {
             internalClient = new OkHttpClient.Builder()
-                                             .proxySelector(new GiphyProxySelector())
+                                             .proxySelector(new GiphyProxySelector(context))
                                              .build();
           }
         }
@@ -55,6 +56,7 @@ public class OkHttpUrlLoader implements ModelLoader<GlideUrl, InputStream> {
 
     @Override
     public ModelLoader<GlideUrl, InputStream> build(Context context, GenericLoaderFactory factories) {
+      this.context = context;
       return new OkHttpUrlLoader(client);
     }
 

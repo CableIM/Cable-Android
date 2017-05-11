@@ -35,7 +35,7 @@ public abstract class GiphyLoader extends AsyncLoader<List<GiphyImage>> {
   protected GiphyLoader(@NonNull Context context, @Nullable String searchString) {
     super(context);
     this.searchString = searchString;
-    this.client       = new OkHttpClient.Builder().proxySelector(new GiphyProxySelector()).build();
+    this.client       = new OkHttpClient.Builder().proxySelector(new GiphyProxySelector(context)).build();
   }
 
   @Override

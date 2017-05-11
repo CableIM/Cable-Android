@@ -5,7 +5,6 @@ import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 
-import org.thoughtcrime.securesms.BuildConfig;
 import org.thoughtcrime.securesms.util.TextSecurePreferences;
 import org.whispersystems.signalservice.api.push.TrustStore;
 import org.whispersystems.signalservice.internal.push.SignalServiceUrl;
@@ -128,7 +127,7 @@ public class SignalServiceNetworkAccess {
     }};
 
     this.uncensoredConfiguration = new SignalServiceUrl[] {
-        new SignalServiceUrl(BuildConfig.SIGNAL_URL, new SignalServiceTrustStore(context))
+        new SignalServiceUrl(TextSecurePreferences.getServerUrl(context), new SignalServiceTrustStore(context))
     };
 
     this.censoredCountries = this.censorshipConfiguration.keySet().toArray(new String[0]);
