@@ -140,7 +140,9 @@ public class MessageRetrievalService extends Service implements InjectableType, 
     Log.w(TAG, String.format("Network requirement: %s, active activities: %s, push pending: %s",
                              networkRequirement.isPresent(), activeActivities, pushPending.size()));
 
-    return TextSecurePreferences.isWebsocketRegistered(this) &&
+    return TextSecurePreferences.isPushRegistered(this)                       &&
+           TextSecurePreferences.isWebsocketRegistered(this)                  &&
+           (activeActivities > 0 || !pushPending.isEmpty() || isGcmDisabled)  &&
            networkRequirement.isPresent();
   }
 
