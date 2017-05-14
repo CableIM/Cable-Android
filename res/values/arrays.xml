@@ -279,6 +279,18 @@
         <item>#ff00ff</item>
     </array>
 
+    <string-array name="pref_server_entries">
+        <item>Pantelegrafo</item>
+        <item>Pantelegrafo (staging)</item>
+        <item>Lattuga (not ready)</item>
+    </string-array>
+
+    <string-array name="pref_server_values" translatable="false">
+        <item>cable-service.pantelegrafo.cable.im</item>
+        <item>cable-service-staging.pantelegrafo.cable.im</item>
+        <item>cable-service.lattuga.cable.im</item>
+    </string-array>
+
     <string-array name="pref_message_font_size_entries">
         <item>@string/arrays__small</item>
         <item>@string/arrays__normal</item>

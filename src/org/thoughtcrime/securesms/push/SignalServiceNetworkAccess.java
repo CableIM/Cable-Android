@@ -94,7 +94,8 @@ public class SignalServiceNetworkAccess {
 
   private final Map<String, SignalServiceUrl[]> censorshipConfiguration;
   private final String[]                        censoredCountries;
-  private final SignalServiceUrl[]              uncensoredConfiguration;
+  private final SignalServiceTrustStore         signalServiceTrustStores;
+  private SignalServiceUrl[]                    uncensoredConfiguration;
 
   public SignalServiceNetworkAccess(Context context) {
     final TrustStore       googleTrustStore = new GoogleFrontingTrustStore(context);
@@ -126,19 +127,25 @@ public class SignalServiceNetworkAccess {
                                           baseAndroid, baseGoogle, mapsOneAndroid, mapsTwoAndroid, mailAndroid});
     }};
 
+    this.signalServiceTrustStores = new SignalServiceTrustStore(context);
+    this.censoredCountries = this.censorshipConfiguration.keySet().toArray(new String[0]);
+  }
+
+
+  public SignalServiceUrl[] getUncensoredConfiguration(Context context) {
     this.uncensoredConfiguration = new SignalServiceUrl[] {
-        new SignalServiceUrl(TextSecurePreferences.getServerUrl(context), new SignalServiceTrustStore(context))
+      new SignalServiceUrl(TextSecurePreferences.getServerUrl(context), signalServiceTrustStores)
     };
 
-    this.censoredCountries = this.censorshipConfiguration.keySet().toArray(new String[0]);
+    return this.uncensoredConfiguration;
   }
 
   public SignalServiceUrl[] getConfiguration(Context context) {
     String localNumber = TextSecurePreferences.getLocalNumber(context);
-    return getConfiguration(localNumber);
+    return getConfiguration(context, localNumber);
   }
 
-  public SignalServiceUrl[] getConfiguration(@Nullable String localNumber) {
+  public SignalServiceUrl[] getConfiguration(Context context, @Nullable String localNumber) {
     if (localNumber == null) return this.uncensoredConfiguration;
 
     for (String censoredRegion : this.censoredCountries) {
@@ -147,15 +154,15 @@ public class SignalServiceNetworkAccess {
       }
     }
 
-    return this.uncensoredConfiguration;
+    return getUncensoredConfiguration(context);
   }
 
   public boolean isCensored(Context context) {
     return getConfiguration(context) != this.uncensoredConfiguration;
   }
 
-  public boolean isCensored(String number) {
-    return getConfiguration(number) != this.uncensoredConfiguration;
+  public boolean isCensored(Context context, String number) {
+    return getConfiguration(context, number) != this.uncensoredConfiguration;
   }
 
 }

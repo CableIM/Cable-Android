@@ -22,7 +22,7 @@ public class AccountManagerFactory {
   }
 
   public static SignalServiceAccountManager createManager(final Context context, String number, String password) {
-    if (new SignalServiceNetworkAccess(context).isCensored(number)) {
+    if (new SignalServiceNetworkAccess(context).isCensored(context, number)) {
       new AsyncTask<Void, Void, Void>() {
         @Override
         protected Void doInBackground(Void... params) {
@@ -36,7 +36,7 @@ public class AccountManagerFactory {
       }.execute();
     }
 
-    return new SignalServiceAccountManager(new SignalServiceNetworkAccess(context).getConfiguration(number),
+    return new SignalServiceAccountManager(new SignalServiceNetworkAccess(context).getConfiguration(context, number),
                                            number, password, BuildConfig.USER_AGENT);
   }
 

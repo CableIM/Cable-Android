@@ -1,0 +1,15 @@
+<resources>
+  <!-- RegistrationActivity -->
+  <string name="RegistrationActivity_select_your_server">Select your registration server</string>
+  <string name="RegistrationActivity_you_must_specify_your_server">You must specify your registration server</string>
+
+  <!-- server_selection_fragment -->
+  <string name="server_selection_fragment__loading_servers">Loading servers...</string>
+  <string name="server_selection_fragment__search">Search</string>
+
+  <!-- registration_activity -->
+  <string name="registration_activity__your_registration_server">YOUR REGISTRATION SERVER</string>
+
+  <!-- preferences.xml -->
+  <string name="preferences__registration_server">Registration Server</string>
+</resources>

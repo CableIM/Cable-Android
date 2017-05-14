@@ -128,7 +128,7 @@ public class TextSecurePreferences {
   }
 
   public static int getGiphyProxyPort(Context context) {
-    return Integer.valueOf(getStringPreference(context, GIPHY_PROXY_PORT, "80"));
+    return getIntegerPreference(context, GIPHY_PROXY_PORT, 80);
   }
 
   public static void setGiphyProxyPort(Context context, int port) {
