@@ -280,8 +280,8 @@
     </array>
 
     <string-array name="pref_server_entries">
-        <item>Pantelegrafo</item>
-        <item>Pantelegrafo (staging)</item>
+        <item>Pantelegrafo (default)</item>
+        <item>Pantelegrafo (devel)</item>
         <item>Lattuga (not ready)</item>
     </string-array>
 
