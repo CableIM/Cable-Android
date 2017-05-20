@@ -22,6 +22,7 @@ import org.thoughtcrime.securesms.jobs.PushTextSendJob;
 import org.thoughtcrime.securesms.jobs.RefreshAttributesJob;
 import org.thoughtcrime.securesms.jobs.RefreshPreKeysJob;
 import org.thoughtcrime.securesms.jobs.RequestGroupInfoJob;
+import org.thoughtcrime.securesms.jobs.RetrieveProfileJob;
 import org.thoughtcrime.securesms.jobs.RotateSignedPreKeyJob;
 import org.thoughtcrime.securesms.push.SecurityEventListener;
 import org.thoughtcrime.securesms.push.SignalServiceNetworkAccess;
@@ -57,7 +58,8 @@ import dagger.Provides;
                                      PushGroupUpdateJob.class,
                                      AvatarDownloadJob.class,
                                      RotateSignedPreKeyJob.class,
-                                     WebRtcCallService.class})
+                                     WebRtcCallService.class,
+                                     RetrieveProfileJob.class})
 public class SignalCommunicationModule {
 
   private final Context                    context;

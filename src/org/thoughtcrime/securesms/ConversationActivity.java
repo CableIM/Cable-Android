@@ -104,6 +104,7 @@ import org.thoughtcrime.securesms.database.RecipientPreferenceDatabase.Recipient
 import org.thoughtcrime.securesms.database.SmsDatabase;
 import org.thoughtcrime.securesms.database.ThreadDatabase;
 import org.thoughtcrime.securesms.jobs.MultiDeviceBlockedUpdateJob;
+import org.thoughtcrime.securesms.jobs.RetrieveProfileJob;
 import org.thoughtcrime.securesms.mms.AttachmentManager;
 import org.thoughtcrime.securesms.mms.AttachmentManager.MediaType;
 import org.thoughtcrime.securesms.mms.AudioSlide;
@@ -259,6 +260,7 @@ public class ConversationActivity extends PassphraseRequiredActionBarActivity
         initializeDraft();
       }
     });
+    initializeProfiles();
   }
 
   @Override
@@ -314,6 +316,7 @@ public class ConversationActivity extends PassphraseRequiredActionBarActivity
 
     MessageNotifier.setVisibleThread(threadId);
     markThreadAsRead();
+    markIdentitySeen();
 
     Log.w(TAG, "onResume() Finished: " + (System.currentTimeMillis() - getIntent().getLongExtra(TIMING_EXTRA, 0)));
   }
@@ -1147,6 +1150,12 @@ public class ConversationActivity extends PassphraseRequiredActionBarActivity
     recipients.addListener(this);
   }
 
+  private void initializeProfiles() {
+    ApplicationContext.getInstance(this)
+                      .getJobManager()
+                      .add(new RetrieveProfileJob(this, recipients));
+  }
+
   @Override
   public void onModified(final Recipients recipients) {
     titleView.post(new Runnable() {
@@ -1437,6 +1446,17 @@ public class ConversationActivity extends PassphraseRequiredActionBarActivity
         return null;
       }
     }.execute(threadId);
+  }
+
+  private void markIdentitySeen() {
+    new AsyncTask<Recipient, Void, Void>() {
+      @Override
+      protected Void doInBackground(Recipient... params) {
+        DatabaseFactory.getIdentityDatabase(ConversationActivity.this)
+                       .setSeen(params[0].getRecipientId());
+        return null;
+      }
+    }.execute(recipients.getPrimaryRecipient());
   }
 
   protected void sendComplete(long threadId) {
