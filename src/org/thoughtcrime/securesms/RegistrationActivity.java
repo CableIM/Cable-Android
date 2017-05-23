@@ -254,7 +254,6 @@ public class RegistrationActivity extends BaseActionBarActivity {
         return;
       }
 
-
       ServerUtil server = new ServerUtil(serverCode.getText().toString());
       TextSecurePreferences.setServerUrl(getApplicationContext(), server.getServerUrl());
       TextSecurePreferences.setGiphyProxyHost(getApplicationContext(), server.getGiphyProxyHost());
