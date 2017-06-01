@@ -34,11 +34,11 @@
     <PreferenceCategory android:layout="@layout/preference_divider"/>
 
     <PreferenceCategory android:title="@string/preferences_app_protection__communication">
-<!--        <org.thoughtcrime.securesms.components.SwitchPreferenceCompat
+        <org.thoughtcrime.securesms.components.SwitchPreferenceCompat
                 android:defaultValue="true"
                 android:key="pref_blocking_identity_changes"
                 android:title="@string/preferences_app_protection__safety_numbers_approval"
-                android:summary="@string/preferences_app_protecting__require_approval_of_new_safety_numbers_when_they_change"/> -->
+                android:summary="@string/preferences_app_protecting__require_approval_of_new_safety_numbers_when_they_change"/>
 
         <org.thoughtcrime.securesms.components.SwitchPreferenceCompat
                 android:defaultValue="false"
