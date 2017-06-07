@@ -142,7 +142,7 @@ public class MessageRetrievalService extends Service implements InjectableType, 
 
     return TextSecurePreferences.isPushRegistered(this)                       &&
            TextSecurePreferences.isWebsocketRegistered(this)                  &&
-           (activeActivities > 0 || !pushPending.isEmpty() || isGcmDisabled)  &&
+//           (activeActivities > 0 || !pushPending.isEmpty() || isGcmDisabled)  &&
            networkRequirement.isPresent();
   }
 
