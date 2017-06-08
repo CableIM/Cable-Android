@@ -196,7 +196,7 @@ android {
         versionCode 267000
         versionName "4.6.0-0"
 
-        minSdkVersion 9
+        minSdkVersion 14
         targetSdkVersion 22
         multiDexEnabled true
 
