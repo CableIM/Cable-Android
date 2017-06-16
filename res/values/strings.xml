@@ -421,6 +421,10 @@
     <string name="MessageRecord_you_set_disappearing_message_time_to_s">You set disappearing message time to %1$s.</string>
     <string name="MessageRecord_s_set_disappearing_message_time_to_s">%1$s set disappearing message time to %2$s.</string>
     <string name="MessageRecord_your_safety_number_with_s_has_changed">Your safety number with %s has changed.</string>
+    <string name="MessageRecord_you_marked_your_safety_number_with_s_verified">You marked your safety number with %s verified</string>
+    <string name="MessageRecord_you_marked_your_safety_number_with_s_verified_from_another_device">You marked your safety number with %s verified from another device</string>
+    <string name="MessageRecord_you_marked_your_safety_number_with_s_unverified">You marked your safety number with %s unverified</string>
+    <string name="MessageRecord_you_marked_your_safety_number_with_s_unverified_from_another_device">You marked your safety number with %s unverified from another device</string>
 
 
     <!-- PassphraseChangeActivity -->
@@ -592,7 +596,10 @@
     <string name="ThreadRecord_media_message">Media message</string>
     <string name="ThreadRecord_s_joined_signal">%s joined Cable!</string>
     <string name="ThreadRecord_disappearing_message_time_updated_to_s">Disappearing message time set to %s</string>
+    <string name="ThreadRecord_safety_number_changed">Safety number changed</string>
     <string name="ThreadRecord_your_safety_number_with_s_has_changed">Your safety number with %s has changed.</string>
+    <string name="ThreadRecord_you_marked_verified">You marked verified</string>
+    <string name="ThreadRecord_you_marked_unverified">You marked unverified</string>
 
     <!-- UpdateApkReadyListener -->
     <string name="UpdateApkReadyListener_Signal_update">Cable update</string>
@@ -669,6 +676,8 @@
     <string name="MessageNotifier_mark_read">Mark read</string>
     <string name="MessageNotifier_media_message">Media message</string>
     <string name="MessageNotifier_reply">Reply</string>
+    <string name="MessageNotifier_pending_signal_messages">Pending Cable messages</string>
+    <string name="MessageNotifier_you_have_pending_signal_messages">You have pending Cable messages, tap to open and retrieve</string>
 
     <!-- MmsPreferencesFragment -->
     <string name="MmsPreferencesFragment__manual_mms_settings_are_required">Manual MMS settings are required for your phone.</string>
@@ -848,6 +857,24 @@
     </plurals>
 
     <string name="expiration_weeks_abbreviated">%dw</string>
+    
+    <!-- unverified safety numbers -->
+    <string name="IdentityUtil_unverified_banner_one">Your safety number with %s has changed and is no longer verified</string>
+    <string name="IdentityUtil_unverified_banner_two">Your safety numbers with %1$s and %2$s are no longer verified</string>
+    <string name="IdentityUtil_unverified_banner_many">Your safety numbers with %1$s, %2$s, and %3$s are no longer verified</string>
+
+    <string name="IdentityUtil_unverified_dialog_one">Your safety number with %1$s has changed and is no longer verified. This could either mean that someone is trying to intercept your communication, or that %1$s simply reinstalled Cable.</string>
+    <string name="IdentityUtil_unverified_dialog_two">Your safety numbers with %1$s and %2$s are no longer verified. This could either mean that someone is trying to intercept your communication, or that they simply reinstalled Cable.</string>
+    <string name="IdentityUtil_unverified_dialog_many">Your safety numbers with %1$s, %2$s, and %3$s are no longer verified. This could either mean that someone is trying to intercept your communication, or that they simply reinstalled Cable.</string>
+
+    <string name="IdentityUtil_untrusted_dialog_one">Your safety number with %s just changed.</string>
+    <string name="IdentityUtil_untrusted_dialog_two">Your safety numbers with %1$s and %2$s just changed.</string>
+    <string name="IdentityUtil_untrusted_dialog_many">Your safety numbers with %1$s, %2$s, and %3$s just changed.</string>
+
+    <plurals name="identity_others">
+        <item quantity="one">%d other</item>
+        <item quantity="other">%d others</item>
+    </plurals>
 
     <!-- giphy_activity -->
     <string name="giphy_activity_toolbar__search_gifs_and_stickers">Search GIFs and stickers</string>
@@ -893,7 +920,7 @@
     <string name="media_overview_activity__no_media">No media</string>
 
     <!-- message_recipients_list_item -->
-    <string name="message_recipients_list_item__verify">VERIFY</string>
+    <string name="message_recipients_list_item__view">VIEW</string>
     <string name="message_recipients_list_item__resend">RESEND</string>
     <string name="message_recipients_list_item__resending">Resending...</string>
 
@@ -922,7 +949,7 @@
     <string name="recipient_preferences__block">Block</string>
     <string name="recipient_preferences__color">Color</string>
     <string name="recipient_preferences__color_for_this_contact">Color for this contact</string>
-    <string name="recipient_preferences__verify_safety_number">Verify safety number</string>
+    <string name="recipient_preferences__view_safety_number">View safety number</string>
 
     <!--- redphone_call_controls -->
     <string name="redphone_call_card__signal_call">Cable Call</string>
@@ -1019,8 +1046,10 @@
     <string name="recipients_panel__add_members">Add members</string>
 
     <!-- verify_display_fragment -->
-    <string name="verify_display_fragment__if_you_wish_to_verify_the_security_of_your_end_to_end_encryption_with_s"><![CDATA[If you wish to verify the security of your end-to-end encryption with %s, compare the number above with the number on their device. Alternatively, you can scan the code on their phone, or ask them to scan your code. <a href="https://whispersystems.org/redirect/safety-numbers">Learn more about verifying safety numbers</a>]]></string>
+    <string name="verify_display_fragment__if_you_wish_to_verify_the_security_of_your_end_to_end_encryption_with_s"><![CDATA[If you wish to verify the security of your encryption with %s, compare the number above with the number on their device. Alternatively, you can scan the code on their phone, or ask them to scan your code. <a href="https://whispersystems.org/redirect/safety-numbers">Learn more.</a>]]></string>
     <string name="verify_display_fragment__tap_to_scan">Tap to scan</string>
+    <string name="verify_display_fragment__loading">Loading...</string>
+    <string name="verify_display_fragment__verified">Verified</string>
 
     <!-- verify_identity -->
     <string name="verify_identity__share_safety_number">Share safety number</string>
@@ -1201,7 +1230,7 @@
     <string name="preferences_app_protection__app_access">App access</string>
     <string name="preferences_app_protection__communication">Communication</string>
     <string name="preferences_chats__chats">Chats</string>
-    <string name="preferences_notifications__message_notifications">Message notifications</string>
+    <string name="preferences_notifications__messages">Messages</string>
     <string name="preferences_notifications__events">Events</string>
     <string name="preferences_notifications__in_chat_sounds">In-chat sounds</string>
     <string name="preferences_notifications__show">Show</string>
@@ -1372,6 +1401,10 @@
 
     <!-- transport_selection_list_item -->
     <string name="transport_selection_list_item__transport_icon">Transport icon</string>
+    <string name="UntrustedSendDialog_send_message">Send message?</string>
+    <string name="UntrustedSendDialog_send">Send</string>
+    <string name="UnverifiedSendDialog_send_message">Send message?</string>
+    <string name="UnverifiedSendDialog_send">Send</string>
 
 
     <!-- EOF -->

@@ -362,6 +362,7 @@ public class WebRtcCallService extends Service implements InjectableType, PeerCo
             @Override
             public void onFailureContinue(Throwable error) {
               Log.w(TAG, error);
+              insertMissedCall(recipient, true);
               terminate();
             }
           });
@@ -489,6 +490,7 @@ public class WebRtcCallService extends Service implements InjectableType, PeerCo
   private void handleLocalIceCandidate(Intent intent) {
     if (callState == CallState.STATE_IDLE || !Util.isEquals(this.callId, getCallId(intent))) {
       Log.w(TAG, "State is now idle, ignoring ice candidate...");
+      return;
     }
 
     if (recipient == null || callId == null) {
@@ -500,6 +502,7 @@ public class WebRtcCallService extends Service implements InjectableType, PeerCo
                                                              intent.getStringExtra(EXTRA_ICE_SDP));
 
     if (pendingIceUpdates != null) {
+      Log.w(TAG, "Adding to pending ice candidates...");
       this.pendingIceUpdates.add(iceUpdateMessage);
       return;
     }
@@ -592,8 +595,8 @@ public class WebRtcCallService extends Service implements InjectableType, PeerCo
   private void handleBusyMessage(Intent intent) {
     Log.w(TAG, "handleBusyMessage...");
 
-    Recipient recipient = getRemoteRecipient(intent);
-    long      callId    = getCallId(intent);
+    final Recipient recipient = getRemoteRecipient(intent);
+    final long      callId    = getCallId(intent);
 
     if (callState != CallState.STATE_DIALING || !Util.isEquals(this.callId, callId) || !recipient.equals(this.recipient)) {
       Log.w(TAG, "Got busy message for inactive session...");
@@ -606,7 +609,12 @@ public class WebRtcCallService extends Service implements InjectableType, PeerCo
     serviceHandler.postDelayed(new Runnable() {
       @Override
       public void run() {
-        WebRtcCallService.this.terminate();
+        Intent intent = new Intent(WebRtcCallService.this, WebRtcCallService.class);
+        intent.setAction(ACTION_LOCAL_HANGUP);
+        intent.putExtra(EXTRA_CALL_ID, intent.getLongExtra(EXTRA_CALL_ID, -1));
+        intent.putExtra(EXTRA_REMOTE_NUMBER, intent.getStringExtra(EXTRA_REMOTE_NUMBER));
+
+        startService(intent);
       }
     }, WebRtcCallActivity.BUSY_SIGNAL_DELAY_FINISH);
   }
@@ -999,6 +1007,7 @@ public class WebRtcCallService extends Service implements InjectableType, PeerCo
     intent.putExtra(EXTRA_ICE_SDP_MID, candidate.sdpMid);
     intent.putExtra(EXTRA_ICE_SDP_LINE_INDEX, candidate.sdpMLineIndex);
     intent.putExtra(EXTRA_ICE_SDP, candidate.sdp);
+    intent.putExtra(EXTRA_CALL_ID, callId);
 
     startService(intent);
   }

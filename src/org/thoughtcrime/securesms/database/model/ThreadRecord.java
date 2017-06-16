@@ -103,7 +103,12 @@ public class ThreadRecord extends DisplayRecord {
       String time = ExpirationUtil.getExpirationDisplayValue(context, (int) (getExpiresIn() / 1000));
       return emphasisAdded(context.getString(R.string.ThreadRecord_disappearing_message_time_updated_to_s, time));
     } else if (SmsDatabase.Types.isIdentityUpdate(type)) {
-      return emphasisAdded(context.getString(R.string.ThreadRecord_your_safety_number_with_s_has_changed, getRecipients().getPrimaryRecipient().toShortString()));
+      if (getRecipients().isGroupRecipient()) return emphasisAdded(context.getString(R.string.ThreadRecord_safety_number_changed));
+      else                                    return emphasisAdded(context.getString(R.string.ThreadRecord_your_safety_number_with_s_has_changed, getRecipients().getPrimaryRecipient().toShortString()));
+    } else if (SmsDatabase.Types.isIdentityVerified(type)) {
+      return emphasisAdded(context.getString(R.string.ThreadRecord_you_marked_verified));
+    } else if (SmsDatabase.Types.isIdentityDefault(type)) {
+      return emphasisAdded(context.getString(R.string.ThreadRecord_you_marked_unverified));
     } else {
       if (TextUtils.isEmpty(getBody().getBody())) {
         return new SpannableString(emphasisAdded(context.getString(R.string.ThreadRecord_media_message)));

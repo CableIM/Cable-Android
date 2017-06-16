@@ -240,7 +240,10 @@ public class ConversationAdapter <V extends View & BindableConversationItem>
   @Override
   public int getItemViewType(@NonNull MessageRecord messageRecord) {
     if (messageRecord.isGroupAction() || messageRecord.isCallLog() || messageRecord.isJoined() ||
-        messageRecord.isExpirationTimerUpdate() || messageRecord.isEndSession() || messageRecord.isIdentityUpdate()) {
+        messageRecord.isExpirationTimerUpdate() || messageRecord.isEndSession()                ||
+        messageRecord.isIdentityUpdate() || messageRecord.isIdentityVerified()                 ||
+        messageRecord.isIdentityDefault())
+    {
       return MESSAGE_TYPE_UPDATE;
     } else if (hasAudio(messageRecord)) {
       if (messageRecord.isOutgoing()) return MESSAGE_TYPE_AUDIO_OUTGOING;
@@ -314,7 +317,7 @@ public class ConversationAdapter <V extends View & BindableConversationItem>
     if (lastSeen <= 0)     return -1;
     if (!isActiveCursor()) return -1;
 
-    int count = getItemCount();
+    int count = getItemCount() - (hasHeaderView() ? 1 : 0) - (hasFooterView() ? 1 : 0);
 
     for (int i=0;i<count;i++) {
       MessageRecord messageRecord = getRecordForPositionOrThrow(i);
