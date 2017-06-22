@@ -1143,7 +1143,7 @@ public class ConversationActivity extends PassphraseRequiredActionBarActivity
           unverifiedBannerView.get().hide();
         }
 
-        titleView.setVerified(identityRecords.isVerified());
+        titleView.setVerified(isSecureText && identityRecords.isVerified());
 
         future.set(true);
       }
