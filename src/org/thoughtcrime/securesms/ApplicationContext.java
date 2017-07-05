@@ -27,7 +27,6 @@ import org.thoughtcrime.securesms.dependencies.AxolotlStorageModule;
 import org.thoughtcrime.securesms.dependencies.InjectableType;
 import org.thoughtcrime.securesms.dependencies.SignalCommunicationModule;
 import org.thoughtcrime.securesms.jobs.CreateSignedPreKeyJob;
-import org.thoughtcrime.securesms.jobs.RefreshAttributesJob;
 import org.thoughtcrime.securesms.jobs.persistence.EncryptingJobSerializer;
 import org.thoughtcrime.securesms.jobs.requirements.MasterSecretRequirementProvider;
 import org.thoughtcrime.securesms.jobs.requirements.MediaNetworkRequirementProvider;
@@ -85,7 +84,6 @@ public class ApplicationContext extends MultiDexApplication implements Dependenc
     initializeSignedPreKeyCheck();
     initializePeriodicTasks();
     initializeCircumvention();
-    initializeSetVideoCapable();
     initializeWebRtc();
   }
 
@@ -150,15 +148,6 @@ public class ApplicationContext extends MultiDexApplication implements Dependenc
 
     if (BuildConfig.PLAY_STORE_DISABLED) {
       UpdateApkRefreshListener.schedule(this);
-    }
-  }
-
-  private void initializeSetVideoCapable() {
-    if (TextSecurePreferences.isPushRegistered(this) &&
-        !TextSecurePreferences.isWebrtcCallingEnabled(this))
-    {
-      TextSecurePreferences.setWebrtcCallingEnabled(this, true);
-      jobManager.add(new RefreshAttributesJob(this));
     }
   }
 
